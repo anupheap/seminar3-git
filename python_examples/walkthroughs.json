@@ -1,0 +1,338 @@
+[
+  {
+    "after": "The row picture",
+    "lecture": 1,
+    "title": "Python: solving the intersection",
+    "figure": "01-solve",
+    "caption": "NumPy gives the same intersection as the two plotted equations.",
+    "notes": "Every code state is a complete Python example. The residual checks the computed solution against the original system. These small integer examples are well-conditioned. Floating-point equality generally requires a tolerance.",
+    "steps": [
+      "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\nb = np.array([0., 3.])",
+      "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\nb = np.array([0., 3.])\nx = np.linalg.solve(A, b)\nprint(x)  # [1. 2.]",
+      "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\nb = np.array([0., 3.])\nx = np.linalg.solve(A, b)\nprint(x)  # [1. 2.]\nprint(A @ x - b)  # [0. 0.]\nassert np.allclose(A @ x, b)"
+    ],
+    "slide": 5,
+    "introducedLines": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ]
+    ]
+  },
+  {
+    "after": "The column picture",
+    "lecture": 1,
+    "title": "Python: the weights are coordinates",
+    "figure": "02-columns",
+    "caption": "The blue column plus twice the orange column reaches the green target.",
+    "notes": "Array slicing with A[:,0] selects the first column. The at-sign is matrix multiplication. Compare a weighted sum of columns with the same computation as A @ x. They are identical operations.",
+    "steps": [
+      "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\na1, a2 = A[:, 0], A[:, 1]",
+      "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\na1, a2 = A[:, 0], A[:, 1]\nb = a1 + 2 * a2\nprint(b)  # [0. 3.]",
+      "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\na1, a2 = A[:, 0], A[:, 1]\nb = a1 + 2 * a2\nprint(b)  # [0. 3.]\nx = np.array([1., 2.])\nassert np.allclose(b, A @ x)\nprint(A @ x)  # [0. 3.]"
+    ],
+    "slide": 7,
+    "introducedLines": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        8
+      ]
+    ]
+  },
+  {
+    "after": "Elimination creates zeros",
+    "lecture": 2,
+    "title": "Python: elimination one row at a time",
+    "figure": "03-elimination",
+    "caption": "Green outlines mark the pivots. The orange divider separates A from b.",
+    "notes": "Each in-place update applies to the whole augmented row, including b. This teaching example does not require pivoting. A general numerical solver must handle row swaps and numerical stability.",
+    "steps": [
+      "import numpy as np\nAb = np.array([[1., 2., 1., 4.],\n               [2., 5., 3., 10.],\n               [1., 0., 8., 9.]])",
+      "import numpy as np\nAb = np.array([[1., 2., 1., 4.],\n               [2., 5., 3., 10.],\n               [1., 0., 8., 9.]])\nAb[1] -= 2 * Ab[0]\nAb[2] -= Ab[0]",
+      "import numpy as np\nAb = np.array([[1., 2., 1., 4.],\n               [2., 5., 3., 10.],\n               [1., 0., 8., 9.]])\nAb[1] -= 2 * Ab[0]\nAb[2] -= Ab[0]\nAb[2] += 2 * Ab[1]\nprint(Ab)\n# [[1. 2. 1. 4.]\n#  [0. 1. 1. 2.]\n#  [0. 0. 9. 9.]]"
+    ],
+    "slide": 12,
+    "introducedLines": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        11
+      ]
+    ]
+  },
+  {
+    "after": "Back substitution solves the triangle",
+    "lecture": 2,
+    "title": "Python: solving upward from the last row",
+    "figure": "04-back-substitution",
+    "caption": "Each bar shows a variable’s contribution after x = y = z = 1.",
+    "notes": "The bottom row contains only z, so solve it first. Then substitute z into row two, and substitute both y and z into row one. The final assertion verifies the triangular system.",
+    "steps": [
+      "import numpy as np\nU = np.array([[1., 2., 1.],\n              [0., 1., 1.],\n              [0., 0., 9.]])\nc = np.array([4., 2., 9.])\nx = np.zeros(3)",
+      "import numpy as np\nU = np.array([[1., 2., 1.],\n              [0., 1., 1.],\n              [0., 0., 9.]])\nc = np.array([4., 2., 9.])\nx = np.zeros(3)\nx[2] = c[2] / U[2, 2]\nx[1] = (c[1] - x[2]) / U[1, 1]",
+      "import numpy as np\nU = np.array([[1., 2., 1.],\n              [0., 1., 1.],\n              [0., 0., 9.]])\nc = np.array([4., 2., 9.])\nx = np.zeros(3)\nx[2] = c[2] / U[2, 2]\nx[1] = (c[1] - x[2]) / U[1, 1]\nx[0] = c[0] - 2*x[1] - x[2]\nprint(x)  # [1. 1. 1.]\nassert np.allclose(U @ x, c)"
+    ],
+    "slide": 14,
+    "introducedLines": [
+      [
+        1,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        11
+      ]
+    ]
+  },
+  {
+    "after": "Five views of matrix multiplication",
+    "lecture": 3,
+    "title": "Python: three equivalent products",
+    "figure": "05-products",
+    "caption": "AB and BA transform the same unit square into different parallelograms.",
+    "notes": "The code compares the usual product with multiplication by columns and a sum of outer products. The plot compares AB with BA, which is a different operation. Shapes match here because both matrices are square.",
+    "steps": [
+      "import numpy as np\nA = np.array([[2, -1], [-1, 2]])\nB = np.array([[1, 2], [0, 1]])\nC = A @ B",
+      "import numpy as np\nA = np.array([[2, -1], [-1, 2]])\nB = np.array([[1, 2], [0, 1]])\nC = A @ B\nby_columns = np.column_stack(\n    [A @ B[:, j] for j in range(2)])\nassert np.allclose(C, by_columns)",
+      "import numpy as np\nA = np.array([[2, -1], [-1, 2]])\nB = np.array([[1, 2], [0, 1]])\nC = A @ B\nby_columns = np.column_stack(\n    [A @ B[:, j] for j in range(2)])\nassert np.allclose(C, by_columns)\nterms = [np.outer(A[:, k], B[k])\n         for k in range(2)]\nby_outer = sum(terms)\nassert np.allclose(C, by_outer)\nprint(C)      # [[2, 3], [-1, 0]]\nprint(B @ A)  # [[0, 3], [-1, 2]]"
+    ],
+    "slide": 19,
+    "introducedLines": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        13
+      ]
+    ]
+  },
+  {
+    "after": "Gauss–Jordan finds the inverse",
+    "lecture": 3,
+    "title": "Python: reducing both halves together",
+    "figure": "06-inverse",
+    "caption": "The right half becomes A⁻¹. Multiplying by A recovers the identity.",
+    "notes": "The first two columns hold A and the last two hold I. The same operations act on all four columns. Once the left half is I, slicing the right half gives the inverse. Numerical applications usually solve directly instead of explicitly forming inverses.",
+    "steps": [
+      "import numpy as np\nA = np.array([[1., 3.], [2., 7.]])\naug = np.column_stack((A, np.eye(2)))",
+      "import numpy as np\nA = np.array([[1., 3.], [2., 7.]])\naug = np.column_stack((A, np.eye(2)))\naug[1] -= 2 * aug[0]\naug[0] -= 3 * aug[1]",
+      "import numpy as np\nA = np.array([[1., 3.], [2., 7.]])\naug = np.column_stack((A, np.eye(2)))\naug[1] -= 2 * aug[0]\naug[0] -= 3 * aug[1]\ninverse = aug[:, 2:]\nprint(inverse)  # [[7, -3], [-2, 1]]\nassert np.allclose(aug[:, :2], np.eye(2))\nassert np.allclose(A @ inverse, np.eye(2))"
+    ],
+    "slide": 22,
+    "introducedLines": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        9
+      ]
+    ]
+  },
+  {
+    "after": "Transposes exchange rows and columns",
+    "lecture": 5,
+    "title": "Python: transpose and row permutation",
+    "figure": "07-transpose",
+    "caption": "The entries keep their values as a 2 × 3 array becomes 3 × 2.",
+    "notes": "A.T is a transpose. The permutation P has the cyclic order used in the next Manim clip. It multiplies R=A.T on the left, producing rows two, three, one. Transposing P reverses that permutation.",
+    "steps": [
+      "import numpy as np\nA = np.arange(1, 7).reshape(2, 3)\nprint(A.shape)  # (2, 3)",
+      "import numpy as np\nA = np.arange(1, 7).reshape(2, 3)\nprint(A.shape)  # (2, 3)\nR = A.T\nprint(R.shape)  # (3, 2)\nprint(R)  # [[1, 4], [2, 5], [3, 6]]",
+      "import numpy as np\nA = np.arange(1, 7).reshape(2, 3)\nprint(A.shape)  # (2, 3)\nR = A.T\nprint(R.shape)  # (3, 2)\nprint(R)  # [[1, 4], [2, 5], [3, 6]]\nP = np.array([[0, 1, 0],\n              [0, 0, 1],\n              [1, 0, 0]])\nprint(P @ R)  # [[2, 5], [3, 6], [1, 4]]\nassert np.allclose(P.T @ P, np.eye(3))"
+    ],
+    "slide": 26,
+    "introducedLines": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        7,
+        11
+      ]
+    ]
+  },
+  {
+    "after": "The subspace test",
+    "lecture": 5,
+    "title": "Python: closure examples and a counterexample",
+    "figure": "08-subspace",
+    "caption": "The blue line contains zero. The shifted orange line misses zero.",
+    "notes": "Finite examples illustrate closure but do not prove it for every vector. The algebraic equation y=2x proves closure in this case. The negative of q=(1,1) gives a decisive counterexample for the first quadrant.",
+    "steps": [
+      "import numpy as np\nu = np.array([1, 2])\nv = np.array([-2, -4])\nassert u[1] == 2*u[0]\nassert v[1] == 2*v[0]",
+      "import numpy as np\nu = np.array([1, 2])\nv = np.array([-2, -4])\nassert u[1] == 2*u[0]\nassert v[1] == 2*v[0]\nw = 3*u - 2*v\nprint(w)  # [7 14]\nassert w[1] == 2*w[0]",
+      "import numpy as np\nu = np.array([1, 2])\nv = np.array([-2, -4])\nassert u[1] == 2*u[0]\nassert v[1] == 2*v[0]\nw = 3*u - 2*v\nprint(w)  # [7 14]\nassert w[1] == 2*w[0]\nq = np.array([1, 1])\nassert np.all(q >= 0)\nprint(np.all(-q >= 0))  # False"
+    ],
+    "slide": 30,
+    "introducedLines": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        9,
+        11
+      ]
+    ]
+  },
+  {
+    "after": "Column space describes possible outputs",
+    "lecture": 6,
+    "title": "Python: testing whether b belongs to C(B)",
+    "figure": "09-column-space",
+    "caption": "Appending (4, 8) adds no direction. Appending (4, 7) increases the rank.",
+    "notes": "This connects lecture 6 to the rank language in lecture 9. A right-hand side belongs to the column space if adding it as a column leaves the rank unchanged. NumPy estimates numerical rank using a floating-point tolerance.",
+    "steps": [
+      "import numpy as np\nB = np.array([[1, 2, 3], [2, 4, 6]])\nr = np.linalg.matrix_rank(B)\nprint(r)  # 1",
+      "import numpy as np\nB = np.array([[1, 2, 3], [2, 4, 6]])\nr = np.linalg.matrix_rank(B)\nprint(r)  # 1\ngood = np.column_stack((B, [4, 8]))\nprint(np.linalg.matrix_rank(good) == r)\n# True: the target is in C(B)",
+      "import numpy as np\nB = np.array([[1, 2, 3], [2, 4, 6]])\nr = np.linalg.matrix_rank(B)\nprint(r)  # 1\ngood = np.column_stack((B, [4, 8]))\nprint(np.linalg.matrix_rank(good) == r)\n# True: the target is in C(B)\nbad = np.column_stack((B, [4, 7]))\nassert np.linalg.matrix_rank(good) == r\nprint(np.linalg.matrix_rank(bad) == r)\n# False: the target is outside C(B)"
+    ],
+    "slide": 33,
+    "introducedLines": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        11
+      ]
+    ]
+  },
+  {
+    "after": "Every solution has a nullspace part",
+    "lecture": 6,
+    "title": "Python: adding a nullspace vector",
+    "figure": "10-nullspace",
+    "caption": "The two displayed basis vectors generate the entire nullspace plane.",
+    "notes": "The columns of N are (-2,1,0) and (-3,0,1). B@N=0 checks both basis vectors at once. For any real parameter pair, xp+N@parameters remains a solution for b=(4,8). The picture shows the homogeneous plane, not the shifted solution plane.",
+    "steps": [
+      "import numpy as np\nB = np.array([[1, 2, 3], [2, 4, 6]])\nN = np.array([[-2, -3], [1, 0], [0, 1]])\nassert np.allclose(B @ N, 0)",
+      "import numpy as np\nB = np.array([[1, 2, 3], [2, 4, 6]])\nN = np.array([[-2, -3], [1, 0], [0, 1]])\nassert np.allclose(B @ N, 0)\nxp = np.array([4., 0., 0.])\nx = xp + N @ np.array([0.5, 1.0])\nprint(x)  # [0.  0.5 1. ]",
+      "import numpy as np\nB = np.array([[1, 2, 3], [2, 4, 6]])\nN = np.array([[-2, -3], [1, 0], [0, 1]])\nassert np.allclose(B @ N, 0)\nxp = np.array([4., 0., 0.])\nx = xp + N @ np.array([0.5, 1.0])\nprint(x)  # [0.  0.5 1. ]\nassert np.allclose(B @ x, [4, 8])\nprint(B @ x)  # [4. 8.]"
+    ],
+    "slide": 36,
+    "introducedLines": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        9
+      ]
+    ]
+  },
+  {
+    "after": "A basis spans without redundancy",
+    "lecture": 9,
+    "title": "Python: coordinates in a different basis",
+    "figure": "11-coordinates",
+    "caption": "The same vector (3, 2) has coordinates (1, 2) in the skew basis.",
+    "notes": "The columns of V are the new basis vectors. Solving Vc=v finds the basis coordinates, while V@c reconstructs the vector in standard coordinates. The vector itself stays fixed. Both bases have dimension two.",
+    "steps": [
+      "import numpy as np\nV = np.array([[1., 1.], [0., 1.]])\nv = np.array([3., 2.])",
+      "import numpy as np\nV = np.array([[1., 1.], [0., 1.]])\nv = np.array([3., 2.])\nc = np.linalg.solve(V, v)\nprint(c)  # [1. 2.]",
+      "import numpy as np\nV = np.array([[1., 1.], [0., 1.]])\nv = np.array([3., 2.])\nc = np.linalg.solve(V, v)\nprint(c)  # [1. 2.]\nassert np.allclose(V @ c, v)\nassert np.linalg.matrix_rank(V) == 2"
+    ],
+    "slide": 42,
+    "introducedLines": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ]
+    ]
+  },
+  {
+    "after": "Rank and nullity count different directions",
+    "lecture": 9,
+    "title": "Python: rank plus nullity",
+    "figure": "12-rank",
+    "caption": "The output space C(M) has dimension 2. The input nullspace has dimension 1.",
+    "notes": "SciPy returns an orthonormal nullspace basis, so its entries can differ from the integer basis by scaling or sign. It still spans the same line. The assertion checks the defining equation M@N=0 with a numerical tolerance.",
+    "steps": [
+      "import numpy as np\nfrom scipy.linalg import null_space\nM = np.array([[1., 0., 1.],\n              [2., 1., 3.],\n              [0., 1., 1.]])\nr = np.linalg.matrix_rank(M)",
+      "import numpy as np\nfrom scipy.linalg import null_space\nM = np.array([[1., 0., 1.],\n              [2., 1., 3.],\n              [0., 1., 1.]])\nr = np.linalg.matrix_rank(M)\nN = null_space(M)\nprint(r, N.shape[1])  # 2 1",
+      "import numpy as np\nfrom scipy.linalg import null_space\nM = np.array([[1., 0., 1.],\n              [2., 1., 3.],\n              [0., 1., 1.]])\nr = np.linalg.matrix_rank(M)\nN = null_space(M)\nprint(r, N.shape[1])  # 2 1\nassert np.allclose(M @ N, 0)\nassert r + N.shape[1] == M.shape[1]\nprint(r, N.shape[1], M.shape[1])  # 2 1 3"
+    ],
+    "slide": 45,
+    "introducedLines": [
+      [
+        1,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        11
+      ]
+    ]
+  }
+]

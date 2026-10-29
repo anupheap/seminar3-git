@@ -1,0 +1,181 @@
+:root {
+  --paper: #f7f5ee;
+  --ink: #192b3a;
+  --muted: #5f6d75;
+  --blue: #246a9c;
+  --orange: #c15b35;
+  --rule: #d8ddd9;
+  --slidev-theme-primary: #246a9c;
+}
+html, body, #app { font-family: 'Segoe UI', Arial, sans-serif; }
+.slidev-layout {
+  background: var(--paper);
+  color: var(--ink);
+  padding: 42px 54px 48px;
+  font-size: 22px;
+  line-height: 1.45;
+}
+.slidev-layout h1, .slidev-layout h2, .slidev-layout h3 {
+  font-family: inherit;
+  color: var(--ink);
+  font-weight: 650;
+  letter-spacing: -.035em;
+}
+.slidev-layout h1 { font-size: 36px; line-height: 1.13; margin: 0 0 23px; }
+.slidev-layout h2 { font-size: 24px; margin: 0 0 14px; }
+.slidev-layout p { margin: 12px 0; }
+.slidev-layout ul { padding-left: 23px; margin: 14px 0; }
+.slidev-layout li { padding-left: 3px; margin: 10px 0; }
+.slidev-layout strong { color: var(--blue); font-weight: 650; }
+.slidev-layout a { color: var(--blue); border-bottom: 1px solid #246a9c55; }
+.slidev-layout .eyebrow {
+  color: var(--blue); font-size: 14px; text-transform: uppercase;
+  letter-spacing: .13em; font-weight: 650; margin-bottom: 10px;
+}
+.slidev-layout .lead { font-size: 25px; line-height: 1.45; max-width: 780px; }
+.slidev-layout .small { font-size: 17px; line-height: 1.5; color: var(--muted); }
+.slidev-layout .note { font-size: 19px; color: var(--muted); margin-top: 20px; }
+.slidev-layout .takeaway {
+  border-top: 2px solid var(--rule); padding-top: 13px;
+  margin-top: 22px; font-size: 21px;
+}
+.slidev-layout .takeaway > p { margin: 0; }
+.slidev-layout .summary-content td { padding-top: 7px; padding-bottom: 7px; }
+.slidev-layout .summary-content .takeaway { margin-top: 16px; }
+.slidev-layout .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; align-items: start; }
+.slidev-layout .cols.wide-right { grid-template-columns: .9fr 1.15fr; gap: 28px; }
+.slidev-layout .cols.wide-left { grid-template-columns: 1.2fr .8fr; }
+.slidev-layout .katex-display { margin: 18px 0; }
+.slidev-layout .katex { font-size: 1.13em; }
+.slidev-layout .math-large .katex { font-size: 1.5em; }
+.slidev-layout .math-small .katex { font-size: .98em; }
+.slidev-layout .equation-line { margin: 26px 0; }
+.slidev-layout table { width: 100%; border-collapse: collapse; font-size: 20px; line-height: 1.35; }
+.slidev-layout th { color: var(--muted); font-weight: 500; font-size: 15px; text-transform: uppercase; letter-spacing: .05em; }
+.slidev-layout th, .slidev-layout td { text-align: left; border-bottom: 1px solid var(--rule); padding: 11px 12px 11px 0; }
+.slidev-layout table .katex { font-size: 1.06em; }
+.slidev-layout .compact table { font-size: 18px; }
+.slidev-layout .compact th, .slidev-layout .compact td { padding: 9px 10px 9px 0; }
+.slidev-layout.cover { padding-top: 82px; }
+.slidev-layout.cover h1 { font-size: 68px; letter-spacing: -.055em; margin: 17px 0; }
+.slidev-layout.cover .subtitle { font-size: 27px; color: var(--muted); }
+.slidev-layout.cover .cover-equation { margin-top: 32px; text-align: left; }
+.slidev-layout.cover .cover-equation .katex { font-size: 2.45em; }
+.slidev-layout.cover .katex-display { text-align: left; }
+.slidev-layout .source-list { font-size: 19px; line-height: 1.5; }
+.slidev-layout .source-list p { margin: 13px 0; }
+.deck-footer {
+  position: absolute; bottom: 15px; left: 54px; right: 54px;
+  display: flex; justify-content: space-between; color: #75818a;
+  font: 12px 'Segoe UI', Arial, sans-serif;
+  letter-spacing: .025em; pointer-events: none;
+}
+.math-film { margin: 0; }
+.math-film video { width: 100%; aspect-ratio: 16 / 9; background: #13222f; border-radius: 3px; display: block; }
+.math-film figcaption { font-size: 16px; color: var(--muted); margin-top: 11px; line-height: 1.45; }
+.slidev-layout .film-wide { max-width: 710px; margin: 0 auto; }
+.slidev-layout .film-wide video { max-height: 330px; }
+.plot-wrap { width: 100%; }
+.plot-wrap svg { width: 100%; height: 310px; overflow: visible; font-family: 'Segoe UI', Arial, sans-serif; }
+.plot-wrap svg text { font-size: 13px !important; }
+.plot-wrap svg text[font-size="16"] { font-size: 16px !important; }
+.plot-wrap svg text[font-size="17"] { font-size: 17px !important; }
+.plot-wrap .plot-key { font-size: 16px; color: var(--muted); line-height: 1.5; }
+@media print { .deck-footer { position: absolute; } }
+.slidev-layout .code-pair { display: grid; grid-template-columns: 1.1fr 1fr; gap: 27px; align-items: start; }
+.slidev-layout .code-pair pre { font-size: 14.5px !important; line-height: 1.55 !important; padding: 14px !important; }
+.slidev-layout .code-pair pre code { font-size: inherit !important; line-height: inherit !important; }
+.slidev-layout .code-pair .shiki-magic-move-container { min-height: 305px; }
+.slidev-layout .python-figure { margin: 0; }
+.slidev-layout .python-figure img { width: 100%; height: 260px; object-fit: contain; }
+.slidev-layout .python-figure figcaption { font-size: 16px; line-height: 1.45; color: var(--muted); margin-top: 11px; }
+.slidev-layout .step-hint { margin-top: 16px; font-size: 15px; color: var(--muted); }
+.slidev-layout .film-wide { max-width: 665px; }
+.slidev-layout .film-wide video { max-height: 300px; object-fit: contain; }
+
+/* Reserve the longest Magic Move state before any tokens begin moving. */
+.slidev-layout .code-pair { grid-template-columns: 1.15fr 1fr; gap: 25px; }
+.slidev-layout .code-panel {
+  --code-panel-height: max(308px, calc((var(--code-lines, 13) + 1) * 21.025px + 28px));
+  height: var(--code-panel-height);
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  background: #f0f1f2;
+  border-radius: 3px;
+}
+.slidev-layout .code-panel .slidev-code-wrapper { height: 100%; }
+.slidev-layout .code-panel pre.shiki-magic-move-container {
+  box-sizing: border-box;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  line-height: 1.45 !important;
+  background: transparent !important;
+}
+.slidev-layout .code-panel pre code { line-height: 1.45 !important; }
+.slidev-layout .step-hint { margin-top: 10px; font-size: 14px; line-height: 20px; }
+
+/* The diagram uses the same local click index as its Magic Move block. */
+.slidev-layout .code-visual { margin: 0; min-width: 0; }
+.slidev-layout .code-visual svg { width: 100%; height: 260px; display: block; overflow: visible; }
+.slidev-layout .code-visual figcaption {
+  font-size: 15.5px;
+  line-height: 1.4;
+  min-height: 44px;
+  margin-top: 10px;
+  color: var(--muted);
+}
+.visual-caption-enter-active { transition: opacity 180ms ease, transform 180ms ease; }
+.visual-caption-leave-active { transition: opacity 100ms ease, transform 100ms ease; }
+.visual-caption-enter-from { opacity: 0; transform: translateY(5px); }
+.visual-caption-leave-to { opacity: 0; transform: translateY(-4px); }
+
+/* Entrance and exit transitions have separate forward/backward directions. */
+.seminar-forward-enter-active,
+.seminar-back-enter-active {
+  transition: opacity 430ms ease, transform 430ms cubic-bezier(.2,.7,.25,1);
+  will-change: opacity, transform;
+}
+.seminar-forward-leave-active,
+.seminar-back-leave-active {
+  transition: opacity 300ms ease, transform 300ms ease;
+  will-change: opacity, transform;
+}
+.seminar-forward-enter-from { opacity: 0; transform: translate3d(28px,10px,0) scale(.993); }
+.seminar-forward-leave-to { opacity: 0; transform: translate3d(-24px,-7px,0) scale(.993); }
+.seminar-back-enter-from { opacity: 0; transform: translate3d(-28px,10px,0) scale(.993); }
+.seminar-back-leave-to { opacity: 0; transform: translate3d(24px,-7px,0) scale(.993); }
+.seminar-forward-enter-active h1,
+.seminar-back-enter-active h1 { animation: heading-arrives 370ms ease both; }
+.seminar-forward-enter-active .code-pair,
+.seminar-back-enter-active .code-pair,
+.seminar-forward-enter-active .film-wide,
+.seminar-back-enter-active .film-wide { animation: content-arrives 380ms 40ms ease both; }
+@keyframes heading-arrives { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes content-arrives { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.slidev-layout.cover > .eyebrow { animation: heading-arrives 450ms ease both; }
+.slidev-layout.cover > h1 { animation: heading-arrives 550ms 70ms ease both; }
+.slidev-layout.cover > .subtitle { animation: content-arrives 550ms 160ms ease both; }
+.slidev-layout.cover > .cover-equation { animation: content-arrives 550ms 260ms ease both; }
+.slidev-layout.cover > .small { animation: content-arrives 500ms 340ms ease both; }
+@media (prefers-reduced-motion: reduce) {
+  .slidev-page, .slidev-layout *, .visual-caption-enter-active, .visual-caption-leave-active {
+    animation: none !important;
+    transition-duration: 0ms !important;
+  }
+}
+
+/* Quiet chapter breaks retain the deck's typography and paper background. */
+.slidev-layout .lecture-divider { padding-top: 72px; }
+.slidev-layout .lecture-divider .eyebrow { font-size: 18px; letter-spacing: .16em; }
+.slidev-layout .lecture-divider h1 {
+  max-width: 800px;
+  margin: 20px 0 26px;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: -.04em;
+}
+.slidev-layout .lecture-question { max-width: 755px; font-size: 23px; line-height: 1.45; color: var(--muted); }
