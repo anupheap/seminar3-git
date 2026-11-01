@@ -1552,3 +1552,10 @@ Spring 2010 OCW publication, using lectures recorded in Fall 1999. This seminar 
 The lecture 1 opening system and lecture 3 Gauss-Jordan matrix come from Strang's examples. Other worked matrices, the practice problem, explanatory wording, and animations are original to this seminar. Source links also appear in the relevant speaker notes. MIT's resource pages identify the recording date as Fall 1999, while the course publication is Spring 2010.
 https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
 -->
+
+<style>
+:global(#slidev-goto-dialog.-top-20) {
+  overflow: hidden;
+  max-height: 80px;
+}
+</style>
