@@ -1553,9 +1553,9 @@ The lecture 1 opening system and lecture 3 Gauss-Jordan matrix come from Strang'
 https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
 -->
 
-<style>
+<!-- <style>
 :global(#slidev-goto-dialog.-top-20) {
   overflow: hidden;
   max-height: 80px;
 }
-</style>
+</style> -->
