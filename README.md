@@ -51,6 +51,7 @@ python -m venv .venv-manim
 - `animations/README.md`: clip regeneration and publication commands.
 - `python_examples/illustrate.py`: Matplotlib illustrations.
 - `python_examples/visual_states.py`: Python computations and synchronized diagram geometry.
+- `python_examples/boilerplate.py` and [`python_examples/BOILERPLATE.md`](python_examples/BOILERPLATE.md): commented shape examples and a complete code-synchronized lesson template.
 
 ## Sources
 
