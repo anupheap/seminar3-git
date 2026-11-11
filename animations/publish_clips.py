@@ -6,16 +6,19 @@ import av
 
 SCENES={
     'linear_algebra':['ColumnCombination','EliminationGeometry','DependenceAndBasis'],
-    'expanded_scenes':['RowIntersection','EliminationPivots','MatrixComposition',
+    'expanded_scenes':['RowIntersection','ThreePlaneIntersection','ThreeColumnCombination',
+        'EliminationPivots','MatrixComposition',
         'GaussJordanInverse','MatrixTranspose','PermutationRows',
         'ColumnSpaceSweep','NullspacePlane','BasisCoordinates'],
 }
 
 
-def publish(media,output):
+def publish(media,output,selected=None):
     output.mkdir(parents=True,exist_ok=True)
     for module,names in SCENES.items():
         for name in names:
+            if selected and name not in selected:
+                continue
             source=media/'videos'/module/'720p30'/f'{name}.mp4'
             if not source.exists():
                 raise FileNotFoundError(f'Render this scene first: {source}')
@@ -33,5 +36,6 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--media',type=Path,default=Path('media'))
     parser.add_argument('--output',type=Path,default=Path(__file__).resolve().parents[1]/'public/animations')
+    parser.add_argument('--scenes',nargs='*',help='Publish only these rendered scene names')
     args=parser.parse_args()
-    publish(args.media,args.output)
+    publish(args.media,args.output,args.scenes)

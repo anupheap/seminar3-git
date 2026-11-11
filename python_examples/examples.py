@@ -1,4 +1,4 @@
-"""Run all twelve complete numerical walkthroughs: python python_examples/examples.py"""
+"""Run the twelve walkthroughs and the guide's 3D check: python python_examples/examples.py"""
 
 
 # Python: solving the intersection
@@ -22,6 +22,21 @@ print(b)  # [0. 3.]
 x = np.array([1., 2.])
 assert np.allclose(b, A @ x)
 print(A @ x)  # [0. 3.]
+
+
+# Python: both 3D pictures agree
+print('Python: both 3D pictures agree')
+import numpy as np
+A = np.array([[ 2., -1.,  0.],
+              [-1.,  2., -1.],
+              [ 0., -3.,  4.]])
+b = np.array([0., -1., 4.])
+point = np.linalg.solve(A, b)
+print(point)        # [0. 0. 1.]
+print(A @ point)    # [ 0. -1.  4.]
+print(A[:, 2])      # [ 0. -1.  4.]
+assert np.allclose(A @ point, b)
+assert np.allclose(A[:, 2], b)
 
 
 # Python: elimination one row at a time

@@ -69,6 +69,11 @@ class ColumnCombination(Scene):
         self.play(GrowArrow(resultant), FadeIn(result), run_time=1.5)
         target = label("b", 26, GREEN).next_to(plane.c2p(0, 3), LEFT, buff=.18)
         self.play(FadeIn(target), run_time=.5)
+        matrix = VGroup(
+            label("[ 2  -1 ] [1]   [0]",22),
+            label("[-1   2 ] [2] = [3]",22),
+        ).arrange(DOWN,aligned_edge=LEFT,buff=.1).move_to([3.15,-2.45,0])
+        self.play(FadeIn(matrix),run_time=.6)
         self.wait(3)
 
 

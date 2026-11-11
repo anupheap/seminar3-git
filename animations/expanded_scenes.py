@@ -51,6 +51,67 @@ class RowIntersection(Scene):
         self.play(FadeIn(answer),run_time=.8)
         dotlabel=label("(1, 2)",24,GREEN).next_to(point,DOWN+RIGHT,buff=.12)
         self.play(FadeIn(dotlabel),run_time=.4)
+        matrix=VGroup(
+            label("[ 2  -1 ] [x]   [0]",23),
+            label("[-1   2 ] [y] = [3]",23),
+        ).arrange(DOWN,aligned_edge=LEFT,buff=.12).move_to([3.1,-1.9,0])
+        self.play(FadeIn(matrix),run_time=.7)
+        self.wait(2)
+
+
+class ThreePlaneIntersection(ThreeDScene):
+    """The guide's three row equations as planes meeting at (0, 0, 1)."""
+    def construct(self):
+        self.camera.background_color=BG
+        self.set_camera_orientation(phi=68*DEGREES,theta=-55*DEGREES,zoom=.9)
+        axes=ThreeDAxes(x_range=[-2,2,1],y_range=[-2,2,1],z_range=[-1,3,1],
+                        x_length=5,y_length=5,z_length=4).shift(LEFT*2.3)
+        plane1=Surface(lambda u,v: axes.c2p(u,2*u,v),
+                       u_range=[-.75,.75],v_range=[-.5,2.5],resolution=(12,12),
+                       fill_color=BLUE,fill_opacity=.45,stroke_color=BLUE,stroke_opacity=.25)
+        plane2=Surface(lambda u,v: axes.c2p(u,v,1-u+2*v),
+                       u_range=[-.7,.7],v_range=[-.7,.7],resolution=(12,12),
+                       fill_color=ORANGE,fill_opacity=.45,stroke_color=ORANGE,stroke_opacity=.25)
+        plane3=Surface(lambda u,v: axes.c2p(u,v,1+.75*v),
+                       u_range=[-1.4,1.4],v_range=[-1.2,1.2],resolution=(12,12),
+                       fill_color=GREEN,fill_opacity=.42,stroke_color=GREEN,stroke_opacity=.25)
+        point=Sphere(radius=.11,color=INK).move_to(axes.c2p(0,0,1))
+        formulas=VGroup(
+            label("2x - y = 0",25,BLUE),
+            label("-x + 2y - z = -1",25,ORANGE),
+            label("-3y + 4z = 4",25,GREEN),
+            label("A(0, 0, 1) = (0, -1, 4)",22,INK),
+        ).arrange(DOWN,aligned_edge=LEFT,buff=.3).move_to([3.2,.2,0])
+        self.add_fixed_in_frame_mobjects(formulas)
+        self.add(axes)
+        self.play(Create(plane1),run_time=1.4)
+        self.play(Create(plane2),run_time=1.4)
+        self.play(Create(plane3),run_time=1.4)
+        self.play(FadeIn(point),run_time=.8)
+        self.wait(2)
+
+
+class ThreeColumnCombination(ThreeDScene):
+    """The guide's columns with weights (0, 0, 1) reaching b."""
+    def construct(self):
+        self.camera.background_color=BG
+        self.set_camera_orientation(phi=68*DEGREES,theta=-55*DEGREES,zoom=.9)
+        axes=ThreeDAxes(x_range=[-3,3,1],y_range=[-3,3,1],z_range=[-4,5,1],
+                        x_length=5,y_length=5,z_length=5).shift(LEFT*2.3)
+        cols=[(2,-1,0),(-1,2,-3),(0,-1,4)]
+        arrows=[Arrow3D(axes.c2p(0,0,0),axes.c2p(*v),color=c)
+                for v,c in zip(cols,[BLUE,ORANGE,GREEN])]
+        formulas=VGroup(
+            label("a1 = (2, -1, 0)",24,BLUE),
+            label("a2 = (-1, 2, -3)",24,ORANGE),
+            label("a3 = (0, -1, 4)",24,GREEN),
+            label("0a1 + 0a2 + 1a3 = b",25,INK),
+            label("b = (0, -1, 4)",24,GREEN),
+        ).arrange(DOWN,aligned_edge=LEFT,buff=.27).move_to([3.3,0,0])
+        self.add_fixed_in_frame_mobjects(formulas)
+        self.add(axes)
+        for i in range(3):
+            self.play(GrowArrow(arrows[i]),run_time=1.2)
         self.wait(2)
 
 

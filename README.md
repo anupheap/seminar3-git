@@ -1,8 +1,8 @@
 # Linear Algebra seminar
 
-A **51-slide** Slidev presentation based on Gilbert Strang's MIT 18.06 lectures **1, 2, 3, 5, 6, and 9**. It follows the Spring 2010 MIT OpenCourseWare publication, whose lecture videos were recorded in Fall 1999.
+A **59-slide** Slidev presentation based on Gilbert Strang's MIT 18.06 lectures **1, 2, 3, 5, 6, and 9**. Lecture 1 follows pages 1–18 of the supplied Canva/PDF guide: row and column pictures, matrix forms, 2D and 3D examples, questions, and special cases. Pages 19–28 are unrelated template material and are excluded. The remaining lectures follow the Spring 2010 MIT OpenCourseWare publication, whose lecture videos were recorded in Fall 1999.
 
-A title page introduces each of the six selected lectures. The deck includes **12 Manim clips** and **12 Shiki Magic Move Python walkthroughs** with 36 synchronized code and diagram states. Twelve standalone Python figures are also included. Worked examples, speaker notes, a practice problem, and direct lecture links are included. Allow about 55 minutes when presenting all code steps.
+A title page introduces each of the six selected lectures. The deck includes **14 animated clips**, **12 Shiki Magic Move Python walkthroughs** with 36 synchronized code and diagram states, and a complete 3D Python example. Twelve standalone Python figures are also included. Worked examples, speaker notes, a practice problem, and direct lecture links are included. Allow about 65 minutes when presenting all code steps.
 
 ## View
 
@@ -38,7 +38,7 @@ python -m venv .venv-manim
 .\.venv-manim\Scripts\python.exe python_examples/illustrate.py
 ```
 
-`python_examples/examples.py` contains all twelve complete examples with checks. `python_examples/walkthroughs.json` records all code states. Each new state preserves the previous code and appends the next calculations. `visual_states.py` executes every state and writes the numerical scene data to `visual_states.json`, which the browser interpolates as the code changes. Regenerate that file after editing the Python walkthroughs. `audit.py` checks cumulative code order, available variables, displayed matrix entries, and plotted results, and writes `audit.json`. Each visualization represents the result after all newly visible lines in that click step. `illustrate.py` generates the standalone SVG figures and PNG previews. The numerical rank calculations use floating-point tolerances. A numerical counterexample can disprove closure, while a few successful examples alone cannot prove closure.
+`python_examples/examples.py` contains all twelve complete walkthrough examples plus the guide's 3D row and column check. `python_examples/walkthroughs.json` records the twelve click-through code states. Each new state preserves the previous code and appends the next calculations. `visual_states.py` executes every state and writes the numerical scene data to `visual_states.json`, which the browser interpolates as the code changes. Regenerate that file after editing the Python walkthroughs. `audit.py` checks cumulative code order, available variables, displayed matrix entries, and plotted results, and writes `audit.json`. Each visualization represents the result after all newly visible lines in that click step. `illustrate.py` generates the standalone SVG figures and PNG previews. The numerical rank calculations use floating-point tolerances. A numerical counterexample can disprove closure, while a few successful examples alone cannot prove closure.
 
 ## Edit
 

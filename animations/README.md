@@ -1,10 +1,10 @@
 # Manim source and rendered clips
 
-The presentation has twelve silent 720p/30fps Manim clips, two for each selected lecture. The MP4 files and JPG posters live in `public/animations`. Viewing the deck needs no Python installation.
+The presentation has fourteen silent clips. Lecture 1 has four clips covering the guide's 2D and 3D row and column pictures; each other selected lecture has two. The MP4 files and JPG posters live in `public/animations`. Viewing the deck needs no Python installation.
 
 | Lecture | Scenes |
 | --- | --- |
-| 1 | `RowIntersection`, `ColumnCombination` |
+| 1 | `RowIntersection`, `ThreePlaneIntersection`, `ColumnCombination`, `ThreeColumnCombination` |
 | 2 | `EliminationPivots`, `EliminationGeometry` |
 | 3 | `MatrixComposition`, `GaussJordanInverse` |
 | 5 | `MatrixTranspose`, `PermutationRows` |
@@ -15,7 +15,7 @@ The clips start when their slide becomes active, loop continuously like GIFs, an
 
 ## Regenerate
 
-The supplied renders used Python 3.14 and Manim Community 0.22.1. The scenes use Pango text and need no LaTeX installation.
+The Manim scene definitions use Python 3.14 and Manim Community 0.22.1. They use Pango text and need no LaTeX installation. The current Lecture 1 MP4 and JPG assets were rendered with `render_lecture1_fallback.py` (Pillow, NumPy, ffmpeg) because Manim was unavailable in the editing environment. Both renderers use the same systems and solutions.
 
 ```powershell
 python -m venv .venv-manim
@@ -25,4 +25,4 @@ python -m venv .venv-manim
 .\.venv-manim\Scripts\python.exe animations/publish_clips.py --media media
 ```
 
-`publish_clips.py` copies all twelve videos and extracts their poster images. Keep both media types in Git so the presentation works after pushing or deploying.
+`publish_clips.py` copies the rendered videos and extracts their poster images. Use `--scenes RowIntersection ThreePlaneIntersection ColumnCombination ThreeColumnCombination` to publish only Lecture 1 after rendering those scenes. Alternatively, run `python animations/render_lecture1_fallback.py` to regenerate the four current Lecture 1 clips. Keep both media types in Git so the presentation works after pushing or deploying.

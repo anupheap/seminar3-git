@@ -4,7 +4,7 @@ title: Linear Algebra — Selected MIT 18.06 Lectures
 author: Based on lectures by Gilbert Strang
 info: |
   A seminar on Gilbert Strang's MIT 18.06 lectures 1, 2, 3, 5, 6, and 9.
-  Twelve Manim films, twelve Shiki Magic Move Python walkthroughs, twelve Python illustrations, and speaker notes.
+  Fourteen animation clips, twelve Shiki Magic Move Python walkthroughs, twelve Python illustrations, and speaker notes.
 class: cover
 colorSchema: light
 aspectRatio: 16/9
@@ -29,7 +29,7 @@ fonts:
   provider: none
 defaults:
   layout: default
-duration: 55min
+duration: 65min
 ---
 
 <div class="eyebrow">Gilbert Strang · MIT 18.06</div>
@@ -53,7 +53,7 @@ Selected lectures 1, 2, 3, 5, 6, and 9
 </div>
 
 <!--
-About 55 minutes, including the code walkthroughs and practice problem. Ask the audience what a matrix equation means geometrically before showing the first example. This deck follows the numbering in MIT OCW's Spring 2010 publication of 18.06. MIT notes that the lecture videos were recorded in Fall 1999.
+About 65 minutes, including the code walkthroughs and practice problem. Lecture 1 follows pages 1–18 of the supplied Canva/PDF guide. Ask the audience what a matrix equation means geometrically before showing the first example. This deck follows the numbering in MIT OCW's Spring 2010 publication of 18.06. MIT notes that the lecture videos were recorded in Fall 1999.
 Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
 -->
 
@@ -91,6 +91,47 @@ Lecture 1 begins here. Introduce the central question before advancing to the wo
 
 ---
 
+<div class="eyebrow">Lecture 1 · Outline</div>
+
+# Four parts of the geometry
+
+1. **Row picture:** equations become lines or planes.
+2. **Column picture:** weighted vectors produce the target.
+3. **Questions:** what targets can the columns reach?
+4. **Special cases:** when does a system have no solution or many?
+
+<!--
+This follows the contents page of the supplied Lecture 1 PDF (page 2). The PDF's lecture material ends on page 18; its later planner-project template pages are unrelated to linear algebra.
+-->
+
+---
+
+<div class="eyebrow">Lecture 1 · Row picture</div>
+
+# Each equation draws a shape
+
+In a row picture, we draw every equation in the same coordinate space. With **two unknowns**, each row makes a line; with **three**, each row makes a plane. Their common intersection solves the whole system.
+
+For the guide's two-variable example:
+
+$$
+2x-y=0, \qquad -x+2y=3
+$$
+
+$$
+\underbrace{\begin{bmatrix}2&-1\\-1&2\end{bmatrix}}_A
+\underbrace{\begin{bmatrix}x\\y\end{bmatrix}}_{\mathbf x}
+=\underbrace{\begin{bmatrix}0\\3\end{bmatrix}}_{\mathbf b}
+$$
+
+Both lines pass through **$(x,y)=(1,2)$**.
+
+<!--
+Source: supplied Lecture 1 PDF, pages 3–5. The intersection is shown in the PDF's graph on page 5.
+-->
+
+---
+
 <div class="eyebrow">Lecture 1 · Manim</div>
 
 # The row picture
@@ -102,6 +143,61 @@ Lecture 1 begins here. Introduce the central question before advancing to the wo
 <!--
 The equations are 2x-y=0 and -x+2y=3. The same point satisfies both. In three variables a nontrivial row equation describes a plane.
 Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
+-->
+
+---
+
+<div class="eyebrow">Lecture 1 · Row picture in 3D</div>
+
+# Three planes, one intersection
+
+The guide's three-variable system is
+
+<div class="cols">
+<div>
+
+$$
+\begin{aligned}
+2x-y&=0\\
+-x+2y-z&=-1\\
+-3y+4z&=4
+\end{aligned}
+$$
+
+</div>
+<div class="math-small">
+
+$$
+\begin{bmatrix}
+2&-1&0\\
+-1&2&-1\\
+0&-3&4
+\end{bmatrix}
+\begin{bmatrix}x\\y\\z\end{bmatrix}
+=\begin{bmatrix}0\\-1\\4\end{bmatrix}
+$$
+
+</div>
+</div>
+
+The three planes share **$(x,y,z)=(0,0,1)$**. Substitution confirms all three rows.
+
+<!--
+Source: supplied Lecture 1 PDF, pages 6–7. The PDF gives (0, 0, 1) as the solution and shows the three planes in a 3D graph.
+-->
+
+---
+
+<div class="eyebrow">Lecture 1 · Manim</div>
+
+# The three-plane row picture
+
+<div class="film-wide">
+<MathFilm src="/animations/ThreePlaneIntersection.mp4" poster="/animations/ThreePlaneIntersection.jpg" caption="The planes 2x − y = 0, −x + 2y − z = −1, and −3y + 4z = 4 meet at (0, 0, 1)." />
+</div>
+
+<!--
+The animation follows the three equations and common solution on pages 6–7 of the supplied Lecture 1 guide.
 -->
 
 ---
@@ -155,6 +251,8 @@ Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/res
 
 # The column picture
 
+The unknowns are weights on the columns. Add those weighted vectors to reach $\mathbf b$.
+
 <div class="cols">
 <div>
 
@@ -195,6 +293,76 @@ Rows impose equations. Columns combine to produce the right-hand side.
 <!--
 The unknowns are weights on columns. Stress that the point (1,2) in the row picture is the input, whereas (0,3) in the column picture is the output. They occupy different conceptual roles even though both have two coordinates here.
 Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
+-->
+
+---
+
+<div class="eyebrow">Lecture 1 · Column picture in 3D</div>
+
+# The same 3D system as vectors
+
+<div class="math-small">
+
+$$
+\underbrace{\begin{bmatrix}2&-1&0\\-1&2&-1\\0&-3&4\end{bmatrix}}_A
+\underbrace{\begin{bmatrix}x\\y\\z\end{bmatrix}}_{\mathbf x}
+=\underbrace{\begin{bmatrix}0\\-1\\4\end{bmatrix}}_{\mathbf b}
+$$
+
+$$
+x\begin{bmatrix}2\\-1\\0\end{bmatrix}
++y\begin{bmatrix}-1\\2\\-3\end{bmatrix}
++z\begin{bmatrix}0\\-1\\4\end{bmatrix}
+=\begin{bmatrix}0\\-1\\4\end{bmatrix}
+$$
+
+</div>
+
+Here $\mathbf x=(0,0,1)$, so $0\mathbf a_1+0\mathbf a_2+1\mathbf a_3=\mathbf b$. The third column alone reaches the target.
+
+<!--
+Source: supplied Lecture 1 PDF, pages 11–12. The system and matrix entries are transcribed from its row and column examples.
+-->
+
+---
+
+<div class="eyebrow">Lecture 1 · Manim</div>
+
+# The 3D column picture
+
+<div class="film-wide">
+<MathFilm src="/animations/ThreeColumnCombination.mp4" poster="/animations/ThreeColumnCombination.jpg" caption="Zero times the first two columns plus one times the third reaches b = (0, −1, 4)." />
+</div>
+
+<!--
+The animation follows the matrix and target on pages 11–12 of the supplied Lecture 1 guide.
+-->
+
+---
+
+<div class="eyebrow">Lecture 1 · Python</div>
+
+# Python: both 3D pictures agree
+
+```python
+import numpy as np
+
+A = np.array([[ 2., -1.,  0.],
+              [-1.,  2., -1.],
+              [ 0., -3.,  4.]])
+b = np.array([0., -1., 4.])
+
+point = np.linalg.solve(A, b)  # row picture: plane intersection
+print(point)                    # [0. 0. 1.]
+print(A @ point)                # [ 0. -1.  4.]
+print(A[:, 2])                  # [ 0. -1.  4.]
+assert np.allclose(A @ point, b)
+```
+
+The third column is $\mathbf b$ because the solved weights are $(0,0,1)$.
+
+<!--
+The matrix, right-hand side, and solution match pages 6 and 11 of the supplied Lecture 1 guide. This complete code is also in python_examples/examples.py.
 -->
 
 ---
@@ -260,9 +428,45 @@ Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/l
 
 ---
 
+<div class="eyebrow">Lecture 1 · Questions</div>
+
+# What can the columns reach?
+
+1. What do **all** choices of $x$, $y$, and their combinations produce?
+2. Can we solve $A\mathbf x=\mathbf b$ for **every** right-hand side $\mathbf b$?
+3. Do the linear combinations of the three columns fill **3D space**?
+4. When can this go wrong?
+
+<!--
+Source: supplied Lecture 1 PDF, pages 13–15. Present these as questions before revealing the next slide.
+-->
+
+---
+
+<div class="eyebrow">Lecture 1 · Answers</div>
+
+# The columns determine the reach
+
+- All combinations of the two columns in the 2D example fill the plane.
+- All combinations of the three columns in the 3D example fill 3D space.
+- For **these two matrices**, every right-hand side $\mathbf b$ has one solution.
+- In general, this can fail when the columns do not provide enough independent directions.
+
+<div class="takeaway">
+
+The row picture asks where equations meet. The column picture asks whether their columns can reach $\mathbf b$.
+
+</div>
+
+<!--
+Answers to the questions on pages 13–15 of the supplied Lecture 1 PDF. The 2D and 3D matrices have determinants 3 and 6, respectively, so each spans its output space. The PDF next shows cases where a system has no solution or infinitely many.
+-->
+
+---
+
 <div class="eyebrow">Lecture 1</div>
 
-# Three possible solution sets
+# Special cases: possible solution sets
 
 For a system of real linear equations:
 
@@ -274,13 +478,12 @@ For a system of real linear equations:
 
 <div class="takeaway">
 
-Existence and uniqueness are separate questions.
+In 3D, infinitely many solutions can form a line or a plane. Parallel constraints can leave no solution.
 
 </div>
 
 <!--
-These are original small examples. In the last system, every point on x+y=3 works. In the second, the same left-hand side cannot equal both three and four. Over the real numbers, a linear system cannot have exactly two distinct solutions: the line through any two solutions also consists of solutions.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
+The supplied Lecture 1 PDF lists no solution and infinitely many solutions, including a line or an entire plane (pages 16–18). The one-solution case is shown by its 2D and 3D worked examples (pages 4–7). The table's small equations illustrate these outcomes. In the last system, every point on x+y=3 works. In the second, the same left-hand side cannot equal both three and four.
 -->
 
 ---
@@ -1544,11 +1747,11 @@ Gilbert Strang, **MIT 18.06 Linear Algebra**, MIT OpenCourseWare.
 
 <div class="small">
 
-Spring 2010 OCW publication, using lectures recorded in Fall 1999. This seminar adapts the concepts with worked examples and original Manim animations.
+Lecture 1 examples and questions follow the [supplied Canva guide](https://canva.link/zq4wr2hywc9crpv), slides 1–18. The remaining material follows the Spring 2010 OCW publication, using lectures recorded in Fall 1999.
 
 </div>
 
 <!--
-The lecture 1 opening system and lecture 3 Gauss-Jordan matrix come from Strang's examples. Other worked matrices, the practice problem, explanatory wording, and animations are original to this seminar. Source links also appear in the relevant speaker notes. MIT's resource pages identify the recording date as Fall 1999, while the course publication is Spring 2010.
+The Lecture 1 examples and questions follow the supplied Canva/PDF guide (slides 1–18); slides 19–28 are unrelated template material and are excluded. The lecture 3 Gauss-Jordan matrix comes from Strang's examples. Other worked matrices and the practice problem were created for this seminar. Source links also appear in the relevant speaker notes. MIT's resource pages identify the recording date as Fall 1999, while the course publication is Spring 2010.
 https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
 -->
