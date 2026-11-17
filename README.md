@@ -1,62 +1,36 @@
-# Linear Algebra seminar
+# Seminar III linear algebra slides
 
-A **59-slide** Slidev presentation based on Gilbert Strang's MIT 18.06 lectures **1, 2, 3, 5, 6, and 9**. Lecture 1 follows pages 1–18 of the supplied Canva/PDF guide: row and column pictures, matrix forms, 2D and 3D examples, questions, and special cases. Pages 19–28 are unrelated template material and are excluded. The remaining lectures follow the Spring 2010 MIT OpenCourseWare publication, whose lecture videos were recorded in Fall 1999.
+This is a **49-slide Slidev deck** compiled from the supplied PDF, two Canva decks, and three PowerPoint files. The active slides cover Lectures 1, 2, 3, 5, and 9. Previous Lecture 6 material and examples outside these sources have been removed from `slides.md`.
 
-A title page introduces each of the six selected lectures. The deck includes **14 animated clips**, **12 Shiki Magic Move Python walkthroughs** with 36 synchronized code and diagram states, and a complete 3D Python example. Twelve standalone Python figures are also included. Worked examples, speaker notes, a practice problem, and direct lecture links are included. Allow about 65 minutes when presenting all code steps.
+## Source map
 
-## View
+| Lecture | Source material | Active slides |
+| :-- | :-- | :-- |
+| 1 — Geometry of linear equations | `White Beige and Brown Simple Minimalist Clean Final Project Presentation.pdf` pp. 1–18; [first Canva deck](https://canva.link/zq4wr2hywc9crpv); `Seminar.pptx` slides 2–18 | Row picture, column picture, 2D and 3D systems, matrix forms, solution cases |
+| 2 — Elimination with matrices | `Seminar.pptx` slides 19–31 | Elimination, back substitution, failure case, matrix products, elimination matrices |
+| 3 — Matrix multiplication and inverses | `Presentation2.pptx` slides 1–12 | Four multiplication views, inverse, Gauss–Jordan, MATLAB example |
+| 5 — Permutations, transposes, vector spaces | `Lecture5.pptx` slides 1–8 | $PA=LU$, symmetry, vector-space test |
+| 9 — Independence, basis, dimension | [second Canva deck](https://canva.link/ntsr64ln7l1s9i0) pp. 1–26 | Dependence example, rank, basis, dimension, SymPy code |
 
-From the repository root, using Node.js 24:
+The PDF's pages 19–28 contain an unrelated planner template and are excluded as requested. The second Canva deck's final blank/template pages are also excluded. See [`SOURCE_COMPARISON.md`](SOURCE_COMPARISON.md) for source differences and corrections.
 
-```powershell
+## View and build
+
+```bash
 npm ci
-npm run dev
-```
-
-Open the URL printed by Slidev, normally `http://localhost:3030`. Space or Right advances the code and its visualization together before advancing to the next slide. Left restores the previous code and diagram state. Magic Move's delayed token entry is disabled, so new code starts appearing as the diagram begins its 700 ms transition. Code panels reserve enough space for the longest step. Slides have directional entrance and exit transitions. Press `p` for presenter mode and speaker notes.
-
-Manim clips start on entry, repeat continuously like GIFs, and pause when you leave. Playback controls appear when the pointer hovers over the video and disappear when it leaves. Keyboard focus or a touch tap can also reveal the controls. Reduced-motion browser settings disable automatic video playback. The Python code illustrates computations already verified locally. The browser does not run a Python interpreter.
-
-## Build
-
-```powershell
+npx slidev --port 3030
 npm run build
 ```
 
-The static site appears in `dist/`. Netlify and Vercel use the repository root. All rendered assets in `public/animations` and `public/python` must be included in commits and pushes.
-
-## Python examples and plots
-
-Viewing needs only Node.js. To rerun the numerical examples or regenerate the figures, use a separate Python environment:
-
-```powershell
-python -m venv .venv-manim
-.\.venv-manim\Scripts\python.exe -m pip install -r python_examples/requirements.txt
-.\.venv-manim\Scripts\python.exe python_examples/examples.py
-.\.venv-manim\Scripts\python.exe python_examples/visual_states.py
-.\.venv-manim\Scripts\python.exe python_examples/audit.py
-.\.venv-manim\Scripts\python.exe python_examples/illustrate.py
-```
-
-`python_examples/examples.py` contains all twelve complete walkthrough examples plus the guide's 3D row and column check. `python_examples/walkthroughs.json` records the twelve click-through code states. Each new state preserves the previous code and appends the next calculations. `visual_states.py` executes every state and writes the numerical scene data to `visual_states.json`, which the browser interpolates as the code changes. Regenerate that file after editing the Python walkthroughs. `audit.py` checks cumulative code order, available variables, displayed matrix entries, and plotted results, and writes `audit.json`. Each visualization represents the result after all newly visible lines in that click step. `illustrate.py` generates the standalone SVG figures and PNG previews. The numerical rank calculations use floating-point tolerances. A numerical counterexample can disprove closure, while a few successful examples alone cannot prove closure.
+Open `http://localhost:3030/`. The currently running local Slidev service uses this folder. Four Lecture 1 clips remain in the active deck because their equations and results match the PDF. Other old animation and Python assets remain in the folder as source files but are not referenced by the active slides.
 
 ## Edit
 
-- `slides.md`: content, equations, Magic Move code, and speaker notes.
-- `styles/style.css`: layout and typography, loaded by `styles/index.ts`.
-- `components/MathFilm.vue`: video playback tied to the active slide.
-- `components/HoverVideo.vue`: reusable muted looping player with hover controls.
-- `components/CodeVisual.vue`: diagrams tied to the local Magic Move click index.
-- `animations/linear_algebra.py` and `animations/expanded_scenes.py`: editable Manim scenes.
-- `animations/README.md`: clip regeneration and publication commands.
-- `python_examples/illustrate.py`: Matplotlib illustrations.
-- `python_examples/visual_states.py`: Python computations and synchronized diagram geometry.
-- `python_examples/boilerplate.py` and [`python_examples/BOILERPLATE.md`](python_examples/BOILERPLATE.md): commented shape examples and a complete code-synchronized lesson template.
+- `slides.md` — source-based slides, equations, code, and source notes.
+- `components/VectorCombination.vue` and `components/LinearPlot.vue` — source-aligned vector and row diagrams.
+- `components/MathFilm.vue` — Lecture 1 clip playback.
+- `styles/style.css` — visual layout.
+- `global-top.vue` — slide footer.
 
-## Sources
-
-[MIT OpenCourseWare: 18.06 Linear Algebra, Spring 2010](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/). The final slide and relevant speaker notes link directly to the six lectures. The opening system and inverse matrix follow Strang's examples. Other matrices, numerical walkthroughs, plots, and animations were created for this seminar.
-
-[Slidev: Shiki Magic Move](https://sli.dev/features/shiki-magic-move) documents the code transitions.
-
-Numerical API references: [NumPy solve](https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html), [NumPy matrix rank](https://numpy.org/doc/stable/reference/generated/numpy.linalg.matrix_rank.html), and [SciPy null space](https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.null_space.html).
+The remote branch also provides `python_examples/boilerplate.py` and
+[`python_examples/BOILERPLATE.md`](python_examples/BOILERPLATE.md) as optional templates for future code-synchronized lessons. They are not referenced by the active slides.

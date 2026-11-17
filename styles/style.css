@@ -179,3 +179,30 @@ html, body, #app { font-family: 'Segoe UI', Arial, sans-serif; }
   letter-spacing: -.04em;
 }
 .slidev-layout .lecture-question { max-width: 755px; font-size: 23px; line-height: 1.45; color: var(--muted); }
+
+/* Layout for the rebuilt, source-based deck. */
+.slidev-layout .source-equation { margin: 20px 0; }
+.slidev-layout .source-equation .katex-display { margin: 12px 0; }
+.slidev-layout .case-grid,
+.slidev-layout .four-grid { display: grid; gap: 14px; margin-top: 20px; }
+.slidev-layout .case-grid { grid-template-columns: repeat(3, 1fr); }
+.slidev-layout .four-grid { grid-template-columns: repeat(4, 1fr); font-size: 18px; line-height: 1.35; }
+.slidev-layout .case-card,
+.slidev-layout .four-grid > div,
+.slidev-layout .geometry-card {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: #ffffffb8;
+  padding: 17px 18px;
+}
+.slidev-layout .case-card { font-size: 19px; line-height: 1.5; }
+.slidev-layout .case-card strong,
+.slidev-layout .four-grid strong,
+.slidev-layout .geometry-card strong { display: block; margin-bottom: 9px; }
+.slidev-layout .geometry-card { min-height: 260px; font-size: 18px; line-height: 1.4; }
+.slidev-layout .geometry-card .katex { font-size: .95em; }
+.slidev-layout .source-vector-figure { margin: 0; }
+.slidev-layout .source-vector-figure svg { display: block; width: 100%; max-height: 330px; }
+.slidev-layout .source-vector-figure text { font: 17px 'Segoe UI', Arial, sans-serif; }
+.slidev-layout .source-vector-figure figcaption { color: var(--muted); font-size: 15px; line-height: 1.4; }
+.slidev-layout pre.slidev-code { font-size: 17px !important; line-height: 1.45 !important; }

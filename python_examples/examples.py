@@ -181,3 +181,48 @@ print(r, N.shape[1])  # 2 1
 assert np.allclose(M @ N, 0)
 assert r + N.shape[1] == M.shape[1]
 print(r, N.shape[1], M.shape[1])  # 2 1 3
+
+
+# Seminar III source decks and Canva Lecture 9
+print('Seminar III: source-aligned worked examples')
+success = np.array([[1., 2., 1., 2.],
+                    [3., 8., 1., 12.],
+                    [0., 4., 1., 2.]])
+success[1] -= 3 * success[0]
+success[2] -= 2 * success[1]
+assert np.allclose(success[2], [0, 0, 5, -10])
+assert np.allclose(np.linalg.solve(success[:, :3], success[:, 3]),
+                   [2, 1, -2])
+
+failure = np.array([[1., 2., 1., 2.],
+                    [3., 8., 1., 12.],
+                    [0., 4., -4., 2.]])
+failure[1] -= 3 * failure[0]
+failure[2] -= 2 * failure[1]
+assert np.allclose(failure[2], [0, 0, 0, -10])
+
+source_A = np.array([[1, 2], [3, 4]])
+source_B = np.array([[5, 6], [7, 8]])
+assert np.array_equal(source_A @ source_B, [[19, 22], [43, 50]])
+assert np.array_equal(
+    sum(np.outer(source_A[:, k], source_B[k]) for k in range(2)),
+    source_A @ source_B)
+
+inverse_A = np.array([[1., 3.], [2., 5.]])
+assert np.allclose(np.linalg.inv(inverse_A), [[-5, 3], [2, -1]])
+
+pivot_A = np.array([[0, 1, 2], [1, 2, 3], [2, 6, 9]])
+pivot_P = np.array([[0, 1, 0], [1, 0, 0], [0, 0, 1]])
+pivot_L = np.array([[1, 0, 0], [0, 1, 0], [2, 2, 1]])
+pivot_U = np.array([[1, 2, 3], [0, 1, 2], [0, 0, -1]])
+assert np.array_equal(pivot_P @ pivot_A, pivot_L @ pivot_U)
+
+source_R = np.array([[1, 2], [3, 0], [0, 4]])
+assert np.array_equal(source_R.T @ source_R, [[10, 2], [2, 20]])
+
+canva_A = np.array([[3, 4, 7], [2, 7, 9], [5, 2, 7]])
+canva_z = np.array([-1, -1, 1])
+assert np.array_equal(canva_A @ canva_z, [0, 0, 0])
+assert np.linalg.matrix_rank(canva_A) == 2
+assert np.linalg.matrix_rank(canva_A[:, :2]) == 2
+print('Source matrices, rank, inverse, and factorization verified')

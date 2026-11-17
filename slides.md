@@ -1,430 +1,237 @@
 ---
 theme: seriph
-title: Linear Algebra — Selected MIT 18.06 Lectures
-author: Based on lectures by Gilbert Strang
+title: Seminar III Linear Algebra — Source Deck
+author: Seminar III
 info: |
-  A seminar on Gilbert Strang's MIT 18.06 lectures 1, 2, 3, 5, 6, and 9.
-  Fourteen animation clips, twelve Shiki Magic Move Python walkthroughs, twelve Python illustrations, and speaker notes.
+  Source-based seminar deck for Lectures 1, 2, 3, 5, and 9. Lecture 1 uses the supplied PDF and Seminar.pptx; Lecture 2 uses Seminar.pptx; Lecture 3 uses Presentation2.pptx; Lecture 5 uses Lecture5.pptx; Lecture 9 uses the second supplied Canva deck.
 class: cover
 colorSchema: light
 aspectRatio: 16/9
 canvasWidth: 980
-transition: seminar-forward | seminar-back
-magicMoveDuration: 700
-magicMoveCopy: true
-shiki:
-  magicMove:
-    delayMove: 0
-    delayEnter: 0
-    delayLeave: 0
-    delayContainer: 0
-    stagger: 0
-    easing: ease-in-out
-drawings:
-  persist: false
+transition: fade
 fonts:
   sans: Segoe UI
   serif: Segoe UI
   mono: Consolas
   provider: none
-defaults:
-  layout: default
-duration: 65min
 ---
 
-<div class="eyebrow">Gilbert Strang · MIT 18.06</div>
+<div class="eyebrow">Project and Seminar III · Linear Algebra</div>
 
 # Linear Algebra
 
-<div class="subtitle">Geometry, equations, and vector spaces</div>
+<div class="subtitle">Geometry, elimination, matrix operations, and vector spaces</div>
 
 <div class="cover-equation">
 
-$$
-A\mathbf{x}=\mathbf{b}
-$$
+$$A\mathbf{x}=\mathbf{b}$$
 
 </div>
 
 <div class="small">
 
-Selected lectures 1, 2, 3, 5, 6, and 9
+Lectures 1, 2, 3, 5, and 9 · compiled from the supplied PDF, Canva decks, and PowerPoint files
 
 </div>
 
-<!--
-About 65 minutes, including the code walkthroughs and practice problem. Lecture 1 follows pages 1–18 of the supplied Canva/PDF guide. Ask the audience what a matrix equation means geometrically before showing the first example. This deck follows the numbering in MIT OCW's Spring 2010 publication of 18.06. MIT notes that the lecture videos were recorded in Fall 1999.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
--->
+<!-- Sources: Lecture 1 PDF pp. 1–18; Seminar.pptx; Presentation2.pptx; Lecture5.pptx; Canva Lecture 9. PDF pp. 19–28 and Canva template pages are excluded as requested. -->
 
 ---
 
-# The six lectures
+# The five source lectures
 
-| Lecture | Topic | Main question |
+| Lecture | Topic | Source |
 | :-- | :-- | :-- |
-| **1** | Geometry of linear equations | What does $A\mathbf{x}=\mathbf{b}$ mean? |
-| **2** | Elimination with matrices | How do we solve the equations? |
-| **3** | Multiplication and inverses | How do matrix operations work? |
-| **5** | Transposes, permutations, $\mathbb{R}^n$ | What is a vector space? |
-| **6** | Column space and nullspace | Which outputs and inputs are possible? |
-| **9** | Independence, basis, dimension | How many directions do we need? |
+| **1** | Geometry of linear equations | PDF, first Canva deck, `Seminar.pptx` |
+| **2** | Elimination with matrices | `Seminar.pptx` |
+| **3** | Matrix multiplication and inverses | `Presentation2.pptx` |
+| **5** | Permutations, transposes, vector spaces | `Lecture5.pptx` |
+| **9** | Independence, basis, dimension | Second Canva deck |
 
-<!--
-The selected lectures move from concrete systems to the spaces associated with a matrix. Lectures 4, 7, and 8 are outside the selected list. Brief explanations in this deck make the later examples self-contained.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-videos/
--->
+<!-- The sources are complementary, not identical. The PDF and first Canva deck mostly match for Lecture 1, but their agenda wording differs. -->
 
 ---
 
-<div class="lecture-divider" data-lecture="1">
-<div class="eyebrow">Lecture 01</div>
+<div class="lecture-divider"><div class="eyebrow">Lecture 01</div>
 
-# The geometry of linear equations
+# Geometry of linear equations
 
-<div class="lecture-question">What does A x = b mean geometrically?</div>
+<div class="lecture-question">
+
+Two views of the same system: rows show intersections; columns show combinations.
+
+</div></div>
+
+<!-- Sources: Lecture 1 PDF pp. 1–18; Seminar.pptx slides 2–18; Canva Lecture 1 pp. 1–18. -->
+
+---
+
+<div class="eyebrow">Lecture 1 · Contents</div>
+
+# From equations to geometry
+
+1. Row picture: draw each equation as a line or plane.
+2. Column picture: combine weighted columns to reach a target.
+3. Questions: which right-hand sides can we reach?
+4. Special cases: one, none, or infinitely many solutions.
+
+<div class="note">
+
+The PowerPoint adds the question “Why do $n$ unknowns often need $n$ equations?”
+
 </div>
 
-<!--
-Lecture 1 begins here. Introduce the central question before advancing to the worked examples.
--->
-
----
-
-<div class="eyebrow">Lecture 1 · Outline</div>
-
-# Four parts of the geometry
-
-1. **Row picture:** equations become lines or planes.
-2. **Column picture:** weighted vectors produce the target.
-3. **Questions:** what targets can the columns reach?
-4. **Special cases:** when does a system have no solution or many?
-
-<!--
-This follows the contents page of the supplied Lecture 1 PDF (page 2). The PDF's lecture material ends on page 18; its later planner-project template pages are unrelated to linear algebra.
--->
+<!-- PDF p. 2 is the main agenda. Seminar.pptx slide 3 and Canva p. 2 include the n-unknowns question instead of the PDF's special-cases item. -->
 
 ---
 
 <div class="eyebrow">Lecture 1 · Row picture</div>
 
-# Each equation draws a shape
+# Each row draws a line or plane
 
-In a row picture, we draw every equation in the same coordinate space. With **two unknowns**, each row makes a line; with **three**, each row makes a plane. Their common intersection solves the whole system.
+A **row picture** draws each equation as a geometric shape. Two-variable equations draw lines; three-variable equations draw planes. A solution lies in every shape at once.
 
-For the guide's two-variable example:
+<div class="source-equation">
 
-$$
-2x-y=0, \qquad -x+2y=3
-$$
+$$\begin{aligned}2x-y&=0\\-x+2y&=3\end{aligned}\qquad\Longleftrightarrow\qquad \underbrace{\begin{bmatrix}2&-1\\-1&2\end{bmatrix}}_A\underbrace{\begin{bmatrix}x\\y\end{bmatrix}}_{\mathbf{x}}=\underbrace{\begin{bmatrix}0\\3\end{bmatrix}}_{\mathbf{b}}$$
 
-$$
-\underbrace{\begin{bmatrix}2&-1\\-1&2\end{bmatrix}}_A
-\underbrace{\begin{bmatrix}x\\y\end{bmatrix}}_{\mathbf x}
-=\underbrace{\begin{bmatrix}0\\3\end{bmatrix}}_{\mathbf b}
-$$
+</div>
 
-Both lines pass through **$(x,y)=(1,2)$**.
+<div class="takeaway">
 
-<!--
-Source: supplied Lecture 1 PDF, pages 3–5. The intersection is shown in the PDF's graph on page 5.
--->
+The two lines intersect at **$(x,y)=(1,2)$**.
+
+</div>
+
+<!-- PDF pp. 3–5; Seminar.pptx slides 4–6. -->
 
 ---
 
-<div class="eyebrow">Lecture 1 · Manim</div>
+<div class="eyebrow">Lecture 1 · Row picture</div>
 
-# The row picture
+# See the common intersection
 
-<div class="film-wide">
-<MathFilm src="/animations/RowIntersection.mp4" poster="/animations/RowIntersection.jpg" caption="Two row equations meet at the input (1, 2)." />
-</div>
+<div class="cols wide-left"><div><LinearPlot mode="rows" /></div><div>
 
-<!--
-The equations are 2x-y=0 and -x+2y=3. The same point satisfies both. In three variables a nontrivial row equation describes a plane.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
--->
+$$\begin{aligned}2(1)-2&=0\\-(1)+2(2)&=3\end{aligned}$$
+
+The point $(1,2)$ satisfies both equations. Each row is a constraint; their intersection is the answer.
+</div></div>
+
+<!-- PDF p. 5; Seminar.pptx slide 6. The diagram plots the exact two source equations. -->
+
+---
+
+<div class="eyebrow">Lecture 1 · Source-aligned animation</div>
+
+# The row intersection forms
+
+<div class="film-wide"><MathFilm src="/animations/RowIntersection.mp4" poster="/animations/RowIntersection.jpg" caption="The source equations 2x − y = 0 and −x + 2y = 3 meet at (1, 2)." /></div>
+
+<!-- The animation formulas match PDF pp. 4–5 and Seminar.pptx slides 5–6. -->
 
 ---
 
 <div class="eyebrow">Lecture 1 · Row picture in 3D</div>
 
-# Three planes, one intersection
+# Three planes meet at one point
 
-The guide's three-variable system is
+<div class="cols"><div>
 
-<div class="cols">
-<div>
+$$\begin{aligned}2x-y&=0\\-x+2y-z&=-1\\-3y+4z&=4\end{aligned}$$
 
-$$
-\begin{aligned}
-2x-y&=0\\
--x+2y-z&=-1\\
--3y+4z&=4
-\end{aligned}
-$$
+The common point is $(0,0,1)$.
+</div><div class="math-small">
 
-</div>
-<div class="math-small">
+$$\begin{bmatrix}2&-1&0\\-1&2&-1\\0&-3&4\end{bmatrix}\begin{bmatrix}x\\y\\z\end{bmatrix}=\begin{bmatrix}0\\-1\\4\end{bmatrix}$$
 
-$$
-\begin{bmatrix}
-2&-1&0\\
--1&2&-1\\
-0&-3&4
-\end{bmatrix}
-\begin{bmatrix}x\\y\\z\end{bmatrix}
-=\begin{bmatrix}0\\-1\\4\end{bmatrix}
-$$
+At $(0,0,1)$, the left side equals $\mathbf b$.
+</div></div>
 
-</div>
-</div>
-
-The three planes share **$(x,y,z)=(0,0,1)$**. Substitution confirms all three rows.
-
-<!--
-Source: supplied Lecture 1 PDF, pages 6–7. The PDF gives (0, 0, 1) as the solution and shows the three planes in a 3D graph.
--->
+<!-- PDF pp. 6–7; Seminar.pptx slide 7. -->
 
 ---
 
-<div class="eyebrow">Lecture 1 · Manim</div>
+<div class="eyebrow">Lecture 1 · Source-aligned animation</div>
 
 # The three-plane row picture
 
-<div class="film-wide">
-<MathFilm src="/animations/ThreePlaneIntersection.mp4" poster="/animations/ThreePlaneIntersection.jpg" caption="The planes 2x − y = 0, −x + 2y − z = −1, and −3y + 4z = 4 meet at (0, 0, 1)." />
-</div>
+<div class="film-wide"><MathFilm src="/animations/ThreePlaneIntersection.mp4" poster="/animations/ThreePlaneIntersection.jpg" caption="The three source planes share the solution (0, 0, 1)." /></div>
 
-<!--
-The animation follows the three equations and common solution on pages 6–7 of the supplied Lecture 1 guide.
--->
+<!-- The source scene uses the same A, b, and solution as PDF pp. 6–7. -->
 
 ---
 
-<div class="eyebrow">Lecture 1 · Python</div>
+<div class="eyebrow">Lecture 1 · Column picture</div>
 
-# Python: solving the intersection
+# Unknowns become vector weights
 
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 7" data-code-lines="7">
+A **column picture** scales each column of $A$ and adds the results. The weighted sum must reach $\mathbf b$.
 
-````md magic-move {duration:700}
-```python
-import numpy as np
-A = np.array([[2., -1.], [-1., 2.]])
-b = np.array([0., 3.])
-```
-```python
-import numpy as np
-A = np.array([[2., -1.], [-1., 2.]])
-b = np.array([0., 3.])
-x = np.linalg.solve(A, b)
-print(x)  # [1. 2.]
-```
-```python
-import numpy as np
-A = np.array([[2., -1.], [-1., 2.]])
-b = np.array([0., 3.])
-x = np.linalg.solve(A, b)
-print(x)  # [1. 2.]
-print(A @ x - b)  # [0. 0.]
-assert np.allclose(A @ x, b)
-```
-````
-
-</div>
-<CodeVisual lesson="01-solve" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-Every code state is a complete Python example. The residual checks the computed solution against the original system. These small integer examples are well-conditioned. Floating-point equality generally requires a tolerance.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
--->
-
----
-
-<div class="eyebrow">Lecture 1</div>
-
-# The column picture
-
-The unknowns are weights on the columns. Add those weighted vectors to reach $\mathbf b$.
-
-<div class="cols">
-<div>
-
-$$
-\underbrace{\begin{bmatrix}2&-1\\-1&2\end{bmatrix}}_A
-\underbrace{\begin{bmatrix}x\\y\end{bmatrix}}_{\mathbf{x}}
-=\underbrace{\begin{bmatrix}0\\3\end{bmatrix}}_{\mathbf{b}}
-$$
-
-Matrix multiplication combines the columns of $A$.
-
-</div>
-<div>
-
-$$
-x\begin{bmatrix}2\\-1\end{bmatrix}
-+y\begin{bmatrix}-1\\2\end{bmatrix}
-=\begin{bmatrix}0\\3\end{bmatrix}
-$$
-
-At $(x,y)=(1,2)$:
-
-$$
-\begin{bmatrix}2\\-1\end{bmatrix}
-+\begin{bmatrix}-2\\4\end{bmatrix}
-=\begin{bmatrix}0\\3\end{bmatrix}
-$$
-
-</div>
-</div>
+$$x\begin{bmatrix}2\\-1\end{bmatrix}+y\begin{bmatrix}-1\\2\end{bmatrix}=\begin{bmatrix}0\\3\end{bmatrix}$$
 
 <div class="takeaway">
 
-Rows impose equations. Columns combine to produce the right-hand side.
+Here $x=1$ and $y=2$: $\begin{bmatrix}2\\-1\end{bmatrix}+2\begin{bmatrix}-1\\2\end{bmatrix}=\begin{bmatrix}0\\3\end{bmatrix}$.
 
 </div>
 
-<!--
-The unknowns are weights on columns. Stress that the point (1,2) in the row picture is the input, whereas (0,3) in the column picture is the output. They occupy different conceptual roles even though both have two coordinates here.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
--->
+<!-- PDF pp. 8–11; Seminar.pptx slides 8–11. -->
 
 ---
 
-<div class="eyebrow">Lecture 1 · Column picture in 3D</div>
+<div class="eyebrow">Lecture 1 · Column picture</div>
 
-# The same 3D system as vectors
+# Visualize the vector sum
 
-<div class="math-small">
+<div class="cols wide-left"><div><VectorCombination /></div><div>
 
-$$
-\underbrace{\begin{bmatrix}2&-1&0\\-1&2&-1\\0&-3&4\end{bmatrix}}_A
-\underbrace{\begin{bmatrix}x\\y\\z\end{bmatrix}}_{\mathbf x}
-=\underbrace{\begin{bmatrix}0\\-1\\4\end{bmatrix}}_{\mathbf b}
-$$
+$$\mathbf a_1=\begin{bmatrix}2\\-1\end{bmatrix},\quad \mathbf a_2=\begin{bmatrix}-1\\2\end{bmatrix}$$
 
-$$
-x\begin{bmatrix}2\\-1\\0\end{bmatrix}
-+y\begin{bmatrix}-1\\2\\-3\end{bmatrix}
-+z\begin{bmatrix}0\\-1\\4\end{bmatrix}
-=\begin{bmatrix}0\\-1\\4\end{bmatrix}
-$$
+$$\mathbf a_1+2\mathbf a_2=\mathbf b$$
 
-</div>
+The same solution $(x,y)=(1,2)$ now tells us how much of each vector to use.
+</div></div>
 
-Here $\mathbf x=(0,0,1)$, so $0\mathbf a_1+0\mathbf a_2+1\mathbf a_3=\mathbf b$. The third column alone reaches the target.
-
-<!--
-Source: supplied Lecture 1 PDF, pages 11–12. The system and matrix entries are transcribed from its row and column examples.
--->
+<!-- PDF pp. 9–11; Seminar.pptx slides 9–11. -->
 
 ---
 
-<div class="eyebrow">Lecture 1 · Manim</div>
+<div class="eyebrow">Lecture 1 · Source-aligned animation</div>
 
-# The 3D column picture
+# Build the column combination
 
-<div class="film-wide">
-<MathFilm src="/animations/ThreeColumnCombination.mp4" poster="/animations/ThreeColumnCombination.jpg" caption="Zero times the first two columns plus one times the third reaches b = (0, −1, 4)." />
-</div>
+<div class="film-wide"><MathFilm src="/animations/ColumnCombination.mp4" poster="/animations/ColumnCombination.jpg" caption="One copy of (2, −1) and two copies of (−1, 2) add to (0, 3)." /></div>
 
-<!--
-The animation follows the matrix and target on pages 11–12 of the supplied Lecture 1 guide.
--->
+<!-- Source: PDF pp. 9–11. -->
 
 ---
 
-<div class="eyebrow">Lecture 1 · Python</div>
+<div class="eyebrow">Lecture 1 · Columns in 3D</div>
 
-# Python: both 3D pictures agree
+# The same matrix, viewed by columns
 
-```python
-import numpy as np
+$$x\begin{bmatrix}2\\-1\\0\end{bmatrix}+y\begin{bmatrix}-1\\2\\-3\end{bmatrix}+z\begin{bmatrix}0\\-1\\4\end{bmatrix}=\begin{bmatrix}0\\-1\\4\end{bmatrix}$$
 
-A = np.array([[ 2., -1.,  0.],
-              [-1.,  2., -1.],
-              [ 0., -3.,  4.]])
-b = np.array([0., -1., 4.])
+Since the target is the third column, the weights are **$(x,y,z)=(0,0,1)$**.
 
-point = np.linalg.solve(A, b)  # row picture: plane intersection
-print(point)                    # [0. 0. 1.]
-print(A @ point)                # [ 0. -1.  4.]
-print(A[:, 2])                  # [ 0. -1.  4.]
-assert np.allclose(A @ point, b)
-```
+<div class="note">
 
-The third column is $\mathbf b$ because the solved weights are $(0,0,1)$.
+In matrix form, this is still $A\mathbf{x}=\mathbf{b}$ with the same $A$ and $\mathbf b$ as the three-plane row picture.
 
-<!--
-The matrix, right-hand side, and solution match pages 6 and 11 of the supplied Lecture 1 guide. This complete code is also in python_examples/examples.py.
--->
+</div>
+
+<!-- PDF pp. 11–12; Seminar.pptx slide 12. -->
 
 ---
 
-<div class="eyebrow">Lecture 1 · Python</div>
+<div class="eyebrow">Lecture 1 · Source-aligned animation</div>
 
-# Python: the weights are coordinates
+# The 3D column combination
 
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 8" data-code-lines="8">
+<div class="film-wide"><MathFilm src="/animations/ThreeColumnCombination.mp4" poster="/animations/ThreeColumnCombination.jpg" caption="The third source column already equals the target vector b." /></div>
 
-````md magic-move {duration:700}
-```python
-import numpy as np
-A = np.array([[2., -1.], [-1., 2.]])
-a1, a2 = A[:, 0], A[:, 1]
-```
-```python
-import numpy as np
-A = np.array([[2., -1.], [-1., 2.]])
-a1, a2 = A[:, 0], A[:, 1]
-b = a1 + 2 * a2
-print(b)  # [0. 3.]
-```
-```python
-import numpy as np
-A = np.array([[2., -1.], [-1., 2.]])
-a1, a2 = A[:, 0], A[:, 1]
-b = a1 + 2 * a2
-print(b)  # [0. 3.]
-x = np.array([1., 2.])
-assert np.allclose(b, A @ x)
-print(A @ x)  # [0. 3.]
-```
-````
-
-</div>
-<CodeVisual lesson="02-columns" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-Array slicing with A[:,0] selects the first column. The at-sign is matrix multiplication. Compare a weighted sum of columns with the same computation as A @ x. They are identical operations.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
--->
-
----
-
-<div class="eyebrow">Lecture 1 · Manim visualization</div>
-
-# A linear combination in motion
-
-<div class="film-wide">
-<MathFilm src="/animations/ColumnCombination.mp4" poster="/animations/ColumnCombination.jpg" caption="The coefficients scale the columns. Tip-to-tail addition produces b = (0, 3)." />
-</div>
-
-<!--
-Play the clip and pause when the orange vector moves to the tip of the blue vector. Translation changes where we draw the vector, not its components. Ask which coefficients produce the target before the final result appears. The animation is an original visualization of the numerical example.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/
--->
+<!-- Source: PDF pp. 11–12. -->
 
 ---
 
@@ -432,1326 +239,587 @@ Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/l
 
 # What can the columns reach?
 
-1. What do **all** choices of $x$, $y$, and their combinations produce?
-2. Can we solve $A\mathbf x=\mathbf b$ for **every** right-hand side $\mathbf b$?
-3. Do the linear combinations of the three columns fill **3D space**?
-4. When can this go wrong?
+- If the columns supply independent directions, their combinations may fill the whole target space.
+- If a column repeats a direction, the reachable set can be smaller.
+- Solving $A\mathbf{x}=\mathbf b$ asks whether $\mathbf b$ lies in the span of the columns.
 
-<!--
-Source: supplied Lecture 1 PDF, pages 13–15. Present these as questions before revealing the next slide.
--->
+<div class="source-equation">
 
----
-
-<div class="eyebrow">Lecture 1 · Answers</div>
-
-# The columns determine the reach
-
-- All combinations of the two columns in the 2D example fill the plane.
-- All combinations of the three columns in the 3D example fill 3D space.
-- For **these two matrices**, every right-hand side $\mathbf b$ has one solution.
-- In general, this can fail when the columns do not provide enough independent directions.
-
-<div class="takeaway">
-
-The row picture asks where equations meet. The column picture asks whether their columns can reach $\mathbf b$.
+$$\mathbf b\in\operatorname{span}\{\mathbf a_1,\ldots,\mathbf a_n\}\quad\Longleftrightarrow\quad A\mathbf{x}=\mathbf b\text{ has a solution.}$$
 
 </div>
 
-<!--
-Answers to the questions on pages 13–15 of the supplied Lecture 1 PDF. The 2D and 3D matrices have determinants 3 and 6, respectively, so each spans its output space. The PDF next shows cases where a system has no solution or infinitely many.
--->
+<!-- PDF pp. 13–15; Seminar.pptx slide 13. -->
 
 ---
 
-<div class="eyebrow">Lecture 1</div>
+<div class="eyebrow">Lecture 1 · Equation count</div>
 
-# Special cases: possible solution sets
+# Why do $n$ unknowns often need $n$ equations?
 
-For a system of real linear equations:
+Each independent equation can remove one degree of freedom. For a **unique** answer in $n$ unknowns, we need $n$ independent constraints.
 
-| Outcome | Row picture in two variables | Example |
+<div class="case-grid"><div class="case-card"><strong>One solution</strong><br>2x − y = 0<br>−x + 2y = 3</div><div class="case-card"><strong>Infinitely many</strong><br>2x − y = 1<br>4x − 2y = 2</div><div class="case-card"><strong>No solution</strong><br>2x − y = 1<br>4x − 2y = 3</div></div>
+
+<div class="small">
+
+Having $n$ equations alone does not guarantee a unique solution; independence and consistency matter.
+
+</div>
+
+<!-- Seminar.pptx slide 14. The source itself notes that n equations need not guarantee one answer. PDF pp. 16–18 covers the special cases. -->
+
+---
+
+<div class="eyebrow">Lecture 1 · Special cases</div>
+
+# How can the system go wrong?
+
+| Geometry | Algebra | Solution set |
 | :-- | :-- | :-- |
-| **One solution** | Two lines intersect once | $x+y=3,\quad x-y=1$ |
-| **No solution** | Distinct parallel lines | $x+y=3,\quad x+y=4$ |
-| **Infinitely many** | The same line twice | $x+y=3,\quad 2x+2y=6$ |
+| Lines cross once | Independent, consistent rows | One point |
+| Lines coincide | Dependent, consistent rows | Infinitely many points |
+| Lines are parallel and distinct | Inconsistent rows | No point |
 
 <div class="takeaway">
 
-In 3D, infinitely many solutions can form a line or a plane. Parallel constraints can leave no solution.
+The row picture shows intersections. The column picture asks whether $\mathbf b$ is reachable.
 
 </div>
 
-<!--
-The supplied Lecture 1 PDF lists no solution and infinitely many solutions, including a line or an entire plane (pages 16–18). The one-solution case is shown by its 2D and 3D worked examples (pages 4–7). The table's small equations illustrate these outcomes. In the last system, every point on x+y=3 works. In the second, the same left-hand side cannot equal both three and four.
--->
+<!-- PDF pp. 16–18; Seminar.pptx slide 14. -->
 
 ---
 
-<div class="lecture-divider" data-lecture="2">
-<div class="eyebrow">Lecture 02</div>
+<div class="lecture-divider"><div class="eyebrow">Lecture 02</div>
 
 # Elimination with matrices
 
-<div class="lecture-question">How do row operations solve a system?</div>
-</div>
+<div class="lecture-question">
 
-<!--
-Lecture 2 begins here. Introduce the central question before advancing to the worked examples.
--->
+Use row operations to uncover pivots and solve a system.
 
----
+</div></div>
 
-<div class="eyebrow">Lecture 2 · Manim</div>
-
-# Elimination creates zeros
-
-<div class="film-wide">
-<MathFilm src="/animations/EliminationPivots.mp4" poster="/animations/EliminationPivots.jpg" caption="The augmented rows change together. The pivots 1, 1, and 9 lead to x = y = z = 1." />
-</div>
-
-<!--
-Apply R2-2R1 and R3-R1, then R3+2R2. The right-hand side undergoes every row operation. The next Python walkthrough reveals the same calculation line by line.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/
--->
+<!-- Source: Seminar.pptx slides 19–31. -->
 
 ---
 
-<div class="eyebrow">Lecture 2 · Python</div>
+<div class="eyebrow">Lecture 2 · Row elimination</div>
 
-# Python: elimination one row at a time
+# Start with the augmented matrix
 
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 11" data-code-lines="11">
+$$\begin{aligned}x+2y+z&=2\\3x+8y+z&=12\\4y+z&=2\end{aligned}$$
 
-````md magic-move {duration:700}
-```python
-import numpy as np
-Ab = np.array([[1., 2., 1., 4.],
-               [2., 5., 3., 10.],
-               [1., 0., 8., 9.]])
-```
-```python
-import numpy as np
-Ab = np.array([[1., 2., 1., 4.],
-               [2., 5., 3., 10.],
-               [1., 0., 8., 9.]])
-Ab[1] -= 2 * Ab[0]
-Ab[2] -= Ab[0]
-```
-```python
-import numpy as np
-Ab = np.array([[1., 2., 1., 4.],
-               [2., 5., 3., 10.],
-               [1., 0., 8., 9.]])
-Ab[1] -= 2 * Ab[0]
-Ab[2] -= Ab[0]
-Ab[2] += 2 * Ab[1]
-print(Ab)
-# [[1. 2. 1. 4.]
-#  [0. 1. 1. 2.]
-#  [0. 0. 9. 9.]]
-```
-````
+$$[A\mid\mathbf b]=\left[\begin{array}{ccc|c}1&2&1&2\\3&8&1&12\\0&4&1&2\end{array}\right]$$
 
-</div>
-<CodeVisual lesson="03-elimination" />
-</div>
+Elimination replaces a row with a combination of rows. The solution stays the same.
 
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-Each in-place update applies to the whole augmented row, including b. This teaching example does not require pivoting. A general numerical solver must handle row swaps and numerical stability.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/
--->
+<!-- Seminar.pptx slides 21–22. -->
 
 ---
 
-<div class="eyebrow">Lecture 2</div>
+<div class="eyebrow">Lecture 2 · Elimination steps</div>
 
-# Back substitution solves the triangle
+# Clear entries below each pivot
 
-<div class="cols">
-<div>
+$$\text{Start: }\left[\begin{array}{ccc|c}1&2&1&2\\3&8&1&12\\0&4&1&2\end{array}\right]$$
 
-After $R_3\gets R_3+2R_2$:
+$$R_2\leftarrow R_2-3R_1:\quad\left[\begin{array}{ccc|c}1&2&1&2\\0&2&-2&6\\0&4&1&2\end{array}\right]$$
 
-$$
-\left[\begin{array}{ccc|c}
-1&2&1&4\\0&1&1&2\\0&0&9&9
-\end{array}\right]
-$$
+$$R_3\leftarrow R_3-2R_2:\quad\left[\begin{array}{ccc|c}1&2&1&2\\0&2&-2&6\\0&0&5&-10\end{array}\right]$$
 
-The pivots are $1,1,9$.
+The coefficient matrix is now **upper triangular**; the pivots are $1,2,5$.
+
+<!-- Seminar.pptx slide 22. -->
+
+---
+
+<div class="eyebrow">Lecture 2 · Back substitution</div>
+
+# Solve from the bottom row upward
+
+$$\begin{aligned}5z&=-10&&\Rightarrow z=-2\\2y-2z&=6&&\Rightarrow y=1\\x+2y+z&=2&&\Rightarrow x=2\end{aligned}$$
+
+<div class="source-equation">
+
+$$\boxed{\mathbf{x}=\begin{bmatrix}2\\1\\-2\end{bmatrix}}\qquad
+\begin{bmatrix}1&2&1\\3&8&1\\0&4&1\end{bmatrix}\begin{bmatrix}2\\1\\-2\end{bmatrix}=\begin{bmatrix}2\\12\\2\end{bmatrix}$$
 
 </div>
-<div>
 
-$$
-\begin{aligned}
-9z&=9 &\Rightarrow z&=1\\
-y+z&=2 &\Rightarrow y&=1\\
-x+2y+z&=4 &\Rightarrow x&=1
-\end{aligned}
-$$
+<!-- Seminar.pptx slides 22 and 24. -->
+
+---
+
+<div class="eyebrow">Lecture 2 · Failure case</div>
+
+# A zero row can reveal inconsistency
+
+Change the last equation to $4y-4z=2$. The same elimination gives
+
+$$\left[\begin{array}{ccc|c}1&2&1&2\\0&2&-2&6\\0&0&0&-10\end{array}\right].$$
+
+The final row says $0=-10$, which is impossible. **This system has no solution.**
+
+<!-- Seminar.pptx slide 23. -->
+
+---
+
+<div class="eyebrow">Lecture 2 · Matrix multiplication</div>
+
+# A matrix acts on a column vector
+
+$$A=\begin{bmatrix}1&2&1\\3&8&1\\0&4&1\end{bmatrix},\qquad\mathbf v=\begin{bmatrix}1\\2\\3\end{bmatrix}$$
+
+$$A\mathbf v=1\begin{bmatrix}1\\3\\0\end{bmatrix}+2\begin{bmatrix}2\\8\\4\end{bmatrix}+3\begin{bmatrix}1\\1\\1\end{bmatrix}
+=\begin{bmatrix}8\\22\\11\end{bmatrix}$$
+
+A **row vector times a matrix** combines rows:
+
+$$\begin{bmatrix}1&2&3\end{bmatrix}\begin{bmatrix}1&2&1\\3&8&1\\0&4&1\end{bmatrix}=\begin{bmatrix}7&30&6\end{bmatrix}.$$
+
+<!-- Seminar.pptx slides 25–26. The row-vector result is copied from the source. -->
+
+---
+
+<div class="eyebrow">Lecture 2 · Elimination matrices</div>
+
+# Row operations can be matrix multiplication
+
+$$E_{21}=\begin{bmatrix}1&0&0\\-3&1&0\\0&0&1\end{bmatrix},\qquad
+E_{32}=\begin{bmatrix}1&0&0\\0&1&0\\0&-2&1\end{bmatrix}$$
+
+$$E_{32}E_{21}A=U,\qquad
+U=\begin{bmatrix}1&2&1\\0&2&-2\\0&0&5\end{bmatrix}.$$
+
+The **rightmost** matrix acts first: $E_{21}$ clears below the first pivot, then $E_{32}$ clears below the second. Order matters: $E_{32}E_{21}\ne E_{21}E_{32}$ in general.
+
+<!-- Seminar.pptx slides 27–28. -->
+
+---
+
+<div class="lecture-divider"><div class="eyebrow">Lecture 03</div>
+
+# Matrix multiplication and inverses
+
+<div class="lecture-question">
+
+Four views of $AB$ lead to the same product.
+
+</div></div>
+
+<!-- Source: Presentation2.pptx slides 1–12. -->
+
+---
+
+<div class="eyebrow">Lecture 3 · Four views</div>
+
+# One product, four computations
+
+Let $A=\begin{bmatrix}1&2\\3&4\end{bmatrix}$ and $B=\begin{bmatrix}5&6\\7&8\end{bmatrix}$.
+
+$$AB=\begin{bmatrix}19&22\\43&50\end{bmatrix}.$$
+
+<div class="four-grid"><div><strong>Entries</strong><br>Row of A · column of B</div><div><strong>Columns</strong><br>A times each column of B</div><div><strong>Rows</strong><br>Rows of A combine rows of B</div><div><strong>Outer products</strong><br>Columns of A × rows of B</div></div>
+
+<!-- Presentation2.pptx slides 2–6. -->
+
+---
+
+<div class="eyebrow">Lecture 3 · Dot products</div>
+
+# Each entry is row times column
+
+$$c_{ij}=\sum_k a_{ik}b_{kj}.$$
+
+$$\begin{bmatrix}\color{#246a9c}{1}&\color{#246a9c}{2}\\3&4\end{bmatrix}
+\begin{bmatrix}\color{#c15b35}{5}&6\\\color{#c15b35}{7}&8\end{bmatrix}
+\Rightarrow c_{11}=1(5)+2(7)=19.$$
+
+Similarly, $c_{12}=22$, $c_{21}=43$, and $c_{22}=50$.
+
+<!-- Presentation2.pptx slides 3–4. -->
+
+---
+
+<div class="eyebrow">Lecture 3 · Columns and rows</div>
+
+# Matrix multiplication as combinations
+
+<div class="cols"><div>
+
+**By columns**
+
+$$AB=\left[\,A\mathbf b_1\quad A\mathbf b_2\,\right]$$
+
+$$A\begin{bmatrix}5\\7\end{bmatrix}=5\begin{bmatrix}1\\3\end{bmatrix}+7\begin{bmatrix}2\\4\end{bmatrix}=\begin{bmatrix}19\\43\end{bmatrix}$$
+</div><div>
+
+**By rows**
+
+$$\operatorname{row}_i(AB)=\operatorname{row}_i(A)B$$
+
+$$\begin{bmatrix}1&2\end{bmatrix}B=1\begin{bmatrix}5&6\end{bmatrix}+2\begin{bmatrix}7&8\end{bmatrix}=\begin{bmatrix}19&22\end{bmatrix}$$
+</div></div>
+
+<!-- Presentation2.pptx slide 5. -->
+
+---
+
+<div class="eyebrow">Lecture 3 · Outer products</div>
+
+# Add column × row pieces
+
+$$AB=\begin{bmatrix}1\\3\end{bmatrix}\begin{bmatrix}5&6\end{bmatrix}+
+\begin{bmatrix}2\\4\end{bmatrix}\begin{bmatrix}7&8\end{bmatrix}$$
+
+$$=\begin{bmatrix}5&6\\15&18\end{bmatrix}+
+\begin{bmatrix}14&16\\28&32\end{bmatrix}=
+\begin{bmatrix}19&22\\43&50\end{bmatrix}.$$
 
 <div class="note">
 
-Three pivots give a unique solution in this square system.
+The source's rectangular example uses $\begin{bmatrix}1\\2\\3\end{bmatrix}\begin{bmatrix}1&3\end{bmatrix}=\begin{bmatrix}1&3\\2&6\\3&9\end{bmatrix}$.
 
 </div>
 
-</div>
-</div>
-
-<!--
-Verify (1,1,1) in the original equations: 1+2+1=4, 2+5+3=10, and 1+0+8=9. A zero candidate pivot may require a row exchange. If no usable entry exists below it, move to another column and investigate rank and consistency rather than dividing by zero.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/
--->
+<!-- Presentation2.pptx slide 6. The source labels its rectangular example in the wrong order; the displayed calculation is column times row. -->
 
 ---
 
-<div class="eyebrow">Lecture 2 · Python</div>
+<div class="eyebrow">Lecture 3 · Inverse</div>
 
-# Python: solving upward from the last row
+# An inverse undoes a square matrix
 
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 11" data-code-lines="11">
+$$AA^{-1}=A^{-1}A=I.$$
 
-````md magic-move {duration:700}
-```python
-import numpy as np
-U = np.array([[1., 2., 1.],
-              [0., 1., 1.],
-              [0., 0., 9.]])
-c = np.array([4., 2., 9.])
-x = np.zeros(3)
+For $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$, an inverse exists when $ad-bc\ne0$:
+
+$$A^{-1}=\frac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}.$$
+
+For $\begin{bmatrix}3&1\\4&2\end{bmatrix}$, the determinant is $2$, so the inverse is $\frac12\begin{bmatrix}2&-1\\-4&3\end{bmatrix}$.
+
+<!-- Presentation2.pptx slide 7. -->
+
+---
+
+<div class="eyebrow">Lecture 3 · Gauss–Jordan</div>
+
+# Build the inverse beside the identity
+
+For $A=\begin{bmatrix}1&3\\2&5\end{bmatrix}$, row-reduce $[A\mid I]$:
+
+$$\text{Start: }\left[\begin{array}{cc|cc}1&3&1&0\\2&5&0&1\end{array}\right]$$
+
+$$R_2\leftarrow R_2-2R_1:\quad\left[\begin{array}{cc|cc}1&3&1&0\\0&-1&-2&1\end{array}\right]$$
+
+$$R_2\leftarrow-R_2,\;R_1\leftarrow R_1-3R_2:\quad\left[\begin{array}{cc|cc}1&0&-5&3\\0&1&2&-1\end{array}\right]$$
+
+Thus $A^{-1}=\begin{bmatrix}-5&3\\2&-1\end{bmatrix}$.
+
+<!-- Presentation2.pptx slides 8–9. -->
+
+---
+
+<div class="eyebrow">Lecture 3 · Source code</div>
+
+# Compute the source examples in MATLAB
+
+```matlab
+A = [1 2; 3 4];
+B = [5 6; 7 8];
+C = A * B;        % [19 22; 43 50]
+
+D = [1 3; 2 5];
+D_inv = inv(D);   % [-5 3; 2 -1]
 ```
-```python
-import numpy as np
-U = np.array([[1., 2., 1.],
-              [0., 1., 1.],
-              [0., 0., 9.]])
-c = np.array([4., 2., 9.])
-x = np.zeros(3)
-x[2] = c[2] / U[2, 2]
-x[1] = (c[1] - x[2]) / U[1, 1]
-```
-```python
-import numpy as np
-U = np.array([[1., 2., 1.],
-              [0., 1., 1.],
-              [0., 0., 9.]])
-c = np.array([4., 2., 9.])
-x = np.zeros(3)
-x[2] = c[2] / U[2, 2]
-x[1] = (c[1] - x[2]) / U[1, 1]
-x[0] = c[0] - 2*x[1] - x[2]
-print(x)  # [1. 1. 1.]
-assert np.allclose(U @ x, c)
-```
-````
 
-</div>
-<CodeVisual lesson="04-back-substitution" />
-</div>
+Matrix multiplication models successive linear transformations; inverses reverse an invertible transformation. The PowerPoint lists graphics, the Hill cipher, and neural networks as applications.
 
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-The bottom row contains only z, so solve it first. Then substitute z into row two, and substitute both y and z into row one. The final assertion verifies the triangular system.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/
--->
+<!-- Presentation2.pptx slides 10–12. This code uses the exact matrices and results displayed in that source. -->
 
 ---
 
-<div class="eyebrow">Lecture 2</div>
+<div class="lecture-divider"><div class="eyebrow">Lecture 05</div>
 
-# Row operations are matrix multiplication
+# Permutations, transposes, and vector spaces
 
-The operation $R_2\gets R_2-2R_1$ has an elimination matrix:
+<div class="lecture-question">
 
-$$
-E_{21}=\begin{bmatrix}1&0&0\\-2&1&0\\0&0&1\end{bmatrix}
-$$
+Reorder rows, flip matrices, and test whether a set is a space.
 
-$$
-E_{21}A=
-\begin{bmatrix}1&2&1\\0&1&1\\1&0&8\end{bmatrix},
-\qquad E_{21}\mathbf{b}=\begin{bmatrix}4\\2\\9\end{bmatrix}
-$$
+</div></div>
 
-<div class="takeaway">
-
-$A\mathbf{x}=\mathbf{b}$ and $EA\mathbf{x}=E\mathbf{b}$ have the same solutions when $E$ is invertible.
-
-</div>
-
-<!--
-Multiplication on the left acts on rows. This elimination matrix is invertible because adding twice row 1 back to row 2 reverses the operation. In a sequence, the rightmost matrix acts first. Elimination therefore connects equation solving to the multiplication rules in lecture 3.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/
--->
+<!-- Source: Lecture5.pptx slides 1–8. -->
 
 ---
 
-<div class="eyebrow">Lecture 2 · Manim visualization</div>
+<div class="eyebrow">Lecture 5 · Permutation</div>
 
-# Elimination preserves the intersection
+# Swap a zero pivot into place
 
-<div class="film-wide">
-<MathFilm src="/animations/EliminationGeometry.mp4" poster="/animations/EliminationGeometry.jpg" caption="Replacing row 2 by row 2 + ½ row 1 turns the second equation into 3y/2 = 3. The intersection stays at (1, 2)." />
-</div>
+$$A=\begin{bmatrix}0&1&2\\1&2&3\\2&6&9\end{bmatrix},\quad
+P=\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix},\quad
+PA=\begin{bmatrix}1&2&3\\0&1&2\\2&6&9\end{bmatrix}.$$
 
-<!--
-This animation returns to the 2-by-2 example from lecture 1. During the interpolation, row 2 becomes row 2 plus t times row 1. The changing line has equation (-1+2t)x+(2-t)y=3. For every displayed t, (1,2) remains on it. At t=1/2, x disappears from the second equation.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/
--->
+$P$ is the identity with its first two rows swapped. A permutation matrix rearranges rows; $P^{-1}=P^T$.
 
----
+For $n$ rows, there are $n!$ possible row permutations.
 
-<div class="lecture-divider" data-lecture="3">
-<div class="eyebrow">Lecture 03</div>
-
-# Multiplication and inverse matrices
-
-<div class="lecture-question">How do matrices combine and undo operations?</div>
-</div>
-
-<!--
-Lecture 3 begins here. Introduce the central question before advancing to the worked examples.
--->
+<!-- Lecture5.pptx slides 3–4. -->
 
 ---
 
-<div class="eyebrow">Lecture 3</div>
+<div class="eyebrow">Lecture 5 · PA = LU</div>
 
-# Five views of matrix multiplication
+# Eliminate after the row swap
 
-<div class="compact">
+From $PA$, apply $R_3\leftarrow R_3-2R_1$ and then $R_3\leftarrow R_3-2R_2$.
 
-For $A\in\mathbb{R}^{m\times n}$ and $B\in\mathbb{R}^{n\times p}$, the product $C=AB$ is $m\times p$.
+$$L=\begin{bmatrix}1&0&0\\0&1&0\\2&2&1\end{bmatrix},\qquad
+U=\begin{bmatrix}1&2&3\\0&1&2\\0&0&-1\end{bmatrix}.$$
 
-| View | Computation |
-| :-- | :-- |
-| Row times column | $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$ |
-| A column at a time | $C_{:j}=A B_{:j}$ |
-| A row at a time | $C_{i:}=A_{i:}B$ |
-| Column times row | $AB=\sum_{k=1}^{n}A_{:k}B_{k:}$ |
-| Blocks | $C_{11}=A_{11}B_{11}+A_{12}B_{21}$ for compatible blocks |
+<div class="source-equation">
+
+$$\boxed{PA=LU}$$
 
 </div>
 
-<!--
-The colon means all entries along that index: A colon k is the kth column, and B k colon is the kth row. The outer-product view adds n matrices of size m by p. Block multiplication follows the same pattern only when block dimensions match. All five views perform the same underlying multiplications.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/
--->
+The two multipliers $2$ appear below the diagonal of $L$.
+
+<!-- Lecture5.pptx slide 4. -->
 
 ---
 
-<div class="eyebrow">Lecture 3 · Python</div>
+<div class="eyebrow">Lecture 5 · Transpose</div>
 
-# Python: three equivalent products
+# Rows become columns
 
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 13" data-code-lines="13">
+$$A=\begin{bmatrix}1&2&3\\4&5&6\end{bmatrix}\quad\Longrightarrow\quad
+A^T=\begin{bmatrix}1&4\\2&5\\3&6\end{bmatrix}.$$
 
-````md magic-move {duration:700}
-```python
-import numpy as np
-A = np.array([[2, -1], [-1, 2]])
-B = np.array([[1, 2], [0, 1]])
-C = A @ B
-```
-```python
-import numpy as np
-A = np.array([[2, -1], [-1, 2]])
-B = np.array([[1, 2], [0, 1]])
-C = A @ B
-by_columns = np.column_stack(
-    [A @ B[:, j] for j in range(2)])
-assert np.allclose(C, by_columns)
-```
-```python
-import numpy as np
-A = np.array([[2, -1], [-1, 2]])
-B = np.array([[1, 2], [0, 1]])
-C = A @ B
-by_columns = np.column_stack(
-    [A @ B[:, j] for j in range(2)])
-assert np.allclose(C, by_columns)
-terms = [np.outer(A[:, k], B[k])
-         for k in range(2)]
-by_outer = sum(terms)
-assert np.allclose(C, by_outer)
-print(C)      # [[2, 3], [-1, 0]]
-print(B @ A)  # [[0, 3], [-1, 2]]
-```
-````
+Entry $(i,j)$ moves to $(j,i)$: $(A^T)_{ij}=A_{ji}$.
 
-</div>
-<CodeVisual lesson="05-products" />
-</div>
+A square matrix is **symmetric** when $A=A^T$.
 
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-The code compares the usual product with multiplication by columns and a sum of outer products. The plot compares AB with BA, which is a different operation. Shapes match here because both matrices are square.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/
--->
+<!-- Lecture5.pptx slide 5. -->
 
 ---
 
-<div class="eyebrow">Lecture 3 · Manim</div>
+<div class="eyebrow">Lecture 5 · Symmetry</div>
 
-# Multiplication order matters
+# $R^TR$ is symmetric
 
-<div class="film-wide">
-<MathFilm src="/animations/MatrixComposition.mp4" poster="/animations/MatrixComposition.jpg" caption="A = [[2, −1], [−1, 2]], B = [[1, 2], [0, 1]]. For v = (1, 1.5), ABv and BAv differ." />
-</div>
+$$R=\begin{bmatrix}1&2\\3&0\\0&4\end{bmatrix},\qquad
+R^TR=\begin{bmatrix}1&3&0\\2&0&4\end{bmatrix}\begin{bmatrix}1&2\\3&0\\0&4\end{bmatrix}
+=\begin{bmatrix}10&2\\2&20\end{bmatrix}.$$
 
-<!--
-The rightmost factor acts first. The blue path is v to Bv=(4,1.5) to ABv=(6.5,-1). The orange path is v to Av=(0.5,2) to BAv=(4.5,2). Associativity holds, but exchanging factors generally changes the result.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/
--->
+The off-diagonal entries match. More generally, $(R^TR)^T=R^TR$.
 
----
-
-<div class="eyebrow">Lecture 3 · Manim</div>
-
-# Gauss–Jordan finds the inverse
-
-<div class="film-wide">
-<MathFilm src="/animations/GaussJordanInverse.mp4" poster="/animations/GaussJordanInverse.jpg" caption="The same row operations reduce A to I and turn I into A⁻¹ = [[7, −3], [−2, 1]]." />
-</div>
-
-<!--
-For A=[[1,3],[2,7]], use R2-2R1 then R1-3R2. Keeping all four augmented columns together is essential.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/
--->
+<!-- Lecture5.pptx slide 6. -->
 
 ---
 
-<div class="eyebrow">Lecture 3 · Python</div>
+<div class="eyebrow">Lecture 5 · Vector spaces</div>
 
-# Python: reducing both halves together
+# A space stays closed under combinations
 
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 9" data-code-lines="9">
+A vector space contains the zero vector and stays inside the set when we **add** its vectors or **scale** them.
 
-````md magic-move {duration:700}
-```python
-import numpy as np
-A = np.array([[1., 3.], [2., 7.]])
-aug = np.column_stack((A, np.eye(2)))
-```
-```python
-import numpy as np
-A = np.array([[1., 3.], [2., 7.]])
-aug = np.column_stack((A, np.eye(2)))
-aug[1] -= 2 * aug[0]
-aug[0] -= 3 * aug[1]
-```
-```python
-import numpy as np
-A = np.array([[1., 3.], [2., 7.]])
-aug = np.column_stack((A, np.eye(2)))
-aug[1] -= 2 * aug[0]
-aug[0] -= 3 * aug[1]
-inverse = aug[:, 2:]
-print(inverse)  # [[7, -3], [-2, 1]]
-assert np.allclose(aug[:, :2], np.eye(2))
-assert np.allclose(A @ inverse, np.eye(2))
-```
-````
+$$\mathbf u,\mathbf v\in V,\quad a,b\in\mathbb R\quad\Longrightarrow\quad a\mathbf u+b\mathbf v\in V.$$
 
-</div>
-<CodeVisual lesson="06-inverse" />
-</div>
+$\mathbb R^2$ passes the test. The first quadrant $\{(x,y):x\ge0,\ y\ge0\}$ fails: $-1(3,2)=(-3,-2)$ leaves it.
 
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-The first two columns hold A and the last two hold I. The same operations act on all four columns. Once the left half is I, slicing the right half gives the inverse. Numerical applications usually solve directly instead of explicitly forming inverses.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/
--->
+<!-- Lecture5.pptx slides 7–8. -->
 
 ---
 
-<div class="eyebrow">Lecture 3</div>
-
-# What an inverse guarantees
-
-For a square invertible matrix:
-
-$$
-A^{-1}A=AA^{-1}=I,\qquad \mathbf{x}=A^{-1}\mathbf{b}
-$$
-
-- Every right-hand side has exactly one solution.
-- A nonzero solution of $A\mathbf{z}=0$ rules out an inverse.
-- If $A$ and $B$ are invertible, $(AB)^{-1}=B^{-1}A^{-1}$.
-
-<div class="takeaway">
-
-Elimination can solve $A\mathbf{x}=\mathbf{b}$ directly without forming $A^{-1}$.
-
-</div>
-
-<!--
-For the nullspace test, suppose A has an inverse and Az=0. Multiplying by the inverse gives z=0. Thus any nonzero null vector contradicts invertibility. The reverse order in the product inverse follows by grouping ABB-inverse A-inverse. Both A and B must be square and invertible here.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/
--->
-
----
-
-<div class="lecture-divider" data-lecture="5">
-<div class="eyebrow">Lecture 05</div>
-
-# Transposes, permutations, and vector spaces
-
-<div class="lecture-question">What changes when we transpose or reorder rows?</div>
-</div>
-
-<!--
-Lecture 5 begins here. Introduce the central question before advancing to the worked examples.
--->
-
----
-
-<div class="eyebrow">Lecture 5 · Manim</div>
-
-# Transposes exchange rows and columns
-
-<div class="film-wide">
-<MathFilm src="/animations/MatrixTranspose.mp4" poster="/animations/MatrixTranspose.jpg" caption="A 2 × 3 array becomes 3 × 2. The product rule reverses order: (AB)ᵀ = BᵀAᵀ." />
-</div>
-
-<!--
-Entry (i,j) becomes entry (j,i). The blue first row becomes the blue first column, and the orange second row becomes the orange second column. A symmetric matrix satisfies A.T=A.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-r-n/
--->
-
----
-
-<div class="eyebrow">Lecture 5 · Python</div>
-
-# Python: transpose and row permutation
-
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 11" data-code-lines="11">
-
-````md magic-move {duration:700}
-```python
-import numpy as np
-A = np.arange(1, 7).reshape(2, 3)
-print(A.shape)  # (2, 3)
-```
-```python
-import numpy as np
-A = np.arange(1, 7).reshape(2, 3)
-print(A.shape)  # (2, 3)
-R = A.T
-print(R.shape)  # (3, 2)
-print(R)  # [[1, 4], [2, 5], [3, 6]]
-```
-```python
-import numpy as np
-A = np.arange(1, 7).reshape(2, 3)
-print(A.shape)  # (2, 3)
-R = A.T
-print(R.shape)  # (3, 2)
-print(R)  # [[1, 4], [2, 5], [3, 6]]
-P = np.array([[0, 1, 0],
-              [0, 0, 1],
-              [1, 0, 0]])
-print(P @ R)  # [[2, 5], [3, 6], [1, 4]]
-assert np.allclose(P.T @ P, np.eye(3))
-```
-````
-
-</div>
-<CodeVisual lesson="07-transpose" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-A.T is a transpose. The permutation P has the cyclic order used in the next Manim clip. It multiplies R=A.T on the left, producing rows two, three, one. Transposing P reverses that permutation.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-r-n/
--->
-
----
-
-<div class="eyebrow">Lecture 5 · Manim</div>
-
-# Permutations reorder rows
-
-<div class="film-wide">
-<MathFilm src="/animations/PermutationRows.mp4" poster="/animations/PermutationRows.jpg" caption="This cyclic P uses row order 2, 3, 1. Its transpose reverses the permutation." />
-</div>
-
-<!--
-P=[[0,1,0],[0,0,1],[1,0,0]]. P inverse equals P transpose, not necessarily P. With row exchanges the elimination factorization becomes PA=LU.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-r-n/
--->
-
----
-
-<div class="eyebrow">Lecture 5</div>
-
-# Vector spaces and subspaces
-
-$\mathbb{R}^n$ contains all real column vectors with $n$ entries.
-
-A nonempty subset $V\subseteq\mathbb{R}^n$ is a subspace when:
-
-<div class="math-large">
-
-$$
-\mathbf{u},\mathbf{v}\in V,\quad c,d\in\mathbb{R}
-\quad\Longrightarrow\quad c\mathbf{u}+d\mathbf{v}\in V
-$$
-
-</div>
-
-It stays closed under addition and multiplication by **every real scalar**.
-
-<div class="takeaway">
-
-Every subspace contains the zero vector.
-
-</div>
-
-<!--
-Explain that a subspace inherits the usual vector addition and scalar multiplication from Rn. Taking both coefficients zero shows the need for the zero vector. Functions and matrices can also form vector spaces, but this seminar focuses on spaces of real coordinate vectors.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-r-n/
--->
-
----
-
-<div class="eyebrow">Lecture 5</div>
-
-# The subspace test
-
-| Set | Subspace? | Reason |
-| :-- | :-- | :-- |
-| The line $y=2x$ | **Yes** | Linear combinations stay on the line |
-| The line $y=2x+1$ | No | It misses the zero vector |
-| The first quadrant | No | Negative scaling leaves the set |
-| The plane $x+y+z=0$ | **Yes** | Addition and scaling preserve the equation |
-
-<div class="takeaway">
-
-Passing through the origin is necessary, but closure still needs checking.
-
-</div>
-
-<!--
-Use the first quadrant to show why containing zero is insufficient: (1,1) belongs, but its negative does not. For the plane, add two equations with right-hand side zero or multiply one by a scalar. A union of distinct lines through the origin is another set that contains zero but fails closure under addition.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-r-n/
--->
-
----
-
-<div class="eyebrow">Lecture 5 · Python</div>
-
-# Python: closure examples and a counterexample
-
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 11" data-code-lines="11">
-
-````md magic-move {duration:700}
-```python
-import numpy as np
-u = np.array([1, 2])
-v = np.array([-2, -4])
-assert u[1] == 2*u[0]
-assert v[1] == 2*v[0]
-```
-```python
-import numpy as np
-u = np.array([1, 2])
-v = np.array([-2, -4])
-assert u[1] == 2*u[0]
-assert v[1] == 2*v[0]
-w = 3*u - 2*v
-print(w)  # [7 14]
-assert w[1] == 2*w[0]
-```
-```python
-import numpy as np
-u = np.array([1, 2])
-v = np.array([-2, -4])
-assert u[1] == 2*u[0]
-assert v[1] == 2*v[0]
-w = 3*u - 2*v
-print(w)  # [7 14]
-assert w[1] == 2*w[0]
-q = np.array([1, 1])
-assert np.all(q >= 0)
-print(np.all(-q >= 0))  # False
-```
-````
-
-</div>
-<CodeVisual lesson="08-subspace" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-Finite examples illustrate closure but do not prove it for every vector. The algebraic equation y=2x proves closure in this case. The negative of q=(1,1) gives a decisive counterexample for the first quadrant.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-r-n/
--->
-
----
-
-<div class="lecture-divider" data-lecture="6">
-<div class="eyebrow">Lecture 06</div>
-
-# Column space and nullspace
-
-<div class="lecture-question">Which outputs are possible, and which inputs map to zero?</div>
-</div>
-
-<!--
-Lecture 6 begins here. Introduce the central question before advancing to the worked examples.
--->
-
----
-
-<div class="eyebrow">Lecture 6 · Manim</div>
-
-# Column space describes possible outputs
-
-<div class="film-wide">
-<MathFilm src="/animations/ColumnSpaceSweep.mp4" poster="/animations/ColumnSpaceSweep.jpg" caption="For B = [[1, 2, 3], [2, 4, 6]], every output lies on b₂ = 2b₁." />
-</div>
-
-<!--
-C(B) is a line in R2. The point (4,8) is reachable, while (4,7) is not. The input vector has three coordinates, but the output has two.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/
--->
-
----
-
-<div class="eyebrow">Lecture 6 · Python</div>
-
-# Python: testing whether b belongs to C(B)
-
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 11" data-code-lines="11">
-
-````md magic-move {duration:700}
-```python
-import numpy as np
-B = np.array([[1, 2, 3], [2, 4, 6]])
-r = np.linalg.matrix_rank(B)
-print(r)  # 1
-```
-```python
-import numpy as np
-B = np.array([[1, 2, 3], [2, 4, 6]])
-r = np.linalg.matrix_rank(B)
-print(r)  # 1
-good = np.column_stack((B, [4, 8]))
-print(np.linalg.matrix_rank(good) == r)
-# True: the target is in C(B)
-```
-```python
-import numpy as np
-B = np.array([[1, 2, 3], [2, 4, 6]])
-r = np.linalg.matrix_rank(B)
-print(r)  # 1
-good = np.column_stack((B, [4, 8]))
-print(np.linalg.matrix_rank(good) == r)
-# True: the target is in C(B)
-bad = np.column_stack((B, [4, 7]))
-assert np.linalg.matrix_rank(good) == r
-print(np.linalg.matrix_rank(bad) == r)
-# False: the target is outside C(B)
-```
-````
-
-</div>
-<CodeVisual lesson="09-column-space" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-This connects lecture 6 to the rank language in lecture 9. A right-hand side belongs to the column space if adding it as a column leaves the rank unchanged. NumPy estimates numerical rank using a floating-point tolerance.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/
--->
-
----
-
-<div class="eyebrow">Lecture 6 · Manim</div>
-
-# Nullspace describes inputs sent to zero
-
-<div class="film-wide">
-<MathFilm src="/animations/NullspacePlane.mp4" poster="/animations/NullspacePlane.jpg" caption="N(B) is the plane x₁ + 2x₂ + 3x₃ = 0 in input space R³. Every point maps to zero." />
-</div>
-
-<!--
-Its basis is (-2,1,0), (-3,0,1). Parameterizing x=s*(-2,1,0)+t*(-3,0,1) produces the entire plane. Contrast with C(B), a line in R2.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/
--->
-
----
-
-<div class="eyebrow">Lecture 6</div>
-
-# Every solution has a nullspace part
-
-For $B\mathbf{x}=\begin{bmatrix}4&8\end{bmatrix}^T$, one solution is $\mathbf{x}_p=(4,0,0)^T$.
-
-$$
-\boxed{\mathbf{x}=\begin{bmatrix}4\\0\\0\end{bmatrix}
-+s\begin{bmatrix}-2\\1\\0\end{bmatrix}
-+t\begin{bmatrix}-3\\0\\1\end{bmatrix}}
-$$
-
-$$
-B(\mathbf{x}_p+\mathbf{x}_n)=\mathbf{b}+0=\mathbf{b}
-$$
-
-<div class="note">
-
-The solutions form a shifted plane. Because $\mathbf{b}\ne0$, this solution set is not a subspace.
-
-</div>
-
-<!--
-This direct parameterization supplies a short bridge over the unselected lectures 7 and 8. If x and xp solve the same equation, B(x-xp)=0. That proves every solution, not just some solutions, has this form. Distinguish the homogeneous nullspace from a shifted set of solutions to a nonhomogeneous equation.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/
--->
-
----
-
-<div class="eyebrow">Lecture 6 · Python</div>
-
-# Python: adding a nullspace vector
-
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 9" data-code-lines="9">
-
-````md magic-move {duration:700}
-```python
-import numpy as np
-B = np.array([[1, 2, 3], [2, 4, 6]])
-N = np.array([[-2, -3], [1, 0], [0, 1]])
-assert np.allclose(B @ N, 0)
-```
-```python
-import numpy as np
-B = np.array([[1, 2, 3], [2, 4, 6]])
-N = np.array([[-2, -3], [1, 0], [0, 1]])
-assert np.allclose(B @ N, 0)
-xp = np.array([4., 0., 0.])
-x = xp + N @ np.array([0.5, 1.0])
-print(x)  # [0.  0.5 1. ]
-```
-```python
-import numpy as np
-B = np.array([[1, 2, 3], [2, 4, 6]])
-N = np.array([[-2, -3], [1, 0], [0, 1]])
-assert np.allclose(B @ N, 0)
-xp = np.array([4., 0., 0.])
-x = xp + N @ np.array([0.5, 1.0])
-print(x)  # [0.  0.5 1. ]
-assert np.allclose(B @ x, [4, 8])
-print(B @ x)  # [4. 8.]
-```
-````
-
-</div>
-<CodeVisual lesson="10-nullspace" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-The columns of N are (-2,1,0) and (-3,0,1). B@N=0 checks both basis vectors at once. For any real parameter pair, xp+N@parameters remains a solution for b=(4,8). The picture shows the homogeneous plane, not the shifted solution plane.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/
--->
-
----
-
-<div class="eyebrow">Lectures 6 and 9</div>
-
-# What elimination preserves
-
-$$
-B=\begin{bmatrix}1&2&3\\2&4&6\end{bmatrix}
-\quad\xrightarrow{\ R_2-2R_1\ }\quad
-U=\begin{bmatrix}1&2&3\\0&0&0\end{bmatrix}
-$$
-
-<div class="cols">
-<div>
-
-### The nullspace stays the same
-
-$$
-N(B)=N(U)
-$$
-
-Both impose $x_1+2x_2+3x_3=0$.
-
-</div>
-<div>
-
-### The column space can change
-
-$$
-C(B)=\operatorname{span}\!\left\{\begin{bmatrix}1\\2\end{bmatrix}\right\}
-$$
-
-$$
-C(U)=\operatorname{span}\!\left\{\begin{bmatrix}1\\0\end{bmatrix}\right\}
-$$
-
-</div>
-</div>
-
-<!--
-This distinction will matter when choosing a basis from pivot columns. Invertible row operations preserve linear dependence relations among columns, and therefore the rank, but can move the actual column space. Select column-space basis vectors from the original matrix using the pivot indices found by elimination.
-Sources: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/ and https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
-
----
-
-<div class="lecture-divider" data-lecture="9">
-<div class="eyebrow">Lecture 09</div>
+<div class="lecture-divider"><div class="eyebrow">Lecture 09</div>
 
 # Independence, basis, and dimension
 
-<div class="lecture-question">How many independent directions describe a space?</div>
-</div>
+<div class="lecture-question">
 
-<!--
-Lecture 9 begins here. Introduce the central question before advancing to the worked examples.
--->
+How many independent directions are there, and what space do they span?
 
----
+</div></div>
 
-<div class="eyebrow">Lecture 9</div>
-
-# Independence excludes redundancy
-
-Vectors $\mathbf{v}_1,\ldots,\mathbf{v}_k$ are independent if
-
-$$
-c_1\mathbf{v}_1+\cdots+c_k\mathbf{v}_k=0
-\quad\Longrightarrow\quad c_1=\cdots=c_k=0
-$$
-
-For example:
-
-$$
-\mathbf{v}_1=\begin{bmatrix}1\\0\end{bmatrix},\quad
-\mathbf{v}_2=\begin{bmatrix}1\\1\end{bmatrix},\quad
-\mathbf{v}_3=\begin{bmatrix}2\\1\end{bmatrix}
-$$
-
-Since $\mathbf{v}_1+\mathbf{v}_2-\mathbf{v}_3=0$, these three vectors are **dependent**.
-
-<!--
-The relation has coefficients (1,1,-1), which are not all zero. Thus the third vector contributes no new direction beyond the first two. Equivalently, columns are independent precisely when the matrix formed from them has only the zero vector in its nullspace. These numerical vectors are an original teaching example.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
+<!-- Source: second Canva deck, pp. 1–26. Template pages 27–29 are excluded. -->
 
 ---
 
-<div class="eyebrow">Lecture 9 · Manim visualization</div>
+<div class="eyebrow">Lecture 9 · Linear independence</div>
 
-# A redundant vector adds no direction
+# Only the zero combination gives zero
 
-<div class="film-wide">
-<MathFilm src="/animations/DependenceAndBasis.mp4" poster="/animations/DependenceAndBasis.jpg" caption="The first two vectors already span the plane. The third equals their sum, so it does not enlarge the span." />
-</div>
+Vectors $\mathbf v_1,\ldots,\mathbf v_n$ are **linearly independent** if
 
-<!--
-Pause after the third vector appears. Ask the audience for a nonzero set of coefficients that gives zero. Then explain that deleting the redundant third vector preserves the span. The remaining two are independent, so they form a basis of R2. This is an original Manim scene.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
+$$c_1\mathbf v_1+\cdots+c_n\mathbf v_n=\mathbf0$$
 
----
+forces $c_1=\cdots=c_n=0$.
 
-<div class="eyebrow">Lecture 9 · Manim</div>
+They are **dependent** if some nonzero coefficient vector satisfies the same equation. Then at least one vector can be built from the others.
 
-# A basis spans without redundancy
-
-<div class="film-wide">
-<MathFilm src="/animations/BasisCoordinates.mp4" poster="/animations/BasisCoordinates.jpg" caption="A basis is independent and spans the space. The vector (3, 2) has coordinates (1, 2) in this basis." />
-</div>
-
-<!--
-The basis columns are b1=(1,0) and b2=(1,1). Their combination b1+2b2 gives (3,2). A different basis changes coordinates, not the vector. Every basis of R2 has two vectors.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
+<!-- Canva Lecture 9 pp. 5–8. Canva p. 7 has a wording error: dependence requires a nontrivial combination, not “no vector” being a combination. -->
 
 ---
 
-<div class="eyebrow">Lecture 9 · Python</div>
+<div class="eyebrow">Lecture 9 · Geometry</div>
 
-# Python: coordinates in a different basis
+# Independent directions span more
 
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 7" data-code-lines="7">
+<div class="cols"><div class="geometry-card"><strong>Independent pair</strong>
 
-````md magic-move {duration:700}
+Two nonparallel vectors in $\mathbb R^3$ span a **plane** through the origin.
+
+$$\operatorname{span}\{\mathbf v_1,\mathbf v_2\}=\{c_1\mathbf v_1+c_2\mathbf v_2\}$$
+</div><div class="geometry-card"><strong>Dependent pair</strong>
+
+Parallel vectors supply only one direction. Their span is a **line** through the origin.
+
+$$\operatorname{span}\{\mathbf v,2\mathbf v\}=\{c\mathbf v\}$$
+</div></div>
+
+<!-- Canva Lecture 9 p. 9. -->
+
+---
+
+<div class="eyebrow">Lecture 9 · Worked example</div>
+
+# The third vector repeats two directions
+
+$$\mathbf v_1=\begin{bmatrix}3\\2\\5\end{bmatrix},\quad
+\mathbf v_2=\begin{bmatrix}4\\7\\2\end{bmatrix},\quad
+\mathbf v_3=\begin{bmatrix}7\\9\\7\end{bmatrix}.$$
+
+$$\boxed{\mathbf v_3=\mathbf v_1+\mathbf v_2}$$
+
+So $-\mathbf v_1-\mathbf v_2+\mathbf v_3=\mathbf0$ is a nontrivial dependence relation.
+
+<!-- Canva Lecture 9 pp. 10–13. -->
+
+---
+
+<div class="eyebrow">Lecture 9 · Matrix of columns</div>
+
+# Put the vectors into one matrix
+
+$$A=\begin{bmatrix}3&4&7\\2&7&9\\5&2&7\end{bmatrix}
+=\left[\,\mathbf v_1\ \mathbf v_2\ \mathbf v_3\,\right].$$
+
+The dependence relation becomes a nullspace equation:
+
+$$A\begin{bmatrix}-1\\-1\\1\end{bmatrix}=\mathbf0.$$
+
+Because the nullspace contains a nonzero vector, the three columns are dependent.
+
+<!-- Canva Lecture 9 pp. 13–17. -->
+
+---
+
+<div class="eyebrow">Lecture 9 · Pivots and free columns</div>
+
+# Row reduction reveals rank two
+
+$$A\sim\operatorname{rref}(A)=\begin{bmatrix}1&0&1\\0&1&1\\0&0&0\end{bmatrix}.$$
+
+Columns 1 and 2 are pivot columns. Column 3 is free and equals the sum of the first two columns.
+
+$$\operatorname{rank}(A)=2,\qquad n-r=3-2=1.$$
+
+The nullspace has one free direction, generated by $(-1,-1,1)^T$.
+
+<!-- Canva Lecture 9 pp. 14–19. -->
+
+---
+
+<div class="eyebrow">Lecture 9 · Basis</div>
+
+# Independent and spanning
+
+A **basis** is a set of vectors that is linearly independent and spans the space.
+
+For this matrix, the pivot columns of the **original** $A$ form a basis of its column space:
+
+$$\boxed{\operatorname{basis}(C(A))=\left\{\begin{bmatrix}3\\2\\5\end{bmatrix},\begin{bmatrix}4\\7\\2\end{bmatrix}\right\}.}$$
+
+The third column adds no new direction.
+
+<!-- Canva Lecture 9 pp. 20–21. -->
+
+---
+
+<div class="eyebrow">Lecture 9 · Dimension</div>
+
+# Count the basis vectors
+
+The **dimension** of a space is the number of vectors in any basis of that space.
+
+$$\dim C(A)=\operatorname{rank}(A)=2,\qquad
+\dim N(A)=n-r=1.$$
+
+The two pivot columns span a plane in $\mathbb R^3$. They form a basis for that plane, **not** for all of $\mathbb R^3$.
+
+<!-- Canva Lecture 9 pp. 22–24. -->
+
+---
+
+<div class="eyebrow">Lecture 9 · Source code</div>
+
+# Check dependence with SymPy
+
 ```python
-import numpy as np
-V = np.array([[1., 1.], [0., 1.]])
-v = np.array([3., 2.])
+from sympy import Matrix
+
+A = Matrix([[3, 4, 7], [2, 7, 9], [5, 2, 7]])
+n_vectors = A.shape[1]
+rank = A.rank()
+print("Number of vectors:", n_vectors)  # 3
+print("Rank:", rank)                  # 2
+print("Linearly independent?", rank == n_vectors)  # False
+print("Determinant:", A.det())        # 0
+for relation in A.nullspace():
+    print("Dependency coefficients:", relation.T)  # [-1 -1 1]
 ```
-```python
-import numpy as np
-V = np.array([[1., 1.], [0., 1.]])
-v = np.array([3., 2.])
-c = np.linalg.solve(V, v)
-print(c)  # [1. 2.]
-```
-```python
-import numpy as np
-V = np.array([[1., 1.], [0., 1.]])
-v = np.array([3., 2.])
-c = np.linalg.solve(V, v)
-print(c)  # [1. 2.]
-assert np.allclose(V @ c, v)
-assert np.linalg.matrix_rank(V) == 2
-```
-````
 
-</div>
-<CodeVisual lesson="11-coordinates" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-The columns of V are the new basis vectors. Solving Vc=v finds the basis coordinates, while V@c reconstructs the vector in standard coordinates. The vector itself stays fixed. Both bases have dimension two.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
+<!-- Canva Lecture 9 p. 25. The code and output match the source example. -->
 
 ---
 
-<div class="eyebrow">Lecture 9</div>
+<div class="eyebrow">Lecture 9 · Summary</div>
 
-# Pivot columns give a column-space basis
+# The four ideas fit together
 
-$$
-M=\begin{bmatrix}1&0&1\\2&1&3\\0&1&1\end{bmatrix}
-\quad\xrightarrow{\text{elimination}}\quad
-U=\begin{bmatrix}1&0&1\\0&1&1\\0&0&0\end{bmatrix}
-$$
-
-The pivot columns are **1 and 2**. Use those columns of the original $M$:
-
-$$
-\text{Basis of }C(M):\quad
-\left\{\begin{bmatrix}1\\2\\0\end{bmatrix},
-\begin{bmatrix}0\\1\\1\end{bmatrix}\right\}
-$$
-
-$$
-\operatorname{rank}(M)=\dim C(M)=2
-$$
-
-<!--
-First replace row 2 by row 2 minus twice row 1, then replace row 3 by row 3 minus the new row 2. The original third column is the sum of the first two. The two pivot columns are independent and generate every column, so they form a basis. Avoid choosing columns from U as a basis for C(M).
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
-
----
-
-<div class="eyebrow">Lecture 9</div>
-
-# Rank and nullity count different directions
-
-For the same $M$, the homogeneous equations reduce to
-
-$$
-x_1+x_3=0,\qquad x_2+x_3=0
-$$
-
-$$
-N(M)=\operatorname{span}\!\left\{\begin{bmatrix}-1\\-1\\1\end{bmatrix}\right\}
-$$
-
-<div class="math-large">
-
-$$
-\underbrace{\operatorname{rank}(M)}_{2}
-+\underbrace{\dim N(M)}_{1}
-=\underbrace{n}_{3}
-$$
-
-</div>
-
-<div class="small">
-
-For any $m\times n$ matrix, rank + nullity equals the number of columns $n$.
-
-</div>
-
-<!--
-There are two pivot variables and one free variable. Each free variable contributes one independent nullspace direction. This explains the rank-nullity count: n input coordinates split into r pivot positions and n-r free positions. For M, the column space is a plane and the nullspace is a line, both inside R3.
-Source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
-
----
-
-<div class="eyebrow">Lecture 9 · Python</div>
-
-# Python: rank plus nullity
-
-<div class="code-pair">
-<div class="code-panel" style="--code-lines: 11" data-code-lines="11">
-
-````md magic-move {duration:700}
-```python
-import numpy as np
-from scipy.linalg import null_space
-M = np.array([[1., 0., 1.],
-              [2., 1., 3.],
-              [0., 1., 1.]])
-r = np.linalg.matrix_rank(M)
-```
-```python
-import numpy as np
-from scipy.linalg import null_space
-M = np.array([[1., 0., 1.],
-              [2., 1., 3.],
-              [0., 1., 1.]])
-r = np.linalg.matrix_rank(M)
-N = null_space(M)
-print(r, N.shape[1])  # 2 1
-```
-```python
-import numpy as np
-from scipy.linalg import null_space
-M = np.array([[1., 0., 1.],
-              [2., 1., 3.],
-              [0., 1., 1.]])
-r = np.linalg.matrix_rank(M)
-N = null_space(M)
-print(r, N.shape[1])  # 2 1
-assert np.allclose(M @ N, 0)
-assert r + N.shape[1] == M.shape[1]
-print(r, N.shape[1], M.shape[1])  # 2 1 3
-```
-````
-
-</div>
-<CodeVisual lesson="12-rank" />
-</div>
-
-<div class="step-hint">Space advances the code. Left arrow returns to the previous step.</div>
-
-<!--
-SciPy returns an orthonormal nullspace basis, so its entries can differ from the integer basis by scaling or sign. It still spans the same line. The assertion checks the defining equation M@N=0 with a numerical tolerance.
-The final code state is included in python_examples/examples.py. The synchronized visual states are computed by executing each code stage in python_examples/visual_states.py. The visualization reads the same local click count as Magic Move. Forward and backward navigation update both together.
-Lecture source: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
-
----
-
-# One matrix connects the six lectures
-
-<div class="cols wide-left">
-<div>
-
-$$
-M=\begin{bmatrix}1&0&1\\2&1&3\\0&1&1\end{bmatrix}
-$$
-
-$$
-C(M)=\{\mathbf{b}:b_2=2b_1+b_3\}
-$$
-
-For $\mathbf{b}=(2,5,1)^T$:
-
-$$
-\mathbf{x}=\begin{bmatrix}2\\1\\0\end{bmatrix}
-+t\begin{bmatrix}-1\\-1\\1\end{bmatrix}
-$$
-
-</div>
-<div>
-
-**Geometry:** achievable outputs form a plane.
-
-**Elimination:** two pivots remain.
-
-**Dependence:** column 3 equals columns 1 + 2.
-
-**Dimension:** rank $2$, nullity $1$.
-
-**Inverse:** no inverse exists.
-
-</div>
-</div>
-
-<!--
-Original synthesis example. The columns are c1=(1,2,0), c2=(0,1,1), and c3=c1+c2. Every output has second coordinate twice the first plus the third. For b=(2,5,1), xp=(2,1,0) works and all other solutions differ by a null vector. By contrast, b=(2,6,1) violates the condition and has no solution.
-Sources: MIT 18.06 lectures 1, 2, 3, 5, 6, and 9, linked on the final slide.
--->
-
----
-
-# Existence and uniqueness through rank
-
-Let $A$ be $m\times n$, with rank $r$.
-
-| Rank condition | Which right-hand sides work? | Solutions when consistent |
-| :-- | :-- | :-- |
-| $r=m=n$ | Every $\mathbf{b}\in\mathbb{R}^m$ | Exactly one |
-| $r=m<n$ | Every $\mathbf{b}\in\mathbb{R}^m$ | Infinitely many |
-| $r=n<m$ | Only $\mathbf{b}\in C(A)$ | Exactly one |
-| $r<m$ and $r<n$ | Only $\mathbf{b}\in C(A)$ | Infinitely many |
-
-<div class="takeaway">
-
-Column space controls existence. Nullspace controls uniqueness.
-
-</div>
-
-<!--
-These four cases exhaust the possibilities because r cannot exceed either m or n. Over R, a consistent system with at least one free variable has infinitely many solutions. The third row is useful: a tall matrix can have a unique solution for a particular right-hand side without having an ordinary two-sided inverse.
-Sources: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/ and https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/
--->
-
----
-
-# Practice: the same questions again
-
-$$
-Q=\begin{bmatrix}1&2&0\\0&0&1\\1&2&1\end{bmatrix},
-\qquad\mathbf{b}=\begin{bmatrix}3\\1\\4\end{bmatrix}
-$$
-
-1. Which columns form a basis for $C(Q)$?
-2. What are the rank and nullity?
-3. What is the complete solution to $Q\mathbf{x}=\mathbf{b}$?
-
-<div class="note">
-
-Hint: compare column 2 with column 1, and compare row 3 with rows 1 and 2.
-
-</div>
-
-<!--
-Allow about two minutes. This is an original practice problem. Ask for the dependence relation first, then a null vector. Next, use the first two rows to construct one solution. The third row checks the consistency condition b3=b1+b2. The next slide gives the answer.
--->
-
----
-
-# Practice: basis, dimension, solutions
-
-<div class="cols">
-<div>
-
-Column 2 is twice column 1.
-
-$$
-\text{Basis of }C(Q):\quad
-\left\{\begin{bmatrix}1\\0\\1\end{bmatrix},
-\begin{bmatrix}0\\1\\1\end{bmatrix}\right\}
-$$
-
-$$
-\operatorname{rank}(Q)=2,\qquad\dim N(Q)=1
-$$
-
-</div>
-<div>
-
-The equations give $x_1+2x_2=3$ and $x_3=1$.
-
-$$
-\boxed{\mathbf{x}=\begin{bmatrix}3\\0\\1\end{bmatrix}
-+t\begin{bmatrix}-2\\1\\0\end{bmatrix}}
-$$
-
-The third row is consistent because $4=3+1$.
-
-</div>
-</div>
-
-<!--
-Verify Q times (3,0,1) is (3,1,4), and Q times (-2,1,0) is zero. The first and third columns are independent because the second coordinate forces the coefficient of column 3 to vanish, after which the first coordinate forces the other coefficient to vanish. Their span contains all three columns.
--->
-
----
-
-<div class="summary-content">
-
-# The main ideas
-
-| Concept | Meaning |
+| Idea | Test or count |
 | :-- | :-- |
-| $A\mathbf{x}=\mathbf{b}$ | A linear combination of columns produces $\mathbf{b}$ |
-| Elimination | Reversible row operations simplify the equations |
-| Inverse | Every right-hand side has a unique solution |
-| Subspace | A set closed under all linear combinations |
-| Column space and nullspace | Achievable outputs and inputs sent to zero |
-| Basis and dimension | Independent spanning vectors and their count |
+| **Independence** | $N(A)=\{\mathbf0\}$ for the columns of $A$ |
+| **Spanning** | All combinations of columns give $C(A)$ |
+| **Basis** | Independent vectors that span the chosen space |
+| **Dimension** | $\dim C(A)=r$ and $\dim N(A)=n-r$ |
 
 <div class="takeaway">
 
-For $A\in\mathbb{R}^{m\times n}$: $\dim C(A)+\dim N(A)=n$.
+The example has three columns, two independent directions, and one dependence relation.
 
 </div>
 
-</div>
-
-<!--
-Ask the audience to explain each concept without calculating. Keep the inverse statement in its square-matrix context. Revisit the opening matrix equation, now with an interpretation of when it can be solved, how many solutions it has, and how elimination reveals the dimensions.
-Sources: the six MIT lecture links on the following slide.
--->
+<!-- Canva Lecture 9 p. 26. N(A) = {0} makes the source's shorthand N(A) = 0 precise. -->
 
 ---
 
-# Sources and further study
+# Source files and comparison
 
-<div class="source-list">
-
-Gilbert Strang, **MIT 18.06 Linear Algebra**, MIT OpenCourseWare.
-
-[1. The geometry of linear equations](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/)
-
-[2. Elimination with matrices](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/)
-
-[3. Multiplication and inverse matrices](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/)
-
-[5. Transposes, permutations, spaces Rⁿ](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-r-n/)
-
-[6. Column space and nullspace](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/)
-
-[9. Independence, basis, and dimension](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/)
-
-</div>
+- **Lecture 1:** PDF pages 1–18, first Canva deck, and `Seminar.pptx` slides 2–18. The equations and examples agree; their contents pages differ.
+- **Lecture 2:** `Seminar.pptx` slides 19–31.
+- **Lecture 3:** `Presentation2.pptx` slides 1–12.
+- **Lecture 5:** `Lecture5.pptx` slides 1–8.
+- **Lecture 9:** second Canva deck pages 1–26. There is no corresponding local PDF or PowerPoint.
 
 <div class="small">
 
-Lecture 1 examples and questions follow the [supplied Canva guide](https://canva.link/zq4wr2hywc9crpv), slides 1–18. The remaining material follows the Spring 2010 OCW publication, using lectures recorded in Fall 1999.
+Unrelated planner-template pages 19–28 of the Lecture 1 PDF and blank/template ending pages in Canva were left out.
 
 </div>
 
-<!--
-The Lecture 1 examples and questions follow the supplied Canva/PDF guide (slides 1–18); slides 19–28 are unrelated template material and are excluded. The lecture 3 Gauss-Jordan matrix comes from Strang's examples. Other worked matrices and the practice problem were created for this seminar. Source links also appear in the relevant speaker notes. MIT's resource pages identify the recording date as Fall 1999, while the course publication is Spring 2010.
-https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
--->
+<!-- Source reconciliation as of 2026-11-17. -->
