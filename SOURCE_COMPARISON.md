@@ -53,6 +53,13 @@ bands. It uses a 3Blue1Brown-inspired palette and the requested sans-serif pairi
 Space Grotesk with Inter. This styling is scoped to Lecture 6. The reference's
 semiconductor content is not imported.
 
+Lecture 6 now states both space definitions before using the four-by-three
+matrix. The column-space example computes b = (1, 3, 5, 7) from x = (2, −1, 0),
+and the nullspace example derives N(A) = span{(1, 1, −1)} by row reduction.
+The schematic input/output map and nullspace line distinguish the ambient
+spaces. Its generated SymPy example uses the same nullspace vector shown on
+the slides, with every code stage executed during generation.
+
 The original four code sections now use native read-only Magic Move sequences:
 combined pages 39, 40, 48 and 97. The two original MATLAB examples retain their
 code, now with the Lecture 3 theme. The two original Python screenshots are replaced
@@ -61,6 +68,14 @@ pages 64 and 69, native SVG geometry, and the click-controlled Manim scene from
 `animations/lecture6_scenes.py`. No editable code editor is present.
 
 ## Issues deliberately left in the originals for review
+
+The live deck has three user-requested changes to the source presentation:
+combined page 15 uses the original PowerPoint render as a still image so all
+three visuals appear together; combined page 33 omits the final “shop 2” line
+from its example block; and combined page 40 changes the title to “Inverse
+Matrice with gauss-jordan method.” The original PowerPoint files and canonical
+source manifests remain unchanged. These live edits are recorded in
+`sources/deck-edits.json`.
 
 - Canva page 7 reverses the verbal dependence definition. The new code correctly
   demonstrates a nonzero dependency relation; the original page remains untouched.
@@ -71,6 +86,10 @@ pages 64 and 69, native SVG geometry, and the click-controlled Manim scene from
   N(A) = {0}.
 - Canva's three blank ending pages remain for later review. Closing Q&A and
   Lecture 5's contact-placeholder/credit pages have been excluded.
+- The workspace-level `Lecture5.pptx` differs from the versioned copy in
+  `public/sources/powerpoint/`. The active deck uses the versioned copy. This
+  duplicate-file mismatch currently stops the full source check; neither file
+  was changed during these slide edits.
 
 ## Fidelity boundaries
 

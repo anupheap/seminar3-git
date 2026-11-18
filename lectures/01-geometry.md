@@ -186,7 +186,7 @@ sourceSlide: 14
 layout: "none"
 lecture: 1
 title: "Lecture 1 · original slide 15"
-clicks: 1
+clicks: 0
 sourceDeck: "Seminar"
 sourceSlide: 15
 ---

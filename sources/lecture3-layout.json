@@ -317,7 +317,7 @@
       ],
       "role": "body",
       "maxScale": 1,
-      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">A : [1 2]</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">B : [5; 7]</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"112.84\">C = 1·5 + 2·7 = 19</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"153.76\">shop 2: 3·5 + 4·7 = 43</text></g>"
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">A : [1 2]</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">B : [5; 7]</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"112.84\">C = 1·5 + 2·7 = 19</text></g>"
     }
   },
   "5": {
@@ -495,7 +495,7 @@
       ],
       "role": "body",
       "maxScale": 1,
-      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"30\">Only exists when the</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"69.6\">matrices is a square and</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"109.2\">the determinant ≠ 0</text></g>"
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"30\">Only exists when the</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"69.6\">matrices is a square and the</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"109.2\">determinant ≠ 0</text></g>"
     },
     "14": {
       "box": [
@@ -927,7 +927,7 @@
       ],
       "role": "heading",
       "maxScale": 1,
-      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Source Serif 4\" font-weight=\"400\" fill=\"#141413\" font-size=\"50\" x=\"0\" y=\"50\">MATLAB demo: multiplication</text></g>"
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Source Serif 4\" font-weight=\"400\" fill=\"#141413\" font-size=\"50\" x=\"0\" y=\"50\">Inverse Matrice with gauss-jordan method</text></g>"
     },
     "4": {
       "box": [
@@ -1046,7 +1046,7 @@
       ],
       "role": "body",
       "maxScale": 1,
-      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">Hill cipher: ciphertext = K·message. Decrypting needs K⁻¹,</text><text fill=\"#141413\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">so a singular key cannot decrypt.</text></g>"
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">Hill cipher: ciphertext = K·message. Decrypting needs K⁻¹, so</text><text fill=\"#141413\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">a singular key cannot decrypt.</text></g>"
     }
   }
 }

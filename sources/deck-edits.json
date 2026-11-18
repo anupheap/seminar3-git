@@ -1,5 +1,22 @@
 {
   "hiddenObjectiveShapes": [1499, 1501],
+  "staticScreenshotSlides": {
+    "Seminar": [15]
+  },
+  "presentationTextEdits": {
+    "Presentation2": {
+      "4": {
+        "18": {
+          "removeLines": ["shop 2: 3·5 + 4·7 = 43"]
+        }
+      },
+      "11": {
+        "12": {
+          "replace": ["Inverse Matrice with gauss-jordan method"]
+        }
+      }
+    }
+  },
   "excludedSourceSlides": {
     "Seminar": [18, 31],
     "Lecture5": [12, 13]

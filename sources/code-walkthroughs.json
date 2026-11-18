@@ -142,10 +142,10 @@
     "language": "python",
     "stages": [
       "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])",
-      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))",
-      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))",
-      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))\n\nx0 = Matrix([1, 0, 0])\nprint(\"A*x0 =\", list(A*x0))",
-      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))\n\nx0 = Matrix([1, 0, 0])\nprint(\"A*x0 =\", list(A*x0))\nprint(\"A*(x0+2*n) =\", list(A*(x0+2*n)))"
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = -A.nullspace()[0]\nprint(\"n =\", list(n))",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = -A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = -A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))\n\nx0 = Matrix([1, 0, 0])\nprint(\"A*x0 =\", list(A*x0))",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = -A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))\n\nx0 = Matrix([1, 0, 0])\nprint(\"A*x0 =\", list(A*x0))\nprint(\"A*(x0+2*n) =\", list(A*(x0+2*n)))"
     ],
     "highlights": [
       "1-5",
@@ -156,10 +156,10 @@
     ],
     "outputs": [
       "",
-      "n = [-1, -1, 1]",
-      "n = [-1, -1, 1]\nA*n = [0, 0, 0, 0]",
-      "n = [-1, -1, 1]\nA*n = [0, 0, 0, 0]\nA*x0 = [1, 2, 3, 4]",
-      "n = [-1, -1, 1]\nA*n = [0, 0, 0, 0]\nA*x0 = [1, 2, 3, 4]\nA*(x0+2*n) = [1, 2, 3, 4]"
+      "n = [1, 1, -1]",
+      "n = [1, 1, -1]\nA*n = [0, 0, 0, 0]",
+      "n = [1, 1, -1]\nA*n = [0, 0, 0, 0]\nA*x0 = [1, 2, 3, 4]",
+      "n = [1, 1, -1]\nA*n = [0, 0, 0, 0]\nA*x0 = [1, 2, 3, 4]\nA*(x0+2*n) = [1, 2, 3, 4]"
     ],
     "outputLines": [
       null,

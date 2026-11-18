@@ -1,4 +1,4 @@
-"""Anthropic-inspired Lecture 3 layouts, preserving the original words and maths."""
+"""Anthropic-inspired Lecture 3 layouts with recorded user text edits."""
 import html,json,re
 from pathlib import Path
 from lxml import etree as ET
@@ -6,6 +6,7 @@ from PIL import ImageFont
 
 ROOT=Path(__file__).resolve().parents[1]
 native=json.loads((ROOT/'sources/lecture3-native.json').read_text(encoding='utf-8'))
+deck_edits=json.loads((ROOT/'sources/deck-edits.json').read_text(encoding='utf-8'))
 pages={}
 
 def obj(n,i):return next(o for o in native['slides'][n-1]['objects'] if o['id']==i)
@@ -22,6 +23,14 @@ def panel(n,i,box):
 def label(n,i,box,max_scale=None):return place(n,i,box,max_scale=max_scale,role='label')
 def text(n,i,box,size,lines=None,family=None,weight=None,role='body',fill='#141413'):
     source=obj(n,i)
+    paragraphs=list(source['paragraphs'])
+    edit=deck_edits.get('presentationTextEdits',{}).get('Presentation2',{}).get(str(n),{}).get(str(i),{})
+    for removed in edit.get('removeLines',[]):
+        assert removed in paragraphs,(n,i,'requested removed line missing from source',removed)
+        paragraphs.remove(removed)
+    if 'replace' in edit:
+        assert paragraphs,(n,i,'requested title source is empty')
+        paragraphs=edit['replace']
     first=next(t for t in ET.fromstring(source['svg'].encode()).iter() if t.tag.endswith('text') and ''.join(t.itertext()).strip())
     attrs={k:v for k,v in first.attrib.items() if k in ['font-family','font-weight','font-style','fill']}
     if family:attrs['font-family']=family
@@ -36,7 +45,7 @@ def text(n,i,box,size,lines=None,family=None,weight=None,role='body',fill='#1414
     except Exception:pass
     if lines is None:
         lines=[]
-        for paragraph in source['paragraphs']:
+        for paragraph in paragraphs:
             if not paragraph.strip():continue
             line=''
             for word in paragraph.split():
@@ -44,8 +53,8 @@ def text(n,i,box,size,lines=None,family=None,weight=None,role='body',fill='#1414
                 if line and font.getlength(candidate)>box[2]-8:lines.append(line);line=word
                 else:line=candidate
             lines.append(line)
-    original=re.sub(r'\s+','', ''.join(source['paragraphs']))
-    assert re.sub(r'\s+','', ''.join(lines))==original,(n,i,'wording changed')
+    intended=re.sub(r'\s+','', ''.join(paragraphs))
+    assert re.sub(r'\s+','', ''.join(lines))==intended,(n,i,'wording changed')
     attr=' '.join(f'{k}="{html.escape(v,quote=True)}"' for k,v in attrs.items())
     svg='<g xmlns="http://www.w3.org/2000/svg">'+''.join(f'<text {attr} x="0" y="{size+j*size*1.32:g}">{html.escape(line)}</text>' for j,line in enumerate(lines))+'</g>'
     item=place(n,i,box,max_scale=1,role=role);item['svg']=svg
@@ -118,4 +127,4 @@ for shape,heading,content,y in [(6,7,16,164),(9,10,11,333),(13,14,15,502)]:
 
 out=ROOT/'sources/lecture3-layout.json'
 out.write_text(json.dumps(pages,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(f'Wrote Anthropic-inspired layouts for {len(pages)} Lecture 3 slides; all text remains verbatim.')
+print(f'Wrote Anthropic-inspired layouts for {len(pages)} Lecture 3 slides with recorded text edits.')

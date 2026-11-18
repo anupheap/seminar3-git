@@ -28,15 +28,15 @@ title: The route through Lecture 6
 
 <div class="l6-head"><div class="l6-eyebrow">The route through the lecture</div>
 
-# Two spaces behind one matrix
+# Define, work, and verify
 
 </div>
 <div class="l6-roadmap">
-<div><span>01</span><h2>Subspaces and linear combinations</h2></div>
-<div><span>02</span><h2>Column space: the outputs we can reach</h2></div>
-<div><span>03</span><h2>Nullspace: the inputs that give zero</h2></div>
+<div><span>01</span><h2>Define the column space and nullspace</h2></div>
+<div><span>02</span><h2>Work both spaces from the same matrix</h2></div>
+<div><span>03</span><h2>Visualize them and verify the results in Python</h2></div>
 </div>
-<div class="l6-band">Follow one matrix from its columns to its nullspace.</div>
+<div class="l6-band">One matrix maps inputs in ℝ³ to outputs in ℝ⁴.</div>
 
 ---
 layout: lecture-six
@@ -60,51 +60,56 @@ A plane through the origin contains every linear combination of its vectors.
 <div v-click="2"><span class="l6-red">Scale by −2:</span> reverse direction and double the length.</div>
 
 </div></div>
-<div class="l6-band">Addition and scaling must keep us inside the same set.</div>
+<div class="l6-band">Column space and nullspace both pass this closure test.</div>
 
 ---
 layout: lecture-six
 lecture: 6
-title: The subspace test
+title: Definitions of column space and nullspace
 ---
 
-<div class="l6-head"><div class="l6-eyebrow">A practical checklist</div>
+<div class="l6-head"><div class="l6-eyebrow">Definitions</div>
 
-# The subspace test
+# Two spaces from one matrix
 
 </div>
-<div class="l6-three">
-<section class="l6-panel"><div class="l6-symbol">0</div><h2>Keep the origin</h2><p>The zero vector belongs to the set.</p></section>
-<section class="l6-panel green"><div class="l6-symbol">+</div><h2>Keep every sum</h2><p>Choose any two vectors in the set. Their sum stays inside.</p></section>
-<section class="l6-panel yellow"><div class="l6-symbol">c ×</div><h2>Keep every multiple</h2><p>Any real scale factor is allowed, including zero and negative values.</p></section>
+<p>Let A be an m × n matrix with columns a₁, …, aₙ.</p>
+<div class="l6-pair l6-definition-pair">
+<section><h2 class="l6-blue">Column space</h2>
+
+$$C(A)=\operatorname{span}\{\mathbf a_1,\ldots,\mathbf a_n\}$$
+
+$$C(A)=\{A\mathbf x:\mathbf x\in\mathbb R^n\}$$
+
+<p>Every output reachable by choosing input weights x. It is a subspace of ℝᵐ.</p></section>
+<section><h2 class="l6-yellow">Nullspace</h2>
+
+$$N(A)=\{\mathbf x\in\mathbb R^n:A\mathbf x=\mathbf 0\}$$
+
+<p>Every input whose columns cancel to zero. It is a subspace of ℝⁿ.</p></section>
 </div>
-<div class="l6-band">Equivalently: u, v ∈ S ⇒ c u + d v ∈ S for every c, d ∈ ℝ.</div>
+<div class="l6-band">Column space answers “Which b can Ax = b reach?” Nullspace answers “Which x gives Ax = 0?”</div>
 
 ---
 layout: lecture-six
 lecture: 6
-title: Combining two subspaces
-clicks: 2
+title: Inputs and outputs live in different spaces
+clicks: 0
 ---
 
-<div class="l6-head"><div class="l6-eyebrow">Union and intersection</div>
+<div class="l6-head"><div class="l6-eyebrow">Map the definitions</div>
 
-# Combining two subspaces
+# Inputs and outputs live in different spaces
 
 </div>
-<div class="l6-split"><div><LectureSixDiagram kind="union" /></div><div>
+<div class="l6-split"><div>
 
-Let **P** be the xy-plane and **L** the z-axis.
+$$A:\mathbb R^3\longrightarrow\mathbb R^4$$
 
-<div v-click="1">
-
-The union **P ∪ L** fails: adding a vector from each can leave both sets.
-
-</div><div v-click="2" class="l6-note">
-
-Here **P ∩ L = {0}**. More generally, intersections of subspaces remain subspaces.
-
-</div></div></div>
+<p><span class="l6-yellow">N(A)</span> is a line of input vectors in ℝ³ for our example. Each point on it maps to zero.</p>
+<p><span class="l6-blue">C(A)</span> is a plane of output vectors inside ℝ⁴. These are the right-hand sides we can reach.</p>
+<div class="l6-note">The drawing shows the map schematically. It does not project ℝ⁴ into literal 3D coordinates.</div>
+</div><div><LectureSixDiagram kind="map" /></div></div>
 
 ---
 layout: lecture-six
@@ -161,34 +166,30 @@ $$\mathbf{x}=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}.$$
 ---
 layout: lecture-six
 lecture: 6
-title: The column space
+title: Column-space example: compute an output
+clicks: 0
 ---
 
-<div class="l6-head"><div class="l6-eyebrow">All weighted column combinations</div>
+<div class="l6-head"><div class="l6-eyebrow">Worked column-space example</div>
 
-# The column space
-
-</div>
-<div class="l6-math-big">
-
-$$
-A\mathbf{x}=x_1\color{#58c4dd}{\mathbf a_1}
-+x_2\color{#83c167}{\mathbf a_2}
-+x_3\color{#f0ac5f}{\mathbf a_3}
-$$
-
-$$C(A)=\{A\mathbf{x}:\mathbf{x}\in\mathbb R^3\}$$
+# Choose weights, then compute b
 
 </div>
-<div class="l6-grid-rule l6-split"><div>
+<div class="l6-split"><div class="l6-math-big">
 
-Take every possible choice of weights. The resulting outputs form **C(A)**.
+$$\mathbf x=\begin{bmatrix}2\\-1\\0\end{bmatrix}$$
 
-</div><div class="l6-small">
+$$A\mathbf x=2\mathbf a_1-\mathbf a_2$$
 
-For a general m × n matrix, C(A) is a subspace of ℝᵐ.
+$$\mathbf b=\begin{bmatrix}1\\3\\5\\7\end{bmatrix}$$
 
+</div><div>
+
+The first two columns combine to make **b**. Thus **b ∈ C(A)**, and **Ax = b** has a solution.
+
+<div class="l6-note">The input is a list of three column weights. The output has four entries because A has four rows.</div>
 </div></div>
+<div class="l6-band">For any x, Ax is a linear combination of the columns of A.</div>
 
 ---
 layout: lecture-six
@@ -344,83 +345,91 @@ $$A\mathbf{x}=\mathbf 0$$
 ---
 layout: lecture-six
 lecture: 6
-title: The nullspace
+title: Nullspace example: a nonzero zero input
 clicks: 1
 ---
 
-<div class="l6-head"><div class="l6-eyebrow">Inputs that cancel the columns</div>
+<div class="l6-head"><div class="l6-eyebrow">Worked nullspace example</div>
 
-# The nullspace
-
-</div>
-<div class="l6-math-big">
-
-$$N(A)=\{\mathbf{x}\in\mathbb R^3:A\mathbf{x}=\mathbf 0\}$$
+# A nonzero input can give zero
 
 </div>
 <div class="l6-split"><div>
 
-Zero is always an input that works.
+The third column is the sum of the first two:
 
-<div v-click="1" class="l6-note">
+$$\mathbf a_3=\mathbf a_1+\mathbf a_2.$$
 
-For this A, a₁ + a₂ − a₃ = 0 also gives a nonzero input.
+<div v-click="1" class="l6-note">Choose weights 1, 1, −1. The three weighted columns cancel.</div>
+</div><div class="l6-math-big" v-click="1">
 
-</div></div><div class="l6-math-big" v-click="1">
+$$\mathbf n=\begin{bmatrix}1\\1\\-1\end{bmatrix}$$
 
-$$A\underbrace{\begin{bmatrix}1\\1\\-1\end{bmatrix}}_{\mathbf n}=\begin{bmatrix}0\\0\\0\\0\end{bmatrix}$$
+$$A\mathbf n=\mathbf a_1+\mathbf a_2-\mathbf a_3$$
+
+$$A\mathbf n=\begin{bmatrix}0\\0\\0\\0\end{bmatrix}$$
 
 </div></div>
+<div class="l6-band">n ≠ 0 and An = 0, so n belongs to N(A).</div>
 
 ---
 layout: lecture-six
 lecture: 6
-title: The nullspace is a line
-clicks: 3
+title: Derive the complete nullspace
+clicks: 0
 ---
 
-<div class="l6-head"><div class="l6-eyebrow">Describe every zero-producing input</div>
+<div class="l6-head"><div class="l6-eyebrow">Solve Ax = 0</div>
 
-# The nullspace is a line
+# Derive the complete nullspace
 
 </div>
-<div class="l6-split"><div>
+<div class="l6-split"><div class="l6-math-big">
+
+$$
+\operatorname{rref}(A)=\begin{bmatrix}
+1&0&1\\0&1&1\\0&0&0\\0&0&0
+\end{bmatrix}
+$$
+
+</div><div>
+
+The pivot equations are **x₁ + x₃ = 0** and **x₂ + x₃ = 0**.
+
+Let **t = −x₃**. Then **x₁ = t**, **x₂ = t**, and **x₃ = −t**.
+
 <div class="l6-math-big">
 
 $$N(A)=\left\{t\begin{bmatrix}1\\1\\-1\end{bmatrix}:t\in\mathbb R\right\}$$
 
 </div>
-
-Every point on this line maps to the same zero vector.
-
-<div class="l6-note">The line includes the origin and extends in both directions.</div>
-</div><div><LectureSixDiagram kind="null" /></div></div>
+</div></div>
+<div class="l6-band">There is one free variable, so the nullspace is a line in ℝ³.</div>
 
 ---
 layout: lecture-six
 lecture: 6
-title: Why the nullspace is a subspace
-clicks: 2
+title: Visualize the nullspace line
+clicks: 3
 ---
 
-<div class="l6-head"><div class="l6-eyebrow">Use linearity</div>
+<div class="l6-head"><div class="l6-eyebrow">Visualize the solution set</div>
 
-# Why N(A) is a subspace
+# The nullspace is a line through zero
+
+</div>
+<div class="l6-split"><div>
+<div class="l6-math-big">
+
+$$\mathbf x=t\mathbf n$$
+
+$$\mathbf n=\begin{bmatrix}1\\1\\-1\end{bmatrix}$$
 
 </div>
 
-Suppose **Av = 0** and **Aw = 0**. Choose any scalars c and d.
-
-<div class="l6-math-big" v-click="1">
-
-$$A(c\mathbf v+d\mathbf w)=cA\mathbf v+dA\mathbf w$$
-
-</div><div class="l6-math-big" v-click="2">
-
-$$=c\mathbf 0+d\mathbf 0=\mathbf 0$$
-
-</div>
-<div class="l6-band">Every linear combination of nullspace inputs remains in the nullspace.</div>
+<p>Click through <strong>t = 0, 1, −1, 2</strong>. Every point stays on the line and satisfies <strong>Ax = 0</strong>.</p>
+<div class="l6-note">The line passes through the origin and extends in both directions.</div>
+</div><div><LectureSixDiagram kind="null" /></div></div>
 
 ---
 layout: lecture-six
@@ -453,7 +462,7 @@ A = Matrix([[1, 1, 2],
             [3, 1, 4],
             [4, 1, 5]])
 
-n = A.nullspace()[0]
+n = -A.nullspace()[0]
 print("n =", list(n))
 ```
 ```python {9}
@@ -463,7 +472,7 @@ A = Matrix([[1, 1, 2],
             [3, 1, 4],
             [4, 1, 5]])
 
-n = A.nullspace()[0]
+n = -A.nullspace()[0]
 print("n =", list(n))
 print("A*n =", list(A*n))
 ```
@@ -474,7 +483,7 @@ A = Matrix([[1, 1, 2],
             [3, 1, 4],
             [4, 1, 5]])
 
-n = A.nullspace()[0]
+n = -A.nullspace()[0]
 print("n =", list(n))
 print("A*n =", list(A*n))
 
@@ -488,7 +497,7 @@ A = Matrix([[1, 1, 2],
             [3, 1, 4],
             [4, 1, 5]])
 
-n = A.nullspace()[0]
+n = -A.nullspace()[0]
 print("n =", list(n))
 print("A*n =", list(A*n))
 
@@ -547,19 +556,25 @@ Adding a nullspace vector leaves the output unchanged.
 ---
 layout: lecture-six
 lecture: 6
-title: Two spaces — one matrix
+title: Column space and nullspace: results
+clicks: 0
 ---
 
-<div class="l6-head"><div class="l6-eyebrow">Bring the two questions together</div>
+<div class="l6-head"><div class="l6-eyebrow">The results for this matrix</div>
 
-# Two spaces, one matrix
+# One matrix, two solution sets
 
 </div>
-<div class="l6-three">
-<section class="l6-panel"><div class="l6-symbol">C(A)</div><h2>Reach the output</h2><p>Ax = b has a solution when b belongs to the column space.</p></section>
-<section class="l6-panel yellow"><div class="l6-symbol">N(A)</div><h2>Find zero inputs</h2><p>The nullspace collects every x whose image under A is zero.</p></section>
-<section class="l6-panel green"><div class="l6-symbol">m × n</div><h2>Track the spaces</h2><p>Inputs have n components. Outputs have m components.</p></section>
-</div>
-<div class="l6-band">A : ℝⁿ → ℝᵐ</div>
+<div class="l6-pair l6-definition-pair">
+<section><h2 class="l6-blue">Column space</h2>
 
-<!-- Reference: MIT OCW 18.06SC Lecture 6 summary, https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/a9361fe289da445a7ca1fe2f88b55ca7_MIT18_06SCF11_Ses1.6sum.pdf . New code and derived b examples are verified in scripts/build-code-walkthroughs.py. The coefficient plot is a schematic parameter view; C(A) belongs to R^4. -->
+$$C(A)=\operatorname{span}\{\mathbf a_1,\mathbf a_2\}$$
+
+<p>a₁ = (1, 2, 3, 4)ᵀ and a₂ = (1, 1, 1, 1)ᵀ. This is a two-dimensional subspace of ℝ⁴ containing (1, 3, 5, 7)ᵀ.</p></section>
+<section><h2 class="l6-yellow">Nullspace</h2>
+
+$$N(A)=\operatorname{span}\{(1,1,-1)^T\}$$
+
+<p>It is a one-dimensional subspace of ℝ³. Every vector on this line maps to zero.</p></section>
+</div>
+<div class="l6-band">Ax = b is solvable exactly when b ∈ C(A); all solutions differ by a vector in N(A).</div>

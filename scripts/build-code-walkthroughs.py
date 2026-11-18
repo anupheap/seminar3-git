@@ -63,7 +63,7 @@ x = Matrix([2, -1, 0])
 print("A*x =", list(A*x))'''
     null=setup+'''
 
-n = A.nullspace()[0]
+n = -A.nullspace()[0]
 print("n =", list(n))
 print("A*n =", list(A*n))
 
@@ -91,6 +91,7 @@ print("A*(x0+2*n) =", list(A*(x0+2*n)))'''
     A=Matrix([[1,1,2],[2,1,3],[3,1,4],[4,1,5]])
     assert A[:,2]==A[:,0]+A[:,1] and A.rank()==2
     assert A*Matrix([1,1,-1])==Matrix.zeros(4,1)
+    assert -A.nullspace()[0]==Matrix([1,1,-1])
     assert A*Matrix([2,-1,0])==Matrix([1,3,5,7])
     assert A*Matrix([1,0,0])==A*(Matrix([1,0,0])+2*A.nullspace()[0])
     (ROOT/'sources/code-walkthroughs.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

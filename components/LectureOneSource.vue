@@ -2,10 +2,12 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useSlideContext } from '@slidev/client'
 import source from '../sources/lecture1-native.json'
+import deckEdits from '../sources/deck-edits.json'
 
 const props = defineProps<{ slide: number }>()
 const { $slidev, $page, $clicks, $renderContext } = useSlideContext()
 const page = computed(() => source.slides.find(item => item.number === props.slide)!)
+const staticScreenshot = computed(() => deckEdits.staticScreenshotSlides.Seminar.includes(props.slide))
 const active = computed(() => $slidev.nav.currentPage === $page.value)
 const step = computed(() => Number($clicks.value) || 0)
 const print = computed(() => $renderContext.value === 'print')
@@ -132,7 +134,8 @@ onBeforeUnmount(() => {
 
 <template>
   <main class="l1-source-slide" :data-source-slide="slide" :data-step="step" :data-run="run" aria-label="Lecture 1, original PowerPoint content">
-    <svg ref="root" class="l1-source-canvas" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <img v-if="staticScreenshot" class="l1-source-still" :src="url(`/sources/slides/Seminar/${slide}.png`)" alt="One equation gives a plane, two equations intersect in a line, and three planes meet at a point" />
+    <svg v-else ref="root" class="l1-source-canvas" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
         <clipPath v-for="effect in wipes" :id="wipeId(effect.shape)" :key="effect.shape" clipPathUnits="userSpaceOnUse">
           <rect v-if="boxes[effect.shape]" v-bind="boxes[effect.shape]" class="l1-source-wipe-window"

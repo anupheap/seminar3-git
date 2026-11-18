@@ -145,6 +145,9 @@ def build(prepare_math=False):
             previous = original['slides'][number - 1]
             entry = {'number': number, 'background': background, 'clicks': previous['clicks'],
                      'objects': [], 'effects': previous['effects']}
+            if number in edits.get('staticScreenshotSlides', {}).get('Seminar', []):
+                entry['clicks'] = 0
+                entry['effects'] = []
             for item in page['objects']:
                 if number == 3 and item['id'] in edits['hiddenObjectiveShapes']:
                     continue
