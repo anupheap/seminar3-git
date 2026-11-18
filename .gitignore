@@ -9,3 +9,4 @@ components.d.ts
 .venv-manim/
 media/
 __pycache__/
+.cache/

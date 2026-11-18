@@ -1,0 +1,20 @@
+.stepped-source-code,.stepped-source-result{position:absolute;z-index:2;box-sizing:border-box;overflow:hidden;border-radius:5px}
+.stepped-source-code{padding:10px;background:#111316;color:#e8e8ea}
+.stepped-source-code .slidev-code-wrapper{height:100%;margin:0!important}
+.stepped-source-code .slidev-code{box-sizing:border-box;width:100%!important;height:100%!important;min-height:0!important;max-height:none!important;margin:0!important;padding:6px!important;background:transparent!important}
+.stepped-source-code pre,.stepped-source-code code{font:15px/1.5 Consolas,monospace!important}
+.stepped-source-code .slidev-code-dishonored,.lecture-six .slidev-code-dishonored{opacity:.65}
+.stepped-source-result{padding:13px;background:#191b1f;color:#e8e8ea}
+.code-walk-output{margin:0!important;padding:0!important;white-space:pre!important;overflow:visible!important;background:transparent!important;font:15px/1.45 Consolas,monospace!important;color:inherit!important}
+.stepped-source-code.walk-matlab,.stepped-source-result.walk-matlab,.stepped-source-code.walk-inverse{background:#c5886a;color:#f5efe3}
+.stepped-source-result.walk-inverse{background:#a65e3a;color:#080808}
+.walk-matlab pre,.walk-matlab code{font-size:24px!important}
+.stepped-source-code.walk-matlab,.stepped-source-result.walk-matlab{display:flex;align-items:center}
+.stepped-source-code.walk-matlab .slidev-code-wrapper,.stepped-source-code.walk-matlab .slidev-code{height:auto!important;width:100%}
+.walk-inverse pre,.walk-inverse code{font-size:16px!important}
+.stepped-source-code.walk-matlab .shiki span,.stepped-source-code.walk-inverse .shiki span{color:#f5efe3!important}
+.stepped-source-code.walk-numpy pre,.stepped-source-code.walk-numpy code{font-size:12px!important;line-height:1.65!important}
+.stepped-source-code.walk-sympy{background:#242538;padding:5px}
+.stepped-source-code.walk-sympy pre,.stepped-source-code.walk-sympy code{font-size:12px!important;line-height:1.35!important}
+.stepped-source-result.walk-sympy{background:#242538;padding:16px}
+.stepped-source-result.walk-sympy pre{font-size:19px!important;line-height:1.6!important}

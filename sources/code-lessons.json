@@ -1,0 +1,326 @@
+[
+  {
+    "lecture": 1,
+    "key": "l1-rows",
+    "title": "Solve the original row picture",
+    "source": "Seminar.pptx, slides 5–6",
+    "scene": "L1Rows",
+    "stages": [
+      {
+        "code": "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\nb = np.array([0., 3.])",
+        "caption": "Enter the two source equations as A and b.",
+        "output": "",
+        "stdout": ""
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\nb = np.array([0., 3.])\nx = np.linalg.solve(A, b)\nprint(\"Intersection:\", x)",
+        "caption": "The rows meet at (1, 2).",
+        "output": "Intersection: [1. 2.]",
+        "stdout": "Intersection: [1. 2.]"
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[2., -1.], [-1., 2.]])\nb = np.array([0., 3.])\nx = np.linalg.solve(A, b)\nprint(\"Intersection:\", x)\nprint(\"A @ x:\", A @ x)\nprint(\"Residual:\", A @ x - b)\nassert np.allclose(x, [1., 2.])\nassert np.allclose(A @ x, b)",
+        "caption": "Substitution verifies both equations.",
+        "output": "A @ x: [0. 3.]\nResidual: [0. 0.]",
+        "stdout": "Intersection: [1. 2.]\nA @ x: [0. 3.]\nResidual: [0. 0.]"
+      }
+    ]
+  },
+  {
+    "lecture": 1,
+    "key": "l1-columns",
+    "title": "Build the original column combination",
+    "source": "Seminar.pptx, slides 8–11",
+    "scene": "L1Columns",
+    "stages": [
+      {
+        "code": "import numpy as np\na1 = np.array([2, -1])\na2 = np.array([-1, 2])",
+        "caption": "Take the exact columns from the source.",
+        "output": "",
+        "stdout": ""
+      },
+      {
+        "code": "import numpy as np\na1 = np.array([2, -1])\na2 = np.array([-1, 2])\nb = a1 + 2 * a2\nprint(\"a1 + 2*a2:\", b)",
+        "caption": "One blue vector plus twice the orange vector reaches b.",
+        "output": "a1 + 2*a2: [0 3]",
+        "stdout": "a1 + 2*a2: [0 3]"
+      },
+      {
+        "code": "import numpy as np\na1 = np.array([2, -1])\na2 = np.array([-1, 2])\nb = a1 + 2 * a2\nprint(\"a1 + 2*a2:\", b)\nA = np.column_stack((a1, a2))\nprint(\"A @ [1, 2]:\", A @ [1, 2])\nassert np.array_equal(b, [0, 3])\nassert np.array_equal(A @ [1, 2], b)",
+        "caption": "The row and column pictures use the same weights.",
+        "output": "A @ [1, 2]: [0 3]",
+        "stdout": "a1 + 2*a2: [0 3]\nA @ [1, 2]: [0 3]"
+      }
+    ]
+  },
+  {
+    "lecture": 1,
+    "key": "l1-3d",
+    "title": "Verify the three-dimensional system",
+    "source": "Seminar.pptx, slides 7 and 12",
+    "scene": "L1ThreePlanes",
+    "stages": [
+      {
+        "code": "import numpy as np\nA = np.array([[2., -1., 0.],\n              [-1., 2., -1.],\n              [0., -3., 4.]])\nb = np.array([0., -1., 4.])",
+        "caption": "The three planes use the source matrix.",
+        "output": "",
+        "stdout": ""
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[2., -1., 0.],\n              [-1., 2., -1.],\n              [0., -3., 4.]])\nb = np.array([0., -1., 4.])\nx = np.linalg.solve(A, b)\nprint(\"Intersection:\", x)",
+        "caption": "All three meet at (0, 0, 1).",
+        "output": "Intersection: [ 0. -0.  1.]",
+        "stdout": "Intersection: [ 0. -0.  1.]"
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[2., -1., 0.],\n              [-1., 2., -1.],\n              [0., -3., 4.]])\nb = np.array([0., -1., 4.])\nx = np.linalg.solve(A, b)\nprint(\"Intersection:\", x)\nprint(\"Third column:\", A[:, 2])\nassert np.allclose(x, [0., 0., 1.])\nassert np.allclose(A @ x, b)\nassert np.allclose(A[:, 2], b)",
+        "caption": "The target is already the third column.",
+        "output": "Third column: [ 0. -1.  4.]",
+        "stdout": "Intersection: [ 0. -0.  1.]\nThird column: [ 0. -1.  4.]"
+      }
+    ]
+  },
+  {
+    "lecture": 2,
+    "key": "l2-elimination",
+    "title": "Eliminate the original augmented matrix",
+    "source": "Seminar.pptx, slides 21–24",
+    "scene": "L2Elimination",
+    "stages": [
+      {
+        "code": "import numpy as np\nAb = np.array([[1., 2., 1., 2.],\n               [3., 8., 1., 12.],\n               [0., 4., 1., 2.]])\nprint(Ab)",
+        "caption": "Start with [A | b] from the PowerPoint.",
+        "output": "[[ 1.  2.  1.  2.]\n [ 3.  8.  1. 12.]\n [ 0.  4.  1.  2.]]",
+        "stdout": "[[ 1.  2.  1.  2.]\n [ 3.  8.  1. 12.]\n [ 0.  4.  1.  2.]]"
+      },
+      {
+        "code": "import numpy as np\nAb = np.array([[1., 2., 1., 2.],\n               [3., 8., 1., 12.],\n               [0., 4., 1., 2.]])\nprint(Ab)\nAb[1] -= 3 * Ab[0]\nprint(\"R2 - 3*R1:\")\nprint(Ab)",
+        "caption": "Clear the entry below the first pivot.",
+        "output": "R2 - 3*R1:\n[[ 1.  2.  1.  2.]\n [ 0.  2. -2.  6.]\n [ 0.  4.  1.  2.]]",
+        "stdout": "[[ 1.  2.  1.  2.]\n [ 3.  8.  1. 12.]\n [ 0.  4.  1.  2.]]\nR2 - 3*R1:\n[[ 1.  2.  1.  2.]\n [ 0.  2. -2.  6.]\n [ 0.  4.  1.  2.]]"
+      },
+      {
+        "code": "import numpy as np\nAb = np.array([[1., 2., 1., 2.],\n               [3., 8., 1., 12.],\n               [0., 4., 1., 2.]])\nprint(Ab)\nAb[1] -= 3 * Ab[0]\nprint(\"R2 - 3*R1:\")\nprint(Ab)\nAb[2] -= 2 * Ab[1]\nprint(\"R3 - 2*R2:\")\nprint(Ab)\nx = np.linalg.solve(Ab[:, :3], Ab[:, 3])\nprint(\"Solution:\", x)\nassert np.allclose(x, [2., 1., -2.])",
+        "caption": "Pivots 1, 2 and 5 give the solution (2, 1, -2).",
+        "output": "R3 - 2*R2:\n[[  1.   2.   1.   2.]\n [  0.   2.  -2.   6.]\n [  0.   0.   5. -10.]]\nSolution: [ 2.  1. -2.]",
+        "stdout": "[[ 1.  2.  1.  2.]\n [ 3.  8.  1. 12.]\n [ 0.  4.  1.  2.]]\nR2 - 3*R1:\n[[ 1.  2.  1.  2.]\n [ 0.  2. -2.  6.]\n [ 0.  4.  1.  2.]]\nR3 - 2*R2:\n[[  1.   2.   1.   2.]\n [  0.   2.  -2.   6.]\n [  0.   0.   5. -10.]]\nSolution: [ 2.  1. -2.]"
+      }
+    ]
+  },
+  {
+    "lecture": 2,
+    "key": "l2-failure",
+    "title": "Check the original failure case",
+    "source": "Seminar.pptx, slide 23",
+    "scene": null,
+    "stages": [
+      {
+        "code": "import numpy as np\nAb = np.array([[1., 2., 1., 2.],\n               [3., 8., 1., 12.],\n               [0., 4., -4., 2.]])",
+        "caption": "The changed last equation is 4y - 4z = 2.",
+        "output": "",
+        "stdout": ""
+      },
+      {
+        "code": "import numpy as np\nAb = np.array([[1., 2., 1., 2.],\n               [3., 8., 1., 12.],\n               [0., 4., -4., 2.]])\nAb[1] -= 3 * Ab[0]\nAb[2] -= 2 * Ab[1]\nprint(\"Last row:\", Ab[2])",
+        "caption": "Apply the same row operations.",
+        "output": "Last row: [  0.   0.   0. -10.]",
+        "stdout": "Last row: [  0.   0.   0. -10.]"
+      },
+      {
+        "code": "import numpy as np\nAb = np.array([[1., 2., 1., 2.],\n               [3., 8., 1., 12.],\n               [0., 4., -4., 2.]])\nAb[1] -= 3 * Ab[0]\nAb[2] -= 2 * Ab[1]\nprint(\"Last row:\", Ab[2])\nassert np.allclose(Ab[2], [0, 0, 0, -10])\nprint(\"0 = -10: no solution\")",
+        "caption": "The contradiction proves inconsistency.",
+        "output": "0 = -10: no solution",
+        "stdout": "Last row: [  0.   0.   0. -10.]\n0 = -10: no solution"
+      }
+    ]
+  },
+  {
+    "lecture": 3,
+    "key": "l3-products",
+    "title": "Compute all four multiplication views",
+    "source": "Presentation2.pptx, slides 3–6 and 10",
+    "scene": "L3Products",
+    "stages": [
+      {
+        "code": "import numpy as np\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\nC = A @ B\nprint(C)",
+        "caption": "Entries are row-column dot products.",
+        "output": "[[19 22]\n [43 50]]",
+        "stdout": "[[19 22]\n [43 50]]"
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\nC = A @ B\nprint(C)\ncolumns = np.column_stack([A @ B[:, j]\n                           for j in range(2)])\nrows = np.vstack([A[i, :] @ B\n                  for i in range(2)])\nassert np.array_equal(columns, C)\nassert np.array_equal(rows, C)",
+        "caption": "Computing by rows or columns gives the same C.",
+        "output": "",
+        "stdout": "[[19 22]\n [43 50]]"
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\nC = A @ B\nprint(C)\ncolumns = np.column_stack([A @ B[:, j]\n                           for j in range(2)])\nrows = np.vstack([A[i, :] @ B\n                  for i in range(2)])\nassert np.array_equal(columns, C)\nassert np.array_equal(rows, C)\nouter = sum(np.outer(A[:, k], B[k, :])\n            for k in range(2))\nprint(\"Outer-product sum:\")\nprint(outer)\nassert np.array_equal(outer, [[19, 22], [43, 50]])",
+        "caption": "The sum of column-times-row pieces also gives C.",
+        "output": "Outer-product sum:\n[[19 22]\n [43 50]]",
+        "stdout": "[[19 22]\n [43 50]]\nOuter-product sum:\n[[19 22]\n [43 50]]"
+      }
+    ]
+  },
+  {
+    "lecture": 3,
+    "key": "l3-inverse",
+    "title": "Follow the source Gauss–Jordan steps",
+    "source": "Presentation2.pptx, slides 8–11",
+    "scene": "L3Inverse",
+    "stages": [
+      {
+        "code": "import numpy as np\nA = np.array([[1., 3.], [2., 5.]])\naug = np.column_stack((A, np.eye(2)))\nprint(aug)",
+        "caption": "Write [A | I] using the source matrix.",
+        "output": "[[1. 3. 1. 0.]\n [2. 5. 0. 1.]]",
+        "stdout": "[[1. 3. 1. 0.]\n [2. 5. 0. 1.]]"
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[1., 3.], [2., 5.]])\naug = np.column_stack((A, np.eye(2)))\nprint(aug)\naug[1] -= 2 * aug[0]\naug[1] *= -1\nprint(aug)",
+        "caption": "Clear and normalize the second pivot.",
+        "output": "[[ 1.  3.  1.  0.]\n [-0.  1.  2. -1.]]",
+        "stdout": "[[1. 3. 1. 0.]\n [2. 5. 0. 1.]]\n[[ 1.  3.  1.  0.]\n [-0.  1.  2. -1.]]"
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[1., 3.], [2., 5.]])\naug = np.column_stack((A, np.eye(2)))\nprint(aug)\naug[1] -= 2 * aug[0]\naug[1] *= -1\nprint(aug)\naug[0] -= 3 * aug[1]\nAinv = aug[:, 2:]\nprint(\"Inverse:\")\nprint(Ainv)\nassert np.allclose(Ainv, [[-5, 3], [2, -1]])\nassert np.allclose(A @ Ainv, np.eye(2))",
+        "caption": "The right half is the inverse when the left half is I.",
+        "output": "Inverse:\n[[-5.  3.]\n [ 2. -1.]]",
+        "stdout": "[[1. 3. 1. 0.]\n [2. 5. 0. 1.]]\n[[ 1.  3.  1.  0.]\n [-0.  1.  2. -1.]]\nInverse:\n[[-5.  3.]\n [ 2. -1.]]"
+      }
+    ]
+  },
+  {
+    "lecture": 5,
+    "key": "l5-permutation",
+    "title": "Verify the original PA = LU",
+    "source": "Lecture5.pptx, slides 3–4",
+    "scene": "L5Permutation",
+    "stages": [
+      {
+        "code": "import numpy as np\nA = np.array([[0, 1, 2],\n              [1, 2, 3],\n              [2, 6, 9]])\nP = np.eye(3, dtype=int)[[1, 0, 2]]",
+        "caption": "The first pivot is zero.",
+        "output": "",
+        "stdout": ""
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[0, 1, 2],\n              [1, 2, 3],\n              [2, 6, 9]])\nP = np.eye(3, dtype=int)[[1, 0, 2]]\nPA = P @ A\nprint(\"After swapping rows:\")\nprint(PA)",
+        "caption": "P swaps the first two rows.",
+        "output": "After swapping rows:\n[[1 2 3]\n [0 1 2]\n [2 6 9]]",
+        "stdout": "After swapping rows:\n[[1 2 3]\n [0 1 2]\n [2 6 9]]"
+      },
+      {
+        "code": "import numpy as np\nA = np.array([[0, 1, 2],\n              [1, 2, 3],\n              [2, 6, 9]])\nP = np.eye(3, dtype=int)[[1, 0, 2]]\nPA = P @ A\nprint(\"After swapping rows:\")\nprint(PA)\nL = np.array([[1, 0, 0], [0, 1, 0], [2, 2, 1]])\nU = np.array([[1, 2, 3], [0, 1, 2], [0, 0, -1]])\nprint(\"PA = LU:\", np.array_equal(PA, L @ U))\nassert np.array_equal(PA, L @ U)\nassert np.array_equal(P.T @ P, np.eye(3))",
+        "caption": "The source factors reproduce the permuted matrix.",
+        "output": "PA = LU: True",
+        "stdout": "After swapping rows:\n[[1 2 3]\n [0 1 2]\n [2 6 9]]\nPA = LU: True"
+      }
+    ]
+  },
+  {
+    "lecture": 5,
+    "key": "l5-symmetry",
+    "title": "Run the original symmetry example",
+    "source": "Lecture5.pptx, slides 6–7",
+    "scene": "L5Symmetry",
+    "stages": [
+      {
+        "code": "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)\nprint(\"R transpose:\")\nprint(R.T)",
+        "caption": "The transpose exchanges rows and columns.",
+        "output": "R transpose:\n[[1. 3. 0.]\n [2. 0. 4.]]",
+        "stdout": "R transpose:\n[[1. 3. 0.]\n [2. 0. 4.]]"
+      },
+      {
+        "code": "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)\nprint(\"R transpose:\")\nprint(R.T)\nG = R.T @ R\nprint(\"R.T @ R:\")\nprint(G)",
+        "caption": "Multiply the exact R from the source.",
+        "output": "R.T @ R:\n[[10.  2.]\n [ 2. 20.]]",
+        "stdout": "R transpose:\n[[1. 3. 0.]\n [2. 0. 4.]]\nR.T @ R:\n[[10.  2.]\n [ 2. 20.]]"
+      },
+      {
+        "code": "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)\nprint(\"R transpose:\")\nprint(R.T)\nG = R.T @ R\nprint(\"R.T @ R:\")\nprint(G)\nprint(\"Symmetric:\", np.allclose(G, G.T))\nassert np.allclose(G, [[10, 2], [2, 20]])\nassert np.allclose(G, G.T)",
+        "caption": "Matching off-diagonal entries confirm symmetry.",
+        "output": "Symmetric: True",
+        "stdout": "R transpose:\n[[1. 3. 0.]\n [2. 0. 4.]]\nR.T @ R:\n[[10.  2.]\n [ 2. 20.]]\nSymmetric: True"
+      }
+    ]
+  },
+  {
+    "lecture": 5,
+    "key": "l5-column-space",
+    "title": "Test the source column space",
+    "source": "Lecture5.pptx, slides 8–11, using R from slides 6–7",
+    "scene": "L5ColumnSpace",
+    "stages": [
+      {
+        "code": "from sympy import Matrix\nR = Matrix([[1, 2], [3, 0], [0, 4]])\nprint(\"Basis:\", R.columnspace())",
+        "caption": "Use the source R to illustrate C(R).",
+        "output": "Basis: [Matrix([\n[1],\n[3],\n[0]]), Matrix([\n[2],\n[0],\n[4]])]",
+        "stdout": "Basis: [Matrix([\n[1],\n[3],\n[0]]), Matrix([\n[2],\n[0],\n[4]])]"
+      },
+      {
+        "code": "from sympy import Matrix\nR = Matrix([[1, 2], [3, 0], [0, 4]])\nprint(\"Basis:\", R.columnspace())\nu, v = R[:, 0], R[:, 1]\nb = u + 2*v\nprint(\"A combination:\", b.T)\nassert b == Matrix([5, 3, 8])",
+        "caption": "Combinations stay inside its column space.",
+        "output": "A combination: Matrix([[5, 3, 8]])",
+        "stdout": "Basis: [Matrix([\n[1],\n[3],\n[0]]), Matrix([\n[2],\n[0],\n[4]])]\nA combination: Matrix([[5, 3, 8]])"
+      },
+      {
+        "code": "from sympy import Matrix\nR = Matrix([[1, 2], [3, 0], [0, 4]])\nprint(\"Basis:\", R.columnspace())\nu, v = R[:, 0], R[:, 1]\nb = u + 2*v\nprint(\"A combination:\", b.T)\nassert b == Matrix([5, 3, 8])\nprint(\"Rank:\", R.rank())\nprint(\"Contains zero:\", R * Matrix([0, 0]) == Matrix.zeros(3, 1))\nassert R.row_join(b).rank() == R.rank()\nassert R.rank() == 2",
+        "caption": "Two independent columns span a plane through zero.",
+        "output": "Rank: 2\nContains zero: True",
+        "stdout": "Basis: [Matrix([\n[1],\n[3],\n[0]]), Matrix([\n[2],\n[0],\n[4]])]\nA combination: Matrix([[5, 3, 8]])\nRank: 2\nContains zero: True"
+      }
+    ]
+  },
+  {
+    "lecture": 9,
+    "key": "l9-dependence",
+    "title": "Run the Canva dependence example",
+    "source": "Canva Lecture 9, pages 10–19 and 25",
+    "scene": "L9Dependence",
+    "stages": [
+      {
+        "code": "from sympy import Matrix\nA = Matrix([[3, 4, 7], [2, 7, 9], [5, 2, 7]])\nn_vectors = A.shape[1]\nprint(\"Number of vectors:\", n_vectors)",
+        "caption": "These are the three columns displayed in Canva.",
+        "output": "Number of vectors: 3",
+        "stdout": "Number of vectors: 3"
+      },
+      {
+        "code": "from sympy import Matrix\nA = Matrix([[3, 4, 7], [2, 7, 9], [5, 2, 7]])\nn_vectors = A.shape[1]\nprint(\"Number of vectors:\", n_vectors)\nrank = A.rank()\nprint(\"Rank:\", rank)\nprint(\"Linearly independent?\", rank == n_vectors)",
+        "caption": "Rank two means the three columns are dependent.",
+        "output": "Rank: 2\nLinearly independent? False",
+        "stdout": "Number of vectors: 3\nRank: 2\nLinearly independent? False"
+      },
+      {
+        "code": "from sympy import Matrix\nA = Matrix([[3, 4, 7], [2, 7, 9], [5, 2, 7]])\nn_vectors = A.shape[1]\nprint(\"Number of vectors:\", n_vectors)\nrank = A.rank()\nprint(\"Rank:\", rank)\nprint(\"Linearly independent?\", rank == n_vectors)\nrelation = Matrix([-1, -1, 1])\nprint(\"A @ relation:\", (A * relation).T)\nassert A[:, 2] == A[:, 0] + A[:, 1]\nassert A * relation == Matrix.zeros(3, 1)\nassert rank == 2",
+        "caption": "The third column is the sum of the first two.",
+        "output": "A @ relation: Matrix([[0, 0, 0]])",
+        "stdout": "Number of vectors: 3\nRank: 2\nLinearly independent? False\nA @ relation: Matrix([[0, 0, 0]])"
+      }
+    ]
+  },
+  {
+    "lecture": 9,
+    "key": "l9-basis",
+    "title": "Find the source basis and dimensions",
+    "source": "Canva Lecture 9, pages 14–24 and 26",
+    "scene": "L9Basis",
+    "stages": [
+      {
+        "code": "from sympy import Matrix\nA = Matrix([[3, 4, 7], [2, 7, 9], [5, 2, 7]])\nreduced, pivots = A.rref()\nprint(\"RREF:\")\nprint(reduced)",
+        "caption": "Row reduction identifies the pivot positions.",
+        "output": "RREF:\nMatrix([[1, 0, 1], [0, 1, 1], [0, 0, 0]])",
+        "stdout": "RREF:\nMatrix([[1, 0, 1], [0, 1, 1], [0, 0, 0]])"
+      },
+      {
+        "code": "from sympy import Matrix\nA = Matrix([[3, 4, 7], [2, 7, 9], [5, 2, 7]])\nreduced, pivots = A.rref()\nprint(\"RREF:\")\nprint(reduced)\nbasis = [A[:, j] for j in pivots]\nprint(\"Pivot columns:\", pivots)\nprint(\"Column-space basis:\", basis)",
+        "caption": "Take basis columns from the original A.",
+        "output": "Pivot columns: (0, 1)\nColumn-space basis: [Matrix([\n[3],\n[2],\n[5]]), Matrix([\n[4],\n[7],\n[2]])]",
+        "stdout": "RREF:\nMatrix([[1, 0, 1], [0, 1, 1], [0, 0, 0]])\nPivot columns: (0, 1)\nColumn-space basis: [Matrix([\n[3],\n[2],\n[5]]), Matrix([\n[4],\n[7],\n[2]])]"
+      },
+      {
+        "code": "from sympy import Matrix\nA = Matrix([[3, 4, 7], [2, 7, 9], [5, 2, 7]])\nreduced, pivots = A.rref()\nprint(\"RREF:\")\nprint(reduced)\nbasis = [A[:, j] for j in pivots]\nprint(\"Pivot columns:\", pivots)\nprint(\"Column-space basis:\", basis)\nrank, nullity = A.rank(), len(A.nullspace())\nprint(\"Dimensions:\", rank, nullity)\nassert (rank, nullity) == (2, 1)\nassert rank + nullity == A.cols",
+        "caption": "The column space has dimension 2 and the nullspace dimension 1.",
+        "output": "Dimensions: 2 1",
+        "stdout": "RREF:\nMatrix([[1, 0, 1], [0, 1, 1], [0, 0, 0]])\nPivot columns: (0, 1)\nColumn-space basis: [Matrix([\n[3],\n[2],\n[5]]), Matrix([\n[4],\n[7],\n[2]])]\nDimensions: 2 1"
+      }
+    ]
+  }
+]

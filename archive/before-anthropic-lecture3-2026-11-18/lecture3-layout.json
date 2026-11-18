@@ -1,0 +1,916 @@
+{
+  "1": {
+    "-100013": {
+      "box": [
+        0,
+        158,
+        1280,
+        0.5
+      ],
+      "stretch": true
+    },
+    "10": {
+      "box": [
+        56,
+        212,
+        1168,
+        40
+      ],
+      "maxScale": 1.5
+    },
+    "11": {
+      "box": [
+        56,
+        304,
+        1168,
+        235
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#433832\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"92\" x=\"0\" y=\"92\">Matrix Multiplication</text><text fill=\"#433832\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"92\" x=\"0\" y=\"213.44\">&amp; Inverses</text></g>"
+    },
+    "13": {
+      "box": [
+        56,
+        643,
+        1168,
+        28
+      ],
+      "maxScale": 1.45
+    }
+  },
+  "2": {
+    "19": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "20": {
+      "box": [
+        56,
+        170,
+        1168,
+        145
+      ],
+      "stretch": true
+    },
+    "21": {
+      "box": [
+        88,
+        218,
+        1104,
+        76
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"34\">1. Showing 4 different ways of matrices multiplication</text></g>"
+    },
+    "22": {
+      "box": [
+        56,
+        339,
+        1168,
+        145
+      ],
+      "stretch": true
+    },
+    "25": {
+      "box": [
+        88,
+        387,
+        1104,
+        76
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"34\">2.Inverse matrices</text></g>"
+    },
+    "24": {
+      "box": [
+        56,
+        508,
+        1168,
+        145
+      ],
+      "stretch": true
+    },
+    "26": {
+      "box": [
+        88,
+        556,
+        1104,
+        76
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"34\">3. Application</text></g>"
+    }
+  },
+  "3": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "3": {
+      "box": [
+        56,
+        132,
+        1168,
+        38
+      ],
+      "maxScale": 1.35
+    },
+    "4": {
+      "box": [
+        56,
+        204,
+        572,
+        210
+      ],
+      "stretch": true
+    },
+    "5": {
+      "box": [
+        88,
+        280,
+        508,
+        66
+      ],
+      "maxScale": 1.7
+    },
+    "7": {
+      "box": [
+        652,
+        204,
+        572,
+        210
+      ],
+      "stretch": true
+    },
+    "8": {
+      "box": [
+        684,
+        280,
+        508,
+        66
+      ],
+      "maxScale": 1.7
+    },
+    "10": {
+      "box": [
+        56,
+        438,
+        572,
+        210
+      ],
+      "stretch": true
+    },
+    "11": {
+      "box": [
+        88,
+        514,
+        508,
+        66
+      ],
+      "maxScale": 1.7
+    },
+    "13": {
+      "box": [
+        652,
+        438,
+        572,
+        210
+      ],
+      "stretch": true
+    },
+    "14": {
+      "box": [
+        684,
+        514,
+        508,
+        66
+      ],
+      "maxScale": 1.7
+    }
+  },
+  "4": {
+    "6": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "21": {
+      "box": [
+        56,
+        162,
+        670,
+        238
+      ],
+      "stretch": true
+    },
+    "22": {
+      "box": [
+        84,
+        190,
+        614,
+        186
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"32\" x=\"0\" y=\"32\">the number of columns in the first matrix (A)</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"32\" x=\"0\" y=\"74.24\">must be equal to the number of rows in the</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"32\" x=\"0\" y=\"116.48\">second matrix (B)</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"32\" x=\"0\" y=\"158.72\">A: m × n</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"32\" x=\"0\" y=\"200.96\">B: n × p</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"32\" x=\"0\" y=\"243.2\">C: m × p</text></g>"
+    },
+    "9": {
+      "box": [
+        758,
+        162,
+        466,
+        238
+      ],
+      "stretch": true
+    },
+    "19": {
+      "box": [
+        790,
+        197,
+        402,
+        166
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"30\" x=\"0\" y=\"30\">Each entry of C = AB is a dot</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"30\" x=\"0\" y=\"69.6\">product:</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"30\" x=\"0\" y=\"109.2\">c_ij = (row i of A) · (col j of B)</text></g>"
+    },
+    "20": {
+      "box": [
+        56,
+        430,
+        1168,
+        228
+      ],
+      "stretch": true
+    },
+    "17": {
+      "box": [
+        88,
+        455,
+        1076,
+        36
+      ],
+      "maxScale": 1.45
+    },
+    "18": {
+      "box": [
+        88,
+        506,
+        1076,
+        148
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">A : [1 2]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">B : [5; 7]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"112.84\">C = 1·5 + 2·7 = 19</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"153.76\">shop 2: 3·5 + 4·7 = 43</text></g>"
+    }
+  },
+  "5": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "3": {
+      "box": [
+        56,
+        162,
+        1168,
+        225
+      ],
+      "stretch": true
+    },
+    "5": {
+      "box": [
+        88,
+        190,
+        1104,
+        169
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"34\">Each column of C is A times the matching column of B, so it is a linear</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"78.88\">combination of the columns of A.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"123.76\">Each row of C is the matching row of A times B, a linear combination of the rows</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"168.64\">of B.</text></g>"
+    },
+    "12": {
+      "box": [
+        56,
+        417,
+        1168,
+        240
+      ],
+      "stretch": true
+    },
+    "14": {
+      "box": [
+        88,
+        440,
+        1104,
+        35
+      ],
+      "maxScale": 1.45
+    },
+    "10": {
+      "box": [
+        88,
+        487,
+        1104,
+        154
+      ],
+      "maxScale": 1.38
+    },
+    "24": {
+      "box": [
+        104,
+        503,
+        1104,
+        138
+      ],
+      "maxScale": 1.24
+    }
+  },
+  "6": {
+    "4": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "6": {
+      "box": [
+        56,
+        162,
+        1168,
+        225
+      ],
+      "stretch": true
+    },
+    "7": {
+      "box": [
+        88,
+        190,
+        1104,
+        169
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"35\" x=\"0\" y=\"35\">take a row from the first matrix and a column from the second matrix, multiply</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"35\" x=\"0\" y=\"81.2\">their corresponding numbers together, and then add those products up.</text></g>"
+    },
+    "18": {
+      "box": [
+        56,
+        417,
+        1168,
+        240
+      ],
+      "stretch": true
+    },
+    "11": {
+      "box": [
+        88,
+        443,
+        1104,
+        36
+      ],
+      "maxScale": 1.5
+    },
+    "13": {
+      "box": [
+        88,
+        501,
+        1104,
+        136
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"34\">A : [ 1; 2; 3]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"78.88\">B : [1 3 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"34\" x=\"0\" y=\"123.76\">AB =[ 1 3; 2 6; 3 9]</text></g>"
+    }
+  },
+  "7": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "3": {
+      "box": [
+        56,
+        164,
+        455,
+        504
+      ],
+      "stretch": true
+    },
+    "4": {
+      "box": [
+        84,
+        192,
+        399,
+        180
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"30\" x=\"0\" y=\"30\">Only exists when the matrices is</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"30\" x=\"0\" y=\"69.6\">a square and the determinant ≠</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"30\" x=\"0\" y=\"109.2\">0</text></g>"
+    },
+    "14": {
+      "box": [
+        84,
+        430,
+        399,
+        185
+      ],
+      "maxScale": 2
+    },
+    "6": {
+      "box": [
+        543,
+        164,
+        681,
+        504
+      ],
+      "stretch": true
+    },
+    "7": {
+      "box": [
+        575,
+        192,
+        617,
+        42
+      ],
+      "maxScale": 1.5
+    },
+    "8": {
+      "box": [
+        575,
+        275,
+        617,
+        58
+      ],
+      "maxScale": 1.6
+    },
+    "18": {
+      "box": [
+        575,
+        365,
+        617,
+        70
+      ],
+      "maxScale": 1.4
+    },
+    "20": {
+      "box": [
+        575,
+        482,
+        617,
+        130
+      ],
+      "maxScale": 1.6
+    }
+  },
+  "8": {
+    "9": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "11": {
+      "box": [
+        56,
+        186,
+        374,
+        440
+      ],
+      "stretch": true
+    },
+    "12": {
+      "box": [
+        84,
+        218,
+        318,
+        56
+      ],
+      "maxScale": 1.6
+    },
+    "13": {
+      "box": [
+        84,
+        344,
+        318,
+        210
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"34\" x=\"0\" y=\"34\">[ A | I ]</text></g>"
+    },
+    "15": {
+      "box": [
+        453,
+        186,
+        374,
+        440
+      ],
+      "stretch": true
+    },
+    "16": {
+      "box": [
+        481,
+        218,
+        318,
+        56
+      ],
+      "maxScale": 1.6
+    },
+    "17": {
+      "box": [
+        481,
+        344,
+        318,
+        210
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"34\" x=\"0\" y=\"34\">Eliminate up and down</text></g>"
+    },
+    "19": {
+      "box": [
+        850,
+        186,
+        374,
+        440
+      ],
+      "stretch": true
+    },
+    "21": {
+      "box": [
+        878,
+        218,
+        318,
+        56
+      ],
+      "maxScale": 1.6
+    },
+    "22": {
+      "box": [
+        878,
+        344,
+        318,
+        210
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"34\" x=\"0\" y=\"34\">[ I | A⁻¹ ]</text></g>"
+    }
+  },
+  "9": {
+    "9": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "5": {
+      "box": [
+        56,
+        164,
+        374,
+        504
+      ],
+      "stretch": true
+    },
+    "18": {
+      "box": [
+        453,
+        164,
+        374,
+        504
+      ],
+      "stretch": true
+    },
+    "29": {
+      "box": [
+        850,
+        164,
+        374,
+        504
+      ],
+      "stretch": true
+    },
+    "6": {
+      "box": [
+        88,
+        192,
+        310,
+        45
+      ],
+      "maxScale": 1.25
+    },
+    "20": {
+      "box": [
+        485,
+        192,
+        310,
+        45
+      ],
+      "maxScale": 1.25
+    },
+    "30": {
+      "box": [
+        882,
+        192,
+        310,
+        45
+      ],
+      "maxScale": 1.25
+    },
+    "7": {
+      "box": [
+        88,
+        253,
+        310,
+        42
+      ],
+      "maxScale": 1.2
+    },
+    "8": {
+      "box": [
+        88,
+        312,
+        310,
+        100
+      ],
+      "maxScale": 1.2
+    },
+    "10": {
+      "box": [
+        88,
+        433,
+        310,
+        42
+      ],
+      "maxScale": 1.2
+    },
+    "14": {
+      "box": [
+        88,
+        505,
+        310,
+        120
+      ],
+      "maxScale": 1.2
+    },
+    "23": {
+      "box": [
+        485,
+        259,
+        310,
+        37
+      ],
+      "maxScale": 1.2
+    },
+    "24": {
+      "box": [
+        485,
+        309,
+        310,
+        72
+      ],
+      "maxScale": 1.2
+    },
+    "25": {
+      "box": [
+        485,
+        397,
+        310,
+        37
+      ],
+      "maxScale": 1.2
+    },
+    "26": {
+      "box": [
+        485,
+        445,
+        310,
+        72
+      ],
+      "maxScale": 1.2
+    },
+    "27": {
+      "box": [
+        485,
+        533,
+        310,
+        37
+      ],
+      "maxScale": 1.2
+    },
+    "28": {
+      "box": [
+        485,
+        580,
+        310,
+        70
+      ],
+      "maxScale": 1.2
+    },
+    "31": {
+      "box": [
+        882,
+        253,
+        310,
+        100
+      ],
+      "maxScale": 1.2
+    },
+    "32": {
+      "box": [
+        882,
+        376,
+        310,
+        42
+      ],
+      "maxScale": 1.2
+    },
+    "33": {
+      "box": [
+        882,
+        444,
+        310,
+        130
+      ],
+      "maxScale": 1.2
+    },
+    "34": {
+      "box": [
+        882,
+        602,
+        310,
+        43
+      ],
+      "maxScale": 1.2
+    }
+  },
+  "10": {
+    "12": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "17": {
+      "box": [
+        550,
+        334,
+        180,
+        40
+      ],
+      "maxScale": 1.2
+    },
+    "19": {
+      "box": [
+        526,
+        402,
+        228,
+        62
+      ],
+      "maxScale": 1.3
+    }
+  },
+  "11": {
+    "12": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "4": {
+      "box": [
+        613,
+        390,
+        54,
+        34
+      ],
+      "maxScale": 1.25
+    }
+  },
+  "12": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        64
+      ],
+      "maxScale": 1.14
+    },
+    "6": {
+      "box": [
+        56,
+        164,
+        1168,
+        150
+      ],
+      "stretch": true
+    },
+    "7": {
+      "box": [
+        88,
+        189,
+        250,
+        48
+      ],
+      "maxScale": 1.6
+    },
+    "16": {
+      "box": [
+        362,
+        189,
+        830,
+        110
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">Layers in neural networks multiply input feature vectors by</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">massive weight matrices followed by non-linear activations.</text></g>"
+    },
+    "9": {
+      "box": [
+        56,
+        333,
+        1168,
+        150
+      ],
+      "stretch": true
+    },
+    "10": {
+      "box": [
+        88,
+        358,
+        250,
+        48
+      ],
+      "maxScale": 1.6
+    },
+    "11": {
+      "box": [
+        362,
+        358,
+        830,
+        110
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">Transforms 3D coordinates (rotation, scaling and projection) by</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">multiplying vectors (points in space) with transformation matrices</text></g>"
+    },
+    "13": {
+      "box": [
+        56,
+        502,
+        1168,
+        150
+      ],
+      "stretch": true
+    },
+    "14": {
+      "box": [
+        88,
+        527,
+        250,
+        48
+      ],
+      "maxScale": 1.6
+    },
+    "15": {
+      "box": [
+        362,
+        527,
+        830,
+        110
+      ],
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#2B3447\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">Hill cipher: ciphertext = K·message. Decrypting needs K⁻¹, so a</text><text fill=\"#2B3447\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">singular key cannot decrypt.</text></g>"
+    }
+  }
+}

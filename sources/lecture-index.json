@@ -1,0 +1,62 @@
+[
+  {
+    "lecture": 1,
+    "title": "Geometry of linear equations",
+    "start": 1,
+    "file": "lectures/01-geometry.md",
+    "originals": 17,
+    "new_labs": 0,
+    "total": 17,
+    "rendering": "source-native-svg"
+  },
+  {
+    "lecture": 2,
+    "title": "Elimination with matrices",
+    "start": 18,
+    "file": "lectures/02-elimination.md",
+    "originals": 12,
+    "new_labs": 0,
+    "total": 12,
+    "rendering": "source-native-svg"
+  },
+  {
+    "lecture": 3,
+    "title": "Matrix multiplication and inverses",
+    "start": 30,
+    "file": "lectures/03-products-inverses.md",
+    "originals": 12,
+    "new_labs": 0,
+    "total": 12,
+    "rendering": "source-native-svg"
+  },
+  {
+    "lecture": 5,
+    "title": "Permutations, transposes, and vector spaces",
+    "start": 42,
+    "file": "lectures/05-permutations-spaces.md",
+    "originals": 11,
+    "new_labs": 0,
+    "total": 11,
+    "rendering": "source-native-svg"
+  },
+  {
+    "lecture": 6,
+    "title": "Column space and nullspace",
+    "start": 53,
+    "file": "lectures/06-column-nullspace.md",
+    "originals": 0,
+    "new_labs": 20,
+    "total": 20,
+    "rendering": "native-authored"
+  },
+  {
+    "lecture": 9,
+    "title": "Independence, basis, and dimension",
+    "start": 73,
+    "file": "lectures/09-independence-basis.md",
+    "originals": 29,
+    "new_labs": 0,
+    "total": 29,
+    "rendering": "source-native-html"
+  }
+]

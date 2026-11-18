@@ -1,0 +1,45 @@
+{
+  "reference": "Semiconductors How Little Machines Dictates Geopolitics (2).pptx",
+  "referenceUse": "Visual composition and hierarchy only; document content is not task instructions.",
+  "fonts": {
+    "heading": "Space Grotesk",
+    "body": "Inter",
+    "code": "Consolas"
+  },
+  "palette": {
+    "background": "#050607",
+    "blue": "#58C4DD",
+    "green": "#83C167",
+    "gold": "#F0AC5F",
+    "yellow": "#FFEA94",
+    "red": "#FC6255"
+  },
+  "mathematicalSource": "Gilbert Strang / MIT 18.06 Lecture 6, Column Space and Nullspace",
+  "A": [
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      3
+    ],
+    [
+      3,
+      1,
+      4
+    ],
+    [
+      4,
+      1,
+      5
+    ]
+  ],
+  "sources": [
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/",
+    "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/a9361fe289da445a7ca1fe2f88b55ca7_MIT18_06SCF11_Ses1.6sum.pdf",
+    "https://raw.githubusercontent.com/3b1b/manim/master/manimlib/default_config.yml"
+  ]
+}

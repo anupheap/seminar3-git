@@ -1,0 +1,9 @@
+{
+  "direction": "Anthropic-inspired editorial design",
+  "reference": "https://www.anthropic.com/",
+  "scope": "All 12 Lecture 3 slides, combined pages 30–41",
+  "palette": {"paper":"#faf9f5","ink":"#141413","panel":"#f0eee6","rule":"#d7d3c8","accent":"#d97757","accentText":"#a65a40"},
+  "typography": {"heading":"Source Serif 4","body":"Inter","code":"Consolas","math":"Original Cambria Math"},
+  "fontNote": "Open-source fonts interpret the editorial serif/sans pairing. These are not Anthropic's proprietary brand fonts.",
+  "contentPolicy": "Keep original prose, code, equations and lecture order. Reflow lines and change layout and styling only."
+}

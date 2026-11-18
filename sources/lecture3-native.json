@@ -1,0 +1,1688 @@
+{
+  "source": "Presentation2.pptx",
+  "lecture": 3,
+  "width": 1280,
+  "height": 720,
+  "sha256": "13926c7a04e5a682412bdecada9846032ca2cf6676ecf86daa266bde2be2c568",
+  "slides": [
+    {
+      "number": 1,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": -100013,
+          "name": "Straight Connector 12",
+          "bounds": [
+            0.00041994751275827486,
+            191.5077107747396,
+            1279.9995930989583,
+            0
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M0 0 1280 0.000104987\" stroke=\"#000000\" stroke-width=\"0.666667\" stroke-miterlimit=\"8\" fill=\"none\" fill-rule=\"evenodd\" transform=\"matrix(-1 0 0 1 1280.5 192.5)\"/></g>",
+          "sourcePart": "ppt/slideMasters/slideMaster1.xml",
+          "sourceShapeId": 13
+        },
+        {
+          "id": 10,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            258,
+            1142.6133626302083,
+            32.53333282470703
+          ],
+          "paragraphs": [
+            "MIT 18.06 · Lecture 3"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#F28C28\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"21\" transform=\"translate(85.3333 280)\">MIT 18.06 · Lecture 3</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(302.833 280)\"/></g>"
+        },
+        {
+          "id": 11,
+          "name": "Text 1",
+          "bounds": [
+            68.69333394368489,
+            349.1333414713542,
+            1142.6133626302083,
+            82.39999898274739
+          ],
+          "paragraphs": [
+            "Matrix Multiplication & Inverses"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#433832\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"69\" transform=\"translate(68.6933 412)\">Matrix Multiplication &amp; Inverses</text><text fill=\"#433832\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"69\" transform=\"translate(1137.53 412)\"/></g>"
+        },
+        {
+          "id": 13,
+          "name": "Text 3",
+          "bounds": [
+            85.33333333333333,
+            654.933349609375,
+            486.9200032552083,
+            25.066665649414062
+          ],
+          "paragraphs": [
+            " Based on Gilbert Strang’s lecture"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#595959\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"16\" transform=\"translate(85.3333 672)\"/><text fill=\"#595959\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"16\" transform=\"translate(89.8333 672)\">Based on Gilbert Strang’s lecture</text><text fill=\"#595959\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"16\" transform=\"translate(338 672)\"/></g>"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 19,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "Roadmap"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">ROADMAP</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(306.333 121)\"/></g>"
+        },
+        {
+          "id": 20,
+          "name": "Shape 1",
+          "bounds": [
+            85.33333333333333,
+            158.9333292643229,
+            357.3333333333333,
+            168.9333292643229
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M85 169.671C85 163.777 89.7774 159 95.6707 159L432.329 159C438.223 159 443 163.777 443 169.671L443 317.329C443 323.223 438.223 328 432.329 328L95.6707 328C89.7774 328 85 323.223 85 317.329Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 21,
+          "name": "Text 3",
+          "bounds": [
+            109.33333333333333,
+            221.0666707356771,
+            318.61334228515625,
+            56.666666666666664
+          ],
+          "paragraphs": [
+            "1. Showing 4 different ways of matrices multiplication  "
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(118.667 241)\">1. Showing 4 different ways of</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(118.667 268)\">matrices multiplication</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"21\" transform=\"translate(352 268)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(357 268)\"/></g>"
+        },
+        {
+          "id": 22,
+          "name": "Shape 4",
+          "bounds": [
+            461.3333333333333,
+            158.9333292643229,
+            357.3333333333333,
+            168.9333292643229
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M461 169.671C461 163.777 465.777 159 471.671 159L808.329 159C814.223 159 819 163.777 819 169.671L819 317.329C819 323.223 814.223 328 808.329 328L471.671 328C465.777 328 461 323.223 461 317.329Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 23,
+          "name": "Text 5",
+          "bounds": [
+            485.3333333333333,
+            182.9333292643229,
+            318.61334228515625,
+            60.26666768391927
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<defs xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><clipPath id=\"l3-s2-o23-clip0\"><rect x=\"485\" y=\"182\" width=\"320\" height=\"62\"/></clipPath></defs><g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" clip-path=\"url(#l3-s2-o23-clip0)\"/>"
+        },
+        {
+          "id": 24,
+          "name": "Shape 7",
+          "bounds": [
+            842.6666666666666,
+            158.9333292643229,
+            357.3333333333333,
+            168.9333292643229
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M843 169.671C843 163.777 847.777 159 853.671 159L1189.33 159C1195.22 159 1200 163.777 1200 169.671L1200 317.329C1200 323.223 1195.22 328 1189.33 328L853.671 328C847.777 328 843 323.223 843 317.329Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 25,
+          "name": "Text 3",
+          "bounds": [
+            480.6933186848958,
+            228.86665852864584,
+            318.61334228515625,
+            56.666666666666664
+          ],
+          "paragraphs": [
+            "2.Inverse matrices  "
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(490.027 249)\">2.Inverse matrices</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(688.027 249)\"/></g>"
+        },
+        {
+          "id": 26,
+          "name": "Text 3",
+          "bounds": [
+            876.0533040364584,
+            228.86665852864584,
+            318.61334228515625,
+            56.666666666666664
+          ],
+          "paragraphs": [
+            "3. Application  "
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(885.387 249)\">3. Application</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(1035.22 249)\"/></g>"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 2,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "Four ways to compute C = AB"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">FOUR WAYS TO COMPUTE C = AB</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(790 121)\"/></g>"
+        },
+        {
+          "id": 3,
+          "name": "Text 1",
+          "bounds": [
+            85.33333333333333,
+            158.93344116210938,
+            1142.6133626302083,
+            30.666666666666668
+          ],
+          "paragraphs": [
+            "Rows of and Columns of B, same answer every time."
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#4A5468\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(85.3333 180)\">Rows of and Columns of B, same answer every time.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(581.833 180)\"/></g>"
+        },
+        {
+          "id": 4,
+          "name": "Shape 2",
+          "bounds": [
+            85.33333333333333,
+            212.50006103515625,
+            545.3333333333334,
+            113.13333129882812
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M85 223.654C85 217.77 89.7698 213 95.6537 213L620.346 213C626.23 213 631 217.77 631 223.654L631 315.346C631 321.23 626.23 326 620.346 326L95.6537 326C89.7698 326 85 321.23 85 315.346Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 5,
+          "name": "Text 3",
+          "bounds": [
+            109.33333333333333,
+            237.60009765625,
+            512.2533365885416,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "1 · Dot products"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(109.333 260)\">1 · Dot products</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(291 260)\"/></g>"
+        },
+        {
+          "id": 7,
+          "name": "Shape 5",
+          "bounds": [
+            649.3333333333334,
+            213.60009765625,
+            545.3333333333334,
+            113.13333129882812
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M649 224.654C649 218.77 653.77 214 659.654 214L1184.35 214C1190.23 214 1195 218.77 1195 224.654L1195 316.346C1195 322.23 1190.23 327 1184.35 327L659.654 327C653.77 327 649 322.23 649 316.346Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 8,
+          "name": "Text 6",
+          "bounds": [
+            673.3333333333334,
+            237.60009765625,
+            512.2533365885416,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "2 · Columns"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(673.333 260)\">2 · Columns</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(812.167 260)\"/></g>"
+        },
+        {
+          "id": 10,
+          "name": "Shape 8",
+          "bounds": [
+            85.33333333333333,
+            353.4001057942708,
+            545.3333333333334,
+            113.13333129882812
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M85 363.748C85 357.812 89.8121 353 95.748 353L620.252 353C626.188 353 631 357.812 631 363.748L631 456.252C631 462.188 626.188 467 620.252 467L95.748 467C89.8121 467 85 462.188 85 456.252Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 11,
+          "name": "Text 9",
+          "bounds": [
+            109.33333333333333,
+            377.4001057942708,
+            512.2533365885416,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "3 · Rows"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(109.333 399)\">3 · Rows</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(207.833 399)\"/></g>"
+        },
+        {
+          "id": 13,
+          "name": "Shape 11",
+          "bounds": [
+            649.3333333333334,
+            353.4001057942708,
+            545.3333333333334,
+            113.13333129882812
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M649 363.748C649 357.812 653.812 353 659.748 353L1184.25 353C1190.19 353 1195 357.812 1195 363.748L1195 456.252C1195 462.188 1190.19 467 1184.25 467L659.748 467C653.812 467 649 462.188 649 456.252Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 14,
+          "name": "Text 12",
+          "bounds": [
+            673.3333333333334,
+            377.4001057942708,
+            512.2533365885416,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "4 · Columns × rows"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(673.333 399)\">4 · Columns</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(818.833 399)\">×</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(835.167 399)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(840.833 399)\">rows</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(898.167 399)\"/></g>"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 20,
+          "name": "Shape 1",
+          "bounds": [
+            413.3066813151042,
+            399.360107421875,
+            346.6666666666667,
+            185.7066650390625
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M413 408.626C413 403.31 417.31 399 422.626 399L750.374 399C755.69 399 760 403.31 760 408.626L760 575.374C760 580.69 755.69 585 750.374 585L422.626 585C417.31 585 413 580.69 413 575.374Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 6,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "1: dot products"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">1: DOT PRODUCTS</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(467.333 121)\"/></g>"
+        },
+        {
+          "id": 9,
+          "name": "Shape 1",
+          "bounds": [
+            713.546630859375,
+            139.67989095052084,
+            346.6666666666667,
+            185.7066650390625
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M714 149.574C714 144.286 718.286 140 723.574 140L1050.43 140C1055.71 140 1060 144.286 1060 149.574L1060 315.426C1060 320.714 1055.71 325 1050.43 325L723.574 325C718.286 325 714 320.714 714 315.426Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 17,
+          "name": "Text 5",
+          "bounds": [
+            440.2401123046875,
+            404.1066487630208,
+            126.34666951497395,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "Example"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#0D0D0D\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(440.24 426)\">Example</text><text fill=\"#0D0D0D\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(540.407 426)\"/></g>"
+        },
+        {
+          "id": 18,
+          "name": "Text 6",
+          "bounds": [
+            460.1066487630208,
+            453.7598876953125,
+            253.0666707356771,
+            122.66666666666667
+          ],
+          "paragraphs": [
+            "A : [1 2]",
+            "B : [5; 7]",
+            "C = 1·5 + 2·7 = 19",
+            "shop 2: 3·5 + 4·7 = 43"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(460.107 477)\">A : [1 2]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(460.107 508)\">B : [5; 7]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(460.107 538)\">C = 1·5 + 2·7 = 19</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(460.107 569)\">shop 2: 3·5 + 4·7 = 43</text></g>"
+        },
+        {
+          "id": 19,
+          "name": "Google Shape;747;h549939e244b3f090_0_18",
+          "bounds": [
+            741.4398600260416,
+            157.54655965169272,
+            292,
+            113.7066650390625
+          ],
+          "paragraphs": [
+            "Each entry of C = AB is a dot product:",
+            "c_ij = (row i of A) · (col j of B)"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M769.273 218.547 795.94 218.547 795.94 239.547 769.273 239.547Z\" fill=\"#DBEAFE\" fill-rule=\"evenodd\"/><path d=\"M795.94 218.547 800.773 218.547 800.773 239.547 795.94 239.547Z\" fill=\"#DBEAFE\" fill-rule=\"evenodd\"/><path d=\"M800.773 218.547 858.607 218.547 858.607 239.547 800.773 239.547Z\" fill=\"#DBEAFE\" fill-rule=\"evenodd\"/><path d=\"M858.607 218.547 862.773 218.547 862.773 239.547 858.607 239.547Z\" fill=\"#DBEAFE\" fill-rule=\"evenodd\"/><path d=\"M862.773 218.547 867.607 218.547 867.607 239.547 862.773 239.547Z\" fill=\"#DBEAFE\" fill-rule=\"evenodd\"/><path d=\"M867.607 218.547 1005.61 218.547 1005.61 239.547 867.607 239.547Z\" fill=\"#DBEAFE\" fill-rule=\"evenodd\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(741.44 175)\">Each entry of</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"17\" transform=\"translate(855.607 175)\">C = AB</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(913.107 175)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(917.94 175)\">is a dot</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(741.44 195)\">product:</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(809.94 195)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(769.273 236)\">c_ij</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(795.94 236)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(800.773 236)\">= (row</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(858.607 236)\">i</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(862.773 236)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(867.607 236)\">of A) · (col j of B)</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(1005.61 236)\"/></g>"
+        },
+        {
+          "id": 21,
+          "name": "Shape 1",
+          "bounds": [
+            116.05333455403645,
+            134.9333292643229,
+            381.2265625,
+            185.7066650390625
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M116 144.625C116 139.309 120.309 135 125.625 135L487.375 135C492.691 135 497 139.309 497 144.625L497 311.375C497 316.691 492.691 321 487.375 321L125.625 321C120.309 321 116 316.691 116 311.375Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 22,
+          "name": "Google Shape;747;h549939e244b3f090_0_18",
+          "bounds": [
+            132.4800008138021,
+            152.79999796549478,
+            346.6665445963542,
+            153.0666707356771
+          ],
+          "paragraphs": [
+            "the number of columns in the first matrix (A) must be equal to the number of rows in the second matrix (B)",
+            "A: m × n",
+            "B: n × p",
+            "C: m × p",
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(156.98 171)\">the number of columns in the first</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(133.313 193)\">matrix (A) must be equal to the number</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(165.147 216)\">of rows in the second matrix (B)</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(446.48 216)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(271.647 237)\">A: m</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(313.48 237)\">×</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(324.98 237)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(329.813 237)\">n</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(339.98 237)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(274.233 258)\">B: n</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(310.4 258)\">×</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(321.9 258)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(326.733 258)\">p</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(337.4 258)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(271.067 278)\">C: m</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(313.567 278)\">×</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(325.067 278)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(329.9 278)\">p</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(340.567 278)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(305.813 299)\"/></g>"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 2,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "2 and 3: columns and rows"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">2 AND 3: COLUMNS AND ROWS</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(746.667 121)\"/></g>"
+        },
+        {
+          "id": 3,
+          "name": "Shape 1",
+          "bounds": [
+            85.33333333333333,
+            158.9332275390625,
+            545.3333333333334,
+            206.13334147135416
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M85 169.66C85 163.773 89.7728 159 95.6603 159L620.34 159C626.227 159 631 163.773 631 169.66L631 354.34C631 360.227 626.227 365 620.34 365L95.6603 365C89.7728 365 85 360.227 85 354.34Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 5,
+          "name": "Text 3",
+          "bounds": [
+            109.33333333333333,
+            174.7199910481771,
+            521.3333333333334,
+            177.59989420572916
+          ],
+          "paragraphs": [
+            "Each column of C is A times the matching column of B, so it is a linear combination of the columns of A. ",
+            "Each row of C is the matching row of A times B, a linear combination of the rows of B."
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(109.333 195)\">Each column of C is A times the matching column</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(109.333 221)\">of B, so it is a linear combination of the columns of</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(109.333 247)\">A.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(136.167 247)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(109.333 272)\">Each row of C is the matching row of A times B, a</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(109.333 298)\">linear combination of the rows of B.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(467.667 298)\"/></g>"
+        },
+        {
+          "id": 10,
+          "name": "Text 6",
+          "bounds": [
+            673.3333333333334,
+            221.0667724609375,
+            512.2533365885416,
+            122.66666666666667
+          ],
+          "paragraphs": [
+            "C = 5·[1;3] + 7·[2;4]",
+            "= [19; 43]",
+            "C = 1·[5 6] + 2·[7 8]",
+            "= [19 22]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(673.333 244)\">C = 5·[1;3] + 7·[2;4]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(673.333 275)\">= [19; 43]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(673.333 305)\">C = 1·[5 6] + 2·[7 8]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(673.333 336)\">= [19 22]</text></g>"
+        },
+        {
+          "id": 12,
+          "name": "Shape 1",
+          "bounds": [
+            649.3335367838541,
+            158.9332275390625,
+            594.6933186848959,
+            206.1334431966146
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M649 169.66C649 163.773 653.773 159 659.66 159L1233.34 159C1239.23 159 1244 163.773 1244 169.66L1244 354.34C1244 360.227 1239.23 365 1233.34 365L659.66 365C653.773 365 649 360.227 649 354.34Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 14,
+          "name": "Text 5",
+          "bounds": [
+            689.3333333333334,
+            182.26666259765625,
+            126.34666951497395,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "Example"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#0D0D0D\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(689.333 204)\">Example</text><text fill=\"#0D0D0D\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(789.5 204)\"/></g>"
+        },
+        {
+          "id": 24,
+          "name": "Text 6",
+          "bounds": [
+            689.3333333333334,
+            237.0667724609375,
+            512.2533365885416,
+            122.66666666666667
+          ],
+          "paragraphs": [
+            "C = 5·[1;3] + 7·[2;4]",
+            "= [19; 43]",
+            "C = 1·[5 6] + 2·[7 8]",
+            "= [19 22]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(689.333 260)\">C = 5·[1;3] + 7·[2;4]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(689.333 291)\">= [19; 43]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(689.333 321)\">C = 1·[5 6] + 2·[7 8]</text><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(689.333 352)\">= [19 22]</text></g>"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 4,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "4: columns times rows"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">4: COLUMNS TIMES ROWS</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(645 121)\"/></g>"
+        },
+        {
+          "id": 18,
+          "name": "Shape 1",
+          "bounds": [
+            658.4135335286459,
+            153.8665568033854,
+            478.6664632161458,
+            206.1334431966146
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M658 164.661C658 158.773 662.773 154 668.661 154L1126.34 154C1132.23 154 1137 158.773 1137 164.661L1137 349.339C1137 355.227 1132.23 360 1126.34 360L668.661 360C662.773 360 658 355.227 658 349.339Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 6,
+          "name": "Shape 1",
+          "bounds": [
+            76.25333150227864,
+            153.11979166666666,
+            545.3333333333334,
+            176.13334147135416
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M76 163.658C76 157.772 80.772 153 86.6585 153L611.342 153C617.228 153 622 157.772 622 163.658L622 318.341C622 324.228 617.228 329 611.342 329L86.6585 329C80.772 329 76 324.228 76 318.341Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 7,
+          "name": "Text 2",
+          "bounds": [
+            109.33333333333333,
+            171.8401082356771,
+            512.2533365885416,
+            129.97333780924478
+          ],
+          "paragraphs": [
+            "take a row from the first matrix and a column from the second matrix, multiply their corresponding numbers together, and then add those products up."
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(109.333 195)\">take a</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(184.333 195)\">row</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(228.167 195)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(235 195)\">from the first matrix and a</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(109.333 224)\">column</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(196.5 224)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(203.333 224)\">from the second matrix, multiply</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(109.333 253)\">their corresponding numbers together, and</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(109.333 281)\">then</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(166.333 281)\">add</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(210.667 281)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(217.5 281)\">those products up.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(430.333 281)\"/></g>"
+        },
+        {
+          "id": 11,
+          "name": "Text 5",
+          "bounds": [
+            673.3333333333334,
+            182.9332275390625,
+            512.2533365885416,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "Example"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(673.333 205)\">Example</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(773.5 205)\"/></g>"
+        },
+        {
+          "id": 13,
+          "name": "Text 6",
+          "bounds": [
+            673.3333333333334,
+            221.0667724609375,
+            512.2533365885416,
+            92.66666666666667
+          ],
+          "paragraphs": [
+            "A : [ 1; 2; 3]",
+            "B : [1 3 ]",
+            "AB =[ 1 3; 2 6; 3 9]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(673.333 244)\">A : [ 1; 2; 3]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(673.333 275)\">B : [1 3 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(673.333 305)\">AB =[ 1 3; 2 6; 3 9]</text></g>"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 2,
+          "name": "Text 0",
+          "bounds": [
+            88.21333821614583,
+            87.25333658854167,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "The inverse matrix"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(88.2133 123)\">THE INVERSE MATRIX</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(546.713 123)\"/></g>"
+        },
+        {
+          "id": 3,
+          "name": "Shape 1",
+          "bounds": [
+            15.904881795247396,
+            136.85333251953125,
+            545.3333333333334,
+            323.9464518229167
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M16 153.767C16 144.507 23.5069 137 32.7672 137L544.233 137C553.493 137 561 144.507 561 153.767L561 444.233C561 453.493 553.493 461 544.233 461L32.7672 461C23.5069 461 16 453.493 16 444.233Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 4,
+          "name": "Text 2",
+          "bounds": [
+            31.801050821940105,
+            154.75800577799478,
+            469.4337158203125,
+            106.78697713216145
+          ],
+          "paragraphs": [
+            "Only exists when the matrices is a square and the determinant ≠ 0"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(31.8011 177)\">Only exists when the matrices is a</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(31.8011 206)\">square and the determinant ≠ 0</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(399.634 206)\"/></g>"
+        },
+        {
+          "id": 5,
+          "name": "Text 3",
+          "bounds": [
+            112.21333821614583,
+            222.9870808919271,
+            512.2533365885416,
+            56.666666666666664
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<defs xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><clipPath id=\"l3-s7-o5-clip0\"><rect x=\"112\" y=\"222\" width=\"513\" height=\"58\"/></clipPath></defs><g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" clip-path=\"url(#l3-s7-o5-clip0)\"/>"
+        },
+        {
+          "id": 6,
+          "name": "Shape 4",
+          "bounds": [
+            574.4677327473959,
+            154.75790405273438,
+            656.3589680989584,
+            276.1612548828125
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M574 169.283C574 161.395 580.395 155 588.283 155L1216.72 155C1224.61 155 1231 161.395 1231 169.283L1231 416.717C1231 424.605 1224.61 431 1216.72 431L588.283 431C580.395 431 574 424.605 574 416.717Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 7,
+          "name": "Text 5",
+          "bounds": [
+            609.904052734375,
+            176.75360107421875,
+            512.2533365885416,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "Example"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(609.904 199)\">Example</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(710.071 199)\"/></g>"
+        },
+        {
+          "id": 8,
+          "name": "Text 6",
+          "bounds": [
+            601.4442952473959,
+            200.22078450520834,
+            273.80775960286456,
+            38.42341105143229
+          ],
+          "paragraphs": [
+            "A = [3 1; 4 2]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#F1EFE9\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(601.444 223)\">A = [3 1; 4 2]</text></g>"
+        },
+        {
+          "id": 14,
+          "name": "Picture 13",
+          "bounds": [
+            31.427716573079426,
+            241.4090372721354,
+            309.6268717447917,
+            84.00724283854167
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<defs xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><clipPath id=\"l3-s7-o14-clip0\"><rect x=\"0\" y=\"0\" width=\"2952750\" height=\"800100\"/></clipPath><image width=\"387\" height=\"105\" xlink:href=\"/sources/native-assets/980e0f4482f6ade1b926.jpg\" preserveAspectRatio=\"none\" id=\"l3-s7-o14-img1\" data-source-asset=\"/sources/native-assets/980e0f4482f6ade1b926.jpg\"/><clipPath id=\"l3-s7-o14-clip2\"><rect x=\"0\" y=\"0\" width=\"2948940\" height=\"800100\"/></clipPath></defs><g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g clip-path=\"url(#l3-s7-o14-clip0)\" transform=\"matrix(0.000104987 0 0 0.000104987 31 241)\"><g clip-path=\"url(#l3-s7-o14-clip2)\" transform=\"scale(1.00129 1)\"><use width=\"100%\" height=\"100%\" xlink:href=\"#l3-s7-o14-img1\" transform=\"scale(7620 7620)\"/></g></g></g>"
+        },
+        {
+          "id": 18,
+          "name": "Text 6",
+          "bounds": [
+            591.8400065104166,
+            200.22078450520834,
+            364.2012532552083,
+            70.43643188476562
+          ],
+          "paragraphs": [
+            "",
+            ""
+          ],
+          "omml": [
+            "<m:oMath xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:a14=\"http://schemas.microsoft.com/office/drawing/2010/main\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><m:r><m:rPr><m:nor/></m:rPr><a:rPr lang=\"en-US\" sz=\"1500\" i=\"0\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>det</m:t></m:r><m:d><m:dPr><m:ctrlPr><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>𝐴</m:t></m:r></m:e></m:d><m:r><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>=</m:t></m:r><m:d><m:dPr><m:ctrlPr><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>3×2</m:t></m:r></m:e></m:d><m:r><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>−</m:t></m:r><m:d><m:dPr><m:ctrlPr><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>1×4</m:t></m:r></m:e></m:d><m:r><a:rPr lang=\"en-US\" sz=\"1500\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>=6−4=2</m:t></m:r></m:oMath>"
+          ],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(612.787 254)\">det</text><path d=\"M662.415 239.249C664.316 239.751 665.776 240.833 666.795 242.497 667.814 244.16 668.323 246.167 668.323 248.517 668.323 250.874 667.815 252.881 666.8 254.538 665.784 256.194 664.322 257.274 662.415 257.775L662.18 257.023C663.684 256.522 664.802 255.532 665.535 254.054 666.267 252.576 666.634 250.698 666.634 248.419 666.634 246.219 666.269 244.391 665.54 242.936 664.811 241.481 663.681 240.503 662.151 240.001ZM648.286 239.249 648.55 240.001C647.026 240.503 645.898 241.481 645.166 242.936 644.434 244.391 644.067 246.219 644.067 248.419 644.067 250.698 644.434 252.576 645.166 254.054 645.898 255.532 647.017 256.522 648.52 257.023L648.286 257.775C646.378 257.274 644.917 256.194 643.901 254.538 642.886 252.881 642.378 250.874 642.378 248.517 642.378 246.167 642.887 244.16 643.906 242.497 644.925 240.833 646.385 239.751 648.286 239.249Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(648.92 254)\">𝐴</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(675.633 254)\">=</text><path d=\"M741.455 239.249C743.356 239.751 744.816 240.833 745.835 242.497 746.854 244.16 747.363 246.167 747.363 248.517 747.363 250.874 746.855 252.881 745.84 254.538 744.824 256.194 743.362 257.274 741.455 257.775L741.22 257.023C742.724 256.522 743.843 255.532 744.575 254.054 745.307 252.576 745.674 250.698 745.674 248.419 745.674 246.219 745.309 244.391 744.58 242.936 743.851 241.481 742.721 240.503 741.191 240.001ZM703.853 239.249 704.116 240.001C702.593 240.503 701.465 241.481 700.733 242.936 700 244.391 699.634 246.219 699.634 248.419 699.634 250.698 700 252.576 700.733 254.054 701.465 255.532 702.583 256.522 704.087 257.023L703.853 257.775C701.945 257.274 700.484 256.194 699.468 254.538 698.452 252.881 697.945 250.874 697.945 248.517 697.945 246.167 698.454 244.16 699.473 242.497 700.492 240.833 701.952 239.751 703.853 239.249Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(704.487 254)\">3</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(715.487 254)\">×</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(729.82 254)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(753.567 254)\">−</text><path d=\"M818.281 239.249C820.182 239.751 821.642 240.833 822.661 242.497 823.68 244.16 824.19 246.167 824.19 248.517 824.19 250.874 823.682 252.881 822.666 254.538 821.651 256.194 820.189 257.274 818.281 257.775L818.047 257.023C819.551 256.522 820.669 255.532 821.402 254.054 822.134 252.576 822.5 250.698 822.5 248.419 822.5 246.219 822.136 244.391 821.406 242.936 820.677 241.481 819.548 240.503 818.018 240.001ZM780.679 239.249 780.943 240.001C779.42 240.503 778.292 241.481 777.559 242.936 776.827 244.391 776.461 246.219 776.461 248.419 776.461 250.698 776.827 252.576 777.559 254.054 778.292 255.532 779.41 256.522 780.914 257.023L780.679 257.775C778.772 257.274 777.31 256.194 776.295 254.538 775.279 252.881 774.771 250.874 774.771 248.517 774.771 246.167 775.281 244.16 776.299 242.497 777.318 240.833 778.778 239.751 780.679 239.249Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(781.313 254)\">1</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(792.313 254)\">×</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(806.647 254)\">4</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(831.5 254)\">=</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(852.053 254)\">6</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(867.5 254)\">−</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(886.947 254)\">4</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(903.5 254)\">=</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(924.053 254)\">2</text></g>"
+        },
+        {
+          "id": 20,
+          "name": "TextBox 19",
+          "bounds": [
+            509.0309651692708,
+            276.44944254557294,
+            770.968994140625,
+            94.72945149739583
+          ],
+          "paragraphs": [
+            "",
+            ""
+          ],
+          "omml": [
+            "<m:oMath xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:a14=\"http://schemas.microsoft.com/office/drawing/2010/main\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><m:r><a:rPr lang=\"en-US\" i=\"1\" smtClean=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>𝐴</m:t></m:r><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>⁻¹=½</m:t></m:r><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"1\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>2,−1</m:t></m:r></m:e></m:d><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>,</m:t></m:r><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>−4,3</m:t></m:r></m:e></m:d></m:e></m:d><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>=</m:t></m:r><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"1\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>2/2,−1/2</m:t></m:r></m:e></m:d><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>,</m:t></m:r><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>−4/2,3/2</m:t></m:r></m:e></m:d></m:e></m:d><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>=</m:t></m:r><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"1\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>1,−0.5</m:t></m:r></m:e></m:d><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>,</m:t></m:r><m:d><m:dPr><m:begChr m:val=\"[\"/><m:endChr m:val=\"]\"/><m:ctrlPr><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr></m:ctrlPr></m:dPr><m:e><m:r><a:rPr lang=\"en-US\" i=\"0\"><a:latin typeface=\"Cambria Math\" panose=\"02040503050406030204\" pitchFamily=\"18\" charset=\"0\"/></a:rPr><m:t>−2,1.5</m:t></m:r></m:e></m:d></m:e></m:d></m:oMath>"
+          ],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(621.684 301)\">𝐴</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(636.851 301)\">⁻¹</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(663.184 301)\">=</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(687.851 301)\">½</text><path d=\"M864.185 280.105 869.529 280.105 869.529 309.097 864.185 309.097 864.185 308.136 867.349 308.136 867.349 281.065 864.185 281.065ZM711.856 280.105 717.2 280.105 717.2 281.065 714.036 281.065 714.036 308.136 717.2 308.136 717.2 309.097 711.856 309.097Z\" fill-rule=\"evenodd\"/><path d=\"M780.295 283.422 785.521 283.422 785.521 305.77 780.295 305.77 780.295 304.868 783.576 304.868 783.576 284.325 780.295 284.325ZM720.396 283.422 725.623 283.422 725.623 284.325 722.341 284.325 722.341 304.868 725.623 304.868 725.623 305.77 720.396 305.77Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(726.124 301)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(739.458 301)\">,</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(748.458 301)\">−</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(766.458 301)\">1</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(788.191 301)\">,</text><path d=\"M855.762 283.422 860.988 283.422 860.988 305.77 855.762 305.77 855.762 304.868 859.043 304.868 859.043 284.325 855.762 284.325ZM799.863 283.422 805.089 283.422 805.089 284.325 801.808 284.325 801.808 304.868 805.089 304.868 805.089 305.77 799.863 305.77Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(805.591 301)\">−</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(823.591 301)\">4</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(836.924 301)\">,</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(841.924 301)\">3</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(878.864 301)\">=</text><path d=\"M1159.2 280.105 1164.54 280.105 1164.54 309.097 1159.2 309.097 1159.2 308.136 1162.36 308.136 1162.36 281.065 1159.2 281.065ZM906.203 280.105 911.547 280.105 911.547 281.065 908.383 281.065 908.383 308.136 911.547 308.136 911.547 309.097 906.203 309.097Z\" fill-rule=\"evenodd\"/><path d=\"M1024.97 283.422 1030.2 283.422 1030.2 305.77 1024.97 305.77 1024.97 304.868 1028.26 304.868 1028.26 284.325 1024.97 284.325ZM914.743 283.422 919.969 283.422 919.969 284.325 916.688 284.325 916.688 304.868 919.969 304.868 919.969 305.77 914.743 305.77Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(920.471 301)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(933.804 301)\">/</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(945.638 301)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(958.971 301)\">,</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(967.971 301)\">−</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(985.971 301)\">1</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(999.304 301)\">/</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1011.14 301)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1032.87 301)\">,</text><path d=\"M1150.77 283.422 1156 283.422 1156 305.77 1150.77 305.77 1150.77 304.868 1154.06 304.868 1154.06 284.325 1150.77 284.325ZM1044.54 283.422 1049.77 283.422 1049.77 284.325 1046.49 284.325 1046.49 304.868 1049.77 304.868 1049.77 305.77 1044.54 305.77Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1050.27 301)\">−</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1068.27 301)\">4</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1081.6 301)\">/</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1093.44 301)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1106.77 301)\">,</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1111.77 301)\">3</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1125.1 301)\">/</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(1136.94 301)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(621.684 333)\">=</text><path d=\"M838.018 312.105 843.362 312.105 843.362 341.097 838.018 341.097 838.018 340.136 841.182 340.136 841.182 313.065 838.018 313.065ZM649.023 312.105 654.367 312.105 654.367 313.065 651.203 313.065 651.203 340.136 654.367 340.136 654.367 341.097 649.023 341.097Z\" fill-rule=\"evenodd\"/><path d=\"M735.795 315.422 741.021 315.422 741.021 337.77 735.795 337.77 735.795 336.868 739.076 336.868 739.076 316.325 735.795 316.325ZM657.563 315.422 662.789 315.422 662.789 316.325 659.508 316.325 659.508 336.868 662.789 336.868 662.789 337.77 657.563 337.77Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(663.291 333)\">1</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(676.624 333)\">,</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(685.624 333)\">−</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(703.624 333)\">0</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(716.958 333)\">.</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(721.958 333)\">5</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(743.691 333)\">,</text><path d=\"M829.595 315.422 834.821 315.422 834.821 337.77 829.595 337.77 829.595 336.868 832.876 336.868 832.876 316.325 829.595 316.325ZM755.363 315.422 760.589 315.422 760.589 316.325 757.308 316.325 757.308 336.868 760.589 336.868 760.589 337.77 755.363 337.77Z\" fill-rule=\"evenodd\"/><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(761.091 333)\">−</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(779.091 333)\">2</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(792.424 333)\">,</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(797.424 333)\">1</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(810.758 333)\">.</text><text font-family=\"Cambria Math,Cambria Math_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(815.758 333)\">5</text></g>"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 9,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "Gauss-Jordan: finding A⁻¹"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">GAUSS</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(234.167 121)\">-</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(254.167 121)\">JORDAN: FINDING A⁻¹</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(710.833 121)\"/></g>"
+        },
+        {
+          "id": 11,
+          "name": "Shape 1",
+          "bounds": [
+            85.33333333333333,
+            158.93354288736978,
+            357.3333333333333,
+            120.53333536783855
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M85.5001 170.12C85.5001 164.255 90.2547 159.5 96.1199 159.5L432.88 159.5C438.745 159.5 443.5 164.255 443.5 170.12L443.5 268.88C443.5 274.745 438.745 279.5 432.88 279.5L96.1199 279.5C90.2547 279.5 85.5001 274.745 85.5001 268.88Z\" stroke=\"#000000\" stroke-width=\"1.33333\" stroke-miterlimit=\"8\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 12,
+          "name": "Text 2",
+          "bounds": [
+            109.33333333333333,
+            182.93355305989584,
+            318.61334228515625,
+            29.866666158040363
+          ],
+          "paragraphs": [
+            "Start"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"23\" transform=\"translate(109.333 204)\">Start</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"23\" transform=\"translate(163.667 204)\"/></g>"
+        },
+        {
+          "id": 13,
+          "name": "Text 3",
+          "bounds": [
+            109.33333333333333,
+            218.1334431966146,
+            318.61334228515625,
+            40
+          ],
+          "paragraphs": [
+            "[ A | I ]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(109.333 246)\">[ A | I ]</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"27\" transform=\"translate(191.833 246)\"/></g>"
+        },
+        {
+          "id": 15,
+          "name": "Shape 4",
+          "bounds": [
+            461.3333333333333,
+            158.93354288736978,
+            357.3333333333333,
+            120.53333536783855
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M461.5 170.12C461.5 164.255 466.255 159.5 472.12 159.5L808.88 159.5C814.745 159.5 819.5 164.255 819.5 170.12L819.5 268.88C819.5 274.745 814.745 279.5 808.88 279.5L472.12 279.5C466.255 279.5 461.5 274.745 461.5 268.88Z\" stroke=\"#000000\" stroke-width=\"1.33333\" stroke-miterlimit=\"8\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 16,
+          "name": "Text 5",
+          "bounds": [
+            485.3333333333333,
+            182.93355305989584,
+            318.61334228515625,
+            29.866666158040363
+          ],
+          "paragraphs": [
+            "Row-reduce"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"23\" transform=\"translate(485.333 204)\">Row</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"23\" transform=\"translate(533 204)\">-</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"23\" transform=\"translate(543.667 204)\">reduce</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"23\" transform=\"translate(621.167 204)\"/></g>"
+        },
+        {
+          "id": 17,
+          "name": "Text 6",
+          "bounds": [
+            485.3333333333333,
+            218.1334431966146,
+            318.61334228515625,
+            40
+          ],
+          "paragraphs": [
+            "Eliminate up and down"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(485.333 246)\">Eliminate up and down</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"27\" transform=\"translate(778.5 246)\"/></g>"
+        },
+        {
+          "id": 19,
+          "name": "Shape 7",
+          "bounds": [
+            837.3333333333334,
+            158.93354288736978,
+            357.3333333333333,
+            120.53333536783855
+          ],
+          "paragraphs": [],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M837.5 170.12C837.5 164.255 842.255 159.5 848.12 159.5L1184.88 159.5C1190.75 159.5 1195.5 164.255 1195.5 170.12L1195.5 268.88C1195.5 274.745 1190.75 279.5 1184.88 279.5L848.12 279.5C842.255 279.5 837.5 274.745 837.5 268.88Z\" stroke=\"#000000\" stroke-width=\"1.33333\" stroke-miterlimit=\"8\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 21,
+          "name": "Text 8",
+          "bounds": [
+            861.3333333333334,
+            182.93355305989584,
+            318.61334228515625,
+            29.866666158040363
+          ],
+          "paragraphs": [
+            "Finish"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"23\" transform=\"translate(861.333 204)\">Finish</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"23\" transform=\"translate(928 204)\"/></g>"
+        },
+        {
+          "id": 22,
+          "name": "Text 9",
+          "bounds": [
+            861.3333333333334,
+            218.1334431966146,
+            318.61334228515625,
+            40
+          ],
+          "paragraphs": [
+            "[ I | A⁻¹ ]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(861.333 246)\">[ I | A⁻¹ ]</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"27\" transform=\"translate(965.167 246)\"/></g>"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 9,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "Example"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">EXAMPLE</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(292 121)\"/></g>"
+        },
+        {
+          "id": 5,
+          "name": "Shape 1",
+          "bounds": [
+            85.33333333333333,
+            178.19999186197916,
+            357.3333333333333,
+            363.6000162760417
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M85 188.686C85 182.784 89.7844 178 95.6863 178L432.314 178C438.216 178 443 182.784 443 188.686L443 531.314C443 537.216 438.216 542 432.314 542L95.6863 542C89.7844 542 85 537.216 85 531.314Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 6,
+          "name": "Text 2",
+          "bounds": [
+            109.33333333333333,
+            202.19999186197916,
+            318.61334228515625,
+            34.666666666666664
+          ],
+          "paragraphs": [
+            "1. Setup"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"109\" y=\"202\" width=\"319\" height=\"35\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(109.333 228)\">1. Setup</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"27\" transform=\"translate(212 228)\"/></g>"
+        },
+        {
+          "id": 7,
+          "name": "Text 3",
+          "bounds": [
+            109.33333333333333,
+            247.5333251953125,
+            318.61334228515625,
+            36.26666768391927
+          ],
+          "paragraphs": [
+            "A = [1 3; 2 5]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"109\" y=\"248\" width=\"319\" height=\"36\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(109.333 273)\">A = [1 3; 2 5]</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(254.167 273)\"/></g>"
+        },
+        {
+          "id": 8,
+          "name": "Text 4",
+          "bounds": [
+            109.33333333333333,
+            294.4663492838542,
+            318.61334228515625,
+            54.93333435058594
+          ],
+          "paragraphs": [
+            "Write [A | I] and row-reduce until the left side becomes I."
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"109\" y=\"294\" width=\"319\" height=\"55\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(109.333 314)\">Write [A | I] and row</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(285.333 314)\">-</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(294 314)\">reduce until</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(109.333 341)\">the left side becomes I.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(314.5 341)\"/></g>"
+        },
+        {
+          "id": 10,
+          "name": "Text 5",
+          "bounds": [
+            109.33333333333333,
+            360.0665690104167,
+            318.61334228515625,
+            26.933334350585938
+          ],
+          "paragraphs": [
+            "Initial augmented matrix"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"109\" y=\"360\" width=\"319\" height=\"27\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"17\" transform=\"translate(109.333 378)\">Initial augmented matrix</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(314 378)\"/></g>"
+        },
+        {
+          "id": 14,
+          "name": "Text 6",
+          "bounds": [
+            109.33333333333333,
+            397.6668701171875,
+            318.61334228515625,
+            62.3999989827474
+          ],
+          "paragraphs": [
+            "[ 1 3 | 1 0 ]",
+            "[ 2 5 | 0 1 ]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"109\" y=\"398\" width=\"319\" height=\"62\" fill=\"#A75F3D\"/><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"21\" transform=\"translate(109.333 420)\">[ 1 3 | 1 0 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"21\" transform=\"translate(109.333 449)\">[ 2 5 | 0 1 ]</text></g>"
+        },
+        {
+          "id": 18,
+          "name": "Shape 7",
+          "bounds": [
+            461.3333333333333,
+            178.19999186197916,
+            357.3333333333333,
+            363.6000162760417
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M461 188.686C461 182.784 465.784 178 471.686 178L808.314 178C814.216 178 819 182.784 819 188.686L819 531.314C819 537.216 814.216 542 808.314 542L471.686 542C465.784 542 461 537.216 461 531.314Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 20,
+          "name": "Text 8",
+          "bounds": [
+            485.3333333333333,
+            202.19999186197916,
+            318.61334228515625,
+            34.666666666666664
+          ],
+          "paragraphs": [
+            "2. Gauss-Jordan"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"485\" y=\"202\" width=\"319\" height=\"35\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(485.333 228)\">2. Gauss</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(598.667 228)\">-</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(611.167 228)\">Jordan</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"27\" transform=\"translate(702.333 228)\"/></g>"
+        },
+        {
+          "id": 23,
+          "name": "Text 9",
+          "bounds": [
+            485.3333333333333,
+            247.5333251953125,
+            318.61334228515625,
+            27.866666158040363
+          ],
+          "paragraphs": [
+            "Step 1: R2 − 2·R1"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"485\" y=\"248\" width=\"319\" height=\"27\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"18\" transform=\"translate(485.333 267)\">Step 1: R2 − 2·R1</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(629 267)\"/></g>"
+        },
+        {
+          "id": 24,
+          "name": "Text 10",
+          "bounds": [
+            485.3333333333333,
+            272.7332356770833,
+            318.61334228515625,
+            58.666666666666664
+          ],
+          "paragraphs": [
+            "[ 1 3 | 1 0 ]",
+            "[ 0 -1 | -2 1 ]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"485\" y=\"273\" width=\"319\" height=\"58\" fill=\"#A75F3D\"/><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(485.333 294)\">[ 1 3 | 1 0 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(485.333 322)\">[ 0</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(529.333 322)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(540.333 322)\">1 |</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(584.333 322)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(595.333 322)\">2 1 ]</text></g>"
+        },
+        {
+          "id": 25,
+          "name": "Text 11",
+          "bounds": [
+            485.3333333333333,
+            342.0665690104167,
+            318.61334228515625,
+            27.866666158040363
+          ],
+          "paragraphs": [
+            "Step 2: R2 × (−1)"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"485\" y=\"342\" width=\"319\" height=\"28\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"18\" transform=\"translate(485.333 361)\">Step 2: R2</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"18\" transform=\"translate(579 361)\">×</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"18\" transform=\"translate(591.167 361)\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"18\" transform=\"translate(595.5 361)\">(−1)</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(629.167 361)\"/></g>"
+        },
+        {
+          "id": 26,
+          "name": "Text 12",
+          "bounds": [
+            485.3333333333333,
+            367.2664388020833,
+            318.61334228515625,
+            58.666666666666664
+          ],
+          "paragraphs": [
+            "[ 1 3 | 1 0 ]",
+            "[ 0 1 | 2 -1 ]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"485\" y=\"367\" width=\"319\" height=\"59\" fill=\"#A75F3D\"/><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(485.333 388)\">[ 1 3 | 1 0 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(485.333 416)\">[ 0 1 | 2</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(595.333 416)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(606.333 416)\">1 ]</text></g>"
+        },
+        {
+          "id": 27,
+          "name": "Text 13",
+          "bounds": [
+            485.3333333333333,
+            436.5997721354167,
+            318.61334228515625,
+            27.866666158040363
+          ],
+          "paragraphs": [
+            "Step 3: R1 − 3·R2"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"485\" y=\"437\" width=\"319\" height=\"27\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"18\" transform=\"translate(485.333 456)\">Step 3: R1 − 3·R2</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(633.167 456)\"/></g>"
+        },
+        {
+          "id": 28,
+          "name": "Text 14",
+          "bounds": [
+            485.3333333333333,
+            461.7996826171875,
+            318.61334228515625,
+            58.666666666666664
+          ],
+          "paragraphs": [
+            "[ 1 0 | -5 3 ]",
+            "[ 0 1 | 2 -1 ]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"485\" y=\"462\" width=\"319\" height=\"58\" fill=\"#A75F3D\"/><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(485.333 483)\">[ 1 0 |</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(573.333 483)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(584.333 483)\">5 3 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(485.333 511)\">[ 0 1 | 2</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(595.333 511)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" transform=\"translate(606.333 511)\">1 ]</text></g>"
+        },
+        {
+          "id": 29,
+          "name": "Shape 15",
+          "bounds": [
+            837.3333333333334,
+            178.19999186197916,
+            357.3333333333333,
+            363.6000162760417
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M837 188.686C837 182.784 841.784 178 847.686 178L1184.31 178C1190.22 178 1195 182.784 1195 188.686L1195 531.314C1195 537.216 1190.22 542 1184.31 542L847.686 542C841.784 542 837 537.216 837 531.314Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 30,
+          "name": "Text 16",
+          "bounds": [
+            861.3333333333334,
+            202.19999186197916,
+            318.61334228515625,
+            34.666666666666664
+          ],
+          "paragraphs": [
+            "3. Solution"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"861\" y=\"202\" width=\"319\" height=\"35\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"27\" transform=\"translate(861.333 228)\">3. Solution</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"27\" transform=\"translate(1000.17 228)\"/></g>"
+        },
+        {
+          "id": 31,
+          "name": "Text 17",
+          "bounds": [
+            861.3333333333334,
+            247.5333251953125,
+            318.61334228515625,
+            54.93333435058594
+          ],
+          "paragraphs": [
+            "The right side now contains the inverse matrix A⁻¹."
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"861\" y=\"248\" width=\"319\" height=\"54\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(861.333 268)\">The right side now contains the</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(861.333 295)\">inverse matrix A⁻¹.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(1022.5 295)\"/></g>"
+        },
+        {
+          "id": 32,
+          "name": "Text 18",
+          "bounds": [
+            856.693359375,
+            313.1330159505208,
+            318.61334228515625,
+            26.933334350585938
+          ],
+          "paragraphs": [
+            "Inverse matrix A⁻¹"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"857\" y=\"313\" width=\"318\" height=\"27\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"17\" transform=\"translate(940 331)\">Inverse matrix A⁻¹</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(1092 331)\"/></g>"
+        },
+        {
+          "id": 33,
+          "name": "Text 19",
+          "bounds": [
+            856.693359375,
+            350.7332356770833,
+            318.61334228515625,
+            92.26666259765625
+          ],
+          "paragraphs": [
+            "[ -5 3 ]",
+            "[ 2 -1 ]"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"857\" y=\"351\" width=\"318\" height=\"92\" fill=\"#A75F3D\"/><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"32\" transform=\"translate(945.333 385)\">[</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"32\" transform=\"translate(980.667 385)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"32\" transform=\"translate(998.333 385)\">5 3 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"32\" transform=\"translate(945.333 430)\">[ 2</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"32\" transform=\"translate(1016 430)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"32\" transform=\"translate(1033.67 430)\">1 ]</text></g>"
+        },
+        {
+          "id": 34,
+          "name": "Text 20",
+          "bounds": [
+            861.3333333333334,
+            453.6668701171875,
+            318.61334228515625,
+            26.933334350585938
+          ],
+          "paragraphs": [
+            "Check: [1 3; 2 5]·[−5 3; 2 −1] = I"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect x=\"861\" y=\"454\" width=\"319\" height=\"27\" fill=\"#A75F3D\"/><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(861.333 472)\">Check: [1 3; 2 5]·[−5 3; 2 −1] = I</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"17\" transform=\"translate(1119.17 472)\"/></g>"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 12,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "MATLAB demo: multiplication"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">MATLAB DEMO: MULTIPLICATION</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(789.167 121)\"/></g>"
+        },
+        {
+          "id": 15,
+          "name": "Text 1",
+          "bounds": [
+            104.53333536783855,
+            178.13321940104166,
+            248.74666341145834,
+            131.94676717122397
+          ],
+          "paragraphs": [
+            "A = [1 2; 3 4];",
+            "B = [5 6; 7 8];",
+            "C = A*B"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M105 182.427C105 179.982 106.982 178 109.427 178L348.573 178C351.018 178 353 179.982 353 182.427L353 305.573C353 308.018 351.018 310 348.573 310L109.427 310C106.982 310 105 308.018 105 305.573Z\" fill=\"#C88769\" fill-rule=\"evenodd\"/><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(126.705 220)\">A = [1 2; 3 4];</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(126.705 247)\">B = [5 6; 7 8];</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(126.705 273)\">C = A*B</text></g>"
+        },
+        {
+          "id": 16,
+          "name": "Text 1",
+          "bounds": [
+            747.413330078125,
+            178.13311767578125,
+            248.74666341145834,
+            131.94676717122397
+          ],
+          "paragraphs": [
+            "C =",
+            "    19    22",
+            "    43    50"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M747 182.427C747 179.982 748.982 178 751.427 178L991.573 178C994.018 178 996 179.982 996 182.427L996 305.573C996 308.018 994.018 310 991.573 310L751.427 310C748.982 310 747 308.018 747 305.573Z\" fill=\"#C88769\" fill-rule=\"evenodd\"/><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(769.585 220)\">C =</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(808.919 247)\">19 22</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"18\" transform=\"translate(808.919 273)\">43 50</text></g>"
+        },
+        {
+          "id": 17,
+          "name": "Right Arrow 16",
+          "bounds": [
+            456.9600016276042,
+            233.2800089518229,
+            202.55999755859375,
+            30.720001220703125
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M457.5 241.25 645 241.25 645 233.5 660.5 249 645 264.5 645 256.75 457.5 256.75Z\" stroke=\"#40433D\" stroke-width=\"1.33333\" stroke-miterlimit=\"8\" fill=\"#9FA597\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 19,
+          "name": "TextBox 18",
+          "bounds": [
+            462.5066731770833,
+            281.28000895182294,
+            240.96000162760416,
+            38.77501424153646
+          ],
+          "paragraphs": [
+            "Expected output"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Goudy Old Style,Goudy Old Style_MSFontService,sans-serif\" font-weight=\"400\" font-stretch=\"semi-expanded\" font-size=\"24\" transform=\"translate(472.107 309)\">Expected output</text></g>"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 12,
+          "name": "Text 0",
+          "bounds": [
+            85.33333333333333,
+            85.33333333333333,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "MATLAB demo: multiplication"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(85.3333 121)\">MATLAB DEMO: MULTIPLICATION</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(789.167 121)\"/></g>"
+        },
+        {
+          "id": 3,
+          "name": "Text 1",
+          "bounds": [
+            96.53333536783855,
+            138.7733357747396,
+            671.4666748046875,
+            194.61344401041666
+          ],
+          "paragraphs": [
+            "A = [1 3; 2 5];",
+            "M = rref([A eye(2)])     % Gauss-Jordan on [A | I]",
+            "Ainv = M(:,3:4)          % right half is the inverse",
+            "A*Ainv                   % check: should be the identity",
+            "inv(A)                   % built-in check"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M97 145.507C97 141.913 99.9132 139 103.507 139L761.493 139C765.087 139 768 141.913 768 145.507L768 326.493C768 330.087 765.087 333 761.493 333L103.507 333C99.9132 333 97 330.087 97 326.493Z\" fill=\"#C88769\" fill-rule=\"evenodd\"/><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(119.321 182)\">A = [1 3; 2 5];</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(119.321 209)\">M =</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(160.654 209)\">rref</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(201.988 209)\">([A eye(2)]) % Gauss</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(449.988 209)\">-</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(460.321 209)\">Jordan on [A | I]</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(119.321 235)\">Ainv</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(170.988 235)\">= M(:,3:4) % right half is the inverse</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(119.321 262)\">A*</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(139.988 262)\">Ainv</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(377.654 262)\">% check: should be the identity</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(119.321 289)\">inv(A) % built</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(449.988 289)\">-</text><text fill=\"#E8E6DF\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(460.321 289)\">in check</text></g>"
+        },
+        {
+          "id": 4,
+          "name": "Down Arrow 3",
+          "bounds": [
+            407.0399983723958,
+            344.6400146484375,
+            43.20000203450521,
+            41.97333272298177
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M407.5 366.5 418.25 366.5 418.25 345.5 439.75 345.5 439.75 366.5 450.5 366.5 429 387.5Z\" stroke=\"#40433D\" stroke-width=\"1.33333\" stroke-miterlimit=\"8\" fill=\"#9FA597\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 5,
+          "name": "Text 1",
+          "bounds": [
+            96.53333536783855,
+            407.6800130208333,
+            671.4666748046875,
+            241.2800089518229
+          ],
+          "paragraphs": [
+            "M =",
+            "     1     0    -5     3",
+            "     0     1     2    -1",
+            "",
+            "Ainv =",
+            "    -5     3",
+            "     2    -1",
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M97 416.083C97 411.619 100.619 408 105.083 408L759.917 408C764.381 408 768 411.619 768 416.083L768 640.917C768 645.381 764.381 649 759.917 649L105.083 649C100.619 649 97 645.381 97 640.917Z\" fill=\"#A75F3D\" fill-rule=\"evenodd\"/><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(119.779 451)\">M =</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(171.446 478)\">1 0</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(285.113 478)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(295.446 478)\">5 3</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(171.446 504)\">0 1 2</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(347.113 504)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(357.446 504)\">1</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(119.779 558)\">Ainv</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(171.446 558)\">=</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(161.113 584)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(171.446 584)\">5 3</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(171.446 611)\">2</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(223.113 611)\">-</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"19\" transform=\"translate(233.446 611)\">1</text></g>"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "background": null,
+      "backgroundColor": "#EDE9E7",
+      "clicks": 0,
+      "effects": [],
+      "objects": [
+        {
+          "id": 2,
+          "name": "Text 0",
+          "bounds": [
+            36.05333455403646,
+            48.5332285563151,
+            1142.6133626302083,
+            49.6000010172526
+          ],
+          "paragraphs": [
+            "Where this is used"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"43\" transform=\"translate(36.0533 85)\">Where this is used</text><text fill=\"#1A2233\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"43\" transform=\"translate(419.887 85)\"/></g>"
+        },
+        {
+          "id": 6,
+          "name": "Shape 1",
+          "bounds": [
+            36.05333455403646,
+            122.13344319661458,
+            357.3333333333333,
+            194.13334147135416
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M36 132.66C36 126.773 40.7728 122 46.6604 122L382.34 122C388.227 122 393 126.773 393 132.66L393 305.34C393 311.227 388.227 316 382.34 316L46.6604 316C40.7728 316 36 311.227 36 305.34Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 7,
+          "name": "Text 2",
+          "bounds": [
+            60.05333455403646,
+            146.1334431966146,
+            318.61334228515625,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "AI"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#3B82F6\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(60.0533 168)\">AI</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(84.72 168)\"/></g>"
+        },
+        {
+          "id": 8,
+          "name": "Text 3",
+          "bounds": [
+            60.05333455403646,
+            184.2669881184896,
+            318.61334228515625,
+            83.66666666666667
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<defs xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><clipPath id=\"l3-s12-o8-clip0\"><rect x=\"59\" y=\"184\" width=\"320\" height=\"85\"/></clipPath></defs><g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" clip-path=\"url(#l3-s12-o8-clip0)\"/>"
+        },
+        {
+          "id": 9,
+          "name": "Shape 4",
+          "bounds": [
+            412.0533447265625,
+            122.13344319661458,
+            357.3333333333333,
+            194.13334147135416
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M412 132.66C412 126.773 416.773 122 422.66 122L758.34 122C764.227 122 769 126.773 769 132.66L769 305.34C769 311.227 764.227 316 758.34 316L422.66 316C416.773 316 412 311.227 412 305.34Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 10,
+          "name": "Text 5",
+          "bounds": [
+            436.0533447265625,
+            146.1334431966146,
+            318.61334228515625,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "Graphics"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#3B82F6\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(436.053 168)\">Graphics</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(541.887 168)\"/></g>"
+        },
+        {
+          "id": 11,
+          "name": "Text 6",
+          "bounds": [
+            436.0533447265625,
+            184.2669881184896,
+            318.61334228515625,
+            110.66666666666667
+          ],
+          "paragraphs": [
+            "Transforms 3D coordinates (rotation, scaling and projection) by multiplying vectors (points in space) with transformation matrices"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(436.053 204)\">Transforms 3D coordinates</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(436.053 230)\">(rotation, scaling and</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(436.053 256)\">projection) by multiplying</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(436.053 281)\">vectors (points in space) with</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(436.053 307)\">transformation matrices</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(676.887 307)\"/></g>"
+        },
+        {
+          "id": 13,
+          "name": "Shape 7",
+          "bounds": [
+            788.0533040364584,
+            122.13344319661458,
+            357.3333333333333,
+            194.13334147135416
+          ],
+          "paragraphs": [
+            ""
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M788 132.66C788 126.773 792.773 122 798.66 122L1134.34 122C1140.23 122 1145 126.773 1145 132.66L1145 305.34C1145 311.227 1140.23 316 1134.34 316L798.66 316C792.773 316 788 311.227 788 305.34Z\" fill=\"#FFFFFF\" fill-rule=\"evenodd\"/></g>"
+        },
+        {
+          "id": 14,
+          "name": "Text 8",
+          "bounds": [
+            812.0533040364584,
+            146.1334431966146,
+            318.61334228515625,
+            31.46666717529297
+          ],
+          "paragraphs": [
+            "Cybersecurity"
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#3B82F6\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" font-size=\"24\" transform=\"translate(812.053 168)\">Cybersecurity</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"24\" transform=\"translate(980.887 168)\"/></g>"
+        },
+        {
+          "id": 15,
+          "name": "Text 9",
+          "bounds": [
+            812.0533040364584,
+            184.2669881184896,
+            318.61334228515625,
+            110.66666666666667
+          ],
+          "paragraphs": [
+            "Hill cipher: ciphertext = K·message. Decrypting needs K⁻¹, so a singular key cannot decrypt."
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text fill=\"#2B3447\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(812.053 204)\">Hill cipher: ciphertext =</text><text fill=\"#2B3447\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(812.053 231)\">K·message. Decrypting needs</text><text fill=\"#2B3447\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(812.053 257)\">K⁻¹, so a singular key cannot</text><text fill=\"#2B3447\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(812.053 284)\">decrypt.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(896.22 284)\"/></g>"
+        },
+        {
+          "id": 16,
+          "name": "Text 6",
+          "bounds": [
+            60.05333455403646,
+            170.76692708333334,
+            318.61334228515625,
+            110.66666666666667
+          ],
+          "paragraphs": [
+            "Layers in neural networks multiply input feature vectors by massive weight matrices followed by non-linear activations."
+          ],
+          "omml": [],
+          "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(60.0533 191)\">Layers in neural networks</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(60.0533 217)\">multiply input feature vectors</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(60.0533 243)\">by massive weight matrices</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(60.0533 268)\">followed by non</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(220.22 268)\">-</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(230.053 268)\">linear</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(60.0533 294)\">activations.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"21\" transform=\"translate(175.387 294)\"/></g>"
+        }
+      ]
+    }
+  ]
+}

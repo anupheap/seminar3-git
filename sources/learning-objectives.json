@@ -1,0 +1,258 @@
+{
+  "background": "/sources/slides/Seminar/objectives/background.png",
+  "image": "/sources/slides/Seminar/03.png",
+  "layers": [
+    {
+      "shape": 1476,
+      "src": "/sources/slides/Seminar/objectives/1476.png",
+      "label": "Understand Row Picture",
+      "origin": [
+        41.495633125305176,
+        22.847090473881472
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "right",
+      "delay": 0.44,
+      "duration": 0.75
+    },
+    {
+      "shape": 1478,
+      "src": "/sources/slides/Seminar/objectives/1478.png",
+      "label": "01.",
+      "origin": [
+        12.48189369837443,
+        21.528717500192148
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "left",
+      "delay": 0.32,
+      "duration": 0.65
+    },
+    {
+      "shape": 1481,
+      "src": "/sources/slides/Seminar/objectives/1481.png",
+      "label": "02.",
+      "origin": [
+        15.267183581988016,
+        38.15350073355216
+      ],
+      "box": [
+        -0.15625,
+        0.0,
+        100.15624999999999,
+        100.0
+      ],
+      "motion": "left",
+      "delay": 0.62,
+      "duration": 0.65
+    },
+    {
+      "shape": 1484,
+      "src": "/sources/slides/Seminar/objectives/1484.png",
+      "label": "03.",
+      "origin": [
+        8.059174021085104,
+        55.21187181825991
+      ],
+      "box": [
+        -0.052083333333333336,
+        0.0925925925925926,
+        100.05208333333333,
+        100.0
+      ],
+      "motion": "left",
+      "delay": 0.92,
+      "duration": 0.65
+    },
+    {
+      "shape": 1486,
+      "src": "/sources/slides/Seminar/objectives/1486.png",
+      "label": "Learning Objectives:",
+      "origin": [
+        32.55262772242229,
+        8.301086602387604
+      ],
+      "box": [
+        -0.7291666666666666,
+        -0.7407407407407408,
+        100.72916666666667,
+        100.74074074074073
+      ],
+      "motion": "top",
+      "delay": 0.0,
+      "duration": 0.65
+    },
+    {
+      "shape": 1499,
+      "src": "/sources/slides/Seminar/objectives/1499.png",
+      "label": "Google Shape;1499;p26",
+      "origin": [
+        95.88355680306752,
+        8.76084115770128
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "top",
+      "delay": 0.14,
+      "duration": 0.7
+    },
+    {
+      "shape": 1500,
+      "src": "/sources/slides/Seminar/objectives/1500.png",
+      "label": "Google Shape;1500;p26",
+      "origin": [
+        62.19980398813883,
+        92.4837150617882
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "grow-y",
+      "delay": 0.18,
+      "duration": 0.8
+    },
+    {
+      "shape": 1501,
+      "src": "/sources/slides/Seminar/objectives/1501.png",
+      "label": "Google Shape;1501;p26",
+      "origin": [
+        5.2445004383722935,
+        92.4849831616437
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "bottom",
+      "delay": 1.42,
+      "duration": 0.7
+    },
+    {
+      "shape": 1519,
+      "src": "/sources/slides/Seminar/objectives/1519.png",
+      "label": "Google Shape;1519;p26",
+      "origin": [
+        16.347748438517254,
+        91.71024569758663
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "grow-x",
+      "delay": 1.5,
+      "duration": 0.7
+    },
+    {
+      "shape": 3,
+      "src": "/sources/slides/Seminar/objectives/3.png",
+      "label": "Rectangle 2",
+      "origin": [
+        1.821301778157552,
+        49.36957421126189
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "fade",
+      "delay": 1.55,
+      "duration": 0.6
+    },
+    {
+      "shape": 6,
+      "src": "/sources/slides/Seminar/objectives/6.png",
+      "label": "Understand Column Picture",
+      "origin": [
+        41.600636641184494,
+        38.55750295850966
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "right",
+      "delay": 0.74,
+      "duration": 0.75
+    },
+    {
+      "shape": 2,
+      "src": "/sources/slides/Seminar/objectives/2.png",
+      "label": "Visualize vectors in 2D and 3D with systems of equations",
+      "origin": [
+        41.495629946390785,
+        55.599366647225835
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "right",
+      "delay": 1.04,
+      "duration": 0.75
+    },
+    {
+      "shape": 4,
+      "src": "/sources/slides/Seminar/objectives/4.png",
+      "label": "04.",
+      "origin": [
+        8.539136250813801,
+        76.48451699150934
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "left",
+      "delay": 1.22,
+      "duration": 0.65
+    },
+    {
+      "shape": 5,
+      "src": "/sources/slides/Seminar/objectives/5.png",
+      "label": "Understand why n unknows need n equations",
+      "origin": [
+        41.600632667541504,
+        76.1575048941153
+      ],
+      "box": [
+        0.0,
+        0.0,
+        100.0,
+        100.0
+      ],
+      "motion": "right",
+      "delay": 1.34,
+      "duration": 0.75
+    }
+  ]
+}

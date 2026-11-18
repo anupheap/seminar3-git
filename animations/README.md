@@ -1,28 +1,31 @@
-# Manim source and rendered clips
+# New source-based Manim scenes
 
-The presentation has fourteen silent clips. Lecture 1 has four clips covering the guide's 2D and 3D row and column pictures; each other selected lecture has two. The MP4 files and JPG posters live in `public/animations`. Viewing the deck needs no Python installation.
+The appended animation slides have been removed from the active presentation.
+`source_scenes.py` retains eleven scenes for future work and imports the
+same numeric constants as `python_examples/source_math.py`.
 
 | Lecture | Scenes |
 | --- | --- |
-| 1 | `RowIntersection`, `ThreePlaneIntersection`, `ColumnCombination`, `ThreeColumnCombination` |
-| 2 | `EliminationPivots`, `EliminationGeometry` |
-| 3 | `MatrixComposition`, `GaussJordanInverse` |
-| 5 | `MatrixTranspose`, `PermutationRows` |
-| 6 | `ColumnSpaceSweep`, `NullspacePlane` |
-| 9 | `DependenceAndBasis`, `BasisCoordinates` |
-
-The clips start when their slide becomes active, loop continuously like GIFs, and pause when you leave. The reusable `HoverVideo.vue` player hides native controls until the pointer hovers over the video. Keyboard focus and touch access can also reveal the controls. A browser preference for reduced motion disables automatic playback.
-
-## Regenerate
-
-The Manim scene definitions use Python 3.14 and Manim Community 0.22.1. They use Pango text and need no LaTeX installation. The current Lecture 1 MP4 and JPG assets were rendered with `render_lecture1_fallback.py` (Pillow, NumPy, ffmpeg) because Manim was unavailable in the editing environment. Both renderers use the same systems and solutions.
+| 1 | `L1Rows`, `L1Columns`, `L1ThreePlanes` |
+| 2 | `L2Elimination` |
+| 3 | `L3Products`, `L3Inverse` |
+| 5 | `L5Permutation`, `L5Symmetry`, `L5ColumnSpace` |
+| 9 | `L9Dependence`, `L9Basis` |
 
 ```powershell
 python -m venv .venv-manim
 .\.venv-manim\Scripts\python.exe -m pip install -r animations/requirements.txt
-.\.venv-manim\Scripts\python.exe -m manim -qm --fps 30 --media_dir media -a animations/linear_algebra.py
-.\.venv-manim\Scripts\python.exe -m manim -qm --fps 30 --media_dir media -a animations/expanded_scenes.py
-.\.venv-manim\Scripts\python.exe animations/publish_clips.py --media media
+.\.venv-manim\Scripts\python.exe animations/render_sources.py
 ```
 
-`publish_clips.py` copies the rendered videos and extracts their poster images. Use `--scenes RowIntersection ThreePlaneIntersection ColumnCombination ThreeColumnCombination` to publish only Lecture 1 after rendering those scenes. Alternatively, run `python animations/render_lecture1_fallback.py` to regenerate the four current Lecture 1 clips. Keep both media types in Git so the presentation works after pushing or deploying.
+Manim Community 0.22.1 renders at 1280 × 720 and 24 fps. These scenes use Pango
+text rather than LaTeX. `render_sources.py` publishes complete videos and their
+posters to `public/animations/source/`. Rendering intermediates go in `.cache`.
+To render a subset, pass `--scenes L2Elimination L9Basis`.
+
+If a clip is re-enabled in a future lesson, its player starts it on entering the slide and pauses it on leaving.
+Controls appear on hover, keyboard focus or touch. Reduced-motion preferences
+disable automatic playback.
+
+Previous scenes and clips are under `archive/legacy/` and are not referenced by
+the active deck. None of those rendered videos was reused for these new scenes.

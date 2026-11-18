@@ -1,0 +1,2931 @@
+[
+  {
+    "id": "Seminar",
+    "source": "/sources/powerpoint/Seminar.pptx",
+    "width": 960.0,
+    "height": 540.0,
+    "slides": [
+      {
+        "number": 1,
+        "image": "/sources/slides/Seminar/01.png",
+        "background": "/sources/slides/Seminar/01-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 2,
+        "image": "/sources/slides/Seminar/02.png",
+        "background": "/sources/slides/Seminar/02-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Lecture 1: Institute of Technology of Cambodia The Geometry of Linear Equations MIT 18.06 Linear Algebra, Spring 2005 Instructor: Gilbert Strang",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 3,
+        "image": "/sources/slides/Seminar/03.png",
+        "background": "/sources/slides/Seminar/03-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 1501,
+            "type": 2,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.4,
+            "direction": 3
+          },
+          {
+            "index": 2,
+            "shape": 1499,
+            "type": 2,
+            "exit": false,
+            "trigger": 3,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.2,
+            "direction": 2
+          },
+          {
+            "index": 3,
+            "shape": 1486,
+            "type": 2,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.4,
+            "direction": 1
+          },
+          {
+            "index": 4,
+            "shape": 1476,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 5,
+            "shape": 1478,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.4,
+            "direction": 19
+          },
+          {
+            "index": 6,
+            "shape": 1481,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.4,
+            "direction": 19
+          },
+          {
+            "index": 7,
+            "shape": 1484,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.4,
+            "direction": 19
+          },
+          {
+            "index": 8,
+            "shape": 6,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 9,
+            "shape": 4,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.4,
+            "duration": 0.4,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 1476,
+            "src": "/sources/slides/Seminar/03-shape-1476.png",
+            "order": 2,
+            "bounds": [
+              13.151148293963255,
+              17.581598133566636,
+              56.68896817585301,
+              10.530985710119568
+            ],
+            "origin": [
+              41.49563238188976,
+              22.84709098862642
+            ]
+          },
+          {
+            "shape": 1478,
+            "src": "/sources/slides/Seminar/03-shape-1478.png",
+            "order": 3,
+            "bounds": [
+              2.9754511154855643,
+              18.641149023038786,
+              19.012885498687663,
+              5.7751385243511235
+            ],
+            "origin": [
+              12.481893864829395,
+              21.528718285214346
+            ]
+          },
+          {
+            "shape": 1481,
+            "src": "/sources/slides/Seminar/03-shape-1481.png",
+            "order": 4,
+            "bounds": [
+              2.599860564304462,
+              32.119670457859435,
+              25.33464566929134,
+              12.067658209390494
+            ],
+            "origin": [
+              15.267183398950133,
+              38.153499562554686
+            ]
+          },
+          {
+            "shape": 1484,
+            "src": "/sources/slides/Seminar/03-shape-1484.png",
+            "order": 5,
+            "bounds": [
+              2.726820866141732,
+              49.17804024496938,
+              10.664706364829396,
+              12.067658209390494
+            ],
+            "origin": [
+              8.05917404855643,
+              55.211869349664624
+            ]
+          },
+          {
+            "shape": 1486,
+            "src": "/sources/slides/Seminar/03-shape-1486.png",
+            "order": 6,
+            "bounds": [
+              1.632004593175853,
+              0.5229075532225138,
+              61.84124835958006,
+              15.556357538641002
+            ],
+            "origin": [
+              32.55262877296588,
+              8.301086322543014
+            ]
+          },
+          {
+            "shape": 1499,
+            "src": "/sources/slides/Seminar/03-shape-1499.png",
+            "order": 7,
+            "bounds": [
+              93.71744586614173,
+              4.645086030912802,
+              4.332217847769028,
+              8.231510644502771
+            ],
+            "origin": [
+              95.88355479002624,
+              8.760841353164189
+            ]
+          },
+          {
+            "shape": 1501,
+            "src": "/sources/slides/Seminar/03-shape-1501.png",
+            "order": 9,
+            "bounds": [
+              3.5746801181102366,
+              89.19352580927384,
+              3.3396407480314956,
+              6.582910469524641
+            ],
+            "origin": [
+              5.244500492125985,
+              92.48498104403616
+            ]
+          },
+          {
+            "shape": 6,
+            "src": "/sources/slides/Seminar/03-shape-6.png",
+            "order": 12,
+            "bounds": [
+              13.256151574803148,
+              33.29200933216681,
+              56.68896817585301,
+              10.530985710119568
+            ],
+            "origin": [
+              41.60063566272966,
+              38.557502187226596
+            ]
+          },
+          {
+            "shape": 4,
+            "src": "/sources/slides/Seminar/03-shape-4.png",
+            "order": 14,
+            "bounds": [
+              3.2067831364829393,
+              70.45068533100029,
+              10.664706364829396,
+              12.067658209390494
+            ],
+            "origin": [
+              8.539136318897636,
+              76.48451443569553
+            ]
+          }
+        ],
+        "text": "Understand Row Picture 01. 02. 03. Learning Objectives: Understand Column Picture Visualize vectors in 2D and 3D with systems of equations 04. Understand why n unknows need n equations",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 4,
+        "image": "/sources/slides/Seminar/04.png",
+        "background": "/sources/slides/Seminar/04-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 8,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 8,
+            "src": "/sources/slides/Seminar/04-shape-8.png",
+            "order": 3,
+            "bounds": [
+              -7.096776574803148,
+              2.239909594634004,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              15.766826607611552,
+              7.505402449693788
+            ]
+          }
+        ],
+        "text": " 1. Row Picture Row picture is a way to view each linear equation in a system as a geometric shape. It could be a line in 2D or a flat plane in 3D. We draw those shapes to see where they intersect.  The intersection point is the answer of our System of Equations.",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 5,
+        "image": "/sources/slides/Seminar/05.png",
+        "background": "/sources/slides/Seminar/05-base.png",
+        "clicks": 4,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 14,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 21,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 4,
+            "shape": 18,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 5,
+            "shape": 13,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 6,
+            "shape": 19,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 7,
+            "shape": 20,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 8,
+            "shape": 23,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 4,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 9,
+            "shape": 24,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 4,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/05-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -11.370964566929134,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              11.492638615485566,
+              7.218657042869641
+            ]
+          },
+          {
+            "shape": 13,
+            "src": "/sources/slides/Seminar/05-shape-13.png",
+            "order": 9,
+            "bounds": [
+              5.465633202099738,
+              84.5795858850977,
+              25.822785433070866,
+              6.731773111694371
+            ],
+            "origin": [
+              18.37702591863517,
+              87.94547244094488
+            ]
+          },
+          {
+            "shape": 14,
+            "src": "/sources/slides/Seminar/05-shape-14.png",
+            "order": 10
+          },
+          {
+            "shape": 18,
+            "src": "/sources/slides/Seminar/05-shape-18.png",
+            "order": 13
+          },
+          {
+            "shape": 19,
+            "src": "/sources/slides/Seminar/05-shape-19.png",
+            "order": 14
+          },
+          {
+            "shape": 20,
+            "src": "/sources/slides/Seminar/05-shape-20.png",
+            "order": 15,
+            "bounds": [
+              36.97206364829396,
+              82.09699620880723,
+              23.199622703412075,
+              12.117191601049868
+            ],
+            "origin": [
+              48.571875,
+              88.15559200933217
+            ]
+          },
+          {
+            "shape": 21,
+            "src": "/sources/slides/Seminar/05-shape-21.png",
+            "order": 16,
+            "bounds": [
+              32.782545931758534,
+              50.0,
+              46.717109580052494,
+              6.731773111694371
+            ],
+            "origin": [
+              56.14110072178478,
+              53.36588655584718
+            ]
+          },
+          {
+            "shape": 23,
+            "src": "/sources/slides/Seminar/05-shape-23.png",
+            "order": 17
+          },
+          {
+            "shape": 24,
+            "src": "/sources/slides/Seminar/05-shape-24.png",
+            "order": 18,
+            "bounds": [
+              65.8553313648294,
+              80.6258530183727,
+              23.199622703412075,
+              12.117191601049868
+            ],
+            "origin": [
+              77.45514271653543,
+              86.68444881889764
+            ]
+          }
+        ],
+        "text": " Example:           Coefficient Matrix   Matrix form   x   Column vector of Unknowns The standard matrix form b  =    Right-hand side vector",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 6,
+        "image": "/sources/slides/Seminar/06.png",
+        "background": "/sources/slides/Seminar/06-base.png",
+        "clicks": 10,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 24,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 2,
+            "shape": 27,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 28,
+            "type": 22,
+            "exit": false,
+            "trigger": 2,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 3
+          },
+          {
+            "index": 4,
+            "shape": 29,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 5,
+            "shape": 31,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 4,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 6,
+            "shape": 2,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 5,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 7,
+            "shape": 35,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 6,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 8,
+            "shape": 34,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 6,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 9,
+            "shape": 36,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 7,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 10,
+            "shape": 37,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 8,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 11,
+            "shape": 3,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 9,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 12,
+            "shape": 4,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 10,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/06-shape-2.png",
+            "order": 2
+          },
+          {
+            "shape": 3,
+            "src": "/sources/slides/Seminar/06-shape-3.png",
+            "order": 3,
+            "bounds": [
+              46.6412155511811,
+              22.603703703703705,
+              45.63726213910761,
+              42.69768153980752
+            ],
+            "origin": [
+              69.45984662073491,
+              43.95254447360746
+            ]
+          },
+          {
+            "shape": 4,
+            "src": "/sources/slides/Seminar/06-shape-4.png",
+            "order": 4
+          },
+          {
+            "shape": 24,
+            "src": "/sources/slides/Seminar/06-shape-24.png",
+            "order": 15,
+            "bounds": [
+              68.0852034120735,
+              53.72716535433071,
+              1.4615403543307088,
+              2.6627879848352287
+            ],
+            "origin": [
+              68.81597358923885,
+              55.058559346748325
+            ]
+          },
+          {
+            "shape": 27,
+            "src": "/sources/slides/Seminar/06-shape-27.png",
+            "order": 16,
+            "bounds": [
+              72.610843175853,
+              40.26032370953631,
+              0.013918963254593178,
+              14.064421114027411
+            ],
+            "origin": [
+              72.6178026574803,
+              47.292534266550014
+            ]
+          },
+          {
+            "shape": 28,
+            "src": "/sources/slides/Seminar/06-shape-28.png",
+            "order": 17,
+            "bounds": [
+              69.0020751312336,
+              40.372645086030914,
+              3.4311351706036746,
+              0.0
+            ],
+            "origin": [
+              70.71764271653544,
+              40.372645086030914
+            ]
+          },
+          {
+            "shape": 29,
+            "src": "/sources/slides/Seminar/06-shape-29.png",
+            "order": 18,
+            "bounds": [
+              72.09194553805774,
+              39.36870807815689,
+              1.4615403543307088,
+              2.6627879848352287
+            ],
+            "origin": [
+              72.8227157152231,
+              40.70010207057451
+            ]
+          },
+          {
+            "shape": 31,
+            "src": "/sources/slides/Seminar/06-shape-31.png",
+            "order": 20,
+            "bounds": [
+              61.51359908136483,
+              24.85415573053368,
+              15.508521981627297,
+              57.36806649168854
+            ],
+            "origin": [
+              69.26786007217848,
+              53.53818897637795
+            ]
+          },
+          {
+            "shape": 34,
+            "src": "/sources/slides/Seminar/06-shape-34.png",
+            "order": 21,
+            "bounds": [
+              65.19417650918633,
+              48.45869058034412,
+              2.8983185695538056,
+              0.0
+            ],
+            "origin": [
+              66.64333579396323,
+              48.45869058034412
+            ]
+          },
+          {
+            "shape": 35,
+            "src": "/sources/slides/Seminar/06-shape-35.png",
+            "order": 22,
+            "bounds": [
+              65.19417650918633,
+              48.170005832604254,
+              0.0,
+              6.022630504520269
+            ],
+            "origin": [
+              65.19417650918633,
+              51.181321084864386
+            ]
+          },
+          {
+            "shape": 36,
+            "src": "/sources/slides/Seminar/06-shape-36.png",
+            "order": 23,
+            "bounds": [
+              64.19660433070867,
+              46.77255759696705,
+              1.6757299868766402,
+              3.0310440361621467
+            ],
+            "origin": [
+              65.03446932414698,
+              48.28807961504812
+            ]
+          },
+          {
+            "shape": 37,
+            "src": "/sources/slides/Seminar/06-shape-37.png",
+            "order": 24,
+            "bounds": [
+              56.51962762467192,
+              53.93098571011957,
+              1.4615403543307088,
+              2.6627879848352287
+            ],
+            "origin": [
+              57.25039780183727,
+              55.26237970253719
+            ]
+          }
+        ],
+        "text": "    y x “Row picture”   x 0 1 y 0 2 x -3 -1 y 0 1 0 2 -3 -1 1  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 7,
+        "image": "/sources/slides/Seminar/07.png",
+        "background": "/sources/slides/Seminar/07-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/07-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -11.370964566929134,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              11.492638615485566,
+              7.218657042869641
+            ]
+          }
+        ],
+        "text": " Example:       https://www.desmos.com/3d/wzmocmkzzv x = 0, y = 0, z = 1 ",
+        "links": [
+          "https://www.desmos.com/3d/wzmocmkzzv"
+        ],
+        "media": []
+      },
+      {
+        "number": 8,
+        "image": "/sources/slides/Seminar/08.png",
+        "background": "/sources/slides/Seminar/08-base.png",
+        "clicks": 2,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 16,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 17,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 4,
+            "shape": 18,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 5,
+            "shape": 19,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/08-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -2.634752296587927,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              20.228850885826773,
+              7.218657042869641
+            ]
+          },
+          {
+            "shape": 16,
+            "src": "/sources/slides/Seminar/08-shape-16.png",
+            "order": 6,
+            "bounds": [
+              18.508989501312335,
+              46.451910177894426,
+              60.29213418635171,
+              12.56596675415573
+            ],
+            "origin": [
+              48.65505659448819,
+              52.73489355497229
+            ]
+          },
+          {
+            "shape": 17,
+            "src": "/sources/slides/Seminar/08-shape-17.png",
+            "order": 7
+          },
+          {
+            "shape": 18,
+            "src": "/sources/slides/Seminar/08-shape-18.png",
+            "order": 8
+          },
+          {
+            "shape": 19,
+            "src": "/sources/slides/Seminar/08-shape-19.png",
+            "order": 9
+          }
+        ],
+        "text": " 2. Column Picture Column picture is a way to view a system of equation by drawing vectors and  combining  them to reach a specific target vector. Linear Combination: the process of scaling vectors and add them up a   + b    ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 9,
+        "image": "/sources/slides/Seminar/09.png",
+        "background": "/sources/slides/Seminar/09-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 4,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 4,
+            "src": "/sources/slides/Seminar/09-shape-4.png",
+            "order": 4,
+            "bounds": [
+              -11.370964566929134,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              11.492638615485566,
+              7.218657042869641
+            ]
+          }
+        ],
+        "text": "     Example:   +   =      Linear Combination",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 10,
+        "image": "/sources/slides/Seminar/10.png",
+        "background": "/sources/slides/Seminar/10-base.png",
+        "clicks": 6,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 41,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 2,
+            "shape": 33,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 42,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 4,
+            "shape": 26,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 4,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 5,
+            "shape": 43,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 5,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 6,
+            "shape": 40,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 6,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 26,
+            "src": "/sources/slides/Seminar/10-shape-26.png",
+            "order": 14,
+            "bounds": [
+              61.530355971128614,
+              34.909317585301835,
+              5.825016404199475,
+              20.63047535724701
+            ],
+            "origin": [
+              64.44286417322836,
+              45.22455526392534
+            ]
+          },
+          {
+            "shape": 33,
+            "src": "/sources/slides/Seminar/10-shape-33.png",
+            "order": 16,
+            "bounds": [
+              67.35537237532809,
+              55.53979294254885,
+              11.533817257217848,
+              9.085914260717411
+            ],
+            "origin": [
+              73.12228100393702,
+              60.08275007290756
+            ]
+          },
+          {
+            "shape": 40,
+            "src": "/sources/slides/Seminar/10-shape-40.png",
+            "order": 22,
+            "bounds": [
+              67.49462762467192,
+              24.62292213473316,
+              0.0,
+              30.570224555263927
+            ],
+            "origin": [
+              67.49462762467192,
+              39.908034412365126
+            ]
+          },
+          {
+            "shape": 41,
+            "src": "/sources/slides/Seminar/10-shape-41.png",
+            "order": 23
+          },
+          {
+            "shape": 42,
+            "src": "/sources/slides/Seminar/10-shape-42.png",
+            "order": 24
+          },
+          {
+            "shape": 43,
+            "src": "/sources/slides/Seminar/10-shape-43.png",
+            "order": 25
+          }
+        ],
+        "text": "x y 2 -1 2 -1 3   +              ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 11,
+        "image": "/sources/slides/Seminar/11.png",
+        "background": "/sources/slides/Seminar/11-base.png",
+        "clicks": 6,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 27,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 2,
+            "shape": 28,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 26,
+            "type": 22,
+            "exit": false,
+            "trigger": 1,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 3
+          },
+          {
+            "index": 4,
+            "shape": 39,
+            "type": 22,
+            "exit": false,
+            "trigger": 1,
+            "step": 4,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 3
+          },
+          {
+            "index": 5,
+            "shape": 45,
+            "type": 22,
+            "exit": false,
+            "trigger": 1,
+            "step": 5,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 3
+          },
+          {
+            "index": 6,
+            "shape": 40,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 6,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 26,
+            "src": "/sources/slides/Seminar/11-shape-26.png",
+            "order": 14,
+            "bounds": [
+              56.90721784776902,
+              16.082473024205306,
+              10.448154527559055,
+              39.45731991834354
+            ],
+            "origin": [
+              62.131295111548546,
+              35.81113298337708
+            ]
+          },
+          {
+            "shape": 40,
+            "src": "/sources/slides/Seminar/11-shape-40.png",
+            "order": 22,
+            "bounds": [
+              67.49462762467192,
+              24.62292213473316,
+              0.0,
+              30.570224555263927
+            ],
+            "origin": [
+              67.49462762467192,
+              39.908034412365126
+            ]
+          },
+          {
+            "shape": 27,
+            "src": "/sources/slides/Seminar/11-shape-27.png",
+            "order": 27
+          },
+          {
+            "shape": 28,
+            "src": "/sources/slides/Seminar/11-shape-28.png",
+            "order": 28
+          },
+          {
+            "shape": 39,
+            "src": "/sources/slides/Seminar/11-shape-39.png",
+            "order": 30,
+            "bounds": [
+              67.35537237532809,
+              24.62292213473316,
+              10.81473097112861,
+              39.003266258384365
+            ],
+            "origin": [
+              72.76273786089239,
+              44.124555263925345
+            ]
+          },
+          {
+            "shape": 45,
+            "src": "/sources/slides/Seminar/11-shape-45.png",
+            "order": 31,
+            "bounds": [
+              57.68041338582677,
+              17.478579760863227,
+              9.814214238845144,
+              7.144342373869933
+            ],
+            "origin": [
+              62.58752050524934,
+              21.050750947798193
+            ]
+          }
+        ],
+        "text": "x y 2 -1 2 -1 3   +              ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 12,
+        "image": "/sources/slides/Seminar/12.png",
+        "background": "/sources/slides/Seminar/12-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 7,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 7,
+            "src": "/sources/slides/Seminar/12-shape-7.png",
+            "order": 6,
+            "bounds": [
+              -11.370964566929134,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              11.492638615485566,
+              7.218657042869641
+            ]
+          }
+        ],
+        "text": "       Example: https://www.desmos.com/3d/aoacgfimov   A   b",
+        "links": [
+          "https://www.desmos.com/3d/aoacgfimov"
+        ],
+        "media": []
+      },
+      {
+        "number": 13,
+        "image": "/sources/slides/Seminar/13.png",
+        "background": "/sources/slides/Seminar/13-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": " 3. Answering some questions 1.  If we have all the x and all the y, then we combine them. What will be all the result? https://www.desmos.com/3d/yornyg6ls4 Answer : Yes, if those vectors are independent( not parallel) of each other.               : No, if those vectors are dependent( parallel ) of each other. Independent vectors dependent vectors https://www.desmos. com /3d/crrvxhbmsg",
+        "links": [
+          "https://www.desmos.com/3d/yornyg6ls4",
+          "https://www.desmos.com/3d/crrvxhbmsg"
+        ],
+        "media": []
+      },
+      {
+        "number": 14,
+        "image": "/sources/slides/Seminar/14.png",
+        "background": "/sources/slides/Seminar/14-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "2. Why n unknowns need n equations? Answer :  Because we want to find one specific solution. But having n equations do not guarantee to get one specific answer or even an answer. Think of Equations as Instructions.         One solution Infinite solutions     No solution",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 15,
+        "image": "/sources/slides/Seminar/15.png",
+        "background": "/sources/slides/Seminar/15-base.png",
+        "clicks": 1,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 83,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 12.026,
+            "direction": 0
+          },
+          {
+            "index": 2,
+            "shape": 4,
+            "type": 1,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 6.0,
+            "duration": 8.0,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/15-shape-2.png",
+            "order": 2,
+            "bounds": [
+              0.0,
+              0.0,
+              105.58923064304462,
+              100.0
+            ],
+            "origin": [
+              52.79461532152231,
+              50.0
+            ]
+          },
+          {
+            "shape": 4,
+            "src": "/sources/slides/Seminar/15-shape-4.png",
+            "order": 3,
+            "bounds": [
+              68.48393208661416,
+              17.044677748614756,
+              38.5521407480315,
+              63.86608340624089
+            ],
+            "origin": [
+              87.7600024606299,
+              48.9777194517352
+            ]
+          }
+        ],
+        "text": "",
+        "links": [],
+        "media": [
+          {
+            "shape": 2,
+            "src": "/sources/media/Seminar-media1.mp4",
+            "start": 37.367,
+            "end": 39.4736333,
+            "crop": {
+              "l": 0.01951,
+              "t": 0.02716,
+              "b": 0.04339
+            },
+            "left": 0.0,
+            "top": 0.0,
+            "width": 105.58923064304462,
+            "height": 100.0
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "image": "/sources/slides/Seminar/16.png",
+        "background": "/sources/slides/Seminar/16-base.png",
+        "clicks": 2,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 13,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 14,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/16-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -11.370964566929134,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              11.492638615485566,
+              7.218657042869641
+            ]
+          },
+          {
+            "shape": 13,
+            "src": "/sources/slides/Seminar/16-shape-13.png",
+            "order": 8,
+            "bounds": [
+              80.22218667979003,
+              34.91860600758238,
+              10.1003937007874,
+              9.42448235637212
+            ],
+            "origin": [
+              85.27238353018373,
+              39.630847185768445
+            ]
+          },
+          {
+            "shape": 14,
+            "src": "/sources/slides/Seminar/16-shape-14.png",
+            "order": 9,
+            "bounds": [
+              81.51250820209974,
+              71.85484106153397,
+              10.1003937007874,
+              9.42448235637212
+            ],
+            "origin": [
+              86.56270505249344,
+              76.56708223972004
+            ]
+          }
+        ],
+        "text": " Summary: 1.  What is Row picture? The way to view the system of equation by drawing geometric shape of each equation to find where it intersect The way to view the system of equation by drawing vectors of each equations and do combination to reach target vectors Both A and B 2.  What is Column picture? The way to view the system of equation by drawing geometric shape of each equation to find where it intersect The way to view the system of equation by drawing vectors of each equations and do combination to reach target vectors Both A and B A B",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 17,
+        "image": "/sources/slides/Seminar/17.png",
+        "background": "/sources/slides/Seminar/17-base.png",
+        "clicks": 1,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 8,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/17-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -11.370964566929134,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              11.492638615485566,
+              7.218657042869641
+            ]
+          },
+          {
+            "shape": 8,
+            "src": "/sources/slides/Seminar/17-shape-8.png",
+            "order": 6,
+            "bounds": [
+              40.86734744094488,
+              31.22862350539516,
+              10.1003937007874,
+              9.42448235637212
+            ],
+            "origin": [
+              45.91754429133859,
+              35.94086468358122
+            ]
+          }
+        ],
+        "text": " Summary: 3.  Having n equation and n unknowns. Can you get a specific solution? Yes, I can No, I can not Both A and B C",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 18,
+        "image": "/sources/slides/Seminar/18.png",
+        "background": "/sources/slides/Seminar/18-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Any Question",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 19,
+        "image": "/sources/slides/Seminar/19.png",
+        "background": "/sources/slides/Seminar/19-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Lecture 2: Elimination with Matrices Institute of Technology of Cambodia MIT 18.06 Linear Algebra, Spring 2005 Instructor: Gilbert Strang",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 20,
+        "image": "/sources/slides/Seminar/20.png",
+        "background": "/sources/slides/Seminar/20-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 2,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.4,
+            "direction": 1
+          },
+          {
+            "index": 2,
+            "shape": 3,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.4,
+            "direction": 19
+          },
+          {
+            "index": 3,
+            "shape": 4,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.4,
+            "direction": 19
+          },
+          {
+            "index": 4,
+            "shape": 5,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.4,
+            "direction": 19
+          },
+          {
+            "index": 5,
+            "shape": 6,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.4,
+            "direction": 19
+          },
+          {
+            "index": 6,
+            "shape": 8,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 7,
+            "shape": 9,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 8,
+            "shape": 10,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 9,
+            "shape": 11,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/20-shape-2.png",
+            "order": 2,
+            "bounds": [
+              1.632004593175853,
+              0.5229075532225138,
+              61.84124835958006,
+              15.556357538641002
+            ],
+            "origin": [
+              32.55262877296588,
+              8.301086322543014
+            ]
+          },
+          {
+            "shape": 3,
+            "src": "/sources/slides/Seminar/20-shape-3.png",
+            "order": 3,
+            "bounds": [
+              -1.5863845144356954,
+              20.283479148439778,
+              17.978149606299212,
+              5.7751385243511235
+            ],
+            "origin": [
+              7.40269028871391,
+              23.171048410615338
+            ]
+          },
+          {
+            "shape": 4,
+            "src": "/sources/slides/Seminar/20-shape-4.png",
+            "order": 4,
+            "bounds": [
+              2.726820866141732,
+              33.69266550014582,
+              25.33464566929134,
+              12.067658209390494
+            ],
+            "origin": [
+              15.394143700787403,
+              39.726494604841065
+            ]
+          },
+          {
+            "shape": 5,
+            "src": "/sources/slides/Seminar/20-shape-5.png",
+            "order": 5,
+            "bounds": [
+              2.726820866141732,
+              49.964537766112564,
+              10.664706364829396,
+              12.067658209390494
+            ],
+            "origin": [
+              8.05917404855643,
+              55.998366870807814
+            ]
+          },
+          {
+            "shape": 6,
+            "src": "/sources/slides/Seminar/20-shape-6.png",
+            "order": 6,
+            "bounds": [
+              2.726820866141732,
+              66.23641003207933,
+              10.664706364829396,
+              12.067658209390494
+            ],
+            "origin": [
+              8.05917404855643,
+              72.27023913677458
+            ]
+          },
+          {
+            "shape": 8,
+            "src": "/sources/slides/Seminar/20-shape-8.png",
+            "order": 8,
+            "bounds": [
+              -1.5863845144356954,
+              17.2249343832021,
+              56.68896817585301,
+              10.530985710119568
+            ],
+            "origin": [
+              26.75809957349081,
+              22.490427238261884
+            ]
+          },
+          {
+            "shape": 9,
+            "src": "/sources/slides/Seminar/20-shape-9.png",
+            "order": 9,
+            "bounds": [
+              13.391527230971128,
+              32.356561679790026,
+              56.68896817585301,
+              10.530985710119568
+            ],
+            "origin": [
+              41.73601131889764,
+              37.62205453484981
+            ]
+          },
+          {
+            "shape": 10,
+            "src": "/sources/slides/Seminar/20-shape-10.png",
+            "order": 10,
+            "bounds": [
+              13.391510826771654,
+              49.36956838728492,
+              56.68896817585301,
+              10.530985710119568
+            ],
+            "origin": [
+              41.73599491469816,
+              54.635061242344705
+            ]
+          },
+          {
+            "shape": 11,
+            "src": "/sources/slides/Seminar/20-shape-11.png",
+            "order": 11,
+            "bounds": [
+              13.391502624671917,
+              66.23641003207933,
+              56.68896817585301,
+              10.530985710119568
+            ],
+            "origin": [
+              41.735986712598425,
+              71.50190288713912
+            ]
+          }
+        ],
+        "text": "Learning Objectives: 01. 02 03 04 Row elimination Back-substitution Matrix multiplication Elimination matrices",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 21,
+        "image": "/sources/slides/Seminar/21.png",
+        "background": "/sources/slides/Seminar/21-base.png",
+        "clicks": 3,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 19,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 20,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 4,
+            "shape": 17,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/21-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -2.9215141076115487,
+              1.2908573928258968,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              19.94208907480315,
+              6.556350247885681
+            ]
+          },
+          {
+            "shape": 20,
+            "src": "/sources/slides/Seminar/21-shape-20.png",
+            "order": 12,
+            "bounds": [
+              49.18455544619423,
+              58.120953630796144,
+              21.63371062992126,
+              26.80731991834354
+            ],
+            "origin": [
+              60.00141076115486,
+              71.52461358996791
+            ]
+          },
+          {
+            "shape": 17,
+            "src": "/sources/slides/Seminar/21-shape-17.png",
+            "order": 13,
+            "bounds": [
+              2.7133366141732287,
+              76.40137066200059,
+              27.210392060367454,
+              5.834208223972004
+            ],
+            "origin": [
+              16.318532644356956,
+              79.3184747739866
+            ]
+          },
+          {
+            "shape": 19,
+            "src": "/sources/slides/Seminar/21-shape-19.png",
+            "order": 14,
+            "bounds": [
+              59.381446850393694,
+              44.79120734908137,
+              0.0,
+              10.41758530183727
+            ],
+            "origin": [
+              59.381446850393694,
+              50.0
+            ]
+          }
+        ],
+        "text": " 1. Row elimination         A   b   U U: upper triangular matrix",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 22,
+        "image": "/sources/slides/Seminar/22.png",
+        "background": "/sources/slides/Seminar/22-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 20,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 20,
+            "src": "/sources/slides/Seminar/22-shape-20.png",
+            "order": 11,
+            "bounds": [
+              -1.613270997375328,
+              0.32282006415864684,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              21.250332185039372,
+              5.58831291921843
+            ]
+          }
+        ],
+        "text": "R2 – 3R1              R3 – 2R2  1. Row elimination A U Success, because pivots are non-zeros c b   R1          R2 R1          R3",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 23,
+        "image": "/sources/slides/Seminar/23.png",
+        "background": "/sources/slides/Seminar/23-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 14,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 14,
+            "src": "/sources/slides/Seminar/23-shape-14.png",
+            "order": 12,
+            "bounds": [
+              -9.339041994750657,
+              0.17201808107319916,
+              60.215329724409436,
+              10.530985710119568
+            ],
+            "origin": [
+              20.768622867454063,
+              5.437510936132983
+            ]
+          }
+        ],
+        "text": "        R2 – 3R1     R3 – 2R2  Example on failure",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 24,
+        "image": "/sources/slides/Seminar/24.png",
+        "background": "/sources/slides/Seminar/24-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 3,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 3,
+            "src": "/sources/slides/Seminar/24-shape-3.png",
+            "order": 3,
+            "bounds": [
+              -1.1509350393700788,
+              1.463167104111986,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              21.71266814304462,
+              6.72865995917177
+            ]
+          }
+        ],
+        "text": " 2. Back-substitution         (1) (2) (3) (3):    (2):   (1):  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 25,
+        "image": "/sources/slides/Seminar/25.png",
+        "background": "/sources/slides/Seminar/25-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/25-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -6.33134842519685,
+              1.6494896471274425,
+              62.85196850393701,
+              10.530985710119568
+            ],
+            "origin": [
+              25.094635826771654,
+              6.914982502187226
+            ]
+          }
+        ],
+        "text": " 3. Matrix multiplication                     Matrix   column vector = column vector  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 26,
+        "image": "/sources/slides/Seminar/26.png",
+        "background": "/sources/slides/Seminar/26-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/26-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -6.33134842519685,
+              1.6494896471274425,
+              62.85196850393701,
+              10.530985710119568
+            ],
+            "origin": [
+              25.094635826771654,
+              6.914982502187226
+            ]
+          }
+        ],
+        "text": " 3. Matrix multiplication                 Row vector   Matrix = row vector  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 27,
+        "image": "/sources/slides/Seminar/27.png",
+        "background": "/sources/slides/Seminar/27-base.png",
+        "clicks": 0,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 8,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 3,
+            "shape": 9,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 4,
+            "shape": 15,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 5,
+            "shape": 16,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/27-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -5.4035187007874015,
+              1.6494896471274425,
+              90.84165846456693,
+              10.530985710119568
+            ],
+            "origin": [
+              40.017310531496065,
+              6.914982502187226
+            ]
+          },
+          {
+            "shape": 8,
+            "src": "/sources/slides/Seminar/27-shape-8.png",
+            "order": 8,
+            "bounds": [
+              1.2371227034120735,
+              14.162408865558474,
+              43.144324146981624,
+              10.530985710119568
+            ],
+            "origin": [
+              22.809284776902885,
+              19.42790172061826
+            ]
+          },
+          {
+            "shape": 9,
+            "src": "/sources/slides/Seminar/27-shape-9.png",
+            "order": 9,
+            "bounds": [
+              1.2371227034120735,
+              46.81119860017498,
+              43.144324146981624,
+              10.530985710119568
+            ],
+            "origin": [
+              22.809284776902885,
+              52.076691455234766
+            ]
+          },
+          {
+            "shape": 15,
+            "src": "/sources/slides/Seminar/27-shape-15.png",
+            "order": 15
+          },
+          {
+            "shape": 16,
+            "src": "/sources/slides/Seminar/27-shape-16.png",
+            "order": 16
+          }
+        ],
+        "text": " 4. Elimination by matrix multiplication          Step 1: subtract 3R1 from R2  Step 2: subtract 2R2 from R3                    ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 28,
+        "image": "/sources/slides/Seminar/28.png",
+        "background": "/sources/slides/Seminar/28-base.png",
+        "clicks": 3,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 3,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 3,
+            "shape": 6,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 4,
+            "shape": 14,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 5,
+            "shape": 18,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 6,
+            "shape": 20,
+            "type": 22,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 3
+          },
+          {
+            "index": 7,
+            "shape": 26,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 8,
+            "shape": 27,
+            "type": 10,
+            "exit": false,
+            "trigger": 2,
+            "step": 3,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/28-shape-2.png",
+            "order": 2,
+            "bounds": [
+              0.6958825459317585,
+              5.777529892096822,
+              43.144324146981624,
+              10.530985710119568
+            ],
+            "origin": [
+              22.26804461942257,
+              11.043022747156606
+            ]
+          },
+          {
+            "shape": 3,
+            "src": "/sources/slides/Seminar/28-shape-3.png",
+            "order": 3,
+            "bounds": [
+              1.3917158792650919,
+              29.67356372120151,
+              43.144324146981624,
+              10.530985710119568
+            ],
+            "origin": [
+              22.963877952755904,
+              34.939056576261294
+            ]
+          },
+          {
+            "shape": 6,
+            "src": "/sources/slides/Seminar/28-shape-6.png",
+            "order": 5
+          },
+          {
+            "shape": 14,
+            "src": "/sources/slides/Seminar/28-shape-14.png",
+            "order": 7
+          },
+          {
+            "shape": 18,
+            "src": "/sources/slides/Seminar/28-shape-18.png",
+            "order": 8,
+            "bounds": [
+              1.9845390419947504,
+              47.518081073199184,
+              54.43298884514436,
+              14.879731700204141
+            ],
+            "origin": [
+              29.20103346456693,
+              54.95794692330126
+            ]
+          },
+          {
+            "shape": 20,
+            "src": "/sources/slides/Seminar/28-shape-20.png",
+            "order": 9,
+            "bounds": [
+              37.20996555118111,
+              66.92057451151939,
+              54.43298884514436,
+              14.879731700204141
+            ],
+            "origin": [
+              64.42645997375328,
+              74.36044036162146
+            ]
+          },
+          {
+            "shape": 26,
+            "src": "/sources/slides/Seminar/28-shape-26.png",
+            "order": 10
+          },
+          {
+            "shape": 27,
+            "src": "/sources/slides/Seminar/28-shape-27.png",
+            "order": 11
+          }
+        ],
+        "text": " Step 1: subtract 3R1 from R2  Step 2: subtract 2R2 from R3         We can decide which pair of matrix to multiply first. But multiplying matrix is a non-commutative.    ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 29,
+        "image": "/sources/slides/Seminar/29.png",
+        "background": "/sources/slides/Seminar/29-base.png",
+        "clicks": 2,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 2,
+            "type": 23,
+            "exit": false,
+            "trigger": 2,
+            "step": 0,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 19
+          },
+          {
+            "index": 2,
+            "shape": 14,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          },
+          {
+            "index": 3,
+            "shape": 15,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 2,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 2,
+            "src": "/sources/slides/Seminar/29-shape-2.png",
+            "order": 2,
+            "bounds": [
+              -11.370964566929134,
+              1.9531641878098571,
+              45.7272063648294,
+              10.530985710119568
+            ],
+            "origin": [
+              11.492638615485566,
+              7.218657042869641
+            ]
+          },
+          {
+            "shape": 14,
+            "src": "/sources/slides/Seminar/29-shape-14.png",
+            "order": 10,
+            "bounds": [
+              70.07243274278215,
+              22.118868474773986,
+              10.1003937007874,
+              9.42448235637212
+            ],
+            "origin": [
+              75.12262959317586,
+              26.831109652960045
+            ]
+          },
+          {
+            "shape": 15,
+            "src": "/sources/slides/Seminar/29-shape-15.png",
+            "order": 11,
+            "bounds": [
+              80.17282644356956,
+              68.4566491688539,
+              10.1003937007874,
+              9.42448235637212
+            ],
+            "origin": [
+              85.22302329396327,
+              73.16889034703996
+            ]
+          }
+        ],
+        "text": " Summary: 1.  Can pivot be zero? Yes No Both A and B 2.  Which of these is Upper Triangular Matrix? A.    B.    C.    B B",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 30,
+        "image": "/sources/slides/Seminar/30.png",
+        "background": "/sources/slides/Seminar/30-base.png",
+        "clicks": 1,
+        "effects": [
+          {
+            "index": 1,
+            "shape": 9,
+            "type": 10,
+            "exit": false,
+            "trigger": 1,
+            "step": 1,
+            "delay": 0.0,
+            "duration": 0.5,
+            "direction": 0
+          }
+        ],
+        "layers": [
+          {
+            "shape": 9,
+            "src": "/sources/slides/Seminar/30-shape-9.png",
+            "order": 4,
+            "bounds": [
+              44.949803149606296,
+              24.192855059784197,
+              10.1003937007874,
+              9.42448235637212
+            ],
+            "origin": [
+              50.0,
+              28.905096237970255
+            ]
+          }
+        ],
+        "text": "3. What is the answer of  Matrix of 3 by 3 multiply by column vector of 3 by 1? Column matrix Column vector Row matrix Row vector Both A and B E",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 31,
+        "image": "/sources/slides/Seminar/31.png",
+        "background": "/sources/slides/Seminar/31-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Any Question",
+        "links": [],
+        "media": []
+      }
+    ]
+  },
+  {
+    "id": "Presentation2",
+    "source": "/sources/powerpoint/Presentation2.pptx",
+    "width": 960.0,
+    "height": 540.0,
+    "slides": [
+      {
+        "number": 1,
+        "image": "/sources/slides/Presentation2/01.png",
+        "background": "/sources/slides/Presentation2/01-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "MIT 18.06 · Lecture 3 Matrix Multiplication & Inverses  Based on Gilbert Strang’s lecture",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 2,
+        "image": "/sources/slides/Presentation2/02.png",
+        "background": "/sources/slides/Presentation2/02-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Roadmap 1. Showing 4 different ways of matrices multiplication    2.Inverse matrices   3. Application  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 3,
+        "image": "/sources/slides/Presentation2/03.png",
+        "background": "/sources/slides/Presentation2/03-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Four ways to compute C = AB Rows of and Columns of B, same answer every time. 1 · Dot products 2 · Columns 3 · Rows 4 · Columns × rows",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 4,
+        "image": "/sources/slides/Presentation2/04.png",
+        "background": "/sources/slides/Presentation2/04-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "1: dot products Example A : [1 2] B : [5; 7] C = 1·5 + 2·7 = 19 shop 2: 3·5 + 4·7 = 43 Each entry of  C = AB  is a dot product: c_ij  = (row  i  of A) · (col j of B) the number of columns in the first matrix (A) must be equal to the number of rows in the second matrix (B) A: m × n B: n × p C: m × p",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 5,
+        "image": "/sources/slides/Presentation2/05.png",
+        "background": "/sources/slides/Presentation2/05-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "2 and 3: columns and rows Each column of C is A times the matching column of B, so it is a linear combination of the columns of A.  Each row of C is the matching row of A times B, a linear combination of the rows of B. C = 5·[1;3] + 7·[2;4] = [19; 43] C = 1·[5 6] + 2·[7 8] = [19 22] Example C = 5·[1;3] + 7·[2;4] = [19; 43] C = 1·[5 6] + 2·[7 8] = [19 22]",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 6,
+        "image": "/sources/slides/Presentation2/06.png",
+        "background": "/sources/slides/Presentation2/06-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "4: columns times rows take a  row  from the first matrix and a  column  from the second matrix, multiply their corresponding numbers together, and then  add  those products up. Example A : [ 1; 2; 3] B : [1 3 ] AB =[ 1 3; 2 6; 3 9]",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 7,
+        "image": "/sources/slides/Presentation2/07.png",
+        "background": "/sources/slides/Presentation2/07-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "The inverse matrix Only exists when the matrices is a square and the determinant ≠ 0 Example A = [3 1; 4 2]    ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 8,
+        "image": "/sources/slides/Presentation2/08.png",
+        "background": "/sources/slides/Presentation2/08-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Gauss-Jordan: finding A⁻¹ Start [ A | I ] Row-reduce Eliminate up and down Finish [ I | A⁻¹ ]",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 9,
+        "image": "/sources/slides/Presentation2/09.png",
+        "background": "/sources/slides/Presentation2/09-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Example 1. Setup A = [1 3; 2 5] Write [A | I] and row-reduce until the left side becomes I. Initial augmented matrix [ 1 3 | 1 0 ] [ 2 5 | 0 1 ] 2. Gauss-Jordan Step 1: R2 − 2·R1 [ 1 3 | 1 0 ] [ 0 -1 | -2 1 ] Step 2: R2 × (−1) [ 1 3 | 1 0 ] [ 0 1 | 2 -1 ] Step 3: R1 − 3·R2 [ 1 0 | -5 3 ] [ 0 1 | 2 -1 ] 3. Solution The right side now contains the inverse matrix A⁻¹. Inverse matrix A⁻¹ [ -5 3 ] [ 2 -1 ] Check: [1 3; 2 5]·[−5 3; 2 −1] = I",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 10,
+        "image": "/sources/slides/Presentation2/10.png",
+        "background": "/sources/slides/Presentation2/10-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "MATLAB demo: multiplication A = [1 2; 3 4]; B = [5 6; 7 8]; C = A*B C =     19    22     43    50 Expected output",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 11,
+        "image": "/sources/slides/Presentation2/11.png",
+        "background": "/sources/slides/Presentation2/11-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "MATLAB demo: multiplication A = [1 3; 2 5]; M =  rref ([A eye(2)])     % Gauss-Jordan on [A | I] Ainv  = M(:,3:4)          % right half is the inverse A* Ainv                    % check: should be the identity inv(A)                   % built-in check M =      1     0    -5     3      0     1     2    -1 Ainv  =     -5     3      2    -1",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 12,
+        "image": "/sources/slides/Presentation2/12.png",
+        "background": "/sources/slides/Presentation2/12-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Where this is used AI Graphics Transforms 3D coordinates (rotation, scaling and projection) by multiplying vectors (points in space) with transformation matrices Cybersecurity Hill cipher: ciphertext = K·message. Decrypting needs K⁻¹, so a singular key cannot decrypt. Layers in neural networks multiply input feature vectors by massive weight matrices followed by non-linear activations.",
+        "links": [],
+        "media": []
+      }
+    ]
+  },
+  {
+    "id": "Lecture5",
+    "source": "/sources/powerpoint/Lecture5.pptx",
+    "width": 720.0,
+    "height": 405.0,
+    "slides": [
+      {
+        "number": 1,
+        "image": "/sources/slides/Lecture5/01.png",
+        "background": "/sources/slides/Lecture5/01-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Permutations, Transposes, and Vector Spaces  Linear Algebra • Lecture #5",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 2,
+        "image": "/sources/slides/Lecture5/02.png",
+        "background": "/sources/slides/Lecture5/02-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "01 Permutation    03 Vector Spaces & Subspaces 02 Transposes & Symmetric Matrices 04 The Column Space    Table of contents",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 3,
+        "image": "/sources/slides/Lecture5/03.png",
+        "background": "/sources/slides/Lecture5/03-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "1.   Permutation     Standard elimination assumes no zeros in pivot positions ( ). Real-world systems need row swaps for zeros, or for numerical stability (avoiding tiny pivots).                                The General Formula :         Properties of   :    Built by reordering the rows of the Identity Matrix ( ). For an    matrix, there are    possible permutations. Key Property:             or    ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 4,
+        "image": "/sources/slides/Lecture5/04.png",
+        "background": "/sources/slides/Lecture5/04-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "1.   Permutation     -    Example:      - To fix the zero pivot, swap  Row 1  and  Row 2  using permutation matrix. Elimination: Row 2 already has a  , so  . ( ).  .                                          ( ).  .        ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 5,
+        "image": "/sources/slides/Lecture5/05.png",
+        "background": "/sources/slides/Lecture5/05-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "2.  Transposes & Symmetric Matrices Transpose  ( ) :  Rows become columns; columns become rows  ( ). Symmetric Matrix  ( ):   A square matrix,  Unchanged when transposed.  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 6,
+        "image": "/sources/slides/Lecture5/06.png",
+        "background": "/sources/slides/Lecture5/06-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "2.  Transposes & Symmetric Matrices Making Symmetry from Any Matrix:   is always symmetric.   - Multiplying any matrix  by its transpose  always produces a symmetric matrix.                    ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 7,
+        "image": "/sources/slides/Lecture5/07.png",
+        "background": "/sources/slides/Lecture5/07-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "2.  Transposes & Symmetric Matrices Python Code: Output :",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 8,
+        "image": "/sources/slides/Lecture5/08.png",
+        "background": "/sources/slides/Lecture5/08-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "3.  Vector Spaces & Subspaces   What Is a Vector Space? A collection of vectors where  linear combinations  stay inside the set. Two mandatory operations:            - Vector Addition  ( )            - Scalar Multiplication  ( ) Every vector space must contain the zero vector .  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 9,
+        "image": "/sources/slides/Lecture5/09.png",
+        "background": "/sources/slides/Lecture5/09-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "3.  Vector Spaces & Subspaces   Examples of Vector Spaces :  All 2D vectors  where  represents the standard 2D  xy -plane.  :  All 3D vectors  where   represents 3D physical space.  :  The general case of column vectors with  real components  .  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 10,
+        "image": "/sources/slides/Lecture5/10.png",
+        "background": "/sources/slides/Lecture5/10-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "3.  Vector Spaces & Subspaces   A  subspace  is a vector space that lives inside a bigger vector space. It must follow the same rules:  Contains the zero vector Closed under addition ( v  +  w ) Closed under scalar multiplication (c v ) Subspaces of ℝ²:  The whole plane ℝ² Any line through the origin Just the zero vector, { 0 } Subspaces of ℝ³:  All of ℝ³ Any plane through the origin Any line through the origin Just { 0 }",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 11,
+        "image": "/sources/slides/Lecture5/11.png",
+        "background": "/sources/slides/Lecture5/11-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "4. Column Spaces C(A)  The space formed by taking  all possible linear combinations  of the columns of a matrix  .  ",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 12,
+        "image": "/sources/slides/Lecture5/12.png",
+        "background": "/sources/slides/Lecture5/12-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "Do you have any questions? addyouremail@freepik.com +91 620 421 838 yourcompany.com Thanks!",
+        "links": [],
+        "media": []
+      },
+      {
+        "number": 13,
+        "image": "/sources/slides/Lecture5/13.png",
+        "background": "/sources/slides/Lecture5/13-base.png",
+        "clicks": 0,
+        "effects": [],
+        "layers": [],
+        "text": "",
+        "links": [],
+        "media": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,639 @@
+{
+  "Seminar": [
+    {
+      "number": 1,
+      "paragraphs": []
+    },
+    {
+      "number": 2,
+      "paragraphs": [
+        "Lecture 1:",
+        "Institute of Technology of Cambodia",
+        "The Geometry of Linear Equations",
+        "MIT 18.06 Linear Algebra, Spring 2005",
+        "Instructor: Gilbert Strang"
+      ]
+    },
+    {
+      "number": 3,
+      "paragraphs": [
+        "Understand Row Picture",
+        "01.",
+        "02.",
+        "03.",
+        "Learning Objectives:",
+        "Understand Column Picture",
+        "Visualize vectors in 2D and 3D with systems of equations",
+        "04.",
+        "Understand why n unknows need n equations"
+      ]
+    },
+    {
+      "number": 4,
+      "paragraphs": [
+        " 1. Row Picture",
+        "Row picture is a way to view each linear equation in a system as a geometric shape.",
+        "It could be a line in 2D or a flat plane in 3D.",
+        "We draw those shapes to see where they intersect. ",
+        "The intersection point is the answer of our System of Equations."
+      ]
+    },
+    {
+      "number": 5,
+      "paragraphs": [
+        " Example:",
+        "Coefficient Matrix",
+        "Matrix form",
+        "x",
+        "Column vector of Unknowns",
+        "The standard matrix form",
+        "b = ",
+        "Right-hand side vector"
+      ]
+    },
+    {
+      "number": 6,
+      "paragraphs": [
+        "y",
+        "x",
+        "“Row picture”",
+        "x",
+        "0",
+        "1",
+        "y",
+        "0",
+        "2",
+        "x",
+        "-3",
+        "-1",
+        "y",
+        "0",
+        "1",
+        "0",
+        "2",
+        "-3",
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "number": 7,
+      "paragraphs": [
+        " Example:",
+        "https://www.desmos.com/3d/wzmocmkzzv",
+        "x = 0, y = 0, z = 1 "
+      ]
+    },
+    {
+      "number": 8,
+      "paragraphs": [
+        " 2. Column Picture",
+        "Column picture is a way to view a system of equation by drawing vectors and combining them to reach a specific target vector.",
+        "Linear Combination: the process of scaling vectors and add them up",
+        "a",
+        "+ b"
+      ]
+    },
+    {
+      "number": 9,
+      "paragraphs": [
+        " Example:",
+        "+  = ",
+        "Linear Combination"
+      ]
+    },
+    {
+      "number": 10,
+      "paragraphs": [
+        "x",
+        "y",
+        "2",
+        "-1",
+        "2",
+        "-1",
+        "3",
+        "+   "
+      ]
+    },
+    {
+      "number": 11,
+      "paragraphs": [
+        "x",
+        "y",
+        "2",
+        "-1",
+        "2",
+        "-1",
+        "3",
+        "+   "
+      ]
+    },
+    {
+      "number": 12,
+      "paragraphs": [
+        " Example:",
+        "https://www.desmos.com/3d/aoacgfimov",
+        "A",
+        "b"
+      ]
+    },
+    {
+      "number": 13,
+      "paragraphs": [
+        " 3. Answering some questions",
+        "1.  If we have all the x and all the y, then we combine them. What will be all the result?",
+        "https://www.desmos.com/3d/yornyg6ls4",
+        "Answer: Yes, if those vectors are independent( not parallel) of each other.",
+        "              : No, if those vectors are dependent( parallel ) of each other.",
+        "Independent vectors",
+        "dependent vectors",
+        "https://www.desmos.com/3d/crrvxhbmsg"
+      ]
+    },
+    {
+      "number": 14,
+      "paragraphs": [
+        "2. Why n unknowns need n equations?",
+        "Answer: ",
+        "Because we want to find one specific solution.",
+        "But having n equations do not guarantee to get one specific answer or even an answer.",
+        "Think of Equations as Instructions.",
+        "One solution",
+        "Infinite solutions",
+        "No solution"
+      ]
+    },
+    {
+      "number": 15,
+      "paragraphs": []
+    },
+    {
+      "number": 16,
+      "paragraphs": [
+        " Summary:",
+        "1.  What is Row picture?",
+        "The way to view the system of equation by drawing geometric shape of each equation to find where it intersect",
+        "The way to view the system of equation by drawing vectors of each equations and do combination to reach target vectors",
+        "Both A and B",
+        "2.  What is Column picture?",
+        "The way to view the system of equation by drawing geometric shape of each equation to find where it intersect",
+        "The way to view the system of equation by drawing vectors of each equations and do combination to reach target vectors",
+        "Both A and B",
+        "A",
+        "B"
+      ]
+    },
+    {
+      "number": 17,
+      "paragraphs": [
+        " Summary:",
+        "3.  Having n equation and n unknowns. Can you get a specific solution?",
+        "Yes, I can",
+        "No, I can not",
+        "Both A and B",
+        "C"
+      ]
+    },
+    {
+      "number": 18,
+      "paragraphs": [
+        "Any Question"
+      ]
+    },
+    {
+      "number": 19,
+      "paragraphs": [
+        "Lecture 2:",
+        "Elimination with Matrices",
+        "Institute of Technology of Cambodia",
+        "MIT 18.06 Linear Algebra, Spring 2005",
+        "Instructor: Gilbert Strang"
+      ]
+    },
+    {
+      "number": 20,
+      "paragraphs": [
+        "Learning Objectives:",
+        "01.",
+        "02",
+        "03",
+        "04",
+        "Row elimination",
+        "Back-substitution",
+        "Matrix multiplication",
+        "Elimination matrices"
+      ]
+    },
+    {
+      "number": 21,
+      "paragraphs": [
+        " 1. Row elimination",
+        "A",
+        "b",
+        "U",
+        "U: upper triangular matrix"
+      ]
+    },
+    {
+      "number": 22,
+      "paragraphs": [
+        "R2 – 3R1",
+        "R3 – 2R2",
+        " 1. Row elimination",
+        "A",
+        "U",
+        "Success, because pivots are non-zeros",
+        "c",
+        "b",
+        "R1          R2",
+        "R1          R3"
+      ]
+    },
+    {
+      "number": 23,
+      "paragraphs": [
+        "R2 – 3R1",
+        "R3 – 2R2",
+        " Example on failure"
+      ]
+    },
+    {
+      "number": 24,
+      "paragraphs": [
+        " 2. Back-substitution",
+        "(1)",
+        "(2)",
+        "(3)",
+        "(3): ",
+        "(2):",
+        "(1):"
+      ]
+    },
+    {
+      "number": 25,
+      "paragraphs": [
+        " 3. Matrix multiplication",
+        "Matrix  column vector = column vector"
+      ]
+    },
+    {
+      "number": 26,
+      "paragraphs": [
+        " 3. Matrix multiplication",
+        "Row vector  Matrix = row vector"
+      ]
+    },
+    {
+      "number": 27,
+      "paragraphs": [
+        " 4. Elimination by matrix multiplication",
+        " Step 1: subtract 3R1 from R2",
+        " Step 2: subtract 2R2 from R3"
+      ]
+    },
+    {
+      "number": 28,
+      "paragraphs": [
+        " Step 1: subtract 3R1 from R2",
+        " Step 2: subtract 2R2 from R3",
+        "We can decide which pair of matrix to multiply first.",
+        "But multiplying matrix is a non-commutative."
+      ]
+    },
+    {
+      "number": 29,
+      "paragraphs": [
+        " Summary:",
+        "1.  Can pivot be zero?",
+        "Yes",
+        "No",
+        "Both A and B",
+        "2.  Which of these is Upper Triangular Matrix?",
+        "A. ",
+        "B. ",
+        "C. ",
+        "B",
+        "B"
+      ]
+    },
+    {
+      "number": 30,
+      "paragraphs": [
+        "3. What is the answer of  Matrix of 3 by 3 multiply by column vector of 3 by 1?",
+        "Column matrix",
+        "Column vector",
+        "Row matrix",
+        "Row vector",
+        "Both A and B",
+        "E"
+      ]
+    },
+    {
+      "number": 31,
+      "paragraphs": [
+        "Any Question"
+      ]
+    }
+  ],
+  "Presentation2": [
+    {
+      "number": 1,
+      "paragraphs": [
+        "MIT 18.06 · Lecture 3",
+        "Matrix Multiplication & Inverses",
+        " Based on Gilbert Strang’s lecture"
+      ]
+    },
+    {
+      "number": 2,
+      "paragraphs": [
+        "Roadmap",
+        "1. Showing 4 different ways of matrices multiplication  ",
+        "2.Inverse matrices  ",
+        "3. Application  "
+      ]
+    },
+    {
+      "number": 3,
+      "paragraphs": [
+        "Four ways to compute C = AB",
+        "Rows of and Columns of B, same answer every time.",
+        "1 · Dot products",
+        "2 · Columns",
+        "3 · Rows",
+        "4 · Columns × rows"
+      ]
+    },
+    {
+      "number": 4,
+      "paragraphs": [
+        "1: dot products",
+        "Example",
+        "A : [1 2]",
+        "B : [5; 7]",
+        "C = 1·5 + 2·7 = 19",
+        "shop 2: 3·5 + 4·7 = 43",
+        "Each entry of C = AB is a dot product:",
+        "c_ij = (row i of A) · (col j of B)",
+        "the number of columns in the first matrix (A) must be equal to the number of rows in the second matrix (B)",
+        "A: m × n",
+        "B: n × p",
+        "C: m × p"
+      ]
+    },
+    {
+      "number": 5,
+      "paragraphs": [
+        "2 and 3: columns and rows",
+        "Each column of C is A times the matching column of B, so it is a linear combination of the columns of A. ",
+        "Each row of C is the matching row of A times B, a linear combination of the rows of B.",
+        "C = 5·[1;3] + 7·[2;4]",
+        "= [19; 43]",
+        "C = 1·[5 6] + 2·[7 8]",
+        "= [19 22]",
+        "Example",
+        "C = 5·[1;3] + 7·[2;4]",
+        "= [19; 43]",
+        "C = 1·[5 6] + 2·[7 8]",
+        "= [19 22]"
+      ]
+    },
+    {
+      "number": 6,
+      "paragraphs": [
+        "4: columns times rows",
+        "take a row from the first matrix and a column from the second matrix, multiply their corresponding numbers together, and then add those products up.",
+        "Example",
+        "A : [ 1; 2; 3]",
+        "B : [1 3 ]",
+        "AB =[ 1 3; 2 6; 3 9]"
+      ]
+    },
+    {
+      "number": 7,
+      "paragraphs": [
+        "The inverse matrix",
+        "Only exists when the matrices is a square and the determinant ≠ 0",
+        "Example",
+        "A = [3 1; 4 2]"
+      ]
+    },
+    {
+      "number": 8,
+      "paragraphs": [
+        "Gauss-Jordan: finding A⁻¹",
+        "Start",
+        "[ A | I ]",
+        "Row-reduce",
+        "Eliminate up and down",
+        "Finish",
+        "[ I | A⁻¹ ]"
+      ]
+    },
+    {
+      "number": 9,
+      "paragraphs": [
+        "Example",
+        "1. Setup",
+        "A = [1 3; 2 5]",
+        "Write [A | I] and row-reduce until the left side becomes I.",
+        "Initial augmented matrix",
+        "[ 1 3 | 1 0 ]",
+        "[ 2 5 | 0 1 ]",
+        "2. Gauss-Jordan",
+        "Step 1: R2 − 2·R1",
+        "[ 1 3 | 1 0 ]",
+        "[ 0 -1 | -2 1 ]",
+        "Step 2: R2 × (−1)",
+        "[ 1 3 | 1 0 ]",
+        "[ 0 1 | 2 -1 ]",
+        "Step 3: R1 − 3·R2",
+        "[ 1 0 | -5 3 ]",
+        "[ 0 1 | 2 -1 ]",
+        "3. Solution",
+        "The right side now contains the inverse matrix A⁻¹.",
+        "Inverse matrix A⁻¹",
+        "[ -5 3 ]",
+        "[ 2 -1 ]",
+        "Check: [1 3; 2 5]·[−5 3; 2 −1] = I"
+      ]
+    },
+    {
+      "number": 10,
+      "paragraphs": [
+        "MATLAB demo: multiplication",
+        "A = [1 2; 3 4];",
+        "B = [5 6; 7 8];",
+        "C = A*B",
+        "C =",
+        "    19    22",
+        "    43    50",
+        "Expected output"
+      ]
+    },
+    {
+      "number": 11,
+      "paragraphs": [
+        "MATLAB demo: multiplication",
+        "A = [1 3; 2 5];",
+        "M = rref([A eye(2)])     % Gauss-Jordan on [A | I]",
+        "Ainv = M(:,3:4)          % right half is the inverse",
+        "A*Ainv                   % check: should be the identity",
+        "inv(A)                   % built-in check",
+        "M =",
+        "     1     0    -5     3",
+        "     0     1     2    -1",
+        "Ainv =",
+        "    -5     3",
+        "     2    -1"
+      ]
+    },
+    {
+      "number": 12,
+      "paragraphs": [
+        "Where this is used",
+        "AI",
+        "Graphics",
+        "Transforms 3D coordinates (rotation, scaling and projection) by multiplying vectors (points in space) with transformation matrices",
+        "Cybersecurity",
+        "Hill cipher: ciphertext = K·message. Decrypting needs K⁻¹, so a singular key cannot decrypt.",
+        "Layers in neural networks multiply input feature vectors by massive weight matrices followed by non-linear activations."
+      ]
+    }
+  ],
+  "Lecture5": [
+    {
+      "number": 1,
+      "paragraphs": [
+        "Permutations, Transposes, and Vector Spaces ",
+        "Linear Algebra • Lecture #5"
+      ]
+    },
+    {
+      "number": 2,
+      "paragraphs": [
+        "01",
+        "Permutation ",
+        "03",
+        "Vector Spaces & Subspaces",
+        "02",
+        "Transposes & Symmetric Matrices",
+        "04",
+        "The Column Space ",
+        "Table of contents"
+      ]
+    },
+    {
+      "number": 3,
+      "paragraphs": [
+        "1. Permutation ",
+        "Standard elimination assumes no zeros in pivot positions ().",
+        "Real-world systems need row swaps for zeros, or for numerical stability (avoiding tiny pivots).",
+        "                              The General Formula :     ",
+        "Properties of  : ",
+        "Built by reordering the rows of the Identity Matrix ().",
+        "For an  matrix, there are  possible permutations.",
+        "Key Property:          or "
+      ]
+    },
+    {
+      "number": 4,
+      "paragraphs": [
+        "1. Permutation ",
+        "-  Example: ",
+        "- To fix the zero pivot, swap Row 1 and Row 2 using permutation matrix.",
+        "Elimination:",
+        "Row 2 already has a , so .",
+        "(). .",
+        " (). ."
+      ]
+    },
+    {
+      "number": 5,
+      "paragraphs": [
+        "2. Transposes & Symmetric Matrices",
+        "Transpose (): Rows become columns; columns become rows ().",
+        "Symmetric Matrix (): A square matrix, Unchanged when transposed."
+      ]
+    },
+    {
+      "number": 6,
+      "paragraphs": [
+        "2. Transposes & Symmetric Matrices",
+        "Making Symmetry from Any Matrix: is always symmetric.",
+        "- Multiplying any matrix by its transpose always produces a symmetric matrix."
+      ]
+    },
+    {
+      "number": 7,
+      "paragraphs": [
+        "2. Transposes & Symmetric Matrices",
+        "Python Code:",
+        "Output:"
+      ]
+    },
+    {
+      "number": 8,
+      "paragraphs": [
+        "3. Vector Spaces & Subspaces",
+        "What Is a Vector Space?",
+        "A collection of vectors where linear combinations stay inside the set.",
+        "Two mandatory operations:",
+        "           - Vector Addition ()",
+        "           - Scalar Multiplication ()",
+        "Every vector space must contain the zero vector ."
+      ]
+    },
+    {
+      "number": 9,
+      "paragraphs": [
+        "3. Vector Spaces & Subspaces",
+        "Examples of Vector Spaces",
+        ": All 2D vectors where represents the standard 2D xy-plane. ",
+        ": All 3D vectors where  represents 3D physical space. ",
+        ": The general case of column vectors with real components ."
+      ]
+    },
+    {
+      "number": 10,
+      "paragraphs": [
+        "3. Vector Spaces & Subspaces",
+        "A subspace is a vector space that lives inside a bigger vector space.",
+        "It must follow the same rules: ",
+        "Contains the zero vector",
+        "Closed under addition (v + w)",
+        "Closed under scalar multiplication (cv)",
+        "Subspaces of ℝ²: ",
+        "The whole plane ℝ²",
+        "Any line through the origin",
+        "Just the zero vector, {0}",
+        "Subspaces of ℝ³: ",
+        "All of ℝ³",
+        "Any plane through the origin",
+        "Any line through the origin",
+        "Just {0}"
+      ]
+    },
+    {
+      "number": 11,
+      "paragraphs": [
+        "4. Column Spaces C(A) ",
+        "The space formed by taking all possible linear combinations of the columns of a matrix ."
+      ]
+    },
+    {
+      "number": 12,
+      "paragraphs": [
+        "Do you have any questions?",
+        "addyouremail@freepik.com",
+        "+91 620 421 838",
+        "yourcompany.com",
+        "Thanks!"
+      ]
+    },
+    {
+      "number": 13,
+      "paragraphs": []
+    }
+  ]
+}

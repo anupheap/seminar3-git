@@ -1,0 +1,21 @@
+{
+  "hiddenObjectiveShapes": [1499, 1501],
+  "excludedSourceSlides": {
+    "Seminar": [18, 31],
+    "Lecture5": [12, 13]
+  },
+  "excludedDemos": [
+    "l1-rows",
+    "l1-columns",
+    "l1-3d",
+    "l2-elimination",
+    "l2-failure",
+    "l3-products",
+    "l3-inverse",
+    "l9-dependence",
+    "l9-basis",
+    "l5-permutation",
+    "l5-symmetry",
+    "l5-column-space"
+  ]
+}

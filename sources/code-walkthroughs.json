@@ -1,0 +1,172 @@
+{
+  "l3-product": {
+    "language": "matlab",
+    "stages": [
+      "A = [1 2; 3 4];",
+      "A = [1 2; 3 4];\nB = [5 6; 7 8];",
+      "A = [1 2; 3 4];\nB = [5 6; 7 8];\nC = A*B"
+    ],
+    "outputs": [
+      "",
+      "",
+      "C =\n    19    22\n    43    50"
+    ],
+    "highlights": [
+      "1",
+      "2",
+      "3"
+    ],
+    "outputLines": [
+      null,
+      null,
+      3
+    ]
+  },
+  "l3-inverse": {
+    "language": "matlab",
+    "stages": [
+      "A = [1 3; 2 5];",
+      "A = [1 3; 2 5];\nM = rref([A eye(2)])     % Gauss-Jordan on [A | I]",
+      "A = [1 3; 2 5];\nM = rref([A eye(2)])     % Gauss-Jordan on [A | I]\nAinv = M(:,3:4)          % right half is the inverse",
+      "A = [1 3; 2 5];\nM = rref([A eye(2)])     % Gauss-Jordan on [A | I]\nAinv = M(:,3:4)          % right half is the inverse\nA*Ainv                   % check: should be the identity",
+      "A = [1 3; 2 5];\nM = rref([A eye(2)])     % Gauss-Jordan on [A | I]\nAinv = M(:,3:4)          % right half is the inverse\nA*Ainv                   % check: should be the identity\ninv(A)                   % built-in check"
+    ],
+    "outputs": [
+      "",
+      "M =\n     1     0    -5     3\n     0     1     2    -1",
+      "M =\n     1     0    -5     3\n     0     1     2    -1\n\nAinv =\n    -5     3\n     2    -1",
+      "M =\n     1     0    -5     3\n     0     1     2    -1\n\nAinv =\n    -5     3\n     2    -1\n\nans =\n     1     0\n     0     1",
+      "M =\n     1     0    -5     3\n     0     1     2    -1\n\nAinv =\n    -5     3\n     2    -1\n\nans =\n     1     0\n     0     1\n\nans =\n    -5     3\n     2    -1"
+    ],
+    "highlights": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "outputLines": [
+      null,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "l5-symmetric": {
+    "language": "python",
+    "stages": [
+      "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)",
+      "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)\n\nRT_R = R.T @ R",
+      "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)\n\nRT_R = R.T @ R\n\nis_symmetric = np.allclose(RT_R, RT_R.T)",
+      "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)\n\nRT_R = R.T @ R\n\nis_symmetric = np.allclose(RT_R, RT_R.T)\n\nprint(\"R^T * R:\\n\", RT_R)",
+      "import numpy as np\nR = np.array([[1, 2], [3, 0], [0, 4]], dtype=float)\n\nRT_R = R.T @ R\n\nis_symmetric = np.allclose(RT_R, RT_R.T)\n\nprint(\"R^T * R:\\n\", RT_R)\nprint(\"Is symmetric?:\", is_symmetric)"
+    ],
+    "highlights": [
+      "1-2",
+      "4",
+      "6",
+      "8",
+      "9"
+    ],
+    "outputs": [
+      "",
+      "",
+      "",
+      "R^T * R:\n [[10.  2.]\n [ 2. 20.]]",
+      "R^T * R:\n [[10.  2.]\n [ 2. 20.]]\nIs symmetric?: True"
+    ],
+    "outputLines": [
+      null,
+      null,
+      null,
+      8,
+      9
+    ]
+  },
+  "l9-rank": {
+    "language": "python",
+    "stages": [
+      "from sympy import Matrix\n\nA = Matrix([[3, 4, 7],\n            [2, 7, 9],\n            [5, 2, 7]])",
+      "from sympy import Matrix\n\nA = Matrix([[3, 4, 7],\n            [2, 7, 9],\n            [5, 2, 7]])\n\nn_vectors = A.shape[1]\nrank = A.rank()",
+      "from sympy import Matrix\n\nA = Matrix([[3, 4, 7],\n            [2, 7, 9],\n            [5, 2, 7]])\n\nn_vectors = A.shape[1]\nrank = A.rank()\n\nprint(\"Number of vectors:\", n_vectors)",
+      "from sympy import Matrix\n\nA = Matrix([[3, 4, 7],\n            [2, 7, 9],\n            [5, 2, 7]])\n\nn_vectors = A.shape[1]\nrank = A.rank()\n\nprint(\"Number of vectors:\", n_vectors)\nprint(\"Rank:\", rank)",
+      "from sympy import Matrix\n\nA = Matrix([[3, 4, 7],\n            [2, 7, 9],\n            [5, 2, 7]])\n\nn_vectors = A.shape[1]\nrank = A.rank()\n\nprint(\"Number of vectors:\", n_vectors)\nprint(\"Rank:\", rank)\nprint(\"Linearly independent?\", rank == n_vectors)"
+    ],
+    "highlights": [
+      "1-5",
+      "7-8",
+      "10",
+      "11",
+      "12"
+    ],
+    "outputs": [
+      "",
+      "",
+      "Number of vectors: 3",
+      "Number of vectors: 3\nRank: 2",
+      "Number of vectors: 3\nRank: 2\nLinearly independent? False"
+    ],
+    "outputLines": [
+      null,
+      null,
+      10,
+      11,
+      12
+    ]
+  },
+  "l6-column": {
+    "language": "python",
+    "stages": [
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\ncolumns = A.columnspace()\nprint([list(v) for v in columns])",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\ncolumns = A.columnspace()\nprint([list(v) for v in columns])\n\nx = Matrix([2, -1, 0])\nprint(\"A*x =\", list(A*x))"
+    ],
+    "highlights": [
+      "1-5",
+      "7-8",
+      "10-11"
+    ],
+    "outputs": [
+      "",
+      "[[1, 2, 3, 4], [1, 1, 1, 1]]",
+      "[[1, 2, 3, 4], [1, 1, 1, 1]]\nA*x = [1, 3, 5, 7]"
+    ],
+    "outputLines": [
+      null,
+      8,
+      11
+    ]
+  },
+  "l6-null": {
+    "language": "python",
+    "stages": [
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))\n\nx0 = Matrix([1, 0, 0])\nprint(\"A*x0 =\", list(A*x0))",
+      "from sympy import Matrix\nA = Matrix([[1, 1, 2],\n            [2, 1, 3],\n            [3, 1, 4],\n            [4, 1, 5]])\n\nn = A.nullspace()[0]\nprint(\"n =\", list(n))\nprint(\"A*n =\", list(A*n))\n\nx0 = Matrix([1, 0, 0])\nprint(\"A*x0 =\", list(A*x0))\nprint(\"A*(x0+2*n) =\", list(A*(x0+2*n)))"
+    ],
+    "highlights": [
+      "1-5",
+      "7-8",
+      "9",
+      "11-12",
+      "13"
+    ],
+    "outputs": [
+      "",
+      "n = [-1, -1, 1]",
+      "n = [-1, -1, 1]\nA*n = [0, 0, 0, 0]",
+      "n = [-1, -1, 1]\nA*n = [0, 0, 0, 0]\nA*x0 = [1, 2, 3, 4]",
+      "n = [-1, -1, 1]\nA*n = [0, 0, 0, 0]\nA*x0 = [1, 2, 3, 4]\nA*(x0+2*n) = [1, 2, 3, 4]"
+    ],
+    "outputLines": [
+      null,
+      8,
+      9,
+      12,
+      13
+    ]
+  }
+}

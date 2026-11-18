@@ -1,0 +1,297 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "source": "https://www.canva.com/design/DAHa-hNCW00/iV35G0qo8ZAcpbj6MrsVOg/edit",
+  "pages": [
+    {
+      "number": 1,
+      "animations": [],
+      "text": "LECTURE 9:IndepENDENCEMath PresentationBASIS & DIMENSION",
+      "textNodes": 4,
+      "images": 2,
+      "nodes": 64,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/01.html"
+    },
+    {
+      "number": 2,
+      "animations": [],
+      "text": "Linear Independence& Dependence1Basis2Dimensions3WHAT WE’LL COVER:",
+      "textNodes": 8,
+      "images": 0,
+      "nodes": 156,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/02.html"
+    },
+    {
+      "number": 3,
+      "animations": [],
+      "text": "1Linear Independence & Dependence",
+      "textNodes": 2,
+      "images": 2,
+      "nodes": 73,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/03.html"
+    },
+    {
+      "number": 4,
+      "animations": [],
+      "text": "1Linear Independence & Dependence",
+      "textNodes": 2,
+      "images": 3,
+      "nodes": 80,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/04.html"
+    },
+    {
+      "number": 5,
+      "animations": [],
+      "text": "A set of vectors are linearly independent when novector within that set is a linear combination of othervectors.1Linear Independence & Dependence",
+      "textNodes": 3,
+      "images": 2,
+      "nodes": 93,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/05.html"
+    },
+    {
+      "number": 6,
+      "animations": [],
+      "text": "In other words, a set of vectors are linearly independentif and only if the solution to that equation is:1Linear Independence & Dependence",
+      "textNodes": 3,
+      "images": 1,
+      "nodes": 79,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/06.html"
+    },
+    {
+      "number": 7,
+      "animations": [],
+      "text": "Contrarily, a set of vectors arelinearly dependent when thatset of vectors contain no vectorthat is a linear combination ofother vectors in the set.1Linear Independence & Dependence",
+      "textNodes": 3,
+      "images": 1,
+      "nodes": 78,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/07.html"
+    },
+    {
+      "number": 8,
+      "animations": [],
+      "text": "Meaning a set of vectors arelinearly dependent when thereexists non-zero solutions to theequation.1Linear Independence & Dependence",
+      "textNodes": 3,
+      "images": 1,
+      "nodes": 73,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/08.html"
+    },
+    {
+      "number": 9,
+      "animations": [],
+      "text": "1Linear Independence & DependenceLinearly IndependentLinearly Dependent",
+      "textNodes": 4,
+      "images": 2,
+      "nodes": 87,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/09.html"
+    },
+    {
+      "number": 10,
+      "animations": [],
+      "text": "1Linear Independence & Dependence?????",
+      "textNodes": 3,
+      "images": 1,
+      "nodes": 70,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/10.html"
+    },
+    {
+      "number": 11,
+      "animations": [],
+      "text": "1Linear Independence & DependenceLinearly Dependent!",
+      "textNodes": 3,
+      "images": 1,
+      "nodes": 70,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/11.html"
+    },
+    {
+      "number": 12,
+      "animations": [],
+      "text": "1Linear Independence & Dependence",
+      "textNodes": 2,
+      "images": 4,
+      "nodes": 89,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/12.html"
+    },
+    {
+      "number": 13,
+      "animations": [],
+      "text": "1Linear Independence & DependenceDependent or Independent?",
+      "textNodes": 3,
+      "images": 3,
+      "nodes": 88,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/13.html"
+    },
+    {
+      "number": 14,
+      "animations": [],
+      "text": "1Linear Independence & DependenceDependent or Independent?",
+      "textNodes": 3,
+      "images": 4,
+      "nodes": 97,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/14.html"
+    },
+    {
+      "number": 15,
+      "animations": [],
+      "text": "1Linear Independence & DependenceDependent or Independent?",
+      "textNodes": 3,
+      "images": 2,
+      "nodes": 79,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/15.html"
+    },
+    {
+      "number": 16,
+      "animations": [],
+      "text": "1Linear Independence & DependenceDependent or Independent?",
+      "textNodes": 3,
+      "images": 1,
+      "nodes": 70,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/16.html"
+    },
+    {
+      "number": 17,
+      "animations": [],
+      "text": "1Linear Independence & DependenceDependent or Independent?Dependent! Column 3 has one free variable",
+      "textNodes": 4,
+      "images": 1,
+      "nodes": 79,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/17.html"
+    },
+    {
+      "number": 18,
+      "animations": [],
+      "text": "1In addition, a rank of a matrix is the number of pivotswithin the matrix.r = # of pivots = 2Before we get into bases",
+      "textNodes": 4,
+      "images": 1,
+      "nodes": 83,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/18.html"
+    },
+    {
+      "number": 19,
+      "animations": [],
+      "text": "1Inversely, the number of free columns in this matrix isn (number of columns) - r (rank)3 - 2 = 1Before we get into bases",
+      "textNodes": 4,
+      "images": 1,
+      "nodes": 80,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/19.html"
+    },
+    {
+      "number": 20,
+      "animations": [],
+      "text": "A basis for a vector space is aset of vectors that satisfies twokey properties:They are linearlyindependent.They span the space.2Basis",
+      "textNodes": 5,
+      "images": 1,
+      "nodes": 90,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/20.html"
+    },
+    {
+      "number": 21,
+      "animations": [],
+      "text": "By definition, this set of vectors isalso a basis!2Basis",
+      "textNodes": 3,
+      "images": 1,
+      "nodes": 73,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/21.html"
+    },
+    {
+      "number": 22,
+      "animations": [],
+      "text": "For every space, the amount of vectors in itsbasis equals to the dimension of that space.2BasisR2R3",
+      "textNodes": 7,
+      "images": 2,
+      "nodes": 112,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/22.html"
+    },
+    {
+      "number": 23,
+      "animations": [],
+      "text": "This is NOT a basis for R  as it only spans aplane2Basis3",
+      "textNodes": 4,
+      "images": 1,
+      "nodes": 82,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/23.html"
+    },
+    {
+      "number": 24,
+      "animations": [],
+      "text": "The dimension of a space S (written dim(S)) isdefined as the number of vectors in any basis for S.3DimensionWe could also say thatdimensions also specify the“just right” amount of vectorsfor its basis.",
+      "textNodes": 4,
+      "images": 1,
+      "nodes": 89,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/24.html"
+    },
+    {
+      "number": 25,
+      "animations": [],
+      "text": "Code Example",
+      "textNodes": 1,
+      "images": 2,
+      "nodes": 55,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/25.html"
+    },
+    {
+      "number": 26,
+      "animations": [],
+      "text": "ConclusionLinear Independence: Equivalent to N(A) = 0, tested by placing vectors ascolumns of A and checking for free variables.Spanning: Extends the definition of column space C(A) as all linearcombinations of columns.Basis: Combines independence and spanning. For R^n, checking if n vectorsform a basis is equivalent to testing matrix invertibility.Dimension: Bridges matrix rank r to geometry: dim(C(A)) = r and dim(N(A)) =n - r.",
+      "textNodes": 5,
+      "images": 0,
+      "nodes": 103,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/26.html"
+    },
+    {
+      "number": 27,
+      "animations": [],
+      "text": "",
+      "textNodes": 0,
+      "images": 0,
+      "nodes": 5,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/27.html"
+    },
+    {
+      "number": 28,
+      "animations": [],
+      "text": "",
+      "textNodes": 0,
+      "images": 0,
+      "nodes": 5,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/28.html"
+    },
+    {
+      "number": 29,
+      "animations": [],
+      "text": "",
+      "textNodes": 0,
+      "images": 0,
+      "nodes": 5,
+      "background": "rgba(0, 0, 0, 0)",
+      "file": "/sources/canva-native/29.html"
+    }
+  ]
+}

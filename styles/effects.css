@@ -1,0 +1,23 @@
+/* Original PowerPoint shape artwork, with its original click/delay sequence. */
+.original-slide { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; background: #fff; }
+.original-frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
+.original-layer { animation-fill-mode: both; animation-timing-function: cubic-bezier(.2,.65,.3,1); transform-origin: center; }
+.source-toolbar { position: absolute; right: 12px; top: 9px; display: flex; align-items: center; gap: 14px; width: max-content; max-width: calc(100% - 24px); padding: 5px 10px; border-radius: 5px; background: #142635e8; color: white; opacity: 0; transition: opacity 160ms; font: 11px 'Segoe UI', sans-serif; z-index: 10; }
+.source-toolbar a { color: #c3e6ff; text-decoration: underline; }
+.original-slide:hover .source-toolbar, .source-toolbar:focus-within { opacity: 1; }
+@keyframes ppt-appear { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ppt-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ppt-fly { from { opacity: 0; transform: translate(var(--fly-x), var(--fly-y)); } to { opacity: 1; transform: translate(0, 0); } }
+@keyframes ppt-zoom { from { opacity: 0; transform: scale(.3); } to { opacity: 1; transform: scale(1); } }
+@keyframes ppt-wipe { from { clip-path: inset(0 var(--wipe-hidden) 0 0); } to { clip-path: inset(0 var(--wipe-visible) 0 0); } }
+.output-caption-enter-active, .output-caption-leave-active { transition: opacity 150ms, transform 150ms; }
+.output-caption-enter-from { opacity: 0; transform: translateY(5px); }
+.output-caption-leave-to { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .original-layer { animation-duration: 0ms !important; animation-delay: 0ms !important; }
+  *, *::before, *::after { transition-duration: 0ms !important; }
+}
+@media print {
+  .source-toolbar, .original-video { display: none; }
+}
+@media (hover: none) { .source-toolbar { opacity: .9; } }

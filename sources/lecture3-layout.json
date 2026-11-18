@@ -1,0 +1,1052 @@
+{
+  "1": {
+    "-100013": {
+      "box": [
+        56,
+        582,
+        1168,
+        1
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"1\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "10": {
+      "box": [
+        56,
+        132,
+        1168,
+        30
+      ],
+      "role": "kicker",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#a65a40\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"500\" font-size=\"20\" x=\"0\" y=\"20\">MIT 18.06 · Lecture 3</text></g>"
+    },
+    "11": {
+      "box": [
+        56,
+        246,
+        1168,
+        245
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"100\" x=\"0\" y=\"100\">Matrix Multiplication</text><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"100\" x=\"0\" y=\"232\">&amp; Inverses</text></g>"
+    },
+    "13": {
+      "box": [
+        56,
+        636,
+        1168,
+        28
+      ],
+      "role": "attribution",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#6b6a62\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"20\" x=\"0\" y=\"20\">Based on Gilbert Strang’s lecture</text></g>"
+    }
+  },
+  "2": {
+    "19": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"50\" x=\"0\" y=\"50\">Roadmap</text></g>"
+    },
+    "20": {
+      "box": [
+        56,
+        170,
+        1168,
+        145
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"145\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "21": {
+      "box": [
+        88,
+        218,
+        1104,
+        76
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">1. Showing 4 different ways of matrices multiplication</text></g>"
+    },
+    "22": {
+      "box": [
+        56,
+        339,
+        1168,
+        145
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"145\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "25": {
+      "box": [
+        88,
+        387,
+        1104,
+        76
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">2.Inverse matrices</text></g>"
+    },
+    "24": {
+      "box": [
+        56,
+        508,
+        1168,
+        145
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"145\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "26": {
+      "box": [
+        88,
+        556,
+        1104,
+        76
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">3. Application</text></g>"
+    }
+  },
+  "3": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"50\" x=\"0\" y=\"50\">Four ways to compute C = AB</text></g>"
+    },
+    "3": {
+      "box": [
+        56,
+        132,
+        1168,
+        38
+      ],
+      "role": "body",
+      "maxScale": 1.35
+    },
+    "4": {
+      "box": [
+        56,
+        204,
+        572,
+        210
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"572\" height=\"210\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "5": {
+      "box": [
+        88,
+        280,
+        508,
+        66
+      ],
+      "role": "body",
+      "maxScale": 1.7
+    },
+    "7": {
+      "box": [
+        652,
+        204,
+        572,
+        210
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"572\" height=\"210\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "8": {
+      "box": [
+        684,
+        280,
+        508,
+        66
+      ],
+      "role": "body",
+      "maxScale": 1.7
+    },
+    "10": {
+      "box": [
+        56,
+        438,
+        572,
+        210
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"572\" height=\"210\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "11": {
+      "box": [
+        88,
+        514,
+        508,
+        66
+      ],
+      "role": "body",
+      "maxScale": 1.7
+    },
+    "13": {
+      "box": [
+        652,
+        438,
+        572,
+        210
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"572\" height=\"210\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "14": {
+      "box": [
+        684,
+        514,
+        508,
+        66
+      ],
+      "role": "body",
+      "maxScale": 1.7
+    }
+  },
+  "4": {
+    "6": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"50\" x=\"0\" y=\"50\">1: dot products</text></g>"
+    },
+    "21": {
+      "box": [
+        56,
+        162,
+        670,
+        238
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"670\" height=\"238\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "22": {
+      "box": [
+        84,
+        190,
+        614,
+        186
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"32\" x=\"0\" y=\"32\">the number of columns in the first matrix</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"32\" x=\"0\" y=\"74.24\">(A) must be equal to the number of rows in</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"32\" x=\"0\" y=\"116.48\">the second matrix (B)</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"32\" x=\"0\" y=\"158.72\">A: m × n</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"32\" x=\"0\" y=\"200.96\">B: n × p</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"32\" x=\"0\" y=\"243.2\">C: m × p</text></g>"
+    },
+    "9": {
+      "box": [
+        758,
+        162,
+        466,
+        238
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"466\" height=\"238\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "19": {
+      "box": [
+        790,
+        197,
+        402,
+        166
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"30\">Each entry of C = AB is a dot</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"69.6\">product:</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"109.2\">c_ij = (row i of A) · (col j of B)</text></g>"
+    },
+    "20": {
+      "box": [
+        56,
+        430,
+        1168,
+        228
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"228\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "17": {
+      "box": [
+        88,
+        455,
+        1076,
+        36
+      ],
+      "role": "label",
+      "maxScale": 1.45
+    },
+    "18": {
+      "box": [
+        88,
+        506,
+        1076,
+        148
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">A : [1 2]</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">B : [5; 7]</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"112.84\">C = 1·5 + 2·7 = 19</text><text fill=\"#141413\" font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"153.76\">shop 2: 3·5 + 4·7 = 43</text></g>"
+    }
+  },
+  "5": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"50\" x=\"0\" y=\"50\">2 and 3: columns and rows</text></g>"
+    },
+    "3": {
+      "box": [
+        56,
+        162,
+        1168,
+        225
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"225\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "5": {
+      "box": [
+        88,
+        190,
+        1104,
+        169
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">Each column of C is A times the matching column of B, so it is a linear</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"78.88\">combination of the columns of A.</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"123.76\">Each row of C is the matching row of A times B, a linear combination of</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"168.64\">the rows of B.</text></g>"
+    },
+    "12": {
+      "box": [
+        56,
+        417,
+        1168,
+        240
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"240\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "14": {
+      "box": [
+        88,
+        440,
+        1104,
+        35
+      ],
+      "role": "label",
+      "maxScale": 1.45
+    },
+    "10": {
+      "box": [
+        88,
+        487,
+        1104,
+        154
+      ],
+      "role": "body",
+      "maxScale": 1.38
+    },
+    "24": {
+      "box": [
+        104,
+        503,
+        1104,
+        138
+      ],
+      "role": "body",
+      "maxScale": 1.24
+    }
+  },
+  "6": {
+    "4": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"50\" x=\"0\" y=\"50\">4: columns times rows</text></g>"
+    },
+    "6": {
+      "box": [
+        56,
+        162,
+        1168,
+        225
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"225\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "7": {
+      "box": [
+        88,
+        190,
+        1104,
+        169
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"35\" x=\"0\" y=\"35\">take a row from the first matrix and a column from the second matrix,</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"35\" x=\"0\" y=\"81.2\">multiply their corresponding numbers together, and then add those</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"35\" x=\"0\" y=\"127.4\">products up.</text></g>"
+    },
+    "18": {
+      "box": [
+        56,
+        417,
+        1168,
+        240
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"240\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "11": {
+      "box": [
+        88,
+        443,
+        1104,
+        36
+      ],
+      "role": "label",
+      "maxScale": 1.5
+    },
+    "13": {
+      "box": [
+        88,
+        501,
+        1104,
+        136
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">A : [ 1; 2; 3]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"78.88\">B : [1 3 ]</text><text font-family=\"Consolas,Consolas_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"123.76\">AB =[ 1 3; 2 6; 3 9]</text></g>"
+    }
+  },
+  "7": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"50\" x=\"0\" y=\"50\">The inverse matrix</text></g>"
+    },
+    "3": {
+      "box": [
+        56,
+        164,
+        455,
+        504
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"455\" height=\"504\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "4": {
+      "box": [
+        84,
+        192,
+        399,
+        180
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"30\">Only exists when the</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"69.6\">matrices is a square and</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"30\" x=\"0\" y=\"109.2\">the determinant ≠ 0</text></g>"
+    },
+    "14": {
+      "box": [
+        84,
+        430,
+        399,
+        185
+      ],
+      "role": "body",
+      "maxScale": 2
+    },
+    "6": {
+      "box": [
+        543,
+        164,
+        681,
+        504
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"681\" height=\"504\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "7": {
+      "box": [
+        575,
+        192,
+        617,
+        42
+      ],
+      "role": "label",
+      "maxScale": 1.5
+    },
+    "8": {
+      "box": [
+        575,
+        275,
+        617,
+        58
+      ],
+      "role": "body",
+      "maxScale": 1.6
+    },
+    "18": {
+      "box": [
+        575,
+        365,
+        617,
+        70
+      ],
+      "role": "equation",
+      "maxScale": 1.4
+    },
+    "20": {
+      "box": [
+        575,
+        482,
+        617,
+        130
+      ],
+      "role": "equation",
+      "maxScale": 1.6
+    }
+  },
+  "8": {
+    "9": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Source Serif 4\" font-weight=\"400\" fill=\"#141413\" font-size=\"50\" x=\"0\" y=\"50\">Gauss-Jordan: finding A⁻¹</text></g>"
+    },
+    "11": {
+      "box": [
+        56,
+        186,
+        374,
+        440
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"374\" height=\"440\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "12": {
+      "box": [
+        84,
+        218,
+        318,
+        56
+      ],
+      "role": "label",
+      "maxScale": 1.6
+    },
+    "13": {
+      "box": [
+        84,
+        344,
+        318,
+        210
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">[ A | I ]</text></g>"
+    },
+    "15": {
+      "box": [
+        453,
+        186,
+        374,
+        440
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"374\" height=\"440\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "16": {
+      "box": [
+        481,
+        218,
+        318,
+        56
+      ],
+      "role": "label",
+      "maxScale": 1.6
+    },
+    "17": {
+      "box": [
+        481,
+        344,
+        318,
+        210
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">Eliminate up and</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"78.88\">down</text></g>"
+    },
+    "19": {
+      "box": [
+        850,
+        186,
+        374,
+        440
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"374\" height=\"440\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "21": {
+      "box": [
+        878,
+        218,
+        318,
+        56
+      ],
+      "role": "label",
+      "maxScale": 1.6
+    },
+    "22": {
+      "box": [
+        878,
+        344,
+        318,
+        210
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"700\" fill=\"#141413\" font-size=\"34\" x=\"0\" y=\"34\">[ I | A⁻¹ ]</text></g>"
+    }
+  },
+  "9": {
+    "9": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Source Serif 4\" font-weight=\"400\" fill=\"#141413\" font-size=\"50\" x=\"0\" y=\"50\">Example</text></g>"
+    },
+    "5": {
+      "box": [
+        56,
+        164,
+        374,
+        504
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"374\" height=\"504\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "18": {
+      "box": [
+        453,
+        164,
+        374,
+        504
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"374\" height=\"504\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "29": {
+      "box": [
+        850,
+        164,
+        374,
+        504
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"374\" height=\"504\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "6": {
+      "box": [
+        88,
+        192,
+        310,
+        45
+      ],
+      "role": "label",
+      "maxScale": 1.25
+    },
+    "20": {
+      "box": [
+        485,
+        192,
+        310,
+        45
+      ],
+      "role": "label",
+      "maxScale": 1.25
+    },
+    "30": {
+      "box": [
+        882,
+        192,
+        310,
+        45
+      ],
+      "role": "label",
+      "maxScale": 1.25
+    },
+    "7": {
+      "box": [
+        88,
+        253,
+        310,
+        42
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "8": {
+      "box": [
+        88,
+        312,
+        310,
+        100
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "10": {
+      "box": [
+        88,
+        433,
+        310,
+        42
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "14": {
+      "box": [
+        88,
+        505,
+        310,
+        120
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "23": {
+      "box": [
+        485,
+        259,
+        310,
+        37
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "24": {
+      "box": [
+        485,
+        309,
+        310,
+        72
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "25": {
+      "box": [
+        485,
+        397,
+        310,
+        37
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "26": {
+      "box": [
+        485,
+        445,
+        310,
+        72
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "27": {
+      "box": [
+        485,
+        533,
+        310,
+        37
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "28": {
+      "box": [
+        485,
+        580,
+        310,
+        70
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "31": {
+      "box": [
+        882,
+        253,
+        310,
+        100
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "32": {
+      "box": [
+        882,
+        376,
+        310,
+        42
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "33": {
+      "box": [
+        882,
+        444,
+        310,
+        130
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    },
+    "34": {
+      "box": [
+        882,
+        602,
+        310,
+        43
+      ],
+      "role": "body",
+      "maxScale": 1.2
+    }
+  },
+  "10": {
+    "12": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Source Serif 4\" font-weight=\"400\" fill=\"#141413\" font-size=\"50\" x=\"0\" y=\"50\">MATLAB demo: multiplication</text></g>"
+    },
+    "17": {
+      "box": [
+        550,
+        334,
+        180,
+        40
+      ],
+      "role": "arrow",
+      "maxScale": 1.2
+    },
+    "19": {
+      "box": [
+        526,
+        402,
+        228,
+        62
+      ],
+      "role": "label",
+      "maxScale": 1.3
+    }
+  },
+  "11": {
+    "12": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Source Serif 4\" font-weight=\"400\" fill=\"#141413\" font-size=\"50\" x=\"0\" y=\"50\">MATLAB demo: multiplication</text></g>"
+    },
+    "4": {
+      "box": [
+        859,
+        390,
+        26,
+        30
+      ],
+      "role": "arrow",
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\" transform=\"rotate(-90 428.64 365.626)\"><g xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M407.5 366.5 418.25 366.5 418.25 345.5 439.75 345.5 439.75 366.5 450.5 366.5 429 387.5Z\" stroke=\"#40433D\" stroke-width=\"1.33333\" stroke-miterlimit=\"8\" fill=\"#9FA597\" fill-rule=\"evenodd\"/></g></g>"
+    }
+  },
+  "12": {
+    "2": {
+      "box": [
+        56,
+        48,
+        1168,
+        65
+      ],
+      "role": "heading",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Source Serif 4\" font-weight=\"400\" font-size=\"50\" x=\"0\" y=\"50\">Where this is used</text></g>"
+    },
+    "6": {
+      "box": [
+        56,
+        164,
+        1168,
+        150
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"150\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "7": {
+      "box": [
+        88,
+        189,
+        250,
+        48
+      ],
+      "role": "label",
+      "maxScale": 1.6
+    },
+    "16": {
+      "box": [
+        362,
+        189,
+        830,
+        110
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"31\" x=\"0\" y=\"31\">Layers in neural networks multiply input feature vectors by</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"31\" x=\"0\" y=\"71.92\">massive weight matrices followed by non-linear activations.</text></g>"
+    },
+    "9": {
+      "box": [
+        56,
+        333,
+        1168,
+        150
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"150\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "10": {
+      "box": [
+        88,
+        358,
+        250,
+        48
+      ],
+      "role": "label",
+      "maxScale": 1.6
+    },
+    "11": {
+      "box": [
+        362,
+        358,
+        830,
+        110
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"31\" x=\"0\" y=\"31\">Transforms 3D coordinates (rotation, scaling and projection)</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"31\" x=\"0\" y=\"71.92\">by multiplying vectors (points in space) with transformation</text><text font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" fill=\"#141413\" font-size=\"31\" x=\"0\" y=\"112.84\">matrices</text></g>"
+    },
+    "13": {
+      "box": [
+        56,
+        502,
+        1168,
+        150
+      ],
+      "role": "panel",
+      "stretch": true,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"1168\" height=\"150\" rx=\"3\" fill=\"#f0eee6\" stroke=\"#dedbd2\" stroke-width=\"1\"/></g>"
+    },
+    "14": {
+      "box": [
+        88,
+        527,
+        250,
+        48
+      ],
+      "role": "label",
+      "maxScale": 1.6
+    },
+    "15": {
+      "box": [
+        362,
+        527,
+        830,
+        110
+      ],
+      "role": "body",
+      "maxScale": 1,
+      "svg": "<g xmlns=\"http://www.w3.org/2000/svg\"><text fill=\"#141413\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"31\">Hill cipher: ciphertext = K·message. Decrypting needs K⁻¹,</text><text fill=\"#141413\" font-family=\"Inter,Inter_MSFontService,sans-serif\" font-weight=\"400\" font-size=\"31\" x=\"0\" y=\"71.92\">so a singular key cannot decrypt.</text></g>"
+    }
+  }
+}

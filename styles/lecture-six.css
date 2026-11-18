@@ -1,0 +1,76 @@
+@font-face{font-family:'Space Grotesk';src:url('/sources/fonts/SpaceGrotesk.ttf') format('truetype');font-weight:300 700;font-display:block}
+.lecture-six{--l6-blue:#58c4dd;--l6-green:#83c167;--l6-gold:#f0ac5f;--l6-yellow:#ffea94;--l6-red:#fc6255;--l6-muted:#a7afb7;position:relative!important;padding:43px 52px 50px!important;background:#050607!important;color:#f4f5f6!important;font:18px/1.5 'Inter',Arial,sans-serif!important;overflow:hidden}
+.lecture-six h1,.lecture-six h2,.lecture-six h3{font-family:'Space Grotesk',Arial,sans-serif!important;color:#f4f5f6!important;letter-spacing:-.025em!important;font-weight:600!important}
+.lecture-six h1{font-size:37px!important;line-height:1.1!important;margin:6px 0 23px!important;max-width:870px}
+.lecture-six h2{font-size:24px!important;line-height:1.2!important;margin:0 0 13px!important}
+.lecture-six h3{font-size:20px!important;margin:0 0 9px!important}
+.lecture-six p{margin:0 0 15px!important}
+.lecture-six strong{font-weight:650;color:white}
+.lecture-six .l6-eyebrow{font:650 10.5px/1.3 'Inter',Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--l6-blue)}
+.lecture-six .l6-head{border-left:4px solid var(--l6-blue);padding-left:19px;margin:5px 0 28px}
+.lecture-six .l6-head h1{margin-bottom:0!important}
+.lecture-six .l6-split{display:grid;grid-template-columns:1.1fr 1fr;gap:35px;align-items:center}
+.lecture-six .l6-split.wide-left{grid-template-columns:1.35fr 1fr}
+.lecture-six .l6-split.wide-right{grid-template-columns:.9fr 1.25fr}
+.lecture-six .l6-small{font-size:13.5px!important;color:var(--l6-muted);line-height:1.45}
+.lecture-six .l6-note{border-left:3px solid var(--l6-yellow);padding-left:16px;color:#d9dfe3;font-size:16px;margin-top:20px}
+.lecture-six .l6-band{position:absolute;left:52px;right:52px;bottom:0;min-height:39px;display:flex;align-items:center;justify-content:center;padding:10px 20px;background:#13313b;border-top:1px solid var(--l6-blue);font-size:12px;font-weight:500;letter-spacing:.02em;text-align:center}
+.lecture-six .l6-three{display:grid;grid-template-columns:repeat(3,1fr);gap:23px;margin-top:29px}
+.lecture-six .l6-panel{border-top:2px solid var(--l6-blue);background:#101417;padding:24px 22px;min-height:218px}
+.lecture-six .l6-panel p{font-size:15px;line-height:1.6;color:#bfc7cc}
+.lecture-six .l6-symbol{font:500 42px/1 'Space Grotesk',sans-serif;color:var(--l6-blue);margin-bottom:23px}
+.lecture-six .l6-panel.green{border-color:var(--l6-green)}
+.lecture-six .l6-panel.yellow{border-color:var(--l6-yellow)}
+.lecture-six .l6-panel.yellow .l6-symbol{color:var(--l6-yellow)}
+.lecture-six .l6-panel.green .l6-symbol{color:var(--l6-green)}
+.lecture-six .l6-blue{color:var(--l6-blue)!important}
+.lecture-six .l6-green{color:var(--l6-green)}
+.lecture-six .l6-gold{color:var(--l6-gold)}
+.lecture-six .l6-yellow{color:var(--l6-yellow)!important}
+.lecture-six .l6-red{color:var(--l6-red)}
+.lecture-six .katex{font-size:1.13em}
+.lecture-six .katex-display{margin:16px 0}
+.lecture-six .l6-math-big{font-size:25px}
+.lecture-six .l6-math-huge{font-size:37px}
+.lecture-six .l6-matrix{font-size:24px}
+.lecture-six .l6-grid-rule{border-top:1px solid #323b42;padding-top:22px;margin-top:22px}
+.lecture-six.l6-cover{padding:0!important}
+.lecture-six .l6-cover-rule{position:absolute;left:49px;top:0;bottom:0;width:4px;background:var(--l6-blue)}
+.lecture-six .l6-cover-copy{position:absolute;left:77px;top:148px;width:600px;z-index:1}
+.lecture-six .l6-cover-copy h1{font-size:62px!important;line-height:1.03!important;letter-spacing:-.055em!important;margin:13px 0 24px!important}
+.lecture-six .l6-cover-copy p{font-size:14px;color:#b9c5cc;max-width:420px}
+.lecture-six .l6-cover-art{position:absolute;right:-60px;top:84px;width:470px;opacity:.28;transform:rotate(-6deg)}
+.lecture-six .l6-cover-art .l6-diagram{width:100%}
+.lecture-six .l6-roadmap{display:grid;gap:24px;margin:35px 10px 0 0}
+.lecture-six .l6-roadmap>div{padding:0 0 17px;border-bottom:1px solid #354650;display:flex;align-items:baseline;gap:27px;max-width:680px}
+.lecture-six .l6-roadmap span{color:var(--l6-blue);font:600 15px 'Inter',sans-serif}
+.lecture-six .l6-roadmap h2{margin:0!important;font-size:29px!important}
+.lecture-six.l6-question{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.lecture-six.l6-question h1{font-size:49px!important;max-width:760px;line-height:1.13!important;margin:17px 0 24px!important}
+.lecture-six.l6-question p{font-size:17px;color:#b7c2ca;max-width:650px}
+.lecture-six .l6-hero-number{font:500 156px/1 'Space Grotesk',sans-serif;color:var(--l6-blue);letter-spacing:-.08em;margin:4px 0 12px}
+.lecture-six .l6-hero-label{font:500 24px/1.25 'Space Grotesk',sans-serif;max-width:330px}
+.lecture-six .l6-diagram{width:100%;margin:0}
+.lecture-six .l6-diagram svg{display:block;width:100%;height:auto;overflow:visible}
+.lecture-six .l6-diagram text{font:16px 'Inter',Arial,sans-serif}
+.l6-moving-point{transition:transform 600ms cubic-bezier(.2,.65,.3,1)}
+.l6-fade{transition:opacity 350ms}
+.l6-reveal{animation:l6-reveal 400ms both}
+@keyframes l6-reveal{from{opacity:0}to{opacity:1}}
+.lecture-six .l6-film{width:100%;display:block;background:#050607}
+.lecture-six .l6-film-text{font-size:17px;min-height:210px}
+.lecture-six .l6-film-text>div{margin:18px 0}
+.lecture-six .l6-code-grid{display:grid;grid-template-columns:1.32fr 1fr;gap:26px;align-items:start}
+.lecture-six .l6-code-block{height:326px;background:#11171c;border-top:2px solid var(--l6-blue);padding:12px 10px;overflow:hidden}
+.lecture-six .l6-code-result{margin:0;height:326px;display:grid;grid-template-rows:190px 1fr;gap:8px}
+.lecture-six .l6-code-result .l6-diagram{margin-top:-20px}
+.lecture-six .l6-code-result .l6-diagram svg{max-height:225px}
+.lecture-six .l6-code-result pre{border-top:1px solid #303b44;margin:0;padding-top:12px;white-space:pre;overflow:visible;font:15px/1.5 Consolas,monospace;color:#dde5eb}
+.lecture-six .l6-code-block pre,.lecture-six .l6-code-block code{font:14px/1.5 Consolas,monospace!important}
+.lecture-six .l6-code-block .slidev-code{padding:10px!important;background:transparent!important;width:100%!important;max-height:none!important;margin:0!important}
+.lecture-six .l6-code-block .slidev-code-wrapper{height:100%;margin:0!important}
+.lecture-six .l6-pair{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:24px}
+.lecture-six .l6-pair>section{border-top:2px solid var(--l6-blue);padding:24px 22px;background:#0e1418}
+.lecture-six .l6-pair>section:last-child{border-color:var(--l6-yellow)}
+.lecture-six .l6-compare-line{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #27343c;padding:14px 0;font-size:17px}
+@media(prefers-reduced-motion:reduce){.l6-moving-point,.l6-fade,.l6-reveal{transition:none;animation:none}}

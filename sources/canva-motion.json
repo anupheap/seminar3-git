@@ -1,0 +1,637 @@
+{
+  "source": "https://www.canva.com/design/DAHa-hNCW00/iV35G0qo8ZAcpbj6MrsVOg/edit",
+  "pages": [
+    {
+      "number": 1,
+      "pageId": "PBnhjG1ZplhmYDrL",
+      "effects": [
+        {
+          "id": "LBHFJ1TLk6K3KpkH",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 30,
+            "B": {
+              "G": {
+                "A": 1600000,
+                "C": {
+                  "A": "VAF8jiLDuRo"
+                }
+              }
+            }
+          },
+          "floatOrigin": "requested-for-all-graphics",
+          "paint": {
+            "duration": 1600,
+            "file": "paint-01.mp4"
+          }
+        },
+        {
+          "id": "LBGCjfDKxz99vR0q",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 1
+    },
+    {
+      "number": 2,
+      "pageId": "PBQKcm2wvh3RwHJv",
+      "effects": [
+        {
+          "id": "LBFBxYnrvkQvprC0",
+          "duration": 1000,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 31,
+            "B": {
+              "A": 0.5,
+              "D": "E",
+              "G": {}
+            }
+          },
+          "floatOrigin": "source-preset"
+        },
+        {
+          "id": "LBjXxJ7l6fzTfswP",
+          "duration": 1000,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 31,
+            "B": {
+              "A": 0.5,
+              "D": "E",
+              "G": {}
+            }
+          },
+          "floatOrigin": "source-preset"
+        },
+        {
+          "id": "LBY79PjMtWLZLbl0",
+          "duration": 1000,
+          "delay": 220,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 31,
+            "B": {
+              "A": 0.5,
+              "D": "E",
+              "G": {}
+            }
+          },
+          "floatOrigin": "source-preset"
+        }
+      ],
+      "savedEffects": 3
+    },
+    {
+      "number": 3,
+      "pageId": "PBfRnjhlxbfwjSDQ",
+      "effects": [
+        {
+          "id": "LBqq5tFlX3jhfdQQ",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LB97RdlffQ1f3ZCB",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 4,
+      "pageId": "PBFHjw8Tbqvlq4gp",
+      "effects": [
+        {
+          "id": "LB3flClpMBTp3h0q",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LB7hz2l12Hr7wmPM",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBb3JQYGcYns8BV6",
+          "duration": 900,
+          "delay": 220,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 5,
+      "pageId": "PBY4fDHgtzSxc7NL",
+      "effects": [
+        {
+          "id": "LB6RksxCCrS52RWp",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 8,
+            "B": {
+              "C": "B",
+              "G": {}
+            }
+          },
+          "floatOrigin": "requested-for-all-graphics",
+          "wipe": {
+            "duration": 1000,
+            "direction": "left-to-right"
+          }
+        },
+        {
+          "id": "LBck44n4bm9MP70Z",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 8,
+            "B": {
+              "C": "B",
+              "G": {}
+            }
+          },
+          "floatOrigin": "requested-for-all-graphics",
+          "wipe": {
+            "duration": 1000,
+            "direction": "left-to-right"
+          }
+        }
+      ],
+      "savedEffects": 2
+    },
+    {
+      "number": 6,
+      "pageId": "PB7xMpdqcy1N8X6s",
+      "effects": [
+        {
+          "id": "LByG0XnS37SpmDj7",
+          "duration": 1000,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 31,
+            "B": {
+              "A": 0.5,
+              "D": "E",
+              "G": {}
+            }
+          },
+          "floatOrigin": "source-preset"
+        }
+      ],
+      "savedEffects": 1
+    },
+    {
+      "number": 7,
+      "pageId": "PBFp4pZq5s87xtj6",
+      "effects": [
+        {
+          "id": "LBZcc7FTG3dJ5YZV",
+          "duration": 1000,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": {
+            "A?": "B",
+            "A": 31,
+            "B": {
+              "A": 0.5,
+              "D": "E",
+              "G": {}
+            }
+          },
+          "floatOrigin": "source-preset"
+        }
+      ],
+      "savedEffects": 1
+    },
+    {
+      "number": 8,
+      "pageId": "PB93qK0bR2zCr8j0",
+      "effects": [
+        {
+          "id": "LBZfhSqS91N88FSd",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 9,
+      "pageId": "PBvPL82ZLSZb8Hn7",
+      "effects": [
+        {
+          "id": "LBX61CrsPjQ7wnf7",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBmZYy4nlV7518PZ",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 10,
+      "pageId": "PB3RJWJgwY5l11Fd",
+      "effects": [
+        {
+          "id": "LBLnJ75CMZpHsnz7",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 11,
+      "pageId": "PBjWDplstkbhdwjW",
+      "effects": [
+        {
+          "id": "LBTrnRDpdQmJ2hR6",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 12,
+      "pageId": "PBC4FBVcrmVCmfzd",
+      "effects": [
+        {
+          "id": "LBzb855FXCMxDNjP",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBQHj6f6fbBXVDpg",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBWHWX6BfjrKh6dl",
+          "duration": 900,
+          "delay": 220,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBsKpbMp4t3jBlff",
+          "duration": 900,
+          "delay": 330,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 13,
+      "pageId": "PBY3YBtTKPfZ6vCW",
+      "effects": [
+        {
+          "id": "LBkVytF6kPqQvMVV",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBK7k9BpwDNBTQxJ",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBsbgnhXSCVdWQ69",
+          "duration": 900,
+          "delay": 220,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 14,
+      "pageId": "PBSTQpRdfD2mpj0G",
+      "effects": [
+        {
+          "id": "LBxmR6Ws7w7t4v5w",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LB4GDvWtz7wbvkqw",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBZyQcyKd9S9833S",
+          "duration": 900,
+          "delay": 220,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBbjlktRmbd3wzTv",
+          "duration": 900,
+          "delay": 330,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 15,
+      "pageId": "PByVRGYt42dWcCDP",
+      "effects": [
+        {
+          "id": "LBM1Kl2BcLr8SxvV",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBmZ9sSWVC3kQlR7",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 16,
+      "pageId": "PBzbkR4rw5s46lYL",
+      "effects": [
+        {
+          "id": "LBV0zyBb77GlsfSY",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 17,
+      "pageId": "PBNP8Dw2YK0fwDDR",
+      "effects": [
+        {
+          "id": "LBpytrGx0wRXgmVt",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 18,
+      "pageId": "PBt3Z7zgxFYTStQD",
+      "effects": [
+        {
+          "id": "LBby0L88SxtcNDc7",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 19,
+      "pageId": "PB58lZzkRQxRT8NY",
+      "effects": [
+        {
+          "id": "LBjr1tfq03d0D93r",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 20,
+      "pageId": "PBlMPjcHCLlT2vT8",
+      "effects": [
+        {
+          "id": "LB3B1QsMlBbkvtkc",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 21,
+      "pageId": "PBwxN565QKG39CKY",
+      "effects": [
+        {
+          "id": "LBhDNsZG4LTnjXgh",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 22,
+      "pageId": "PBN0Nw4dVS7nv4Pm",
+      "effects": [
+        {
+          "id": "LB4hGqZlfXh3WmPx",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        },
+        {
+          "id": "LBjD2GdymvfLQ2xx",
+          "duration": 900,
+          "delay": 110,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 23,
+      "pageId": "PBTYpRXwv2NlfRnV",
+      "effects": [
+        {
+          "id": "LBTC0bkfyLgMC99s",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 24,
+      "pageId": "PBDR5tVTVXF8rpNJ",
+      "effects": [
+        {
+          "id": "LBmyW1rWWQTl8wjZ",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 25,
+      "pageId": "PBYcXZCpzbH1V0Qj",
+      "effects": [
+        {
+          "id": "LBLT65NgH90Vt8FJ",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics",
+          "replacement": "code"
+        },
+        {
+          "id": "LBfgHLv4wDjVzzS0",
+          "duration": 900,
+          "delay": 0,
+          "distance": 64,
+          "sourceSettings": null,
+          "floatOrigin": "requested-for-all-graphics",
+          "replacement": "output"
+        }
+      ],
+      "savedEffects": 0
+    },
+    {
+      "number": 26,
+      "pageId": "PBKS4KlKf2q0rgMs",
+      "effects": [],
+      "savedEffects": 0
+    },
+    {
+      "number": 27,
+      "pageId": "PB0zHb7g7xtv80VV",
+      "effects": [],
+      "savedEffects": 0
+    },
+    {
+      "number": 28,
+      "pageId": "PBhBFr0GRXRg8BjT",
+      "effects": [],
+      "savedEffects": 0
+    },
+    {
+      "number": 29,
+      "pageId": "PBnL3R5WcV0SCjFf",
+      "effects": [],
+      "savedEffects": 0
+    }
+  ],
+  "loops": "sources/canva-liquid.json",
+  "notes": "Saved presets 8/30/31 are recreated with directional clipping, the original paint mask, and float entrances. Remaining picture graphics also float in as requested. Native elements stay mounted; no slide-image overlays or final-image swaps."
+}

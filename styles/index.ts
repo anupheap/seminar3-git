@@ -1,1 +1,8 @@
 import './style.css'
+import './effects.css'
+import './source-fonts.css'
+import './canva-native.css'
+import './source-slides.css'
+import './code-walkthroughs.css'
+import './lecture-three.css'
+import './lecture-six.css'

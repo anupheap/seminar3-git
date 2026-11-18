@@ -1,0 +1,260 @@
+[
+  {
+    "number": 1,
+    "text": "\nLECTURE 9:\nIndepENDENCE\nMath Presentation\nBASIS & DIMENSION",
+    "paragraphs": [
+      "LECTURE 9:",
+      "IndepENDENCE",
+      "Math Presentation",
+      "BASIS & DIMENSION"
+    ]
+  },
+  {
+    "number": 2,
+    "text": "\nLinear Independence& Dependence\n1\nBasis\n2\n\nDimensions\n3\nWHAT WE’LL COVER:",
+    "paragraphs": [
+      "Linear Independence& Dependence",
+      "1",
+      "Basis",
+      "2",
+      "Dimensions",
+      "3",
+      "WHAT WE’LL COVER:"
+    ]
+  },
+  {
+    "number": 3,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence"
+    ]
+  },
+  {
+    "number": 4,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence"
+    ]
+  },
+  {
+    "number": 5,
+    "text": "\n\n\n\n\nA set of vectors are linearly independent when no vector within that set is a linear combination of other vectors.\n1\nLinear Independence & Dependence",
+    "paragraphs": [
+      "A set of vectors are linearly independent when no vector within that set is a linear combination of other vectors.",
+      "1",
+      "Linear Independence & Dependence"
+    ]
+  },
+  {
+    "number": 6,
+    "text": "\n\n\n\n\nIn other words, a set of vectors are linearly independent if and only if the solution to that equation is:\n1\nLinear Independence & Dependence",
+    "paragraphs": [
+      "In other words, a set of vectors are linearly independent if and only if the solution to that equation is:",
+      "1",
+      "Linear Independence & Dependence"
+    ]
+  },
+  {
+    "number": 7,
+    "text": "\n\n\n\nContrarily, a set of vectors are linearly dependent when that set of vectors contain no vector that is a linear combination of other vectors in the set.\n1\nLinear Independence & Dependence",
+    "paragraphs": [
+      "Contrarily, a set of vectors are linearly dependent when that set of vectors contain no vector that is a linear combination of other vectors in the set.",
+      "1",
+      "Linear Independence & Dependence"
+    ]
+  },
+  {
+    "number": 8,
+    "text": "\n\n\n\nMeaning a set of vectors are linearly dependent when there exists non-zero solutions to the equation.\n1\nLinear Independence & Dependence",
+    "paragraphs": [
+      "Meaning a set of vectors are linearly dependent when there exists non-zero solutions to the equation.",
+      "1",
+      "Linear Independence & Dependence"
+    ]
+  },
+  {
+    "number": 9,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\nLinearly Independent\nLinearly Dependent",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "Linearly Independent",
+      "Linearly Dependent"
+    ]
+  },
+  {
+    "number": 10,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\n?????",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "?????"
+    ]
+  },
+  {
+    "number": 11,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\nLinearly Dependent!",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "Linearly Dependent!"
+    ]
+  },
+  {
+    "number": 12,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence"
+    ]
+  },
+  {
+    "number": 13,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\nDependent or Independent?",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "Dependent or Independent?"
+    ]
+  },
+  {
+    "number": 14,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\nDependent or Independent?",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "Dependent or Independent?"
+    ]
+  },
+  {
+    "number": 15,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\nDependent or Independent?",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "Dependent or Independent?"
+    ]
+  },
+  {
+    "number": 16,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\nDependent or Independent?",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "Dependent or Independent?"
+    ]
+  },
+  {
+    "number": 17,
+    "text": "\n\n\n\n1\nLinear Independence & Dependence\nDependent or Independent?\nDependent! Column 3 has one free variable",
+    "paragraphs": [
+      "1",
+      "Linear Independence & Dependence",
+      "Dependent or Independent?",
+      "Dependent! Column 3 has one free variable"
+    ]
+  },
+  {
+    "number": 18,
+    "text": "\n\n\n\n1\nIn addition, a rank of a matrix is the number of pivots within the matrix.\nr = # of pivots = 2\nBefore we get into bases",
+    "paragraphs": [
+      "1",
+      "In addition, a rank of a matrix is the number of pivots within the matrix.",
+      "r = # of pivots = 2",
+      "Before we get into bases"
+    ]
+  },
+  {
+    "number": 19,
+    "text": "\n\n\n\n1\nInversely, the number of free columns in this matrix is n (number of columns) - r (rank)\n3 - 2 = 1\nBefore we get into bases",
+    "paragraphs": [
+      "1",
+      "Inversely, the number of free columns in this matrix is n (number of columns) - r (rank)",
+      "3 - 2 = 1",
+      "Before we get into bases"
+    ]
+  },
+  {
+    "number": 20,
+    "text": "\n\n\n\nA basis for a vector space is a set of vectors that satisfies two key properties:They are linearly independent.They span the space.\n2\nBasis",
+    "paragraphs": [
+      "A basis for a vector space is a set of vectors that satisfies two key properties:They are linearly independent.They span the space.",
+      "2",
+      "Basis"
+    ]
+  },
+  {
+    "number": 21,
+    "text": "\n\n\n\nBy definition, this set of vectors is also a basis!\n2\nBasis",
+    "paragraphs": [
+      "By definition, this set of vectors is also a basis!",
+      "2",
+      "Basis"
+    ]
+  },
+  {
+    "number": 22,
+    "text": "\n\n\n\nFor every space, the amount of vectors in its basis equals to the dimension of that space.\n2\nBasis\nR\n2\nR\n3",
+    "paragraphs": [
+      "For every space, the amount of vectors in its basis equals to the dimension of that space.",
+      "2",
+      "Basis",
+      "R",
+      "2",
+      "R",
+      "3"
+    ]
+  },
+  {
+    "number": 23,
+    "text": "\n\n\n\nThis is NOT a basis for R  as it only spans a plane\n2\nBasis\n3",
+    "paragraphs": [
+      "This is NOT a basis for R  as it only spans a plane",
+      "2",
+      "Basis",
+      "3"
+    ]
+  },
+  {
+    "number": 24,
+    "text": "\n\n\n\nThe dimension of a space S (written dim(S)) is defined as the number of vectors in any basis for S.\n3\nDimension\nWe could also say that dimensions also specify the “just right” amount of vectors for its basis.",
+    "paragraphs": [
+      "The dimension of a space S (written dim(S)) is defined as the number of vectors in any basis for S.",
+      "3",
+      "Dimension",
+      "We could also say that dimensions also specify the “just right” amount of vectors for its basis."
+    ]
+  },
+  {
+    "number": 25,
+    "text": "\n\n\nCode Example",
+    "paragraphs": [
+      "Code Example"
+    ]
+  },
+  {
+    "number": 26,
+    "text": "\n\n\nConclusion\nLinear Independence: Equivalent to N(A) = 0, tested by placing vectors as columns of A and checking for free variables.Spanning: Extends the definition of column space C(A) as all linear combinations of columns.Basis: Combines independence and spanning. For R^n, checking if n vectors form a basis is equivalent to testing matrix invertibility.Dimension: Bridges matrix rank r to geometry: dim(C(A)) = r and dim(N(A)) = n - r.",
+    "paragraphs": [
+      "Conclusion",
+      "Linear Independence: Equivalent to N(A) = 0, tested by placing vectors as columns of A and checking for free variables.Spanning: Extends the definition of column space C(A) as all linear combinations of columns.Basis: Combines independence and spanning. For R^n, checking if n vectors form a basis is equivalent to testing matrix invertibility.Dimension: Bridges matrix rank r to geometry: dim(C(A)) = r and dim(N(A)) = n - r."
+    ]
+  },
+  {
+    "number": 27,
+    "text": "",
+    "paragraphs": []
+  },
+  {
+    "number": 28,
+    "text": "",
+    "paragraphs": []
+  },
+  {
+    "number": 29,
+    "text": "",
+    "paragraphs": []
+  }
+]

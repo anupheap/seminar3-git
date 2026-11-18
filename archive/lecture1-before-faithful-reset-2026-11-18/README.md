@@ -1,0 +1,1 @@
+Checkpoint before the faithful Lecture 1 reset. These files contain the rejected rewrite and design. Do not regenerate Lecture 1 from this version. Original source: public/sources/powerpoint/Seminar.pptx, slides 1–17. Approved exclusions remain in sources/deck-edits.json.

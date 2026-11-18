@@ -1,0 +1,31 @@
+"""Rebuild the approved source-faithful lecture sequence. No authored rewrite."""
+from pathlib import Path
+import json,runpy
+ROOT=Path(__file__).resolve().parents[1]
+FILES={1:'01-geometry.md',2:'02-elimination.md',3:'03-products-inverses.md',5:'05-permutations-spaces.md',6:'06-column-nullspace.md',9:'09-independence-basis.md'}
+TITLES={1:'Geometry of linear equations',2:'Elimination with matrices',3:'Matrix multiplication and inverses',5:'Permutations, transposes, and vector spaces',6:'Column space and nullspace',9:'Independence, basis, and dimension'}
+def build():
+    runpy.run_path(str(ROOT/'scripts/build-lecture1-native.py'))['build']()
+    runpy.run_path(str(ROOT/'scripts/build-remaining-native.py'))['build']()
+    runpy.run_path(str(ROOT/'scripts/build-lecture3-layout.py'))
+    runpy.run_path(str(ROOT/'scripts/build-canva-motion.py'))
+    canva=json.loads((ROOT/'sources/canva-native.json').read_text(encoding='utf-8'))
+    parts=[]
+    for page in canva['pages']:
+        n=page['number'];fields={'layout':'none','lecture':9,'title':f'Lecture 9 · original page {n}','sourceDeck':'CanvaLecture9','sourceSlide':n,'clicks':0}
+        if not parts:fields.update(routeAlias='lecture-9',section=True)
+        parts.append('---\n'+'\n'.join(f'{k}: {json.dumps(v)}' for k,v in fields.items())+f'\n---\n\n<CanvaSource :slide="{n}" />\n')
+    (ROOT/'lectures'/FILES[9]).write_text('\n'.join(parts),encoding='utf-8')
+    runpy.run_path(str(ROOT/'scripts/build-code-walkthroughs.py'))['apply']()
+    index=[];start=1
+    for lecture in FILES:
+        if lecture==6:
+            import re
+            count=len(re.findall(r'^layout: lecture-six$',(ROOT/'lectures'/FILES[6]).read_text(encoding='utf-8'),re.M))
+        else:
+            count=len(canva['pages']) if lecture==9 else len(json.loads((ROOT/f'sources/lecture{lecture}-native.json').read_text(encoding='utf-8'))['slides'])
+        index.append({'lecture':lecture,'title':TITLES[lecture],'start':start,'file':'lectures/'+FILES[lecture],'originals':0 if lecture==6 else count,'new_labs':count if lecture==6 else 0,'total':count,'rendering':'native-authored' if lecture==6 else 'source-native-html' if lecture==9 else 'source-native-svg'})
+        start+=count
+    (ROOT/'sources/lecture-index.json').write_text(json.dumps(index,indent=2)+'\n',encoding='utf-8')
+    print(f'Built {start-1} slides in lecture order 1, 2, 3, 5, 6, 9.')
+if __name__=='__main__':build()
